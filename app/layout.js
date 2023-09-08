@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`font-sans box-border m-0 p-0`}>
+      <body className={`box-border m-0 p-0`}>
         <Header />
         {children}
         <Footer />
