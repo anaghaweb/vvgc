@@ -17,7 +17,7 @@ export default async function Event() {
 
         <>
             <React.Fragment>
-                <section className={`h-[50dvh] md:h-[70vh] w-full bg-hero-event bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-sans font-[300] bg-opacity-70`}>
+                <section className={`h-96 md:h-[70vh] w-full bg-hero-event bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-sans font-[300] bg-opacity-70 m-[0.1px]`}>
                     <div className="w-[280px] h-auto text-center"><h1>VVGC San Martin Events</h1></div>
                 </section>
             </React.Fragment>
