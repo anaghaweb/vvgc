@@ -1,0 +1,133 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from 'next/navigation';
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+
+// Navigation bar Item list
+const navLinks = [
+  {
+    name: 'Home',
+    link: '/'
+  },
+
+  {
+    name: 'Events',
+    link: '/events'
+  },
+  {
+    name: 'Pooja Services',
+    link: '/pooja-services'
+  },
+  {
+    name: 'Prasadam Services',
+    link: '/prasadam-services'
+  },
+  {
+    name: 'Priests',
+    link: '/priests'
+  },
+
+  {
+    name: 'About Us',
+    link: '/about-us'
+  },
+
+  {
+    name: 'San Hose Temple',
+    link: '/san-hose-temple'
+  },
+
+];
+
+
+
+export default function Header() {
+
+  //state to manage hamburger menu open & close icons
+  const [menuIcon, setMenuIcon] = useState(false);
+  function smallScreenNavigation() {
+    setMenuIcon(!menuIcon);
+  }
+
+  const pathname = usePathname();
+
+  return (
+    <header className="flex flex-col w-full h-40 bg-vvgcnav-400 min-w-full">
+      <nav
+        className="justify-between md:min-w-fit lg:w-full h-14 flex lg:justify-center items-center"
+      >
+        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-[georgia] 
+        text-[#000033]">
+
+          {/* Large to medium scree navigation bar */}
+          {navLinks.map(({ name, link }) => {
+            return (
+              <li key={name} className={
+                `${pathname === link ?
+                  'p-2 md:text-[12px] lg:text-xl m-[4px] text-center border-b-2 border-indigo-950 text-semibold hover:border-b-transparent'
+                  :
+                  'p-2 text-center m-[4px]'}                 
+                  hover:border-b-2  hover:border-b-black`} >
+                <Link href={link}>{name}</Link></li>
+            )
+          })}
+        </ul>
+
+        {/* Support us button leads to Donations page */}
+        <button type="button"
+          className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-8 
+        shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-black
+           right-3 font-sans font-medium
+        "
+        >
+          <Link href={"/donations"}>Support Us</Link>
+        </button>
+        {/* {hamburger menu icon open and close } */}
+        <div onClick={smallScreenNavigation} className="flex flex-col md:hidden p-3">
+          {
+            menuIcon ? <AiOutlineClose size={25} className="text-black self-end" /> : <AiOutlineMenu size={25} className="text-black self-end " />
+          }
+
+          {/*Mobile navbar drops down/close*/}
+          <div onClick={smallScreenNavigation}
+            className={
+              menuIcon ? "flex flex-col absolute left-0 top-0 w-full h-full justify-start items-center text-center bg-midblue-400 p-2"
+                :
+                "flex flex-col absolute left-[-100%] top-[144px] w-full h-full justify-center items-center text-center bg-midblue-400"
+            }>
+            {
+              menuIcon ?
+                <AiOutlineClose size={25} className="text-white self-end" /> :
+                <AiOutlineMenu size={25} className="text-white self-end " />
+            }
+
+            {/* Populate the navbar with navbar links from navLinks Array */}
+            <ul className="text-white text-2xl my-4">
+              {
+                navLinks.map(({ name, link }) => {
+                  return (
+                    <li key={name} onClick={smallScreenNavigation} className="my-2 hover:cursor-pointer"><Link href={link}>{name}</Link> </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      {/* Temple Title */}
+      <section className="py-1 my-1 flex flex-col justify-center h-24 text-center text-[#000033] tracking-tight">
+        <p className={`tracking-tight font-sans text-[24px] md:text-2xl lg:text-3xl font-normal`}>
+          Vaidica Vidhya Ganapathi Center
+        </p>
+        <p className={`tracking-tighter font-sans text-lg md:text-xl lg:text-2xl font-thin`}>
+          Sri Vallabha Maha Ganapathi Temple
+        </p>
+        <p className={`tracking-tighter font-sans text-[10px] md:text-12px lg:text-[13px] font-thin`}>
+          (A Registered Non-Profit Organization - CA Tax ID: 61-1449457)
+        </p>
+      </section>
+    </header>
+  );
+}
