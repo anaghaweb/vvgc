@@ -1,3 +1,5 @@
+import React from "react";
+
 export const metadata = {
     title: 'About Us',
     description: 'VVGC- Temple',
@@ -6,15 +8,11 @@ export const metadata = {
 export default function About() {
     return (
         <>
-            <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-                <section className="w-full h-96 rounded-lg bg-blue-300 my-6"></section>
-                <section className="w-full h-96 rounded-lg bg-green-300 my-6"></section>
-                <section className="w-full h-96 rounded-lg bg-purple-300 my-6"></section>
-
-
-
-            </main>
+            <React.Fragment>
+                <section className={`h-[50dvh] w-full bg-hero-about bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-sans font-[300] bg-opacity-70`}>
+                    <div className="w-[280px] h-auto text-center"><h1>About Us</h1></div>
+                </section>
+            </React.Fragment>
         </>
     );
 }

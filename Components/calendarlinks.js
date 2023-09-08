@@ -135,13 +135,13 @@ export default function CalenderLinks({ eventdata }) {
 
     return (
         <React.Fragment>
-            <section className="flex justify-between w-full h-20px" >
 
-                <Link href={googleCalendarLink} target="_blank" className="px-1">Google Calendar</Link>
-                <Link href={outlookCalendarLink} target="_blank" className="px-1">Outlook Calendar</Link>
-                <Link href={appleCalendarLink} target="_blank" className="px-1">Apple Calendar</Link>
 
-            </section>
+            <Link href={googleCalendarLink} target="_blank" className="px-1">Google</Link>
+            <Link href={outlookCalendarLink} target="_blank" className="px-1">Outlook</Link>
+            <Link href={appleCalendarLink} target="_blank" className="px-1">Apple</Link>
+
+
         </React.Fragment>
     )
 

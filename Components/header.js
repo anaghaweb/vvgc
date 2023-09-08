@@ -92,9 +92,9 @@ export default function Header() {
           {/*Mobile navbar drops down/close*/}
           <div onClick={smallScreenNavigation}
             className={
-              menuIcon ? "flex flex-col absolute left-0 top-0 w-full h-full justify-start items-center text-center bg-midblue-400 p-2"
+              menuIcon ? "flex flex-col absolute left-0 top-0 w-full h-full justify-start items-center text-center bg-[#FF9933] p-2"
                 :
-                "flex flex-col absolute left-[-100%] top-[144px] w-full h-full justify-center items-center text-center bg-midblue-400"
+                "flex flex-col absolute left-[-100%] top-[144px] w-full h-full justify-center items-center text-center"
             }>
             {
               menuIcon ?
