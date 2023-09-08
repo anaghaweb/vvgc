@@ -53,11 +53,11 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-col w-full h-40 bg-vvgcnav-400 min-w-full">
+    <header className="flex flex-col w-full h-40 bg-[#FF9933] min-w-full">
       <nav
         className="justify-between md:min-w-fit lg:w-full h-14 flex lg:justify-center items-center"
       >
-        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-[georgia] 
+        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-sans
         text-[#000033]">
 
           {/* Large to medium scree navigation bar */}
@@ -65,7 +65,7 @@ export default function Header() {
             return (
               <li key={name} className={
                 `${pathname === link ?
-                  'p-2 md:text-[12px] lg:text-xl m-[4px] text-center border-b-2 border-indigo-950 text-semibold hover:border-b-transparent'
+                  'p-2 md:text-[12px] lg:text-xl m-[4px] text-center border-b-2 border-indigo-950 hover:border-b-transparent'
                   :
                   'p-2 text-center m-[4px]'}                 
                   hover:border-b-2  hover:border-b-black`} >

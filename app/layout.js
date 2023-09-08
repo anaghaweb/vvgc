@@ -1,5 +1,4 @@
 import './globals.css'
-import { Playfair } from 'next/font/google'
 import Header from '@/Components/header';
 import Footer from '@/Components/footer';
 
