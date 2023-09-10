@@ -1,35 +1,21 @@
 import React from "react";
-import RenderEvent from "@/Components/event";
-import FetchData from "@/Components/fetchdata";
+import Image from "next/image";
+import CalenderLinks from "@/Components/calendarlinks";
+import Link from "next/link";
 
-export const metadata = {
-    title: 'Events',
-    description: 'VVGC- Temple',
-}
 
-export default async function Event() {
 
-    const data = await FetchData();
-
-    return (
-
-        <>
-            <React.Fragment>
-                <section className={`h-96 md:h-[70vh] w-full bg-hero-event bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-sans font-[300] bg-opacity-70 m-[0.1px]`}>
-                    <div className="w-[280px] h-auto text-center"><h1>VVGC San Martin Events</h1></div>
-                </section>
-            </React.Fragment>
-
-            <RenderEvent data={data} width={'850px'} />
-
-            {/* {
-                <div className="flex flex-col w-full h-auto shadow-md px-1 relative">
-                    {data.content.map((data, index) => (
-                        <section key={index} className="bg-white flex flex-col w-full sm:w-full md:w-[850px] m-auto h-auto my-2 md:border-[1px] md:border-black md:p-2">
+export default async function RenderEvent({data, width}) {
+        
+            
+        
+        return <div className="flex flex-col w-full h-auto shadow-md px-1 relative">
+        {data.content.map((data, index) => (
+            <section key={index} className={`bg-white flex flex-col w-full sm:w-full md:w-[${width}] m-auto h-auto my-2 md:border-[1px] md:border-black md:p-2`}>
 
                             <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-950 text-white" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}</div>
 
-                            <div className="p-2 text-center text-lg md:text-start font-serif text-red-700">{data.title}</div>
+                            <div className="p-2 text-center text-lg md:text-start font-opensans text-red-700">{data.title}</div>
 
                             <hr className="h-[1.1px] bg-indigo-950 my-2 " />
 
@@ -39,7 +25,7 @@ export default async function Event() {
 
                             <div className="grid grid-cols-6 gap-x-1 gap-y-3 my-5">
                                 {data.startTime && data.endTime && data.description ?
-                                    <><div className="col-span-1 border-r-[1px] text-red-600 align-middle text-[12px] md:text-sm font-sans flex items-center justify-end px-[4px]">{data.startTime} to {data.endTime}</div><div className="col-span-5 text-[12px] md:text-sm ">{data.description}</div></>
+                                    <><div className="col-span-1 border-r-[1px] text-red-600 align-middle text-[12px] md:text-sm font-opensans flex items-center justify-end px-[4px]">{data.startTime}</div><div className="col-span-5 text-[12px] md:text-sm ">{data.description}</div></>
                                     : data.startTime && !data.endTime ?
                                         <><div className="col-span-1 border-r-[1px] text-red-600 align-middle text-[12px]
                     md:text-sm font-sans flex items-center justify-end px-[4px]">{data.startTime}:</div><div className="col-span-5 text-[12px] md:text-sm">{data.description}</div></>
@@ -47,7 +33,7 @@ export default async function Event() {
                                             : <div className="col-span-6 text-[12px] md:text-sm">{data.description}</div>
                                 }
                                 {data.time_1 ? <><div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-sm text-red-600 flex items-center justify-end font-inter px-1">{data.time_1}:</div><div className="col-span-5 px-1 text-[12px]text-sm w-full">{data.event_1}</div></>
+                    md:text-sm text-red-600 flex items-center justify-end font-inter px-1">{data.time_1}:</div><div className="col-span-5 px-1 text-[12px] text-sm w-full">{data.event_1}</div></>
                                     : data.event_1 ? <div className="col-span-6 font-inter">{data.event_1}</div>
                                         : ""}
                                 {data.time_2 ? <><div className="col-span-1 border-r-[1px] text-[12px]
@@ -94,7 +80,8 @@ export default async function Event() {
                         </section>
                     ))}
                 </div>
-            } */}
-        </>
-    );
+              
+                    
+                    
+                    
 }

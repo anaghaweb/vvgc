@@ -17,7 +17,14 @@ export const theme = {
       'hero-donate': "url('https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914197/VVGC%20San%20Martin%20Temple%20Data/Gallery/72523726_2376249359110130_8985447543194255360_n_qf7i6r.jpg')",
       'hero-sanjose': "url('https://res.cloudinary.com/dixkqgqsi/image/upload/v1694185032/VVGC%20San%20Martin%20Temple%20Data/VVGC/sanJose_o4qckq.jpg')"
 
-    }
+    },
+    fontFamily: {
+      inter: ['var(--font-inter)'],
+      opensans: ['var(--font-opensans )'],
+      raleway: ['var(--font-raleway'],
+      playfair: ['var(--font-playfair)'],
+      cormorant: ['var(--font-cormorant)'],
+    },
   },
 
   plugins: [

@@ -3,6 +3,9 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { Cormorant } from 'next/font/google';
+
+const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
 
 // Navigation bar Item list
 const navLinks = [
@@ -53,11 +56,11 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-col w-full h-40 bg-[#FF9933] min-w-full">
+    <header className={`flex flex-col w-full h-40 bg-[#FF9933] min-w-full ${cormorant.variable}`}>
       <nav
         className="justify-between md:min-w-fit lg:w-full h-14 flex lg:justify-center items-center"
       >
-        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-sans
+        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-cormorant
         text-[#000033]">
 
           {/* Large to medium scree navigation bar */}
@@ -78,7 +81,7 @@ export default function Header() {
         <button type="button"
           className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-8 
         shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-black
-           right-3 font-sans font-medium
+           right-3 font-cormorant font-large
         "
         >
           <Link href={"/donations"}>Support Us</Link>
@@ -118,13 +121,13 @@ export default function Header() {
 
       {/* Temple Title */}
       <section className="py-1 my-1 flex flex-col justify-center h-24 text-center text-[#000033] tracking-tight">
-        <p className={`tracking-tight font-sans text-[24px] md:text-2xl lg:text-3xl font-normal`}>
+        <p className={`tracking-tight font-cormorant text-[24px] md:text-2xl lg:text-3xl font-large`}>
           Vaidica Vidhya Ganapathi Center
         </p>
-        <p className={`tracking-tighter font-sans text-lg md:text-xl lg:text-2xl font-thin`}>
+        <p className={`tracking-tighter font-cormorant text-lg md:text-xl lg:text-2xl font-thin`}>
           Sri Vallabha Maha Ganapathi Temple
         </p>
-        <p className={`tracking-tighter font-sans text-[10px] md:text-12px lg:text-[13px] font-thin`}>
+        <p className={`tracking-tighter font-cormorant text-[10px] md:text-12px lg:text-[13px] font-thin`}>
           (A Registered Non-Profit Organization - CA Tax ID: 61-1449457)
         </p>
       </section>
