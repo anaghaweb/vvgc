@@ -12,8 +12,8 @@ export default function SponsorEvent({data,index, width}) {
         
     return (
         
-        <section key={index} className={` bg-white w-full md:w-[800px] 
-            ${playfair.variable} h-auto my-2 md:border-[1px] md:shadow-lg md:rounded md:p-2 mx-auto`}>
+        <section key={index} className={`bg-white w-full md:w-[600px] 
+            ${playfair.variable} h-auto my-2 md:shadow-lg md:rounded md:p-2 mx-auto`}>
 
                 <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-950 text-white" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}</div>
 

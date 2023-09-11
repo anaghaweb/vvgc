@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" >
-      <body className={`flex flex-col w-full h-auto ${opensans.variable} box-border m-0 p-0`}>
+      <body className={`${opensans.variable} box-border`}>
         <Header />
         {children}
         <Footer />
