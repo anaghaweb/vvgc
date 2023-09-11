@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
-
+import { FcGoogle } from 'react-icons/fc'
+import { BsApple } from 'react-icons/Bs';
+import { SiMicrosoftoutlook } from 'react-icons/si'
 function convertToGoogleTimeFormat(timeString) {
 
     const match = timeString.match(/(\d+):(\d+)([APap][Mm])/);
@@ -136,10 +138,11 @@ export default function CalenderLinks({ eventdata }) {
     return (
         <React.Fragment>
 
+            <Link href={appleCalendarLink} target="_blank" className="px-1"><BsApple size={25} /></Link>
+            <Link href={googleCalendarLink} target="_blank" className="px-1"><FcGoogle size={25} /></Link>
+            <Link href={outlookCalendarLink} target="_blank" className="px-1">
+                <SiMicrosoftoutlook size={25} /></Link>
 
-            <Link href={googleCalendarLink} target="_blank" className="px-1">Google</Link>
-            <Link href={outlookCalendarLink} target="_blank" className="px-1">Outlook</Link>
-            <Link href={appleCalendarLink} target="_blank" className="px-1">Apple</Link>
 
 
         </React.Fragment>

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose, AiFillHome, AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai';
 import { Cormorant } from 'next/font/google';
 
 const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
@@ -78,6 +78,7 @@ export default function Header() {
         </ul>
 
         {/* Support us button leads to Donations page */}
+
         <button type="button"
           className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-8 
         shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-black
@@ -85,6 +86,7 @@ export default function Header() {
         "
         >
           <Link href={"/donations"}>Support Us</Link>
+
         </button>
         {/* {hamburger menu icon open and close } */}
         <div onClick={smallScreenNavigation} className="flex flex-col md:hidden p-3">

@@ -13,8 +13,11 @@ export default async function RenderEvent({data, width}) {
         {data.content.map((data, index) => (
             <section key={index} className={`bg-white flex flex-col w-full sm:w-full md:w-[${width}] m-auto h-auto my-2 md:border-[1px] md:border-black md:p-2`}>
 
-                            <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-950 text-white" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}</div>
+                <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-950 text-white" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+                
+                </div>
 
+                
                             <div className="p-2 text-center text-lg md:text-start font-opensans text-red-700">{data.title}</div>
 
                             <hr className="h-[1.1px] bg-indigo-950 my-2 " />
@@ -64,9 +67,9 @@ export default async function RenderEvent({data, width}) {
 
                             </div>
 
-                            <div className="flex flex-col md:flex-row w-full p-2 bg-green-400">
+                            <div className="flex flex-col md:flex-row w-full p-2 bg-green-400 items-center">
                                 <span className="justify-center md:text-left text-blue-950">Add to Calendar: </span>
-                                <div className="flex justify-around flex-grow">
+                                <div className="flex flex-grow justify-evenly">
                                     <CalenderLinks eventdata={{
                                         startdate: data.date,
                                         enddate: data.date,
@@ -74,7 +77,8 @@ export default async function RenderEvent({data, width}) {
                                         endTime: data.endTime,
                                         summary: data.title,
                                         description: data.description
-                                    }} /></div></div>
+                        }} /></div>
+                </div>
 
 
                         </section>

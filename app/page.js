@@ -28,7 +28,7 @@ export default async function Home() {
       <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto`} >
 
 
-        <section className={`w-[100%] h-auto md:h-96 bg-amber-100 p-1 md:p-10 `}>
+        <section className={`w-[100%] h-auto md:h-96 p-1 md:p-10 `}>
           <div className="text-red-950 ">
             <h1 className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</h1></div>
           <hr className="h-[2px] bg-red-800 my-2 " />
@@ -48,7 +48,7 @@ export default async function Home() {
           <hr className="my-1" />
         </section>
         {/* Upcoming events */}
-        <section className="w-[100%] h-auto md:h-auto bg-amber-100  md:p-10">
+        <section className="w-[100%] h-auto md:h-auto bg-gradient-to-tr md:p-10">
           <div>
             <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming & Ongoing Events</h1>
           </div>
