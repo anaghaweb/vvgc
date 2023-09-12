@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" >
-      <body className={`${opensans.variable} box-border`}>
+      <body className={`${opensans.variable} font-sans box-border bg-gradient-to-tr from-slate-200 via-blue-50 to-orangr-100`}>
         <Header />
         {children}
         <Footer />
