@@ -1,7 +1,10 @@
 import React from "react";
 import RenderEvent from "@/Components/event";
 import FetchData from "@/Components/fetchdata";
-import { Cormorant } from "next/font/google"
+
+import { Cormorant } from "next/font/google";
+import Regular from "@/Components/regular";
+
 export const metadata = {
     title: 'Events',
     description: 'VVGC- Temple',
@@ -12,6 +15,7 @@ export default async function Event() {
 
     const data = await FetchData();
 
+
     return (
 
         <>
@@ -21,27 +25,32 @@ export default async function Event() {
                 </section>
             </React.Fragment>
             <main className="flex flex-col w-full items-center py-4 my-4 md:my-6">
-                <section className="flex flex-col w-[900px] h-auto my-10 items-center text-center">
+                <section className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 items-center text-center">
                     <h1 className="py-2 px-1 md:font-bold font-opensans text-sm md:text-xl text-red-950 md:underline">Watch events live on Youtube and Facebook</h1>
                     <hr />
                     <section className="my-5">
-                        <iframe className="w-[560px] h-[315px]" src="https://www.youtube.com/embed/2cPHTccmXbc?si=9zoHXb8Jp4uc1jRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className="w-full h-auto md:w-[560px] md:h-[314px]" src="https://www.youtube.com/embed/2cPHTccmXbc?si=9zoHXb8Jp4uc1jRM" ></iframe>
 
                     </section>
                     <hr />
                     <section className="my-5">
-                        <iframe className="w-full h-[314px] md:w-[560px]" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvvgctemple%2Fvideos%2F1693276331153085%2F&show_text=false&width=560&t=0" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        <iframe className="w-full h-[314px] md:w-[560px]" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvvgctemple%2Fvideos%2F1693276331153085%2F&show_text=false&width=560&t=0" ></iframe>
                     </section>
-                    <hr />
+
                 </section>
 
                 <section>
-                    <h1 className="py-2 px-1 md:font-semibold font-cormorant text-sm md:text-4xl text-red-950 " >Event Details</h1>
+                    <h1 className="py-2 px-1 md:font-semibold font-cormorant text-xl md:text-4xl text-red-950 " >Event Details</h1>
                     <hr />
                     <RenderEvent data={data} />
                     <hr className="my-4" />
                 </section>
 
+                <hr />
+                <section className="w-full lg:w-[900px] h-auto my-10 items-center text-center">
+
+                    <Regular />
+                </section>
             </main>
 
         </>

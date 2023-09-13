@@ -4,19 +4,20 @@ import CalenderLinks from "@/Components/calendarlinks";
 import Link from "next/link";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+import Regular from "./regular";
+
 
 export default async function RenderEvent({data}) {
         
             
         
-        return <div className="flex flex-col w-full h-auto shadow-md px-1 relative">
+        return <div className="flex flex-col w-full h-auto md:shadow-md:shadow-indigo-500 px-1 relative">
         {data.content.map((data, index) => (
-            <section key={index} className={`bg-white flex flex-col w-full sm:w-full md:w-[900px] m-auto h-auto my-2 md:shadow-md:shadow-indigo-500 md:p-2`}>
+            <section key={index} className={`bg-white flex flex-col w-full sm:w-full md:w-[900px] m-auto h-auto my-2  md:p-2`}>
 
-                <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-950 text-white" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+                <div className="p-3 w-full md:w-[235px] text-center text-base md:text-2xl bg-indigo-300 text-black" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
                 
                 </div>
-
                 
                             <div className="p-2 text-center text-lg md:text-start font-opensans text-red-700">{data.title}</div>
 
@@ -80,13 +81,15 @@ export default async function RenderEvent({data}) {
                             endTime: data.endTime,
                             summary: data.title,
                             description: data.description
-                        }} /></div></div>
+                        }} />
+                       
+                    </div></div>
+                
                         </section>
                         
                     ))}
                 </div>
               
-                    
-                    
-                    
+                                
 }
+
