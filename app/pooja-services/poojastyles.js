@@ -23,5 +23,12 @@ height: 70vh;
 }
 
 `;
-
 export default HeroOuter;
+
+// export const PoojaSectionOne = styled.section`
+  
+
+// `
+
+
+
