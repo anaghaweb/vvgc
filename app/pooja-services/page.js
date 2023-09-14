@@ -48,8 +48,8 @@ export default function Pooja() {
                         <li>Email: srikalahatheeswara@yahoo.com</li>
                     </ul>
                 </section>
-                <section className="block justify-center max-w-full relative h-[1300px] p-5 overflow-x-auto overflow-y-hidden">
-                    <iframe src={iframeURL} height='1300px' className="w-[700px] "></iframe>
+                <section className="block max-w-full relative h-[1300px] p-5 overflow-x-auto overflow-y-hidden">
+                    <iframe src={iframeURL} className="w-[700px] md:m-auto h-[1300px]"></iframe>
                 </section>
 
 
