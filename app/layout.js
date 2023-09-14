@@ -1,8 +1,9 @@
+'use client'
 import './globals.css'
 import Header from '@/Components/header';
 import Footer from '@/Components/footer';
 import { Open_Sans, Playfair_Display } from 'next/font/google';
-
+import StyledComponentsRegistry from './lib/registry'
 
 export const metadata = {
   title: 'VVGC Temple',
@@ -16,10 +17,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" >
+
       <body className={`${opensans.variable} max-w-full font-sans box-border bg-gradient-to-r from-gray-300 via-green-100 to-violet-200`}>
-        <Header />
-        {children}
-        <Footer />
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
     </html>
   )

@@ -3,6 +3,7 @@ import React from "react";
 import { FcGoogle } from 'react-icons/fc'
 import { BsApple } from 'react-icons/bs';
 import { SiMicrosoftoutlook } from 'react-icons/si'
+
 function convertToGoogleTimeFormat(timeString) {
 
     const match = timeString.match(/(\d+):(\d+)([APap][Mm])/);

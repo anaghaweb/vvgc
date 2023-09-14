@@ -1,46 +1,41 @@
+'use client'
 import result from '@/json/regularevents.json'
 import { Cormorant } from 'next/font/google'
+import styled from 'styled-components'
+import React from 'react';
 
-const cormorant = Cormorant({subsets: ['latin'], variable:'--font-cormorant', fallback: 'serif'})
+const cormorant = Cormorant({subsets: ['latin'], variable:'--font-cormorant', fallback: 'sans'})
+
 export default function regular() {
 
     
       return (
-        <div >
-              <h1 className={`py-2 px-1 md:font-semibold font-cormorant text-xl md:text-4xl text-red-950 ${cormorant.variable} font-cormorant `}>Regular Events</h1>
+        <div className ={cormorant.variable} >
+              <Heading01 >Regular Events</Heading01>
             {
                 result.content.map((data, index) => {
                     
                     return(  
-                                       
-                    <section key={index} className="grid grid-cols-6 gap-x-1 gap-y-3 my-5">
-                        <div className="p-2 text-start col-span-full text-lg  font-opensans text-red-700">{data.day}</div>
+                     <React.Fragment key={index}>                  
+                    <Event_Section>
+                        <Weekday>{data.day}</Weekday>
                          
-                        <div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time}:</div>
-                            <div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event}</div>
-                    <div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time1}:</div><div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event1}</div>
+                        <DailyTime>{data.time}:</DailyTime>
+                            <DailyEvent>{data.event}</DailyEvent>
                             
-                            { data.time2 && <> <div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time2}:</div><div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event2}</div></>}
+                    <DailyTime>{data.time1}:</DailyTime><DailyEvent>{data.event1}</DailyEvent>
                             
-                        {data.time3 &&  <><div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time3}:</div><div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event3}</div></>}
+                            {data.time2 && <> <DailyTime>{data.time2}:</DailyTime>
+                                <DailyEvent>{data.event2}</DailyEvent></>}
                             
-                        {data.time4  && <><div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time4}:</div><div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event4}</div></>}
+                        {data.time3 &&  <><DailyTime>{data.time3}:</DailyTime><DailyEvent>{data.event3}</DailyEvent></>}
                             
-                        {data.time5  && <><div className="col-span-1 border-r-[1px] text-[12px]
-                    md:text-base text-red-600 flex items-center justify-end font-inter px-1">{data.time5}:</div><div className="col-span-5 px-1 text-[12px]
-                    md:text-base w-full text-start">{data.event5}</div></>}
-                    <hr className='bg-black'/>        
-                    </section>
+                        {data.time4  && <><DailyTime>{data.time4}:</DailyTime><DailyEvent>{data.event4}</DailyEvent></>}
+                            
+                        {data.time5  && <><DailyTime>{data.time5}:</DailyTime><DailyEvent>{data.event5}</DailyEvent></>}
+                    <hr/>        
+                    </Event_Section>
+                    </React.Fragment>
                     )
                     
                  })
@@ -48,100 +43,71 @@ export default function regular() {
              }
         </div>)
     
-}
+};
 
-// const jsondata = {
-//     "content": [
-//         {
-//             "day": "Sunday",
-//             "time": "1899-12-30T20:00:00.000Z",
-//             "event": "Jai Jagadeesha Hare Aarati followed by Maha prasadam / Priti Bhoj",
-//             "time1": "1899-12-31T00:00:00.000Z",
-//             "event1": "Sri Vallabha Maha Ganapathi Homa, Sri Vallabha Maha Ganapathi Abhisheka, Sri Shiva, Sri Subramanya Abhisheka, Sri Ayyappa Swami Abhisheka, Aarathi and Manthra Pushpa",
-//             "time2": "1899-12-31T01:00:00.000Z",
-//             "event2": "Sri Gomatha (Cow) Pooja",
-//             "time3": "1899-12-31T01:00:00.000Z",
-//             "event3": "Sri Jai Jagadesha Hare Aarathi",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Monday",
-//             "time": "1899-12-31T02:30:00.000Z",
-//             "event": "Shiva Abisheka, Aarthi and Manthra Pushpa",
-//             "time1": "1899-12-31T03:30:00.000Z",
-//             "event1": "Shiva Chalisa Aarathi",
-//             "time2": "1899-12-31T04:00:00.000Z",
-//             "event2": "Sri Jai Jagadesha Hare Aarathi",
-//             "time3": "",
-//             "event3": "",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Tuesday",
-//             "time": "1899-12-31T02:30:00.000Z",
-//             "event": "Shiva Abisheka, Aarthi and Manthra Pushpa",
-//             "time1": "1899-12-31T03:30:00.000Z",
-//             "event1": "Sri Panduranga Vittala Aarathi and Sri Puri Jagannath Aarathi",
-//             "time2": "1899-12-31T04:00:00.000Z",
-//             "event2": "Sri Jai Jagadesha Hare Aarathi",
-//             "time3": "",
-//             "event3": "",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Wednesday",
-//             "time": "1899-12-31T02:30:00.000Z",
-//             "event": "Shiva Abisheka, Aarthi and Manthra Pushpa",
-//             "time1": "1899-12-31T03:30:00.000Z",
-//             "event1": "Sri Panduranga Vittala Aarathi and Sri Puri Jagannath Aarathi",
-//             "time2": "1899-12-31T04:00:00.000Z",
-//             "event2": "Sri Jai Jagadesha Hare Aarathi",
-//             "time3": "",
-//             "event3": "",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Thrusday",
-//             "time": "1899-12-31T02:30:00.000Z",
-//             "event": "Shiva Abisheka, Aarthi and Manthra Pushpa",
-//             "time1": "1899-12-31T03:30:00.000Z",
-//             "event1": "Sri Shridi Sai Haarathulu Dhoop Aarathi",
-//             "time2": "1899-12-31T04:00:00.000Z",
-//             "event2": "Sri Jai Jagadesha Hare Aarathi",
-//             "time3": "",
-//             "event3": "",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Friday",
-//             "time": "1899-12-31T02:30:00.000Z",
-//             "event": "Shiva Abisheka, Aarthi and Manthra Pushpa, Sri Lalitha Sahasranamam Chanting, Sri Vaishno Devi Chalisa Aarath",
-//             "time1": "1899-12-31T04:00:00.000Z",
-//             "event1": "Sri Jai Jagadesha Hare Aarathi",
-//             "time2": "",
-//             "event2": "",
-//             "time3": "",
-//             "event3": "",
-//             "time4": "",
-//             "event4": ""
-//         },
-//         {
-//             "day": "Saturday",
-//             "time": "1899-12-30T20:00:00.000Z",
-//             "event": "Jai Jagadeesha Hare Aarati followed by Maha prasadam / Priti Bhoj",
-//             "time1": "1899-12-31T00:00:00.000Z",
-//             "event1": "Sri Venkateswara Abhisheka, Sri Vishnu Sahasra Nama Chanting, Aarathi and Manthra Pushpa",
-//             "time2": "1899-12-31T01:00:00.000Z",
-//             "event2": "Sri Gomatha (Cow) Pooja",
-//             "time3": "1899-12-31T04:00:00.000Z",
-//             "event3": "Sri Jai Jagadesha Hare Aarathi",
-//             "time4": "",
-//             "event4": ""
-//         }
-//     ]
-// }
+//className="grid grid-cols-6 gap-x-1 gap-y-3 my-5"
+const Weekday = styled.div`
+padding: 0.5rem;
+text-align: start;
+grid-column: 1 / -1;
+font-size: 1.5rem/* 18px */;
+font-weight: 500;
+line-height: 1.75rem/* 28px */;
+font-family: var(--font-cormorant );
+ color: #BF4F74;
+`
+
+const Event_Section = styled.section`
+display: grid;
+grid-template-columns: repeat(6, minmax(0, 1fr));
+column-gap: 0.25rem;
+row-gap: 0.75rem;
+margin-top: 1.25rem;
+margin-bottom: 1.25rem;
+`
+
+const Heading01 = styled.h1`
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    font-family: var(--font-cormorant);
+    font-size: 2rem;
+    color: #BF4F74;
+    line-height: 1.75rem;
+
+    @media(min-width: 768px)
+    {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+    }
+`;
+
+
+const DailyEvent = styled.div`
+    grid-column: span 5 / span 5;
+    padding: 0 0.25rem 0 0.25rem;
+    font-size: 12ps;
+    width: 100%;
+    text-align: start;
+    
+    @media(min-width: 768px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+`;
+
+const DailyTime = styled.div`
+grid-column: span 1 / span 1;
+border-right-width: 1px;
+font-size: 12px;
+color: #BF4F74;
+font-family: var(--font-opensans);
+padding: 0 4px 0 4px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+@media (min-width: 768px){
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+`;

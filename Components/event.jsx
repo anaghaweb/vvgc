@@ -4,8 +4,6 @@ import CalenderLinks from "@/Components/calendarlinks";
 import Link from "next/link";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import Regular from "./regular";
-
 
 export default async function RenderEvent({data}) {
         
