@@ -25,13 +25,9 @@ height: auto;
 `;
 
 export const StyledLink = styled(Link)`
-  color: #BF4F74;
+  color: rgb(249, 115, 22);
   font-weight: bold;
-  display: flex;
-  justify-contents: center;
-  margin: auto;
-  width: auto;
-  
+    
   & span {
     padding: 0 4px 0 4px;
   }
@@ -40,6 +36,13 @@ export const StyledLink = styled(Link)`
     padding: 0 4px 0 4px;
   }
 
+`;
+
+export const DonateLink = styled(StyledLink)`
+  display: flex;
+  justify-contents: center;
+  margin: auto;
+  width: auto;
 `;
 
 export const Heading01 = styled.h1`
