@@ -74,17 +74,17 @@ export default function Donations() {
                 </HorizontalBox>
 
                 <HorizontalBox>
-                    <div className="md:col-span-2 col-span-1 flex flex-col h-auto w-full justify-items-center font-opensans max-w-full">
+                    <HBox_Text_Div>
                         <div className="text-center py-5 text-base font-normal px-5 font-opensans"><h3>Donate using PayPal Giving Fund (requires PayPal account) and 100% of your donations will go to the Temple. Click below</h3></div>
 
-                        <div className="text-center py-5 mx-auto text-orange-500">
+                        <div>
                             <DonateLink href="https://www.paypal.com/US/fundraiser/charity/1269532"><span>Click Here to donate through PayPal</span> <div><FaExternalLinkAlt size={20} /></div> </DonateLink>
                         </div>
-                    </div >
+                    </HBox_Text_Div >
                     <div className="md:col-span-2 col-span-1 flex flex-col h-auto w-full justify-items-center font-opensans max-w-full">
                         <div className="text-center  py-5 text-base font-normal px-5 font-opensans"> <h3>If you prefer to donate without logging into PayPal or if you don't have a PayPal account, click on the Donate button below. After a small credit/debit card processing fee, the rest of your donations will go to the Temple.</h3></div>
 
-                        <div className="text-center py-5 mx-auto text-orange-500">
+                        <div>
                             <DonateLink href="https://www.paypal.com/donate?token=HYL-hpCzltaDvpErldKPbXdVDQQxQkJy0okO_jjIVqhutaOg-7Q3AITqcGhDiST1wyzB4HzlTgU5VeTv"><span>Donate using Debit/ Credit Cards</span> <div><FaExternalLinkAlt size={20} /></div> </DonateLink>
                         </div>
 
@@ -92,26 +92,26 @@ export default function Donations() {
 
                 </HorizontalBox>
 
-                <section className="relative  bg-white grid grid-cols-1 max-w-full h-auto md:grid-cols-4 justify-stretch lg:w-[90%] mx-auto my-5 md:shadow-lg  md:shadow-slate-400 md:drop-shadow-lg p-5">
-                    <div className="md:col-span-2 col-span-1 flex flex-col h-auto w-full justify-items-center font-opensans max-w-full">
-                        <div className="text-center  py-5 text-3xl font-semibold font-cormorant">
+                <HorizontalBox>
+                    <HBox_Text_Div>
+                        <div>
                             <h1>VVGC San Martin Loan Program</h1>
                         </div>
 
-                        <div className="text-center py-5 px-5">
+                        <div>
                             <h3>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. <StyledLink href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505"><span>Click here</span></StyledLink> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
                         </div>
-                    </div>
-                    <div className="md:col-span-2 col-span-1 flex flex-col h-auto w-full justify-items-center font-opensans max-w-full">
-                        <div className="text-center  py-5 text-3xl font-semibold font-cormorant">
+                    </HBox_Text_Div>
+                    <HBox_Text_Div>
+                        <div >
                             <h1>Stock Donations</h1>
                         </div>
 
-                        <div className="text-center py-5 px-5">
+                        <div>
                             <h3>You can save on your capital gains tax by directly donating your appreciated stock rather than cash. Brokerages such as Schwab provide facility for stock donations via their charities arm. Use the VVGC Tax ID 61-1449457 to direct the donation to the temple.</h3>
                         </div>
-                    </div>
-                </section>
+                    </HBox_Text_Div>
+                </HorizontalBox>
 
 
             </main>

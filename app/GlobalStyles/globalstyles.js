@@ -1,5 +1,6 @@
 'use client'
 import styled from 'styled-components';
+import { opensans } from '../fonts';
 
 
 
@@ -39,7 +40,7 @@ display: flex;
 flex-direction: column; 
 grid-column: span 1 / span 1; 
 justify-items: center;
-align-items: space-between;  
+align-items: center;  
 width: 100%; 
 max-width: 100%; 
 height: auto; 
@@ -49,7 +50,7 @@ font-Family: var(--font-opensans);
 & div{
 padding: 1.25rem 1rem 1.25rem 1rem; 
 text-align: center; 
-
+font-weight: 400;
 }
 
 @media (min-width: 768px) { 
@@ -66,8 +67,20 @@ height: auto;
 @media (min-width: 768px) { 
   grid-column: span 2 / span 2; 
  }
-
-
-
  }
+`
+export const H1_Wrapper = styled.div`
+  color: ${(props) => (props.color || 'black')};
+  padding: 1.25rem 0.5rem 1.25rem 0.5rem; 
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 2.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  font-family: var(--font-cormorant);
+  text-align: center;
+
+  @media (min-wdith: 768px){
+      font-size: 1.5rem;
+  }
 `

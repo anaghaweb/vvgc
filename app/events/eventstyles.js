@@ -5,10 +5,11 @@ import Link from 'next/link';
 export const Zoomlink = styled.section`
 display: flex;
 flex-direction: column;
-justify-contents: center;
-margin: 1.25rem 0 1.25rem 0;
+justify-content: center;
+margin: 1.25rem auto 1.25rem auto;
 width: 100%;
 height: auto;
+
 @media(min-width: 768px){
     width: 560px;
 }
@@ -27,7 +28,7 @@ height: auto;
 export const StyledLink = styled(Link)`
   color: rgb(249, 115, 22);
   font-weight: bold;
-    
+  margin: 0 auto 0 auto;  
   & span {
     padding: 0 4px 0 4px;
   }
@@ -40,7 +41,7 @@ export const StyledLink = styled(Link)`
 
 export const DonateLink = styled(StyledLink)`
   display: flex;
-  justify-contents: center;
+  justify-content: center;
   margin: auto;
   width: auto;
 `;
