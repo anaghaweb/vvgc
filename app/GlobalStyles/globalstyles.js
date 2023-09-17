@@ -1,7 +1,5 @@
 'use client'
 import styled from 'styled-components';
-import { opensans } from '../fonts';
-
 
 
 export const HorizontalBox = styled.section`
@@ -38,7 +36,7 @@ font-family: var(--font-cormorant);
 export const HBox_Text_Div = styled.div`
 display: flex; 
 flex-direction: column; 
-grid-column: span 1 / span 1; 
+grid-column: ${(props) => (props.$maxwidth === 'full' ? '1 / -1' : 'span 1 / span 1')} ; 
 justify-items: center;
 align-items: center;  
 width: 100%; 
@@ -46,7 +44,8 @@ max-width: 100%;
 height: auto; 
 text-align: center; 
 font-Family: var(--font-opensans);
-
+padding: 1.5rem;
+grid-column: span 2 / span 2; 
 & div{
 padding: 1.25rem 1rem 1.25rem 1rem; 
 text-align: center; 
@@ -54,7 +53,10 @@ font-weight: 400;
 }
 
 @media (min-width: 768px) { 
-  grid-column: span 2 / span 2; 
+  &[maxwidth === "full]{
+    grid-column: 1 / -1;
+  }
+  
  }
 `
 export const HBox_Image_Div = styled.div`
@@ -70,7 +72,7 @@ height: auto;
  }
 `
 export const H1_Wrapper = styled.div`
-  color: ${(props) => (props.color || 'black')};
+  color: ${(props) => (props.$setcolor || 'black')};
   padding: 1.25rem 0.5rem 1.25rem 0.5rem; 
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -80,7 +82,22 @@ export const H1_Wrapper = styled.div`
   font-family: var(--font-cormorant);
   text-align: center;
 
-  @media (min-wdith: 768px){
+  @media (max-wdith: 768px){
       font-size: 1.5rem;
+      line-height: 1.25rem;
+      padding: 1.5rem;
   }
-`
+`;
+
+export const Content_Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  background-color: ${props => props.$setcolor || '#ffffff'};
+
+  `

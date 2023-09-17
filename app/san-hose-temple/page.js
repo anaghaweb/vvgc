@@ -3,9 +3,7 @@ import { Cormorant } from 'next/font/google';
 import { H1_Wrapper } from "../GlobalStyles/globalstyles";
 import FetchData from "@/Components/fetchdata";
 import SponsorEvent from "@/Components/sponsor";
-import { BiSolidNavigation } from 'react-icons/bi';
-import Image from "next/image";
-import { FaExternalLinkAlt } from 'react-icons/fa'
+
 
 const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
 export const metadata = {

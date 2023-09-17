@@ -21,6 +21,8 @@ export default function Donations() {
 
     const go_dhanam_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914207/VVGC%20San%20Martin%20Temple%20Data/temple-donation-image-1_fb8q9e.jpg';
 
+    const godhanam_donate_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1694926304/VVGC%20San%20Martin%20Temple%20Data/VVGC/GoDanam_ar6vy1.jpg';
+
 
     return (
         <React.Fragment>
@@ -63,7 +65,7 @@ export default function Donations() {
                             <h3>(Sustaining & Caring for Cows)</h3>
                         </div>
                         <div>
-                            <h3>At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle. Click here to learn more about the programs and how you can support them.</h3>
+                            <h3>At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.  <span><StyledLink href={godhanam_donate_img} target="_blank">Click here</StyledLink></span> to learn more about the programs and how you can support them.</h3>
                         </div>
                     </HBox_Text_Div>
                     <HBox_Image_Div>
@@ -99,7 +101,7 @@ export default function Donations() {
                         </div>
 
                         <div>
-                            <h3>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. <StyledLink href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505"><span>Click here</span></StyledLink> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
+                            <h3>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. <StyledLink href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank"><span>Click here</span></StyledLink> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
                         </div>
                     </HBox_Text_Div>
                     <HBox_Text_Div>

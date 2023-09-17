@@ -54,18 +54,18 @@ export default function Prasadam() {
 const CustomPrasadamBookingForm = () => {
 
 
-    <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdKe1bGct5Imy89sgXoWGftT8HGTGOgmN0flzs65QWKxDl_Uw/viewform?embedded=true"
-        max-width="100%"
-        width="100%"
-        height="1700"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        padding-bottom="1px"
-    >
-        Loading…
-    </iframe>
+    // <iframe
+    //     src="https://docs.google.com/forms/d/e/1FAIpQLSdKe1bGct5Imy89sgXoWGftT8HGTGOgmN0flzs65QWKxDl_Uw/viewform?embedded=true"
+    //     max-width="100%"
+    //     width="100%"
+    //     height="1700"
+    //     frameborder="0"
+    //     marginheight="0"
+    //     marginwidth="0"
+    //     padding-bottom="1px"
+    // >
+    //     Loading…
+    // </iframe>
 
 
 }
