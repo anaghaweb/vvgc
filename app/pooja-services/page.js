@@ -1,6 +1,6 @@
 import React from "react";
-import { Cormorant } from 'next/font/google';
-import HeroOuter from "./poojastyles";
+import { cormorant } from "../fonts"
+import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Link from "next/link";
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
     description: 'VVGC- Temple',
 }
 
-const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'sans' })
+
 
 
 
@@ -18,13 +18,15 @@ export default function Pooja() {
 
     const iframeURL = 'https://docs.google.com/document/d/e/2PACX-1vRdSrMjEqc4pTuSYBsAGuCjqsa19IV38XbLasPhdv1POi02zAOniAg5Xv_0sx1SUw/pub?embedded=true';
 
+    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0005_rersoq.jpg';
+
+
+
     return (
         <React.Fragment>
-            <section className={cormorant.variable}>
-                <HeroOuter>
-                    <div>Pooja Services</div>
-                </HeroOuter>
-            </section>
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}><h1>Our Pooja Services</h1></div>
+            </Hero_Image_Wrapper>
             <main className={`${cormorant.variable} m-auto`}>
                 <section className="flex flex-col w-[full] md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-cormorant font-medium text-base md:text-2xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
                     <h2>At VVGC, we perform a variety of poojas and events for our devotees. Our priests can conduct the events, both at home or at the temple premises.

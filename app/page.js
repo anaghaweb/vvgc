@@ -1,13 +1,14 @@
 import React from "react";
 import FetchData from "@/Components/fetchdata";
 import SponsorEvent from "@/Components/sponsor";
-import { Cormorant } from 'next/font/google';
+import { cormorant } from "./fonts"
 import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import Link from "next/link";
+import { Hero_Image_Wrapper } from "./GlobalStyles/globalstyles";
 
-const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
+
+
 
 
 export const metadata = {
@@ -18,15 +19,15 @@ export const metadata = {
 export default async function Home() {
 
   const data = await FetchData();
-
+  const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg';
   return (
     <React.Fragment >
 
       {/* Hero Section */}
-      <section id="herohome" className={`h-[40dvh] sm:h-[70dvh] my-[0.1px] mx-auto w-full bg-hero-pattern bg-center bg-no-repeat bg-cover bg-blend-soft-light flex justify-center items-center bg-opacity-70 ${cormorant.variable}`}>
-        <div className="w-[200px] md:w-[300px] h-auto align-middle text-start">
-          <h1><span className="text-3xl md:text-7xl text-white font-cormorant">A Home For Hindu Devotees</span></h1></div>
-      </section>
+      <Hero_Image_Wrapper $bgimg={heroimgURL}>
+        <div className={cormorant.variable}>
+          <h1>A Home For Hindu Devotees</h1></div>
+      </Hero_Image_Wrapper>
 
 
       <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto bg-gradient-to-tr from-gray-100 via-blue-100 to-slate-100`} >

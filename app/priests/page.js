@@ -3,7 +3,7 @@ import { cormorant } from "../fonts";
 import { DonateLink } from "../events/eventstyles";
 import { SiGofundme } from "react-icons/si";
 import { Grid_Container, Gofundme_Wrapper, Container, Inner_div } from "./prieststyles";
-import { HBox_Text_Div, H1_Wrapper } from "../GlobalStyles/globalstyles";
+import { HBox_Text_Div, Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,15 +18,17 @@ const goFundMeURL = 'https://www.gofundme.com/f/vvgc-priests-guru-dakshana?utm_c
 
 const placeholderImg = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914205/VVGC%20San%20Martin%20Temple%20Data/Priests/Hindu_priest_rfqtoy.jpg';
 
+const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0009_yam0oq.jpg';
+
 export default function Priest() {
 
 
     return (
         <React.Fragment>
 
-            <section className={`h-[70vh] w-full bg-hero-priests bg-center bg-no-repeat bg-cover flex justify-center items-center text-6xl text-white font-[300] bg-opacity-70 ${cormorant.variable}`}>
-                <div className="w-[280px] h-auto font-cormorant"><h1>Our Priests</h1></div>
-            </section>
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}><h1>Our Priests</h1></div>
+            </Hero_Image_Wrapper>
             <main className={cormorant.variable}>
 
 

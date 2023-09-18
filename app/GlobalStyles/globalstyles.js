@@ -1,6 +1,42 @@
 'use client'
 import styled from 'styled-components';
 
+export const Hero_Image_Wrapper = styled.section`
+display: flex; 
+justify-content: center; 
+align-items: center; 
+width: 100%; 
+height: 24rem; 
+font-size: 1.875rem;
+line-height: 2.25rem; 
+color: #ffffff; 
+
+background-image: url('${props => props.$bgimg}') ;
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover; 
+margin: 0.1px;
+
+
+
+@media (min-width: 768px) { 
+  font-size: 4.5rem;
+  font-weight: 600;
+line-height: 1; 
+height: 70vh;
+ }
+
+ & div{
+  width: 100%; 
+height: auto; 
+text-align: center; 
+font-family: var(--font-cormorant);
+ }
+
+ 
+
+`
+
 
 export const HorizontalBox = styled.section`
 

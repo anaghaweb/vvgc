@@ -3,7 +3,7 @@ import { cormorant } from "../fonts";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { StyledLink, DonateLink } from "../events/eventstyles";
-import { HorizontalBox, HBox_Text_Div, HBox_Image_Div } from "../GlobalStyles/globalstyles";
+import { HorizontalBox, HBox_Text_Div, HBox_Image_Div, Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 
 
 
@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Donations() {
 
-    const donateHeroImageURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914197/VVGC%20San%20Martin%20Temple%20Data/Gallery/72523726_2376249359110130_8985447543194255360_n_qf7i6r.jpg';
+    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1689678777/VVGC%20Images/image_10.jpg';
 
     const divine_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg';
 
@@ -26,11 +26,11 @@ export default function Donations() {
 
     return (
         <React.Fragment>
-            <section className={cormorant.variable}>
-                <div className={`h-[50dvh] md:h-[70vh] max-w-full w-full bg-hero-donate bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-[500] bg-opacity-70 `}>
-                    <div className="w-[200px] md:w-[280px] h-auto text-center"><h1 className="font-cormorant">Support Us</h1></div>
-                </div>
-            </section>
+            {/* Hero Section */}
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}>
+                    <h1>Support Us</h1></div>
+            </Hero_Image_Wrapper>
             {/* main section */}
             <main className={`${cormorant.variable} mx-auto w-full max-w-full`}>
 

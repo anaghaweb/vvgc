@@ -1,6 +1,7 @@
 import React from "react";
-import { Cormorant } from 'next/font/google';
-const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'sans' })
+import { cormorant } from "../fonts";
+import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
+
 
 import Link from "next/link";
 
@@ -17,11 +18,13 @@ export default function Prasadam() {
     const CustomPrasadamBookingFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfnXHyH_O2Y5qwF_OTLhTaoKqrZDmRP5_4vLGh89aQWPK1lzg/viewform';
 
 
+    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0007_gsimyw.jpg';
+
     return (
         <React.Fragment>
-            <section className={`h-[70vh] w-full bg-hero-prasadam bg-center bg-no-repeat bg-cover flex justify-center items-center text-6xl text-white font-sans font-[300] bg-opacity-70`}>
-                <div className="w-[280px] h-auto text-center"><h1>Prasadam Services</h1></div>
-            </section>
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}><h1>Our Prasadam Sevices</h1></div>
+            </Hero_Image_Wrapper>
 
             <main className={`${cormorant.variable} m-auto`}>
                 <section className="flex flex-col w-[full] md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-normal text-base  text-black shadow-slate-900 drop-shadow-md rounded-sm bg-white">

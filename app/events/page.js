@@ -2,29 +2,30 @@
 import React from "react";
 import RenderEvent from "@/Components/event";
 import FetchData from "@/Components/fetchdata";
-import { Cormorant } from "next/font/google";
+import { cormorant } from "../fonts";
 import Regular from "@/Components/regular";
 import { Zoomlink, DonateLink, Heading01 } from "./eventstyles";
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 
 export const metadata = {
     title: 'Events',
     description: 'VVGC- Temple',
 }
-const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
 
 export default async function Event() {
 
     const data = await FetchData();
+    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0006_vhnxgu.jpg';
 
 
     return (
 
         <>
 
-            <section className={`h-96 md:h-[70vh] w-full bg-hero-event bg-center bg-no-repeat bg-cover flex justify-center items-center text-3xl md:text-6xl text-white font-sans font-[300] bg-opacity-70 m-[0.1px] ${cormorant.variable}`}>
-                <div className="w-full h-auto text-center font-cormorant"><h1>VVGC San Martin Events</h1></div>
-            </section>
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}><h1>VVGC San Martin Events</h1></div>
+            </Hero_Image_Wrapper>
 
             <main className="mx-auto py-4 my-4 md:my-6">
                 <section className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto text-center">

@@ -1,11 +1,11 @@
 import React from "react";
-import { Cormorant } from 'next/font/google';
-import { H1_Wrapper } from "../GlobalStyles/globalstyles";
+import { cormorant } from "../fonts";
+import { H1_Wrapper, Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import FetchData from "@/Components/fetchdata";
 import SponsorEvent from "@/Components/sponsor";
 
 
-const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
+
 export const metadata = {
     title: 'San Jose Temple',
     description: 'Second Branch',
@@ -15,11 +15,16 @@ export default async function SanJose() {
 
     const data = await FetchData()
 
+    const IframeURL = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d943.8068848783809!2d-121.83776058292534!3d37.28149680729865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e324114e97d6d%3A0x6669fb128082a9f3!2sSri%20Lakshmi%20Ganapathi%20Temple!5e0!3m2!1sen!2sin!4v1690648613216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+
+    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1694185032/VVGC%20San%20Martin%20Temple%20Data/VVGC/sanJose_o4qckq.jpg';
+
     return (
         <React.Fragment>
-            <section className={`${cormorant.variable} h-[50dvh] md:h-[70vh] w-full bg-hero-pattern bg-center bg-no-repeat bg-cover flex justify-center items-center text-5xl md:text-6xl text-white  font-[500] bg-opacity-70`}>
-                <div className="w-[280px] h-auto text-center font-cormorant"><h1>Welcome to San Jose Temple</h1></div>
-            </section>
+            <Hero_Image_Wrapper $bgimg={heroimgURL}>
+                <div className={cormorant.variable}><h1>Welcom To San Jose Temple</h1></div>
+            </Hero_Image_Wrapper>
+
             <main className={`${cormorant.variable} w-full mx-auto`} >
 
 
@@ -62,4 +67,4 @@ export default async function SanJose() {
     );
 }
 
-const IframeURL = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d943.8068848783809!2d-121.83776058292534!3d37.28149680729865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e324114e97d6d%3A0x6669fb128082a9f3!2sSri%20Lakshmi%20Ganapathi%20Temple!5e0!3m2!1sen!2sin!4v1690648613216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+
