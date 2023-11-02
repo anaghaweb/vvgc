@@ -80,8 +80,8 @@ export default function Header() {
         {/* Support us button leads to Donations page */}
 
         <button type="button"
-          className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-8 
-        shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-black
+          className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-9 w-[100px]
+        shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-white
            right-3 font-cormorant font-large
         "
         >
@@ -99,7 +99,7 @@ export default function Header() {
             className={
               menuIcon ? "flex flex-col absolute left-0 top-0 w-full h-screen justify-start items-center text-center bg-[#FF9933] p-2 z-10"
                 :
-                "flex flex-col absolute left-[-100%] top-[144px] w-full h-full justify-center items-center text-center"
+                "flex flex-col absolute left-[-100%] top-[-144px] w-full h-full justify-center items-center text-center"
             }>
             {
               menuIcon ?

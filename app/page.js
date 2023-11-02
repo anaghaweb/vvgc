@@ -30,7 +30,7 @@ export default async function Home() {
       </Hero_Image_Wrapper>
 
 
-      <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto bg-gradient-to-tr from-gray-100 via-blue-100 to-slate-100`} >
+      <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto from-gray-100 via-blue-100 to-slate-100`} >
 
 
         <section className={`w-[100%] h-auto md:h-96 p-1 md:p-10 bg-amber-50`}>
@@ -38,24 +38,23 @@ export default async function Home() {
             <h1 className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</h1></div>
           <hr className="h-[2px] bg-red-800 my-2 " />
 
-          <div className="text-sm md:text-xl ">Time: 12:00PM</div>
-          <div className="text-sm md:text-base ">Jai Jagadeesha Hare Aarati followed by Maha prasadam / Priti Bhoj</div>
+          <div className="text-sm md:text-xl ">Time: 6:30PM</div>
+          <div className="text-sm md:text-base ">Shiva Abisheka, Aarthi and Manthra Pushpa</div>
           <hr className="my-1" />
 
           <div className="text-sm md:text-xl ">Time: 7:30AM</div>
-          <div className="text-sm md:text-base  ">September 6, Saturday - September 12, Sunday:</div>
-          <div className="text-sm md:text-base  ">Sri Krishna Janmashtami - Bhagavatha Sapthagam</div>
+          <div className="text-sm md:text-base  ">Sri Shridi Sai Haarathulu Dhoop Aarathi</div>
+
           <hr className="my-1" />
 
-          <div className="text-sm md:text-xl  ">Time: 4:00PM</div>
-          <div className="text-sm md:text-base  ">September 9, Saturday - September 24, Sunday</div>
-          <div className="text-sm md:text-base  ">Daily Ganapathi Homam, Weekdays at 6:00PM, Weekends at 4:00PM</div>
+          <div className="text-sm md:text-xl  ">Time: 8:00PM</div>
+          <div className="text-sm md:text-base  ">Sri Jai Jagadesha Hare Aarathi</div>
           <hr className="my-1" />
         </section>
         {/* Upcoming events */}
         <section className="w-[100%] h-auto md:h-auto  md:p-10">
           <div>
-            <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming & Ongoing Events</h1>
+            <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming Special Events</h1>
           </div>
           <hr className="h-[2px] bg-red-800 my-2 " />
           <div className="my-[16px] w-[100%] grid grid-cols-1 md:grid-cols-2 ">

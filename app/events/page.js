@@ -7,6 +7,7 @@ import Regular from "@/Components/regular";
 import { Zoomlink, DonateLink, Heading01 } from "./eventstyles";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
+import Link from "next/link";
 
 export const metadata = {
     title: 'Events',
@@ -31,8 +32,8 @@ export default async function Event() {
                 <section className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto text-center">
                     <h1 className="py-2 px-1 md:font-bold font-opensans text-sm md:text-xl text-red-950 md:underline">Watch events live on Youtube and Facebook</h1>
                     <hr />
-                    <section className="my-5 mx-auto">
-                        <iframe className="w-full h-auto md:w-[560px] md:h-[314px]" src="https://www.youtube.com/embed/5EsafKRdnqs" ></iframe>
+                    <section className="my-5 mx-auto text-lg sm:underline text-blue-700">
+                        <Link href="https://www.youtube.com/@vaidicavidhyaganapathicent2187/streams">Click here to visit our Youtube Channel</Link>
 
                     </section>
                     <hr />

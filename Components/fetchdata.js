@@ -1,13 +1,13 @@
 export default async function FetchData() {
 
-    const url = "https://script.google.com/macros/s/AKfycbwi1DRMxZlv8XkSIm0K_8nKMPukufofUvxF-wXYmiB9_E5uMhTF8-CyBNnzEFSoDHNy2g/exec";
+    const url = "https://script.google.com/macros/s/AKfycbwG1RNL5ZSUlo3RZGuFj0P-LtKw1AJppzTjwwUE5MtxQvAtBT7pS3aMeRpzyKVr2Z6d_w/exec";
 
     const res = await fetch(
         url,
 
         {
             next: {
-                revalidate: 3600
+                revalidate: 60
             }
         }
     );

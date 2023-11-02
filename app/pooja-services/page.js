@@ -8,10 +8,6 @@ export const metadata = {
     description: 'VVGC- Temple',
 }
 
-
-
-
-
 export default function Pooja() {
 
     const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLScUfVMwLiLHa8UuEFO9rz1-k9JcK01AWD7PMu0DP0NBxcbpAQ/viewform';
@@ -53,10 +49,6 @@ export default function Pooja() {
                 <section className="block max-w-full relative h-[1300px] p-5 overflow-x-auto overflow-y-hidden">
                     <iframe src={iframeURL} className="w-[700px] md:m-auto h-[1300px]"></iframe>
                 </section>
-
-
-
-
             </main>
         </React.Fragment>
     );

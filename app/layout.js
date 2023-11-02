@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
 
-      <body className={`${opensans.variable} max-w-full font-sans box-border bg-gradient-to-r from-gray-300 via-green-100 to-violet-200 m-0`}>
+      <body className={`${opensans.variable} max-w-full font-sans box-border m-0`}>
         <StyledComponentsRegistry>
           <Header />
           {children}

@@ -47,7 +47,7 @@ export const DonateLink = styled(StyledLink)`
 `;
 
 export const Heading01 = styled.h1`
-    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    padding: 0.5rem 0.25rem 0.5rem 2rem;
     font-family: var(--font-cormorant);
     font-size: 2rem;
     color: rgb(69, 10, 10);

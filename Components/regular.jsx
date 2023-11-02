@@ -59,6 +59,7 @@ font-family: var(--font-cormorant );
 
 const Event_Section = styled.section`
 display: grid;
+padding-left:0.5rem;
 grid-template-columns: repeat(6, minmax(0, 1fr));
 column-gap: 0.25rem;
 row-gap: 0.75rem;
