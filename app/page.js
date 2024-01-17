@@ -9,8 +9,6 @@ import { Hero_Image_Wrapper } from "./GlobalStyles/globalstyles";
 
 
 
-
-
 export const metadata = {
   title: 'Home',
   description: 'VVGC- Temple',

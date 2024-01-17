@@ -1,6 +1,6 @@
 export default async function FetchData() {
 
-    const url = "https://script.google.com/macros/s/AKfycbwG1RNL5ZSUlo3RZGuFj0P-LtKw1AJppzTjwwUE5MtxQvAtBT7pS3aMeRpzyKVr2Z6d_w/exec";
+    const url = "https://script.google.com/macros/s/AKfycbz_4zkG5RI3dIS8xgZkxVB75MeSejFlfvyKr4MeAq0N259cyp4GLRcrGfA7aQVODdc7Ag/exec";
 
     const res = await fetch(
         url,
