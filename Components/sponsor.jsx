@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import CalenderLinks from "@/Components/calendarlinks";
+import CalenderLinks from "@/components/calendarlinks";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
 import {FaExternalLinkAlt} from 'react-icons/fa'

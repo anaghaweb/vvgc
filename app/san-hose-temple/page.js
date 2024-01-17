@@ -1,8 +1,8 @@
 import React from "react";
 import { cormorant } from "../fonts";
 import { H1_Wrapper, Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
-import FetchData from "@/Components/fetchdata";
-import SponsorEvent from "@/Components/sponsor";
+import {FetchData} from "@/components/fetchdata";
+import SponsorEvent from "@/components/sponsor";
 import Link from 'next/link'
 
 

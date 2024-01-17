@@ -1,13 +1,21 @@
-
 import React from "react";
-import RenderEvent from "@/Components/event";
-import FetchData from "@/Components/fetchdata";
+import RenderEvent from "@/components/event";
+import { FetchData } from "@/components/fetchdata";
 import { cormorant } from "../fonts";
-import Regular from "@/Components/regular";
+import Regular from "@/components/regular";
 import { Zoomlink, DonateLink, Heading01 } from "./eventstyles";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Link from "next/link";
+import Youtube from "@/lib/icons/youtube";
+import Zoom from "@/lib/icons/zoom";
+import FaceBook from "@/lib/icons/facebook";
+import { Card,  CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle, } from "@/components/ui/card";
+   
 
 export const metadata = {
     title: 'Events',
@@ -28,32 +36,40 @@ export default async function Event() {
                 <div className={cormorant.variable}><h1>VVGC San Martin Events</h1></div>
             </Hero_Image_Wrapper>
 
-            <main className="mx-auto py-4 my-4 md:my-6">
-                <section className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto text-center">
-                    <h1 className="py-2 px-1 md:font-bold font-opensans text-sm md:text-xl text-red-950 md:underline">Watch events live on Youtube and Facebook</h1>
+            <main className="mx-auto py-4 my-4 ">
+                
+                <Card className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto">
+                    <CardHeader className="py-2 px-1 font-opensans text-4xl text-blue-900 ">Watch events live</CardHeader>
                     <hr />
-                    <section className="my-5 mx-auto text-lg sm:underline text-blue-700">
-                        <Link href="https://www.youtube.com/@vaidicavidhyaganapathicent2187/streams">Click here to visit our Youtube Channel</Link>
+                    <CardContent className="w-full p-2 h-auto min-h-[100%] md:h-60 md:grid grid-cols-3 rounded border-slate-400 border-solid shadow-inner bg-gray-100">
+                        <div className=" sm:min-h-48 col-span-1 flex flex-col justify-start items-center">
+                            <Link href="https://www.youtube.com/@vaidicavidhyaganapathicent2187/streams" target="_blank"><span className="text-4xl text-sky-950">Youtube</span>
+                            <div><Youtube /></div></Link>
+                        </div>
+                        <div className=" sm:min-h-48 col-span-1 flex flex-col justify-start items-center">
+                            <Link href="https://www.facebook.com/vvgctemple" ><span className="text-4xl text-sky-950">Facebook</span><div><FaceBook /></div></Link>
+                        </div>
+                        <div className=" sm:min-h-48 col-span-1 flex flex-col justify-start items-center">
+                           
+                        <span className="text-4xl text-sky-950">Zoom</span>
+                        <Link href="https://zoom.us/j/6233634720?pwd=OEY3K3U2ZEdNZTlaSTJVc1VZQklUdz09#success" target="_blank"> <div><Zoom /></div></Link>
+                        <p>Meeting ID: 6233634720</p>
+                        <p> Password : 040415</p>
+                        <div className="flex gap-1 items-center">
+                        
+                        </div>
+                        
+                        </div>
+                    </CardContent>
+                  
 
-                    </section>
-                    <hr />
-                    <section className="my-5 mx-auto">
-                        <iframe className="w-full h-[316px] md:w-[560px]" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvvgctemple%2Fvideos%2F964852681442973" ></iframe>
-                    </section>
 
-                    <Zoomlink>
-                        <span>Zoom Link:</span>
-                        <p>Meeting Number: 6233634720</p>
-                        <p>Meeting Password : 040415</p>
-                        <DonateLink href="https://zoom.us/j/6233634720?pwd=OEY3K3U2ZEdNZTlaSTJVc1VZQklUdz09#success" target="_blank"><span>Click Here to launch Zoom</span> <div><FaExternalLinkAlt size={20} color={'#BF4F74'} /></div></DonateLink>
-                    </Zoomlink>
-
-
-                </section>
+                </Card>
+                
 
                 <section className={cormorant.variable}>
-                    <Heading01>Event Details</Heading01>
-                    <hr />
+               
+                    
                     <RenderEvent data={data} />
                     <hr className="my-4" />
                 </section>
