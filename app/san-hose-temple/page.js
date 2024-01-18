@@ -8,6 +8,9 @@ import { Card,  CardContent,
     CardFooter,
     CardHeader,
     CardTitle, } from "../../Components/ui/card";
+import Youtube from "@/lib/icons/youtube";
+import FaceBook from "@/lib/icons/facebook";
+import Zoom from "@/lib/icons/zoom";
    
 
 export const metadata = {
