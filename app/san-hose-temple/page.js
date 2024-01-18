@@ -3,10 +3,10 @@ import { cormorant } from "../fonts";
 import {FetchData} from "@/Components/fetchdata";
 import SponsorEvent from "@/Components/sponsor";
 import Link from 'next/link'
-
 import Youtube from "@/lib/icons/youtube";
 import FaceBook from "@/lib/icons/facebook";
 import Zoom from "@/lib/icons/zoom";
+import { Card, CardHeader } from "@/Components/ui/card";
    
 
 export const metadata = {
@@ -30,8 +30,8 @@ export default async function SanJose() {
                      <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Welcome to San Jose </h1>
                 </div>
             <main className={`${cormorant.variable} w-full mx-auto`} >
-            <div className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto">
-                    <div className=" font-opensans text-center lg:text-left text-2xl md:text-4xl text-blue-900 ">Watch events live</div>
+            <Card  className="flex flex-col max-w-full lg:w-[900px] bg-yellow-100 h-auto my-5 mx-auto">
+                    <CardHeader  className=" font-opensans text-center lg:text-left text-2xl md:text-4xl text-blue-900 ">Watch events live</CardHeader>
                     <hr />
                     <div className="w-full p-2 h-auto min-h-[100%] md:h-60 md:grid grid-cols-3 rounded border-slate-400 border-solid shadow-inner">
                         <div className=" h-36 sm:min-h-48 col-span-1 flex flex-col justify-center items-center">
@@ -56,20 +56,9 @@ export default async function SanJose() {
                   
 
 
-                </div>
+                </Card>
 
-                <section className="flex flex-col max-w-full w-full h-auto my-5 mx-auto text-center">
-                    <h1 className="py-2 px-1 md:font-bold font-opensans text-sm md:text-xl text-red-950 md:underline">Watch events live on Youtube and Facebook</h1>
-                    <hr />
-                    <section className="my-5 mx-auto text-lg sm:underline text-blue-700">
-                        <Link href="https://www.youtube.com/@vaidicavidhyaganapathicent2187/streams">Click here to visit our Youtube Channel</Link>
-
-                    </section>
-                    <hr />
-                    <section className="my-5 mx-auto">
-                        <iframe className="w-full h-[316px] md:w-[560px]" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvvgctemple%2Fvideos%2F964852681442973" ></iframe>
-                    </section>
-                </section>
+               
 
                 <section className="w-[100%] h-auto md:h-auto  md:p-10">
                     <div>
