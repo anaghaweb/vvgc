@@ -21,17 +21,17 @@ export default async function RenderEvent({ data }) {
       {data.content.map((data, index) => (
         <Card key={index} className={`bg-gray-100 flex flex-col w-full sm:w-full m-auto h-auto my-2  md:p-2 shadow`}>
           
-          <CardHeader className=" w-full md:w-[235px] text-base md:text-2xl  text-slate-800" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+          <CardHeader className=" w-full md:w-[235px] text-2xl md:text-2xl  text-slate-800" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
           </CardHeader>
 
           <CardTitle className=" pl-7 text-base md:text-2xl text-red-600">{data.title}</CardTitle>
 
-          <hr className="h-[1.1px] bg-indigo-950 my-2 " />
+          <hr className=" my-2 " />
 
           {data.imageurl && <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]"><Link href={data.imageurl} target="_blank"><Image src={data.imageurl} alt="Event" fill quality={75} sizes={'100vw'} className="absolute object-contain cursor-pointer" /></Link></div>}
 
-          {data.imageurl && <hr className="h-[1.1px] bg-indigo-950 my-2 " />}
+          {data.imageurl && <hr className=" my-2 " />}
 
           <CardContent key={index} className="grid grid-cols-8 gap-x-1 gap-y-3 my-5">
             {data.startTime && data.endTime && data.description ?

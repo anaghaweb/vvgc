@@ -1,6 +1,6 @@
 import React from "react";
-import RenderEvent from "@/components/event";
-import { FetchData } from "@/components/fetchdata";
+import RenderEvent from "../../components/event";
+import { FetchData } from "../../components/fetchdata";
 import { cormorant } from "../fonts";
 import Regular from "@/components/regular";
 import { Zoomlink, DonateLink, Heading01 } from "./eventstyles";
