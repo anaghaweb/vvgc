@@ -8,7 +8,10 @@ import Youtube from "@/lib/icons/youtube";
 import Zoom from "@/lib/icons/zoom";
 import FaceBook from "@/lib/icons/facebook";
 
-   
+export const metadata = {
+    title: 'Events',
+    description: 'Help us Grow',
+}
 
 export default async function Event() {
 
