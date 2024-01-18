@@ -1,6 +1,6 @@
 
 import { FetchData } from "./fetchdata";
-import SponsorEvent from "@/components/sponsor";
+import SponsorEvent from "@/Components/sponsor";
 import { cormorant } from "@/app/fonts";
 import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
@@ -12,8 +12,6 @@ import * as React from 'react'
 export default async function HomePage() {
 
     const data = await FetchData();
-
-
 
   const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg';
   return (
@@ -53,7 +51,7 @@ export default async function HomePage() {
             <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming Special Events</h1>
           </div>
           <hr className="h-[2px] bg-red-800 my-2 " />
-          <div className="my-[16px] w-[100%] grid grid-cols-1 md:grid-cols-2 ">
+          <div className="my-[16px] w-[100%] grid grid-cols-1 lg:grid-cols-2 ">
             {data.content.map((data, index) => {
 
               return (data.homepage === 'sponsor' ? <SponsorEvent data={data} key={index} /> : "")

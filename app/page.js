@@ -1,4 +1,4 @@
-import HomePage from '@/components/homePage';
+import HomePage from '@/Components/homePage';
 import * as React from 'react';
 
 

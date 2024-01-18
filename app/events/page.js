@@ -1,8 +1,8 @@
 import React from "react";
-import RenderEvent from "../../components/event";
-import { FetchData } from "../../components/fetchdata";
+import RenderEvent from "@/Components/event";
+import { FetchData } from "@/Components/fetchdata";
 import { cormorant } from "../fonts";
-import Regular from "@/components/regular";
+import Regular from "@/Components/regular";
 
 import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Link from "next/link";
@@ -13,7 +13,7 @@ import { Card,  CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
-    CardTitle, } from "@/components/ui/card";
+    CardTitle, } from "@/Components/ui/card";
    
 
 export const metadata = {

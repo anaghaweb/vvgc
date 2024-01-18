@@ -1,8 +1,8 @@
 import React from "react";
 import { cormorant } from "../fonts";
 import { H1_Wrapper, Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
-import {FetchData} from "@/components/fetchdata";
-import SponsorEvent from "@/components/sponsor";
+import {FetchData} from "@/Components/fetchdata";
+import SponsorEvent from "@/Components/sponsor";
 import Link from 'next/link'
 
 
@@ -22,7 +22,7 @@ export default async function SanJose() {
     return (
         <React.Fragment>
             <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}><h1>Welcom To San Jose Temple</h1></div>
+                <div className={cormorant.variable}><h1>Welcome To San Jose Temple</h1></div>
             </Hero_Image_Wrapper>
             <main className={`${cormorant.variable} w-full mx-auto`} >
                 <H1_Wrapper>
