@@ -3,10 +3,10 @@ import { cormorant } from "../fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/Components/ui/button";
-import { Card, CardContent, CardHeader } from "@/Components/ui/card";
+import { Card } from "@/Components/ui/card";
 
 export const metadata = {
-    title: 'Priest',
+    title: 'VVGC Priests',
     description: 'VVGC- Temple',
 }
 
