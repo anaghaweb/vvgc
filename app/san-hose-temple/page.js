@@ -3,11 +3,7 @@ import { cormorant } from "../fonts";
 import {FetchData} from "@/Components/fetchdata";
 import SponsorEvent from "@/Components/sponsor";
 import Link from 'next/link'
-// import { div,  div,
-//     divDescription,
-//     divFooter,
-//     div,
-//     divTitle, } from "../../Components/ui/div";
+
 import Youtube from "@/lib/icons/youtube";
 import FaceBook from "@/lib/icons/facebook";
 import Zoom from "@/lib/icons/zoom";

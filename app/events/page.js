@@ -7,11 +7,7 @@ import Link from "next/link";
 import Youtube from "@/lib/icons/youtube";
 import Zoom from "@/lib/icons/zoom";
 import FaceBook from "@/lib/icons/facebook";
-import { div,  div,
-    divDescription,
-    divFooter,
-    div,
-    divTitle, } from "../../Components/ui/div";
+
    
 
 export default async function Event() {
