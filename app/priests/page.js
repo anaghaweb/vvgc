@@ -26,11 +26,12 @@ export default function Priest() {
     return (
         <React.Fragment>
 
-            <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}><h1>Our Priests</h1></div>
-            </Hero_Image_Wrapper>
+< div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-priests ${cormorant.variable} `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">VVGC Priests </h1>
+                </div>
             <main className={cormorant.variable}>
-
 
                 <Gofundme_Wrapper>
                     <h2>Their selfless service forms the foundation of our temple's spiritual offerings, and their presence enriches our lives in countless ways. We would like to express our deep appreciation for the priests and acknowledge the invaluable role they play in maintaining the sanctity and vibrancy of our Temple.

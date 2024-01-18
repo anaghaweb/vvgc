@@ -10,7 +10,6 @@ height: 24rem;
 font-size: 1.875rem;
 line-height: 2.25rem; 
 color: #ffffff; 
-
 background-image: url('${props => props.$bgimg}') ;
 background-position: center; 
 background-repeat: no-repeat; 
@@ -32,9 +31,6 @@ height: auto;
 text-align: center; 
 font-family: var(--font-cormorant);
  }
-
- 
-
 `
 
 

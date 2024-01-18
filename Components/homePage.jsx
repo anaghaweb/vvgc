@@ -1,7 +1,7 @@
 
 import { FetchData } from "./fetchdata";
 import SponsorEvent from "@/Components/sponsor";
-import { cormorant } from "@/app/fonts";
+import { cormorant, playfair } from "@/app/fonts";
 import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
 import { FaExternalLinkAlt } from 'react-icons/fa'
@@ -18,10 +18,11 @@ export default async function HomePage() {
     <React.Fragment >
 
       {/* Hero Section */}
-      <Hero_Image_Wrapper $bgimg={heroimgURL}>
-        <div className={cormorant.variable}>
-          <h1>A Home For Hindu Devotees</h1></div>
-      </Hero_Image_Wrapper>
+      < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-home ${playfair.variable} bg-[rgb(0,0,0,0.8)]  `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[playfair] leading-3 font-light ">A Home For Hindu Devotees </h1>
+                </div>
 
 
       <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto from-gray-100 via-blue-100 to-slate-100`} >

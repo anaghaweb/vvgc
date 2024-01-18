@@ -8,7 +8,7 @@ import { Card,  CardContent,
   CardFooter,
   CardHeader,
   CardTitle, } from "./ui/card";
-  import { Button } from "./ui/button";
+ 
 
 
 export default async function RenderEvent({ data }) {
@@ -19,7 +19,8 @@ export default async function RenderEvent({ data }) {
        <h1 className="py-2 px-1 font-opensans text-center text-4xl text-blue-900  max-w-full lg:w-[900px]  lg:text-left ">Event Details</h1>
        <hr/>
       {data.content.map((data, index) => (
-       !!data.title ? <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
+       !!data.title ? 
+       <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
           
        <CardHeader className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 

@@ -18,13 +18,13 @@ export default function Prasadam() {
     const CustomPrasadamBookingFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfnXHyH_O2Y5qwF_OTLhTaoKqrZDmRP5_4vLGh89aQWPK1lzg/viewform';
 
 
-    const heroimgURL = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0007_gsimyw.jpg';
-
-    return (
+      return (
         <React.Fragment>
-            <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}><h1>Our Prasadam Sevices</h1></div>
-            </Hero_Image_Wrapper>
+             < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-prasadam ${cormorant.variable} `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Prasadam Services </h1>
+                </div> 
 
             <main className={`${cormorant.variable} m-auto`}>
                 <section className="flex flex-col w-[full] md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-normal text-base  text-black shadow-slate-900 drop-shadow-md rounded-sm bg-white">

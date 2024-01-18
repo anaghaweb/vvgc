@@ -21,9 +21,11 @@ export default async function SanJose() {
 
     return (
         <React.Fragment>
-            <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}><h1>Welcome To San Jose Temple</h1></div>
-            </Hero_Image_Wrapper>
+           < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-san-jose ${cormorant.variable} `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Welcome to San Jose </h1>
+                </div>
             <main className={`${cormorant.variable} w-full mx-auto`} >
                 <H1_Wrapper>
                     <h1>Watch Events Online</h1>

@@ -3,8 +3,6 @@ import RenderEvent from "@/Components/event";
 import { FetchData } from "@/Components/fetchdata";
 import { cormorant } from "../fonts";
 import Regular from "@/Components/regular";
-
-import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Link from "next/link";
 import Youtube from "@/lib/icons/youtube";
 import Zoom from "@/lib/icons/zoom";
@@ -13,7 +11,7 @@ import { Card,  CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
-    CardTitle, } from "@/Components/ui/card";
+    CardTitle, } from "../../Components/ui/card";
    
 
 export const metadata = {
@@ -31,9 +29,11 @@ export default async function Event() {
 
         <>
 
-            <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}><h1>VVGC San Martin Events</h1></div>
-            </Hero_Image_Wrapper>
+< div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-event ${cormorant.variable} `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Events </h1>
+                </div> 
 
             <main className="mx-auto py-4 my-4 bg-neutral-100">
                 

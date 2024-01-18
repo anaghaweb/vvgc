@@ -26,11 +26,11 @@ export default function Donations() {
 
     return (
         <React.Fragment>
-            {/* Hero Section */}
-            <Hero_Image_Wrapper $bgimg={heroimgURL}>
-                <div className={cormorant.variable}>
-                    <h1>Support Us</h1></div>
-            </Hero_Image_Wrapper>
+           < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-donations ${cormorant.variable} `}        
+                >
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Support Us</h1>
+                </div> 
             {/* main section */}
             <main className={`${cormorant.variable} mx-auto w-full max-w-full`}>
 
