@@ -3,7 +3,7 @@ import { cormorant } from "../fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/Components/ui/button";
-import { Card } from "@/Components/ui/card";
+
 
 export const metadata = {
     title: 'VVGC Priests',
@@ -44,7 +44,7 @@ export default function Priest() {
                     <div className={`w-4/5 grid grid-cols-1 text-[green] gap-8 m-auto  md:grid-cols-2 md:w-full md:ga md:p-2`}>
 
                         {/* 1st priest */}
-                        <Card className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
+                        <div className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
                          md:h-auto md:p-2` }>
                             <div className="relative w-full h-[200px]"><Link className={`text-orange-500 font-[bold] text-xl`} href={placeholderImg}>
                                 <Image src={placeholderImg} fill sizes={'100vw'} alt="placeholder" className="absolute cursor-pointer" /></Link></div>
@@ -54,10 +54,10 @@ export default function Priest() {
                                 <h3>9252097637</h3>
 
                             </div>
-                        </Card>
+                        </div>
 
                         {/* 2nd priest */}
-                        <Card className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
+                        <div className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
                          md:h-auto md:p-2` }>
                             <div className="relative w-full h-[200px]"><Link className={`text-orange-500 font-[bold] text-xl`} href={placeholderImg}>
                                 <Image src={placeholderImg} fill sizes={'100vw'} alt="placeholder" className="absolute cursor-pointer" /></Link></div>
@@ -68,11 +68,11 @@ export default function Priest() {
                                 <h3>408-724-3577</h3>
 
                             </div>
-                        </Card>
+                        </div>
 
 
                         {/* 3rd priest */}
-                        <Card className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
+                        <div className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
                          md:h-auto md:p-2` }>
                             <div className="relative w-full h-[200px]"><Link className={`text-orange-500 font-[bold] text-xl`} href={placeholderImg}>
                                 <Image src={placeholderImg} fill sizes={'100vw'} alt="placeholder" className="absolute cursor-pointer" /></Link></div>
@@ -83,10 +83,10 @@ export default function Priest() {
                                 <h3>669-350-5788</h3>
 
                             </div>
-                        </Card>
+                        </div>
                         {/* 4th priest */}
 
-                        <Card className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
+                        <div className={` bg-white h-[350px]  sm:min-w-80 max-w-80 mx-auto flex flex-col  md:col-span-1 
                          md:h-auto md:p-2` }>
                             <div className="relative w-full h-[200px]"><Link className={`text-orange-500 font-[bold] text-xl`} href={placeholderImg}>
                                 <Image src={placeholderImg} fill sizes={'100vw'} alt="placeholder" className="absolute cursor-pointer" /></Link></div>
@@ -97,7 +97,7 @@ export default function Priest() {
                                 <h3>860-262-2478</h3>
 
                             </div>
-                        </Card>
+                        </div>
 
 
                     </div>
