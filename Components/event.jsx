@@ -22,11 +22,11 @@ export default async function RenderEvent({ data }) {
        !!data.title ? 
        <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
           
-       <CardHeader className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+       <CardHeader  className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
        </CardHeader>
 
-       <CardTitle className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
+       <CardTitle  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
 
        <hr className=" my-2 " />
 
@@ -34,14 +34,14 @@ export default async function RenderEvent({ data }) {
 
        {data.imageurl && <hr className=" my-2 " />}
 
-       <CardContent key={index} className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
+       <CardContent key={index + data.title} className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
          {data.startTime && data.endTime && data.description ?
-           <><div className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">{data.startTime}</div><div className="col-span-8 text-[13px] md:text-base ">{data.description}</div></>
+           <><div key={index + data.title} className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">{data.startTime}</div><div key={index + data.title} className="col-span-8 text-[13px] md:text-base ">{data.description}</div></>
            : data.startTime && !data.endTime ?
-             <><div className="col-span-2 border-r-[1px] text-blue-900 text-[13px]
-                 md:text-base font-sans flex items-center justify-center px-[4px]">{data.startTime}:</div><div className="col-span-8 text-[13px] md:text-base">{data.description}</div></>
+             <><div key={index + data.title} className="col-span-2 border-r-[1px] text-blue-900 text-[13px]
+                 md:text-base font-sans flex items-center justify-center px-[4px]">{data.startTime}:</div><div key={index + data.title} className="col-span-8 text-[13px] md:text-base">{data.description}</div></>
              : data.startTime && data.endTime && !data.description ? ""
-               : <div className="col-span-10 text-xl ">{data.description}<br/></div>
+               : <div key={index + data.title} className="col-span-10 text-xl ">{data.description}<br/></div>
          }
          {[1, 2, 3, 4, 5, 6].map((num, index) => (
            data[`time_${num}`] ? (

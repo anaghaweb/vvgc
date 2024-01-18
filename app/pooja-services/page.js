@@ -1,6 +1,5 @@
 import React from "react";
 import { cormorant } from "../fonts"
-import { Hero_Image_Wrapper } from "../GlobalStyles/globalstyles";
 import Link from "next/link";
 
 export const metadata = {

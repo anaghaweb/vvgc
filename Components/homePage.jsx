@@ -5,7 +5,6 @@ import { cormorant, playfair } from "@/app/fonts";
 import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import { Hero_Image_Wrapper } from "@/app/GlobalStyles/globalstyles";
 import * as React from 'react'
 
 
