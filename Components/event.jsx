@@ -3,11 +3,7 @@ import Image from "next/image";
 import CalenderLinks from "./calendarlinks";
 import Link from "next/link";
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { Card,  CardContent,
-  div,
-  CardFooter,
-  CardHeader,
-  CardTitle, } from "./ui/card";
+
  
 
 
@@ -20,13 +16,13 @@ export default async function RenderEvent({ data }) {
        <hr/>
       {data.content.map((data, index) => (
        !!data.title ? 
-       <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
+       <div key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
           
-       <CardHeader  className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+       <div  className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
-       </CardHeader>
+       </div>
 
-       <CardTitle  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
+       <div  className=" pl-7 text-xl   text-cyan-950">{data.title}</div>
 
        <hr className=" my-2 " />
 
@@ -34,7 +30,7 @@ export default async function RenderEvent({ data }) {
 
        {data.imageurl && <hr className=" my-2 " />}
 
-       <CardContent key={index + data.title} className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
+       <div key={index + data.title} className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
          {data.startTime && data.endTime && data.description ?
            <><div key={index + data.title} className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">{data.startTime}</div><div key={index + data.title} className="col-span-8 text-[13px] md:text-base ">{data.description}</div></>
            : data.startTime && !data.endTime ?
@@ -66,10 +62,10 @@ export default async function RenderEvent({ data }) {
 
                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus accusantium ipsum beatae atque, animi cum ipsam et distinctio nemo vitae sapiente vel libero eos velit eaque veniam recusandae debitis. */}
 
-       </CardContent>
+       </div>
        {/* sponsor event Link */}
       
-       <Card className="flex flex-col p-2 rounded w-full md:max-w-fit border-slate-400 border-solid shadow-inner bg-gray-100 md:bg-transparent md:border-none " >
+       <div className="flex flex-col p-2 rounded w-full md:max-w-fit border-slate-400 border-solid shadow-inner bg-gray-100 md:bg-transparent md:border-none " >
        {data.sponsorLink &&
        
          <Link className="flex sm:max-w-fit justify-start items-center " href={data.sponsorLink} target="_blank">
@@ -88,14 +84,11 @@ export default async function RenderEvent({ data }) {
              description: data.description
            }} />
 
-         </div>
-         
+         </div>        
        </div>
-       </Card>
-       
-     </Card> : ""
-       
-
+       </div>    
+     </div> : ""
+    
       ))}
     </div>
 
