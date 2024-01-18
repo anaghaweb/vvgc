@@ -26,7 +26,7 @@ export default function SponsorEvent({ data, index }) {
 
        <CardTitle className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
 
-       <hr className=" my-2 " />
+       <hr className=" my-2" />
 
        {data.imageurl && <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]"><Link href={data.imageurl} target="_blank"><Image src={data.imageurl} alt="Event" fill quality={75} sizes={'100vw'} className="absolute object-contain cursor-pointer" /></Link></div>}
 

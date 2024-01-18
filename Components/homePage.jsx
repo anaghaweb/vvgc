@@ -1,4 +1,3 @@
-
 import { FetchData } from "./fetchdata";
 import SponsorEvent from "@/Components/sponsor";
 import { cormorant, playfair } from "@/app/fonts";

@@ -14,11 +14,6 @@ import { Card,  CardContent,
     CardTitle, } from "../../Components/ui/card";
    
 
-export const metadata = {
-    title: 'Events',
-    description: 'VVGC- Temple',
-}
-
 export default async function Event() {
 
     const data = await FetchData();
@@ -49,26 +44,16 @@ export default async function Event() {
                             <Link href="https://www.facebook.com/vvgctemple" ><span className="text-2xl md:text-4xl text-sky-950">Facebook</span><div className="flex justify-center"><FaceBook /></div></Link>
                         </Card>
                         <Card className=" h-36 sm:min-h-48 col-span-1 flex flex-col justify-center items-center">
-                           
-                        <span className="text-2xl md:text-4xl text-sky-950">Zoom</span>
+                       <span className="text-2xl md:text-4xl text-sky-950">Zoom</span>
                         <Link href="https://zoom.us/j/6233634720?pwd=OEY3K3U2ZEdNZTlaSTJVc1VZQklUdz09#success" target="_blank"> <div className="flex justify-center"><Zoom /></div></Link>
                         <p>Meeting ID: 6233634720</p>
                         <p> Password : 040415</p>
                         <div className="flex gap-1 items-center">
-                        
-                        </div>
-                        
+                      </div>
                         </Card>
                     </CardContent>
-                  
-
-
-                </Card>
-                
-
-                <section className={cormorant.variable}>
-               
-                    
+             </Card>
+                <section className={cormorant.variable}>                
                     <RenderEvent data={data} />
                     <hr className="my-4" />
                 </section>

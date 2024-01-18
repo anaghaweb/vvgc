@@ -1,5 +1,4 @@
 import React from "react";
-
 import { cormorant } from "../fonts";
 
 export const metadata = {

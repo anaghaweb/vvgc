@@ -1,8 +1,5 @@
 import React from "react";
 import { cormorant } from "../fonts";
-
-
-
 import Link from "next/link";
 
 
