@@ -29,9 +29,7 @@ export default async function Event() {
                 >
                      <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Events </h1>
                 </div> 
-
-            <main className="mx-auto py-4 my-4 bg-neutral-100">
-                
+            <main className="mx-auto py-4 my-4 bg-neutral-100">               
                 <Card className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto">
                     <CardHeader className=" font-opensans text-center lg:text-left text-2xl md:text-4xl text-blue-900 ">Watch events live</CardHeader>
                     <hr />

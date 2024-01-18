@@ -4,7 +4,6 @@ import Footer from '../Components/footer';
 import { Open_Sans } from 'next/font/google';
 
 
-
 const opensans = Open_Sans({ subsets: ['latin'], variable: '--font-opensans', fallback: 'sans' });
 
 export default function RootLayout({ children }) {
