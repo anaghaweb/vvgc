@@ -4,14 +4,14 @@ import { SubscribeForm } from './subscribe/subscribe';
 
 export default function Footer() {
     return (
-        <footer className="w-full max-w-full grid gap-2 grid-cols-1 lg:grid-cols-5 text-white bg-sky-950 h-auto md:h-[275px] items-center justify-center px-4 py-4">
+        <footer className="w-full max-w-full grid gap-2 grid-cols-1 md:grid-col-2 xl:grid-cols-5 text-white bg-sky-950 h-auto md:h-[275px] items-center justify-center px-4 py-4">
             <section className='grid grid-cols-3 lg:w-[200px] md:w-[150px] w-full'>
                 <Link href={`https://www.youtube.com/live/mAH6q0YPwso?si=nAC-_69uH-ndKIV2`}><AiOutlineYoutube size={25} /></Link>
                 <Link href={`https://www.instagram.com/explore/tags/vvgcsanmartin/`}><AiOutlineInstagram size={25} /></Link>
                 <Link href={`https://www.facebook.com/vvgctemple`}><AiOutlineFacebook size={25} /></Link>
             </section>
 
-            <section className='text-white flex flex-col text-sm md:text-base'>
+            <section className='text-white flex flex-col col-span-1 text-sm md:text-base'>
                 <p className='underline'>VVGC San Martin</p>
                 <p>Phone: 4087596183</p>
                 <p>Email: info@vvgc.org</p>
@@ -19,7 +19,7 @@ export default function Footer() {
                 <p>San Martin, CA 95046</p>
             </section>
 
-            <section className='text-white flex flex-col text-sm md:text-base'>
+            <section className='text-white flex flex-col col-span-1 text-sm md:text-base'>
                 <p className='underline'>VVGC San Jose</p>
                 <p>Phone: 4082263600</p>
                 <p>Email: info@vvgc.org</p>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <p>San Jose CA 95111</p>
             </section>
 
-            <section className='text-white flex flex-col text-sm md:text-base'>
+            <section className='text-white flex flex-col text-sm col-span-1 md:text-base'>
                 <p className='underline'>Temple Timings</p>
                 <p>Weekdays:</p>
                 <p>10:00AM to 12:00PM</p>
@@ -41,7 +41,7 @@ export default function Footer() {
             <section >
 
                 <div
-                    className='flex flex-col justify-center items-center lg:w-[200px]'>
+                    className='flex flex-col col-span-1 justify-center items-center lg:w-[200px]'>
                    <SubscribeForm />
                 </div>
 
