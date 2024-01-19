@@ -27,7 +27,7 @@ export async function POST(request){
 
         const response = await sheets.spreadsheets.values.append({
              spreadsheetId : process.env.NEXT_PUBLIC_ID,
-             range: 'subscribe!A1:A1',
+             range: 'subscribe!A:A',
             valueInputOption:'USER_ENTERED',
             requestBody:{
                 values:[
