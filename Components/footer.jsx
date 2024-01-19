@@ -4,7 +4,7 @@ import { SubscribeForm } from './subscribe/subscribe';
 
 export default function Footer() {
     return (
-        <footer className="w-full max-w-full grid gap-2 grid-cols-1 md:grid-cols-5 text-white bg-sky-950 h-auto md:h-[275px] items-center justify-center px-4 py-4">
+        <footer className="w-full max-w-full grid gap-2 grid-cols-1 lg:grid-cols-5 text-white bg-sky-950 h-auto md:h-[275px] items-center justify-center px-4 py-4">
             <section className='grid grid-cols-3 lg:w-[200px] md:w-[150px] w-full'>
                 <Link href={`https://www.youtube.com/live/mAH6q0YPwso?si=nAC-_69uH-ndKIV2`}><AiOutlineYoutube size={25} /></Link>
                 <Link href={`https://www.instagram.com/explore/tags/vvgcsanmartin/`}><AiOutlineInstagram size={25} /></Link>

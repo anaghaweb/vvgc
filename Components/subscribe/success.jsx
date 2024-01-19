@@ -5,16 +5,14 @@ import Link from "next/link";
 
 export function SuccessfulSubscribe(){
     return(
-        <Card className="min-w-80 h-80">
-            <CardHeader>
-            <p className="text-2xl text-blue-500">Feedback Received!</p>
-            </CardHeader>
+        <Card className="min-w-24 h-24">
+           
             <CardContent className="flex flex-col items-center justify-center gap-4">
-                <FaCheckCircle className="text-green-700 text-xl size-12"/>
-                <p>Thankyou for submitting your feedback!</p>
+                <FaCheckCircle className="text-green-700 text-xl size-8"/>
+                <p>You are Subscribed!</p>
 
             </CardContent>
-            <Button className="flex mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href="/"> Return to VVGC homepage</Link></Button>
+            
             </Card>
     )
 }

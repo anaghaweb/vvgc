@@ -17,7 +17,7 @@ import {
 } from "@/Components/ui/form"
 import { Textarea } from "../ui/textarea"
 import {Input} from '../ui/input'
-import { Card, CardHeader, CardContent, CardFooter } from "../ui/card"
+import { Card, CardTitle , CardContent, CardFooter } from "../ui/card"
 import { Loader2 } from "lucide-react"
 
 
@@ -75,8 +75,8 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
   else {
   return (
   
-    <Card className="bg-sky-950">
-      <CardHeader className="text-center text-xl text-white">Subscribe to our mailing list</CardHeader>
+    <Card className="bg-sky-950 min-w-44">
+      <CardTitle  className="text-center text-xl text-white">Subscribe</CardTitle >
 
     <Form {...form}>
       <CardContent className="min-w-64 ">
