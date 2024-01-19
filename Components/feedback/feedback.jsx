@@ -58,11 +58,11 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
       },
       body: JSON.stringify(values)
   })
-  
+  setSubmitting(true)
   setTimeout(()=>{
     
   }, 2000)
-  setSubmitting(true)
+  
 
   if (response.status === 200){
     
