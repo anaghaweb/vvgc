@@ -25,22 +25,16 @@ import { Loader2 } from "lucide-react"
 export function SubscribeForm() {
    
 const formSchema = z.object({
-  username: z.string().min(4, {
-    message: "Username must be at least 2 characters.",
-  }),
+ 
   email: z.string().email({message:"Invalid email address"}),
-  phone: z.string().min(7,{message:"please enter a valid phone number"}),
-  message:z.string().min(4,{
-    message:"Message cannot be empty"
-  }),
+ 
 })
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+     
       email:"",
-      phone:"",
-      message:"",
+     
     },
   })
 const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessful} = form;
@@ -82,7 +76,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
   return (
   
     <Card>
-      <CardHeader className="text-center text-xl">Feedback Form</CardHeader>
+      <CardHeader className="text-center text-xl">Subscribe</CardHeader>
 
     <Form {...form}>
       <CardContent className="min-w-80 sm:w-96">
@@ -99,7 +93,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
               <FormControl>
                 <Input placeholder="email" {...field}  />
               </FormControl>
-              <FormDescription></FormDescription>
+              
               <FormMessage />
             </FormItem>
           )}

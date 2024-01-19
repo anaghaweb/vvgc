@@ -22,7 +22,7 @@ export default async function HomePage() {
       < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-home ${playfair.variable} bg-[rgb(0,0,0,0.8)]  `}        
                 >
-                     <h1 className="text-5xl md:text-7xl font-[playfair] text-wrap font-light text-center ">A Home  For Hindu Devotees </h1>
+                     <h1 className="text-6xl md:text-7xl font-[playfair] text-wrap font-light text-center ">A Home  For Hindu Devotees </h1>
                 </div>
 
 
@@ -63,7 +63,7 @@ export default async function HomePage() {
         
         
         </CardContent>
-        <CardFooter><Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href={'/feedback'} target="_blank"> Feedback</Link></Button></CardFooter>
+        <CardFooter><Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href={'/feedback'}> Feedback</Link></Button></CardFooter>
         </Card>
         
 
