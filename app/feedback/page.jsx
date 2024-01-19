@@ -1,4 +1,4 @@
-
+import { FeedbackForm } from "@/Components/feedback/feedback"
 
 export const metadata = {
     title: 'Feedback',
@@ -7,6 +7,8 @@ export const metadata = {
 
 export default function FeedbackPage(){
     return(
-        <>Hello</>
+        <div className="min-h-[70dvh]  flex items-start justify-center bg-slate-800 py-10">
+        <FeedbackForm />
+        </div>
     )
 }
