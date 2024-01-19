@@ -51,7 +51,7 @@ export default async function HomePage() {
             <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming Special Events</h1>
           </div>
           <hr className="h-[2px] bg-red-800 my-2 " />
-          <div className="my-[16px] w-[100%] grid grid-cols-1 lg:grid-cols-2 ">
+          <div className="my-[16px] w-[100%] grid grid-cols-1 lg:grid-cols-2 lg:gap-6 ">
             {data.content.map((data, index) => {
 
               return (data.homepage === 'sponsor' ? <SponsorEvent data={data} key={index} /> : "")

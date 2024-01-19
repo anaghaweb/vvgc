@@ -14,13 +14,13 @@ export default function SponsorEvent({ data, index }) {
         
     return (
         
-      <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
+      <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2 bg-blue-100`}>
           
-       <CardHeader  className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
+       <CardHeader  className=" text-2xl     text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
        </CardHeader>
 
-       <CardHeader  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardHeader>
+       <CardTitle  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
 
        <hr className=" my-2 " />
 

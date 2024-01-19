@@ -4,6 +4,7 @@ import CalenderLinks from "./calendarlinks";
 import Link from "next/link";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
  
 
 
@@ -11,18 +12,20 @@ export default async function RenderEvent({ data }) {
 
 
   return (
-    <div className="flex flex-col  max-w-full lg:w-[900px] mx-auto h-auto  px-1 relative">
-       <h1 className="py-2 px-1 font-opensans text-center text-4xl text-blue-900  max-w-full lg:w-[900px]  lg:text-left ">Event Details</h1>
+    <>
+    <h1 className="py-2 px-1 my-5 font-opensans  text-4xl text-blue-900   min-w-full  text-center ">Special Event Details</h1>
+    <div className="flex flex-col max-w-full lg:w-[900px] mx-auto h-auto  px-1 relative">
+       
        <hr/>
       {data.content.map((data, index) => (
        !!data.title ? 
-       <Card key={index} className={` flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
+       <Card key={index} className={`bg-blue-100 flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
           
        <CardHeader  className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
        </CardHeader>
 
-       <CardHeader  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardHeader>
+       <CardTitle  className=" pl-7 text-xl   text-cyan-950">{data.title}</CardTitle>
 
        <hr className=" my-2 " />
 
@@ -91,7 +94,7 @@ export default async function RenderEvent({ data }) {
     
       ))}
     </div>
-
+          </>
   )
 }
 

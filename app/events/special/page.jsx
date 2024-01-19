@@ -1,15 +1,18 @@
 import React from "react";
 import RenderEvent from "@/Components/event";
 import { FetchData } from "@/Components/fetchdata";
-import { cormorant } from "../fonts";
-import Regular from "@/Components/regular";
+import { cormorant } from "../../fonts";
 import Link from "next/link";
 import Youtube from "@/lib/icons/youtube";
 import Zoom from "@/lib/icons/zoom";
 import FaceBook from "@/lib/icons/facebook";
+import Tablist from "@/Components/tabs";
+import { Button } from "@/Components/ui/button";
+import { Card,CardHeader, CardContent, CardTitle } from "@/Components/ui/card";
+
 
 export const metadata = {
-    title: 'Events',
+    title: 'Special Events',
     description: 'Help us Grow',
 }
 
@@ -26,13 +29,14 @@ export default async function Event() {
 < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-event ${cormorant.variable} `}        
                 >
-                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Events </h1>
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]"> Special Events </h1>
                 </div> 
             <main className="mx-auto py-4 my-4 bg-neutral-100">               
-                <div className="flex flex-col max-w-full lg:w-[900px] h-auto my-5 mx-auto">
-                    <div className=" font-opensans text-center lg:text-left text-2xl md:text-4xl text-blue-900 ">Watch events live</div>
+            <div className="min-h-lvh  flex items-center bg-gray-100 ">
+                <Card className="flex flex-col w-full lg:w-[900px] my-5 mx-auto">
+                    <CardHeader className=" font-opensans text-center lg:text-left text-2xl md:text-4xl bg-blue-300 text-blue-900 ">Watch events live</CardHeader>
                     <hr />
-                    <div className="w-full p-2 h-auto min-h-[100%] md:h-60 md:grid grid-cols-3 rounded border-slate-400 border-solid shadow-inner">
+                    <CardContent className="w-full p-2 h-auto min-h-[100%] md:h-60 md:grid grid-cols-3 rounded border-slate-400 border-solid shadow-inner">
                         <div className=" h-36 sm:min-h-48 col-span-1 flex flex-col justify-center items-center">
                             <Link href="https://www.youtube.com/@vaidicavidhyaganapathicent2187/streams" target="_blank"><span className="text-2xl md:text-4xl text-sky-950">Youtube</span>
                             <div className="flex justify-center"><Youtube /></div></Link>
@@ -45,21 +49,35 @@ export default async function Event() {
                         <Link href="https://zoom.us/j/6233634720?pwd=OEY3K3U2ZEdNZTlaSTJVc1VZQklUdz09#success" target="_blank"> <div className="flex justify-center"><Zoom /></div></Link>
                         <p>Meeting ID: 6233634720</p>
                         <p> Password : 040415</p>
-                        <div className="flex gap-1 items-center">
-                      </div>
+                       
                         </div>
-                    </div>
+                    </CardContent>
+             </Card>
+             </div>             
+             <div className="grid grid-cols-2 max-w-full lg:w-[900px] justify-item-center h-auto mx-auto gap:3 md:gap-10">
+             <Button
+            asChild
+            className={`w-fit md:w-full text-white bg-blue-400 mx-auto md:h-16 md:text-2xl`}
+          >
+            <Link href={"/events/special"}>Special Events</Link>
+          </Button>
+          <Button
+            asChild
+            className={`w-fit md:w-full text-white bg-blue-400 mx-auto md:h-16 md:text-2xl `}
+          >
+            <Link href={"/events/regular"}>Regular Events</Link>
+          </Button>
+                
              </div>
+             <hr/>
                 <section className={cormorant.variable}>                
                     <RenderEvent data={data} />
                     <hr className="my-4" />
                 </section>
 
                 <hr />
-                <section className="w-full lg:w-[900px] h-auto my-10 items-center text-center">
+        
 
-                    <Regular />
-                </section>
             </main>
 
         </>

@@ -17,7 +17,7 @@ const navLinks = [
 
   {
     name: 'Events',
-    link: '/events'
+    link: '/events/special'
   },
   {
     name: 'Pooja Services',
@@ -57,7 +57,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className={`flex flex-col w-full h-40 bg-[#FF9933] min-w-full ${cormorant.variable}`}>
+    <header className={`flex flex-col w-full h-44 md:h-40 bg-[#FF9933] min-w-full ${cormorant.variable}`}>
       <nav
         className="justify-between md:min-w-fit lg:w-full h-14 flex lg:justify-center items-center"
       >
