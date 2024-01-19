@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome, AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai';
 import { Cormorant } from 'next/font/google';
+import { Button } from "./ui/button";
 // import { Button } from "./ui/button";
 
 const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-cormorant', fallback: 'serif' });
@@ -41,6 +42,10 @@ const navLinks = [
     name: 'San Jose Temple',
     link: '/san-hose-temple'
   },
+  {
+    name:'Goshala',
+    link: '/goshala'
+  }
 
 ];
 
@@ -61,7 +66,7 @@ export default function Header() {
       <nav
         className="justify-between md:min-w-fit lg:w-full h-14 flex lg:justify-center items-center"
       >
-        <ul className=" text-[16px] list-none hidden w-full h-full md:flex md:justify-center md:text-sm lg:text-xl font-normal font-cormorant
+        <ul className=" text-base list-none hidden w-full h-full lg:flex lg:justify-center  xl:text-xl font-normal font-cormorant
         text-[#000033]">
 
           {/* Large to medium scree navigation bar */}
@@ -80,7 +85,7 @@ export default function Header() {
 
         {/* Support us button leads to Donations page */}
 
-        <button type="button" variant="outlined"
+        <Button type="button" variant="outlined"
           className="self-center mx-2  md:m-1 min-w-max py-1 px-2 h-9 w-[100px]
         shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-white
            right-3 font-cormorant font-large
@@ -88,9 +93,9 @@ export default function Header() {
         >
           <Link href={"/donations"}>Support Us</Link>
 
-        </button>
+        </Button>
         {/* {hamburger menu icon open and close } */}
-        <div onClick={smallScreenNavigation} className="flex flex-col md:hidden p-3">
+        <div onClick={smallScreenNavigation} className="flex flex-col lg:hidden p-3">
           {
             menuIcon ? <AiOutlineClose size={25} className="text-black self-end" /> : <AiOutlineMenu size={25} className="text-black self-end " />
           }

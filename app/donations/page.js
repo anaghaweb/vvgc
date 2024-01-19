@@ -70,7 +70,7 @@ export default function Donations() {
                         <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>(Sustaining & Caring for Cows)</h3>
 
 
-                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.  <span><Link className={`text-orange-500 font-[bold]`} href={godhanam_donate_img} target="_blank">Click here</Link></span> to learn more about the programs and how you can support them.</h3>
+                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.  <span><Link className={`text-orange-500 font-[bold]`} href={'https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList'} target="_blank">Click here</Link></span> to learn more about the programs and how you can support them.</h3>
 
                     </div>
                     <div className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}>

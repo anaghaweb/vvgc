@@ -5,7 +5,9 @@ import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import * as React from 'react'
-import { Card } from "./ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 
 export default async function HomePage() {
@@ -26,29 +28,52 @@ export default async function HomePage() {
 
       <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto from-gray-100 via-blue-100 to-slate-100`} >
 
-
-        <Card className={`w-[100%] h-auto md:h-96 p-1 md:p-10 bg-amber-50`}>
-          <div className="text-red-950 ">
-            <h1 className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</h1></div>
-          <hr className="h-[2px] bg-red-800 my-2 " />
-
+      <div className="grid grid-cols-1 lg:grid-cols-6">
+        <div className="col-span-1 lg:col-span-4 h-auto md:h-[400px] my-2 md:my-0 flex-1 text-center">
+          <Card className={`w-[100%] h-auto md:h-full p-1 md:p-1`}>
+          <div className="text-blue-600 ">
+            <CardHeader className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</CardHeader></div>
+          <CardContent className="flex flex-col gap-6">
+          
+    <div>
           <div className="text-sm md:text-xl ">Time: 6:30PM</div>
           <div className="text-sm md:text-base ">Shiva Abisheka, Aarthi and Manthra Pushpa</div>
-          <hr className="my-1" />
-
+          </div>
+          <div>
           <div className="text-sm md:text-xl ">Time: 7:30AM</div>
           <div className="text-sm md:text-base  ">Sri Shridi Sai Haarathulu Dhoop Aarathi</div>
 
-          <hr className="my-1" />
-
+          </div>
+        <div>
           <div className="text-sm md:text-xl  ">Time: 8:00PM</div>
           <div className="text-sm md:text-base  ">Sri Jai Jagadesha Hare Aarathi</div>
-          <hr className="my-1" />
+          </div>
+          </CardContent>
         </Card>
+        </div>
+
+        {/* FEEDBACK */}
+        <div className="col-span-1 lg:col-span-2 h-auto md:h-[400px] flex-1  text-center">
+        <Card className={`w-[100%] h-auto md:h-[400px] p-1 md:p-1`}>
+        <CardHeader className="text-2xl md:text-4xl font-cormorant text-blue-500">Feedback</CardHeader>
+        <CardContent className="flex flex-col gap-3">
+        <div className="text-sm md:text-base ">Please consider sharing a few words about your recent experiences. Your feedback plays a crucial role in shaping the services we provide. </div>
+        <div className="text-sm md:text-base ">Thank you for being an integral part of our temple community</div>
+        <div className="text-sm md:text-base ">Click to provide feedback</div>
+        
+        
+        </CardContent>
+        <CardFooter><Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href={'/feedback'} target="_blank"> Feedback</Link></Button></CardFooter>
+        </Card>
+        
+
+        </div>
+      </div>
+        
         {/* Upcoming events */}
         <Card className="w-[100%] h-auto md:h-auto  md:p-10">
           <div>
-            <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">Upcoming Special Events</h1>
+            <h1 className="text-2xl md:text-4xl font-cormorant text-blue-500 ">Upcoming Special Events</h1>
           </div>
           <hr className="h-[2px] bg-red-800 my-2 " />
           <div className="my-[16px] w-[100%] grid grid-cols-1 lg:grid-cols-2 lg:gap-6 ">
@@ -58,6 +83,7 @@ export default async function HomePage() {
             })
             }
           </div>
+          <CardFooter><Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700" ><Link href="/events/regular">View Regular Events</Link></Button></CardFooter>
         </Card>
         <Card className={`w-[100%] md:max-w-screen h-auto p-1 md:p-10 my-10 grid grid-col-1 md:grid-cols-3 justify-items-center `} >
 
@@ -66,7 +92,7 @@ export default async function HomePage() {
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1689678777/VVGC%20Images/image_12.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Gallery </div>
-              <div className="flex p-1 my-1 items-center"><span className="px-2">See more Photoes</span> <BiSolidNavigation /></div>
+              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://photos.google.com/share/AF1QipPnhJjX11JcdedpRJ97_AGnHygXzxq4Gd0YsdiwYThBuxLKsobJZ3ZtnIfpVUrFkA/photo/AF1QipNR2fkwsk0gbcML9Ie4Tum9r_yHNgmbF-gVAkSj?key=elhBbTRXUkdGWklPdkRGYk5Jcy1mV0JyeXU1eFpR"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">See more Photoes</span> <BiSolidNavigation/></Link> </Button>
             </div>
           </Card>
 
@@ -74,7 +100,7 @@ export default async function HomePage() {
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914196/VVGC%20San%20Martin%20Temple%20Data/Gallery/68936063_2274984382569962_8933000778419798016_n_uqrzsf.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Sponsor other Events </div>
-              <div className="flex p-1 my-1 items-center"><span className="px-2">Know more</span> <FaExternalLinkAlt /></div>
+              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://paybee.io/quickpay.html?handle=vvgc#campaignList"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">Know more</span> <FaExternalLinkAlt/></Link> </Button>
             </div>
           </Card>
 
@@ -82,7 +108,7 @@ export default async function HomePage() {
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914197/VVGC%20San%20Martin%20Temple%20Data/Gallery/73283570_2376249725776760_7286846728483897344_n_taqhkw.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Our History </div>
-              <div className="flex p-1 my-1 items-center"><span className="px-2">Know more</span> <BiSolidNavigation /></div>
+              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://lh3.googleusercontent.com/pw/ABLVV85Qje7znDKrvt3CUtRgMkIZYwwtzpWudTIEd6tE4UUhEGi5clbeIxyFbhuxt7jN0xqRxbJuznTN8LE3obnFqM0sjbYYgqyBrF26OGKLcTEO1HBZpSQwVyeSjYIxfioP5FEn8JEg8rS5qWygHaI8SBE=w960-h641-s-no-gm?authuser=0"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">Know more</span> <BiSolidNavigation/></Link> </Button>
             </div>
           </Card>
 
