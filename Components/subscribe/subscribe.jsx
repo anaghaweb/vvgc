@@ -76,7 +76,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
   return (
   
     <Card className="bg-sky-950 min-w-44">
-      <CardTitle  className="text-center text-xl text-white">Subscribe</CardTitle >
+      <CardTitle  className="text-center text-xl text-white mb-3">Subscribe</CardTitle >
 
     <Form {...form}>
       <CardContent className="min-w-64 ">
@@ -101,7 +101,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
         {/* PHONE */}
 
      
-        <Button className="bg-green-700" type="submit" disabled={submitting}>
+        <Button className="bg-green-700 mx-auto" type="submit" disabled={submitting}>
          {submitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" /> } 
           {submitting ? 'Please wait ': 'Subscribe'}
           
