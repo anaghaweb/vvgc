@@ -22,7 +22,7 @@ export default async function HomePage() {
       < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-home ${playfair.variable} bg-[rgb(0,0,0,0.8)]  `}        
                 >
-                     <h1 className="text-[1.9rem] md:text-7xl font-[playfair] leading-4 font-light text-center ">A Home For Hindu Devotees </h1>
+                     <h1 className="text-4xl md:text-7xl font-[playfair] leading-4 font-light text-center ">A Home For Hindu Devotees </h1>
                 </div>
 
 
