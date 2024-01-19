@@ -1,5 +1,6 @@
 import { AiOutlineMenu, AiOutlineClose, AiFillHome, AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai';
 import Link from 'next/link';
+import { SubscribeForm } from './subscribe/subscribe';
 
 export default function Footer() {
     return (
@@ -41,9 +42,7 @@ export default function Footer() {
 
                 <div
                     className='flex flex-col justify-center items-center lg:w-[200px]'>
-                    <h1 htmlFor="">Subscribe to mailing list</h1>
-                    <input className='w-full m-1 h-8' type="email" name="" id="" placeholder='email id' />
-                    <button className='w-full m-1 h-8 shadow-md bg-blue-500 text-center text-sm md:text-base hover:bg-blue-600' type="button">Subscribe</button>
+                   <SubscribeForm />
                 </div>
 
             </section>

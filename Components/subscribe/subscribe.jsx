@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { Button } from "../ui/button"
 import {useState} from 'react'
-import { SuccessfulSubmit } from "./success"
+import { SuccessfulSubscribe } from "./success"
 import {
   Form,
   FormControl,
@@ -44,7 +44,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
 
   // submit form
   async function onSubmit (values) {
-     let response = await fetch('/api/feedback', {
+     let response = await fetch('/api/subscribe', {
       method:'POST',
       headers:{
           'Accept':'application/json',
@@ -69,17 +69,17 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
 
   if(success){
     return(
-<SuccessfulSubmit />
+<SuccessfulSubscribe />
     )
   }
   else {
   return (
   
-    <Card>
-      <CardHeader className="text-center text-xl">Subscribe</CardHeader>
+    <Card className="bg-sky-950">
+      <CardHeader className="text-center text-xl text-white">Subscribe to our mailing list</CardHeader>
 
     <Form {...form}>
-      <CardContent className="min-w-80 sm:w-96">
+      <CardContent className="min-w-64 ">
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
       
 
@@ -89,9 +89,9 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subscribe to our mailing list</FormLabel>
+              
               <FormControl>
-                <Input placeholder="email" {...field}  />
+                <Input placeholder="your email id" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -101,7 +101,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
         {/* PHONE */}
 
      
-        <Button className="bg-blue-800" type="submit" disabled={submitting}>
+        <Button className="bg-green-700" type="submit" disabled={submitting}>
          {submitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" /> } 
           {submitting ? 'Please wait ': 'Subscribe'}
           
