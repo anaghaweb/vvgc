@@ -4,7 +4,7 @@ import { SubscribeForm } from './subscribe/subscribe';
 
 export default function Footer() {
     return (
-        <footer className="w-full max-w-full grid gap-2 grid-cols-1 md:grid-col-2 xl:grid-cols-5 text-white bg-sky-950 h-auto md:h-[275px] items-center justify-center px-4 py-4">
+        <footer className="w-full max-w-full grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-5 text-white bg-sky-950 max-h-full h-auto xl:h-64 items-center justify-center px-4 py-4">
             <section className='grid grid-cols-3 lg:w-[200px] md:w-[150px] w-full'>
                 <Link href={`https://www.youtube.com/live/mAH6q0YPwso?si=nAC-_69uH-ndKIV2`}><AiOutlineYoutube size={25} /></Link>
                 <Link href={`https://www.instagram.com/explore/tags/vvgcsanmartin/`}><AiOutlineInstagram size={25} /></Link>
@@ -34,14 +34,14 @@ export default function Footer() {
                 <p>6:00PM to 8:00PM</p>
                 <p>Weekends & Holidays</p>
                 <p>10:00AM to 8:00PM</p>
-                <p>Temple might be open for longer duration during special events.</p>
+                <p>Temple might be open for longer duration <br/> during special events.</p>
             </section>
 
 
             <section >
 
                 <div
-                    className='flex flex-col col-span-1 justify-center items-center lg:w-[200px]'>
+                    className='flex flex-col col-span-1 justify-center items-center'>
                    <SubscribeForm />
                 </div>
 
