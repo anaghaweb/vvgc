@@ -31,7 +31,7 @@ export async function POST(request){
             valueInputOption:'USER_ENTERED',
             requestBody:{
                 values:[
-                    [payload.username, payload.email, payload.phone, payload.message]
+                    [ payload.email]
                 ]
               }
         });
