@@ -75,7 +75,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
   else {
   return (
   
-    <Card className="bg-sky-950 min-w-44">
+    <Card className="bg-sky-950 min-w-40">
       <CardTitle  className="text-center text-xl text-white mb-3">Subscribe</CardTitle >
 
     <Form {...form}>
