@@ -9,12 +9,12 @@ export function SuccessfulSubmit(){
             <CardHeader>
             <p className="text-2xl text-blue-500">Feedback Received!</p>
             </CardHeader>
-            <CardContent className="flex items-center justify-center gap-4">
-                <FaCheckCircle className="text-green-700 text-xl"/>
+            <CardContent className="flex flex-col items-center justify-center gap-4">
+                <FaCheckCircle className="text-green-700 text-xl size-12"/>
                 <p>Thankyou for submitting your feedback!</p>
 
             </CardContent>
-            <Button className="flex w-full mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href="/"> Return to VVGC homepage</Link></Button>
+            <Button className="flex mx-auto p-6 my-1 items-center text-white bg-green-700"><Link href="/"> Return to VVGC homepage</Link></Button>
             </Card>
     )
 }
