@@ -50,6 +50,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
 
   // submit form
   async function onSubmit (values) {
+    setSubmitting(true)
      let response = await fetch('/api/feedback', {
       method:'POST',
       headers:{
@@ -58,7 +59,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
       },
       body: JSON.stringify(values)
   })
-  setSubmitting(true)
+  
   setTimeout(()=>{
     
   }, 2000)
