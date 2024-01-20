@@ -27,7 +27,7 @@ export default async function SanJose() {
            < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-san-jose ${cormorant.variable} `}        
                 >
-                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Welcome to San Jose </h1>
+                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Welcome to VVGC San Jose </h1>
                 </div>
             <main className={`${cormorant.variable} w-full mx-auto`} >
             <Card  className="flex flex-col max-w-full lg:w-[900px] bg-yellow-100 h-auto my-5 mx-auto">

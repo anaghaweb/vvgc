@@ -92,7 +92,7 @@ export default async function HomePage() {
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1689678777/VVGC%20Images/image_12.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Gallery </div>
-              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://photos.google.com/share/AF1QipPnhJjX11JcdedpRJ97_AGnHygXzxq4Gd0YsdiwYThBuxLKsobJZ3ZtnIfpVUrFkA/photo/AF1QipNR2fkwsk0gbcML9Ie4Tum9r_yHNgmbF-gVAkSj?key=elhBbTRXUkdGWklPdkRGYk5Jcy1mV0JyeXU1eFpR"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">See more Photoes</span> <BiSolidNavigation/></Link> </Button>
+              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://photos.google.com/share/AF1QipPnhJjX11JcdedpRJ97_AGnHygXzxq4Gd0YsdiwYThBuxLKsobJZ3ZtnIfpVUrFkA/photo/AF1QipNR2fkwsk0gbcML9Ie4Tum9r_yHNgmbF-gVAkSj?key=elhBbTRXUkdGWklPdkRGYk5Jcy1mV0JyeXU1eFpR"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">See more Photos</span> <BiSolidNavigation/></Link> </Button>
             </div>
           </Card>
 
@@ -108,7 +108,7 @@ export default async function HomePage() {
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914197/VVGC%20San%20Martin%20Temple%20Data/Gallery/73283570_2376249725776760_7286846728483897344_n_taqhkw.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Our History </div>
-              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"https://lh3.googleusercontent.com/pw/ABLVV85Qje7znDKrvt3CUtRgMkIZYwwtzpWudTIEd6tE4UUhEGi5clbeIxyFbhuxt7jN0xqRxbJuznTN8LE3obnFqM0sjbYYgqyBrF26OGKLcTEO1HBZpSQwVyeSjYIxfioP5FEn8JEg8rS5qWygHaI8SBE=w960-h641-s-no-gm?authuser=0"} target="_blank" className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">Know more</span> <BiSolidNavigation/></Link> </Button>
+              <Button className="flex p-1 my-1 items-center bg-orange-400"><Link href={"/about-us"}  className="flex flex-row gap-1 items-center justify-center pl-2 pr-2"><span className="px-2">Know more</span> <BiSolidNavigation/></Link> </Button>
             </div>
           </Card>
 

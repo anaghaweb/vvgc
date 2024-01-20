@@ -36,7 +36,7 @@ export default function Priest() {
                         If you would like to give Guru Dakshana to our priests, you can do so using GoFundMe.
                     </h3>
                     <div className={`text-xl w-5/5 px-8 py-[1em]`}>
-                  <Button className={`text-white font-[bold] text-2xl bg-orange-600`}> <Link  href={goFundMeURL}>Click Here</Link > </Button> 
+                  <Button className={`text-white font-[bold] text-2xl bg-orange-600`}> <Link  href={goFundMeURL} target="_blank">Click Here</Link > </Button> 
                     </div>
                 </div>
 
