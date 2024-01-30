@@ -85,10 +85,10 @@ export default async function HomePage() {
           </div>
           <CardFooter><Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700" ><Link href="/events/regular">View Regular Events</Link></Button></CardFooter>
         </Card>
-        <Card className={`w-[100%] md:max-w-screen h-auto p-1 md:p-10 my-10 grid grid-col-1 md:grid-cols-3 justify-items-center `} >
+        <Card className={`w-[100%] md:max-w-screen h-auto p-1 md:p-10 my-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4`} >
 
 
-          <Card className="flex flex-col w-full md:w-[330px] h-[400px] shadow-lg rounded-md justify-center bg-white">
+          <Card className="flex flex-col w-full md:w-[300px] h-[400px] shadow-lg rounded-md justify-center bg-white">
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1689678777/VVGC%20Images/image_12.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Gallery </div>
@@ -96,7 +96,7 @@ export default async function HomePage() {
             </div>
           </Card>
 
-          <Card className="flex flex-col w-full md:w-[330px] h-[400px] shadow-lg rounded-md justify-center bg-white">
+          <Card className="flex flex-col w-full md:w-[300px] h-[400px] shadow-lg rounded-md justify-center bg-white">
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914196/VVGC%20San%20Martin%20Temple%20Data/Gallery/68936063_2274984382569962_8933000778419798016_n_uqrzsf.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Sponsor other Events </div>
@@ -104,7 +104,7 @@ export default async function HomePage() {
             </div>
           </Card>
 
-          <Card className="flex flex-col w-full md:w-[330px] h-[400px] shadow-lg rounded-md justify-center bg-white">
+          <Card className="flex flex-col w-full md:w-[300px] h-[400px] shadow-lg rounded-md justify-center bg-white">
             <div className="relative w-full h-[200px] "><Image className="absolute object-cover place-self-start" fill sizes="100dvw" src={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914197/VVGC%20San%20Martin%20Temple%20Data/Gallery/73283570_2376249725776760_7286846728483897344_n_taqhkw.jpg`} alt="/"></Image></div>
             <div className="flex flex-col items-center justify-center h-[200px]">
               <div className="text-orange-600 my-1 p-1 font-opensans md:text-lg">Our History </div>
