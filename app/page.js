@@ -2,8 +2,8 @@ import HomePage from '@/Components/homePage';
 import * as React from 'react';
 
 export const metadata = {
-  title: 'Home',
-  description: 'VVGC- Temple',
+  title: 'VVGC- Home',
+  description: 'VVGC- Home',
 }
 
 export default async function Home() {

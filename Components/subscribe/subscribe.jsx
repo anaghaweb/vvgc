@@ -9,13 +9,13 @@ import { SuccessfulSubscribe } from "./success"
 import {
   Form,
   FormControl,
-  FormDescription,
+  
   FormField,
   FormItem,
-  FormLabel,
+  
   FormMessage,
 } from "@/Components/ui/form"
-import { Textarea } from "../ui/textarea"
+
 import {Input} from '../ui/input'
 import { Card, CardTitle , CardContent, CardFooter } from "../ui/card"
 import { Loader2 } from "lucide-react"
@@ -76,12 +76,13 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
   else {
   return (
   
-    <Card className="bg-sky-950 min-w-36">
-      <CardTitle  className="text-center text-xl text-white mb-3">Subscribe</CardTitle >
+    <div className="bg-sky-950 min-w-36">
+      
 
     <Form {...form}>
-      <CardContent className="min-w-64 ">
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <div className="min-w-56 ">
+      
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex items-center ">
       
 
         {/* EMAIL */}
@@ -92,7 +93,7 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
             <FormItem>
               
               <FormControl>
-                <Input placeholder="your email id" {...field}  />
+                <Input placeholder="Your Email id" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -102,14 +103,14 @@ const {isDirty, isValid, formState, isSubmitted, isSubmitting, isSubmitSuccessfu
         {/* PHONE */}
 
      
-        <Button className="bg-green-700 w-full" type="submit" disabled={submitting}>
+        <Button className="bg-green-700 border-none rounded-none" type="submit" disabled={submitting}>
          {submitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" /> } 
           {submitting ? 'Please wait ': 'Subscribe'}
           
           </Button>
       </form>
-      </CardContent>
+      </div>
     </Form>
-    </Card>
+    </div>
   )
 }}
