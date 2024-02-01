@@ -1,19 +1,25 @@
-import { Cormorant } from 'next/font/google'
 import React from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 
-const cormorant = Cormorant({subsets: ['latin'], variable:'--font-cormorant', fallback: 'sans'})
 
-export default function Regular() {
-   return (
-        <Card className ={cormorant.variable} >
-              <CardHeader className=' text-[2rem] leading-7 px-1 py-2 md:text-4xl text-gray-900 bg-orange-400 md:leading-10 md:font-semibold' >Regular Events</CardHeader>
-            {
-                result.content.map((data, index) => {
-                    
-                    return(  
-                     <React.Fragment key={index}>                  
-                    <CardContent className='grid grid-cols-6 gap-x-1 gap-y-3 my-5 pl-6'>
+const EventCard = ({ events }) => {
+  const getDay = () => {
+    const today = new Date();
+    const num = today.getDay();
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    return daysOfWeek[num];
+  };
+
+  const currentDay = getDay();
+  const data = events.find((event) => event.day === currentDay);
+
+  if (!data) {
+    return <div>No events for today</div>;
+  }
+
+  return (
+    <div>
+      
+      <div className='grid grid-cols-6 gap-x-1 gap-y-3 my-5 pl-6'>
                         <div className='text-start col-span-full text-2xl font-medium leading-7 
                         text-blue-950 p-2}'>{data.day}</div>
                          
@@ -45,13 +51,9 @@ export default function Regular() {
                         justify-end px-1 py-0 border-r md:text-xl md:leading-6 }`}>{data.time5}:</div>
                         <div className='col-span-5 text-sm w-full text-start px-1 py-0 md:text-xl md:leading-6'>{data.event5}</div></>}
                     <hr/>        
-                    </CardContent>
-                    </React.Fragment>
-                    )
-                    
-                 })
-             
-             }
-        </Card>)
-    
+                    </div>
+    </div>
+  );
 };
+
+export default EventCard;

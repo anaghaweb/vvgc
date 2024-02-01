@@ -1,4 +1,4 @@
-import Goshala from "@/Components/goshala";
+import Goshala from "../../Components/goshala";
 
 export default function PageViewGoshala(){
 

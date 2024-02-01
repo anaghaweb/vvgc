@@ -6,10 +6,8 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "./ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import result from '@/json/regularevents.json'
-import { cormorant } from "@/app/fonts";
-import Youtube from "@/lib/icons/youtube";
-import Zoom from "@/lib/icons/zoom";
-import FaceBook from "@/lib/icons/facebook";
+import { cormorant } from "../app/fonts";
+
 
 
 

@@ -1,5 +1,5 @@
-import Tablist from "@/Components/tabs"
-import { FetchData } from "@/Components/fetchdata";
+import Tablist from "../../Components/ui/tabs"
+import { FetchData } from "../../../Components/fetchdata";
 export default async function Tabs(){
 
     // const data = await FetchData();

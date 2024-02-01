@@ -1,12 +1,12 @@
 import React from "react";
-import { cormorant } from "../fonts";
-import {FetchData} from "@/Components/fetchdata";
-import SponsorEvent from "@/Components/sponsor";
+import { cormorant } from "../app/fonts";
+import { FetchData } from "../../../Components/fetchdata";
+import SponsorEvent from "../../../Components/sponsor";
 import Link from 'next/link'
-import Youtube from "@/lib/icons/youtube";
-import FaceBook from "@/lib/icons/facebook";
-import Zoom from "@/lib/icons/zoom";
-import { Card, CardHeader } from "@/Components/ui/card";
+import Youtube from "../../../lib/icons/youtube";
+import Zoom from "../../../lib/icons/zoom";
+import FaceBook from "../../../lib/icons/facebook";
+import { Card, CardHeader } from "../../Components/ui/card";
    
 
 export const metadata = {

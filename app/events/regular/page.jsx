@@ -1,14 +1,13 @@
 import React from "react";
-import { FetchData } from "@/Components/fetchdata";
+import { FetchData } from "../../../Components/fetchdata";
 import { cormorant } from "../../fonts";
-import Regular from "@/Components/regular";
+import Regular from "../../../Components/regular";
 import Link from "next/link";
-import Youtube from "@/lib/icons/youtube";
-import Zoom from "@/lib/icons/zoom";
-import FaceBook from "@/lib/icons/facebook";
-import Tablist from "@/Components/tabs";
-import { Button } from "@/Components/ui/button";
-import { Card, CardContent, CardHeader } from "@/Components/ui/card";
+import Youtube from "../../../lib/icons/youtube";
+import Zoom from "../../../lib/icons/zoom";
+import FaceBook from "../../../lib/icons/facebook";
+import { Button } from "../../../Components/ui/button";
+import { Card, CardContent, CardHeader } from "../../../Components/ui/card";
 
 export const metadata = {
   title: "Regular Events",

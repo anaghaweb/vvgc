@@ -1,4 +1,4 @@
-import { FeedbackForm } from "@/Components/feedback/feedback"
+import { FeedbackForm } from "../../Components/feedback/feedback"
 
 export const metadata = {
     title: 'Feedback',

@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import { FcGoogle } from 'react-icons/fc'
 import { PiAppleLogoDuotone } from 'react-icons/pi';
-import { SiMicrosoftoutlook } from 'react-icons/si';
 import {TfiMicrosoftAlt} from "react-icons/tfi";
 
 function convertToGoogleTimeFormat(timeString) {
@@ -25,7 +24,7 @@ function convertToGoogleTimeFormat(timeString) {
 
     // Format the result
     const formattedTime = `${String(hours).padStart(2, '0')}${String(minutes).padStart(2, '0')}000`;
-
+  
     return formattedTime;
 }
 
@@ -48,7 +47,7 @@ function convertToAppleTimeFormat(timeString) {
 
     // Format the result
     const formattedTime = `${String(hours).padStart(2, '0')}${String(minutes).padStart(2, '0')}000Z`;
-
+    //console.log(formattedTime);
     return formattedTime;
 }
 
@@ -72,7 +71,7 @@ function convertToOutlookTimeFormat(timeString) {
 
     // Format the result
     const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00.000`;
-
+    //console.log(formattedTime);
     return formattedTime;
 }
 

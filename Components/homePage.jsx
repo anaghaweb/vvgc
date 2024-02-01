@@ -1,6 +1,6 @@
 import { FetchData } from "./fetchdata";
-import SponsorEvent from "@/Components/sponsor";
-import { cormorant, playfair } from "@/app/fonts";
+import SponsorEvent from "./sponsor";
+import { cormorant, playfair } from "../app/fonts";
 import { BiSolidNavigation } from 'react-icons/bi';
 import Image from "next/image";
 import { FaExternalLinkAlt } from 'react-icons/fa'
@@ -8,7 +8,8 @@ import * as React from 'react'
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import Link from "next/link";
 import { Button } from "./ui/button";
-
+import {events} from '../data/regularEvent'
+import EventCard from './dailyEvent'
 
 export default async function HomePage() {
 
@@ -34,8 +35,8 @@ export default async function HomePage() {
           <div className="text-blue-600 ">
             <CardHeader className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</CardHeader></div>
           <CardContent className="flex flex-col gap-6">
-          
-    <div>
+            <EventCard events = {events} />
+          {/* <div>
           <div className="text-sm md:text-xl ">Time: 6:30PM</div>
           <div className="text-sm md:text-base ">Shiva Abisheka, Aarthi and Manthra Pushpa</div>
           </div>
@@ -47,7 +48,7 @@ export default async function HomePage() {
         <div>
           <div className="text-sm md:text-xl  ">Time: 8:00PM</div>
           <div className="text-sm md:text-base  ">Sri Jai Jagadesha Hare Aarathi</div>
-          </div>
+          </div> */}
           </CardContent>
         </Card>
         </div>

@@ -1,14 +1,13 @@
 import React from "react";
-import RenderEvent from "@/Components/event";
-import { FetchData } from "@/Components/fetchdata";
+import RenderEvent from "../../../Components/event";
+import { FetchData } from "../../../Components/fetchdata";
 import { cormorant } from "../../fonts";
 import Link from "next/link";
-import Youtube from "@/lib/icons/youtube";
-import Zoom from "@/lib/icons/zoom";
-import FaceBook from "@/lib/icons/facebook";
-import Tablist from "@/Components/tabs";
-import { Button } from "@/Components/ui/button";
-import { Card,CardHeader, CardContent, CardTitle } from "@/Components/ui/card";
+import Youtube from "../../../lib/icons/youtube";
+import Zoom from "../../../lib/icons/zoom";
+import FaceBook from "../../../lib/icons/facebook";
+import { Button } from "../../../Components/ui/button";
+import { Card,CardHeader, CardContent, CardTitle } from "../../../Components/ui/card";
 
 
 export const metadata = {

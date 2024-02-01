@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SubscribeForm } from "./subscribe/subscribe";
 import { FaFacebook, FaPhoneAlt, FaRegCopyright } from "react-icons/fa";
 import { IoLogoYoutube, IoMdMail } from "react-icons/io";
-import { Separator } from "@/Components/ui/separator";
+import { Separator } from "./ui/separator"
 
 export default function Footer() {
   return (

@@ -5,15 +5,13 @@ import * as z from "zod"
 import { Button } from "../ui/button"
 import {useState} from 'react'
 import { SuccessfulSubmit } from "./success"
-import {
-  Form,
+ import { Form,
   FormControl,
   FormDescription,
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
-} from "@/Components/ui/form"
+  FormMessage,} from "../ui/form"
 import { Textarea } from "../ui/textarea"
 import {Input} from '../ui/input'
 import { Card, CardHeader, CardContent, CardFooter } from "../ui/card"
