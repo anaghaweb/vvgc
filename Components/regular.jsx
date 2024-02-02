@@ -1,10 +1,18 @@
 import { Cormorant } from 'next/font/google'
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import localJsonData from './staticData';
 
 const cormorant = Cormorant({subsets: ['latin'], variable:'--font-cormorant', fallback: 'sans'})
 
-export default function Regular() {
+export default async function Regular() {
+
+    const result = await localJsonData();
+    if(!result){
+        return <div>...No data found. Retry after some time.</div>
+    }
+
+    else{
    return (
         <Card className ={cormorant.variable} >
               <CardHeader className=' text-[2rem] leading-7 px-1 py-2 md:text-4xl text-gray-900 bg-orange-400 md:leading-10 md:font-semibold' >Regular Events</CardHeader>
@@ -52,6 +60,7 @@ export default function Regular() {
                  })
              
              }
-        </Card>)
+        </Card>)}
+        
     
 };
