@@ -11,10 +11,7 @@ export const metadata = {
     description: 'Help us Grow',
 }
 
-
 export default function Donations() {
-
-
 
     const divine_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg';
 
