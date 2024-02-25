@@ -40,7 +40,7 @@ const navLinks = [
 
   {
     name: 'San Jose Temple',
-    link: '/san-hose-temple'
+    link: '/san-jose-temple'
   },
   {
     name:'Goshala',
