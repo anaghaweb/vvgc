@@ -9,12 +9,12 @@ export const metadata = {
     
   }],
   viewport: "width=device-width, initial-scale=1",
-  keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva","vvgc"]
+  keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva","vvgc", "temples in california", "ganapathi temples in california"]
 };
 
 export default async function Home() {
 
-      return<React.Fragment>
+      return <React.Fragment>
         <HomePage />
     </React.Fragment>
   

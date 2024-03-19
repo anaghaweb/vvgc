@@ -70,14 +70,26 @@ export default function Header() {
         text-[#000033]">
 
           {/* Large to medium scree navigation bar */}
-          {navLinks.map(({ name, link }) => {
+          {/* {navLinks.map(({ name, link }) => {
             return (
               <li key={name} className={
                 `${pathname === link ?
                   'p-2 md:text-[12px] lg:text-xl m-[4px] text-center border-b-2 border-indigo-950 hover:border-b-transparent'
-                  :
+                  : 
                   'p-2 text-center m-[4px]'}                 
                   hover:border-b-2  hover:border-b-black`} >
+                <Link href={link}>{name}</Link></li>
+            )
+          })} */}
+          {navLinks.map(({ name, link }) => {
+            return (
+              <li key={name} className={
+  pathname === link ?
+    
+    'p-2 md:text-[12px] lg:text-xl m-[4px] text-center border-b-2 border-indigo-950 hover:border-b-transparent' : 
+    (name === 'Maharudram') ? 'p-2 bg-red-500 text-white hover:bg-red-700 rounded-md m-[4px]' :
+    'p-2 text-center m-[4px] hover:border-b-2 hover:border-b-black'
+                }>
                 <Link href={link}>{name}</Link></li>
             )
           })}
@@ -94,6 +106,7 @@ export default function Header() {
           <Link href={"/donations"}>Support Us</Link>
 
         </Button>
+        
         {/* {hamburger menu icon open and close } */}
         <div onClick={smallScreenNavigation} className="flex flex-col lg:hidden p-3">
           {
@@ -118,7 +131,7 @@ export default function Header() {
               {
                 navLinks.map(({ name, link }) => {
                   return (
-                    <li key={name} onClick={smallScreenNavigation} className="my-2 hover:cursor-pointer"><Link href={link}>{name}</Link> </li>
+                    <li key={name} onClick={smallScreenNavigation} className={(name === 'Maharudram') ? 'p-2 bg-red-500 text-white hover:bg-red-700 rounded-md m-[4px]' :"my-2 hover:cursor-pointer"}><Link href={link}>{name}</Link> </li>
                   )
                 })
               }

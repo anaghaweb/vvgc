@@ -29,7 +29,7 @@ export default async function RenderEvent({ data }) {
 
        <hr className=" my-2 " />
 
-       {data.imageurl && <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]"><Link href={data.imageurl} target="_blank"><Image src={data.imageurl} alt="Event" fill quality={75} sizes={'100vw'} className="absolute object-contain cursor-pointer" /></Link></div>}
+       {data.imageurl && <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[500px]"><Link href={data.imageurl} target="_blank"><Image src={`${data.imageurl}`} alt="Event" fill quality={75} sizes={'100vw'} className="absolute object-contain cursor-pointer" /></Link></div>}
 
        {data.imageurl && <hr className=" my-2 " />}
 
@@ -42,7 +42,7 @@ export default async function RenderEvent({ data }) {
              : data.startTime && data.endTime && !data.description ? ""
                : <div key={index + data.title} className="col-span-10 text-xl ">{data.description}<br/></div>
          }
-         {[1, 2, 3, 4, 5, 6].map((num, index) => (
+         {[1, 2, 3, 4, 5, 6, 7, 8].map((num, index) => (
            data[`time_${num}`] ? (
              <>
                <div key={num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
@@ -54,9 +54,14 @@ export default async function RenderEvent({ data }) {
              </>
            ) : (
              data[`event_${num}`] ? (
+              <>
+              <div key={num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
+                 {"-"}
+               </div>
                <div key={index} className="col-span-8 font-inter text-[13px] md:text-base">
                  {data[`event_${num}`]}
                </div>
+               </>
              ) : (
                ""
              )
@@ -72,8 +77,14 @@ export default async function RenderEvent({ data }) {
        {data.sponsorLink &&
        
          <Link className="flex justify-start items-center gap-2 " href={data.sponsorLink} target="_blank">
-           <h6 className=" text-base md:text-xl text-indigo-950  ">Sponsor this event</h6> 
+           <h6 className=" text-base md:text-xl text-indigo-950  ">{data.link_keyword}</h6> 
            <FaExternalLinkAlt className="text-lime-700" /></Link>}
+
+           {data.registerLink &&
+       
+       <Link className="flex justify-start items-center gap-2 " href={data.registerLink} target="_blank">
+         <h6 className=" text-base md:text-xl text-indigo-950  ">{data.link_keyword_1}</h6> 
+         <FaExternalLinkAlt className="text-lime-700" /></Link>}
            
        <div className="flex md:flex-row  p-2">
          <span className="justify-center md:text-xl md:text-left text-blue-950 pr-2">Add to Calendar: </span>

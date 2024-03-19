@@ -23,12 +23,23 @@ export default async function HomePage() {
       < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-home ${playfair.variable} bg-[rgb(0,0,0,0.8)]  `}        
                 >
-                     <h1 className="text-6xl md:text-7xl font-[playfair] text-wrap font-light text-center ">A Home  For Hindu Devotees </h1>
+                     <h1 className="text-6xl md:text-7xl font-[playfair] text-wrap font-light text-center ">A Home For Hindu Devotees </h1>
+        {/* MAHARUDRAM BUTTON */}
+        <Button type="button" variant="filled"
+          className="absolute self-center top-5 mx-2  md:m-1 min-w-max py-1 px-3 h-12 w-[160px]
+        shadow-lg bg-red-500 rounded-md hover:bg-green-300 hover:text-black text-white
+          font-sans text-lg text-pretty font-bold
+        "
+        >
+          <Link href={"/events/special/maharudram"}>Click here - Maharudram</Link>
+          <span className="absolute flex -top-4 -left-7 -mt-1 -mr-1 h-10 bg-yellow-500 text-black rounded-full px-2 py-1 text-xs items-center font-bold ">New!</span>
+        </Button>
                 </div>
 
 
       <main className={`${cormorant.variable} flex flex-col max-w-screen overflow-hidden h-auto from-gray-100 via-blue-100 to-slate-100`} >
-
+      
+     
       <div className="grid grid-cols-1 lg:grid-cols-6">
         <div className="col-span-1 lg:col-span-4 h-auto md:h-[400px] my-2 md:my-0 flex-1 text-center">
           <Card className={`w-[100%] h-auto md:h-full p-1 md:p-1`}>
@@ -36,19 +47,6 @@ export default async function HomePage() {
             <CardHeader className="text-2xl md:text-4xl font-cormorant">Today at the Temple:</CardHeader></div>
           <CardContent className="flex flex-col gap-6">
             <EventCard events = {events} />
-          {/* <div>
-          <div className="text-sm md:text-xl ">Time: 6:30PM</div>
-          <div className="text-sm md:text-base ">Shiva Abisheka, Aarthi and Manthra Pushpa</div>
-          </div>
-          <div>
-          <div className="text-sm md:text-xl ">Time: 7:30AM</div>
-          <div className="text-sm md:text-base  ">Sri Shridi Sai Haarathulu Dhoop Aarathi</div>
-
-          </div>
-        <div>
-          <div className="text-sm md:text-xl  ">Time: 8:00PM</div>
-          <div className="text-sm md:text-base  ">Sri Jai Jagadesha Hare Aarathi</div>
-          </div> */}
           </CardContent>
         </Card>
         </div>
@@ -72,7 +70,7 @@ export default async function HomePage() {
       </div>
         
         {/* Upcoming events */}
-        <Card className="w-[100%] h-auto md:h-auto  md:p-10">
+        <Card className="w-[100%] h-auto md:p-10">
           <div>
             <h1 className="text-2xl md:text-4xl font-cormorant text-blue-500 ">Upcoming Special Events</h1>
           </div>
