@@ -8,6 +8,8 @@ import Zoom from "../../../lib/icons/zoom";
 import FaceBook from "../../../lib/icons/facebook";
 import { Button } from "../../../Components/ui/button";
 import { Card, CardContent, CardHeader } from "../../../Components/ui/card";
+import {EventTabs} from "../../../Components/eventTabs/eventTabs";
+
 
 export const metadata = {
   title: "Regular Events",
@@ -98,6 +100,7 @@ export default async function RegularEventPage() {
         <section className="my-4">
           <Regular />
         </section>
+        <EventTabs data={data}/>
       </main>
     </>
   );

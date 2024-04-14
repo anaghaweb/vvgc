@@ -14,8 +14,8 @@ export default async function Regular() {
 
     else{
    return (
-        <Card className ={cormorant.variable} >
-              <CardHeader className=' text-[2rem] leading-7 px-1 py-2 md:text-4xl text-gray-900 bg-orange-400 md:leading-10 md:font-semibold' >Regular Events</CardHeader>
+        <Card className ={`${cormorant.variable} lg:w-[900px] mx-auto`} >
+              <CardHeader className=' text-[2rem]  text-orange-600 border-b-2 border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold' >Regular Events</CardHeader>
             {
                 result.content.map((data, index) => {
                     

@@ -8,6 +8,8 @@ import Zoom from "../../../lib/icons/zoom";
 import FaceBook from "../../../lib/icons/facebook";
 import { Button } from "../../../Components/ui/button";
 import { Card,CardHeader, CardContent, CardTitle } from "../../../Components/ui/card";
+import { EventTabs } from "../../../Components/eventTabs/eventTabs";
+
 
 
 export const metadata = {
@@ -53,29 +55,10 @@ export default async function Event() {
                     </CardContent>
              </Card>
              </div>             
-             <div className="grid grid-cols-2 max-w-full lg:w-[900px] justify-item-center h-auto mx-auto gap:3 md:gap-10">
-             <Button
-            asChild
-            className={`w-fit md:w-full text-white bg-blue-400 mx-auto md:h-16 md:text-2xl`}
-          >
-            <Link href={"/events/special"}>Special Events</Link>
-          </Button>
-          <Button
-            asChild
-            className={`w-fit md:w-full text-white bg-blue-400 mx-auto md:h-16 md:text-2xl `}
-          >
-            <Link href={"/events/regular"}>Regular Events</Link>
-          </Button>
-                
-             </div>
-             <hr/>
-                <section className={cormorant.variable}>                
-                    <RenderEvent data={data} />
-                    <hr className="my-4" />
-                </section>
+            
 
                 <hr />
-        
+                <EventTabs data={data}/>
 
             </main>
 
