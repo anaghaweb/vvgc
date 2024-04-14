@@ -171,7 +171,7 @@ export default function Header() {
                     : "p-2 text-center m-[4px] hover:bg-orange-600 hover:border-b-black"
                     }
                   >
-                    {link = "https://old.vvgc.org" ? (
+                    {link === "https://old.vvgc.org" ? (
                   <Link href={link} target="_blank">{name}</Link>
                 ) : (
                   <Link href={link}>{name}</Link>
