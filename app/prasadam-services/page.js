@@ -23,8 +23,8 @@ export default function Prasadam() {
                      <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Prasadam Services </h1>
                 </div> 
 
-            <main className={`${cormorant.variable} m-auto`}>
-                <section className="flex flex-col w-[full] md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-normal text-base  text-black shadow-slate-900 drop-shadow-md rounded-sm bg-white">
+            <main className={`${cormorant.variable} m-auto `}>
+                <section className="flex flex-col w-[full] max-w-screen-lg h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-normal text-base  text-black shadow-slate-900 drop-shadow-md rounded-sm bg-white">
 
                     <h2>Daily Maha Prasadam offered to all deities: Pongal, Jaggery Pongal, Puliyotharai (Tamarind Rice).
                         Maha prasadam will be served daily as annadhanam (Preethi Bhoj) at VVGC San Martin to everyone.

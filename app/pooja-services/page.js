@@ -24,8 +24,8 @@ export default function Pooja() {
                 >
                      <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Pooja Services </h1>
                 </div> 
-            <main className={`${cormorant.variable} m-auto`}>
-                <section className="flex flex-col w-[full] md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-cormorant font-medium text-base md:text-2xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
+            <main className={`${cormorant.variable} m-auto `}>
+                <section className="flex flex-col w-full max-w-screen-lg  h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-cormorant font-medium text-base md:text-2xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
                     <h2>At VVGC, we perform a variety of poojas and events for our devotees. Our priests can conduct the events, both at home or at the temple premises.
                     </h2>
                     <hr />
@@ -35,7 +35,7 @@ export default function Pooja() {
                         Note: that these are the dollar amounts that are set by the temple. Devotees are welcome to contribute additional dakshina directly to the priests during the event.
                     </h4>
                 </section>
-                <section className="flex flex-col w-full md:w-[900px] h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-medium text-base md:text-xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
+                <section className="flex flex-col w-full max-w-screen-lg h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-medium text-base md:text-xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
                     <ul>
                         <li className="md:text-2xl">For Poojas and Rituals Contact:</li>
                         <hr />
