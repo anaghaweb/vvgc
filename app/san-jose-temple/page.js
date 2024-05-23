@@ -10,8 +10,8 @@ import { Card, CardHeader } from "../../Components/ui/card";
    
 
 export const metadata = {
-    title: 'San Jose Temple',
-    description: 'Second Branch',
+    title: 'Lakshmi Ganapathi Temple',
+    description: 'San Jose',
 }
 
 export default async function SanJose() {
@@ -24,10 +24,13 @@ export default async function SanJose() {
 
     return (
         <React.Fragment>
-           < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+           < div className={`flex flex-col gap-y-4 justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-san-jose ${cormorant.variable} `}        
                 >
-                     <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Welcome to VVGC San Jose </h1>
+                    <h1 className="text-[1.3rem] md:text-[3rem] font-[cormorant] md:mb-3">Welcome to </h1>
+                     <h1 className="text-[1.3rem] md:text-[4rem] font-[cormorant] md:mb-2">Lakshmi Ganapathi Temple,</h1>
+                     
+                     <h1 className="text-[1.3rem] md:text-[4rem] font-[cormorant]">San Jose </h1>
                 </div>
             <main className={`${cormorant.variable} w-full mx-auto`} >
             <Card  className="flex flex-col max-w-full lg:w-[900px] bg-yellow-100 h-auto my-5 mx-auto">
@@ -62,7 +65,7 @@ export default async function SanJose() {
 
                 <section className="w-[100%] h-auto md:h-auto  md:p-10">
                     <div>
-                        <h1 className="text-2xl md:text-4xl font-cormorant text-red-950 ">We invite you to attends these upcoming events</h1>
+                        <h1 className="text-2xl md:text-3xl font-cormorant  px-2">We invite you to attends these upcoming events:</h1>
                     </div>
                     <hr className="h-[2px] bg-red-800 my-2 " />
                     <div className="my-4 w-[100%] grid grid-cols-1 md:grid-cols-2 ">

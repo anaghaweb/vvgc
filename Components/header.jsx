@@ -49,17 +49,17 @@ const navLinks = [
   },
 
   {
-    name: "San Jose Temple",
+    name: "Lakshmi Ganapathi Temple",
     link: "/san-jose-temple",
   },
   {
     name: "Goshala",
     link: "/goshala",
   },
-  {
-    name: "Old Website",
-    link: "https://old.vvgc.org",
-  },
+  // {
+  //   name: "Old Website",
+  //   link: "https://old.vvgc.org",
+  // },
 ];
 
 export default function Header() {
@@ -121,12 +121,12 @@ export default function Header() {
         <Button
           type="button"
           variant="outlined"
-          className=" mx-2 md:m-1 min-w-max py-1 px-2 h-9 w-[100px]
+          className=" mx-2 md:my-1 md:mr-5 min-w-max py-1 px-2 h-9 w-[100px]
         shadow-lg  bg-emerald-600 rounded-md hover:bg-green-700 hover:text-white text-white
            right-3 font-cormorant font-large
         "
         >
-          <Link href={"/donations"}>Support Us</Link>
+          <Link href={"/donations"}>Donate</Link>
         </Button>
 
         {/* {hamburger menu icon open and close } */}

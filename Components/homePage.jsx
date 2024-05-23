@@ -27,21 +27,7 @@ export default async function HomePage() {
           A Home For Spiritual Devotees{" "}
         </h1>
         {/* MAHARUDRAM BUTTON */}
-        <Button
-          type="button"
-          variant="filled"
-          className="absolute self-center top-5 mx-2  md:m-1 min-w-max py-1 px-3 h-12 w-[160px]
-        shadow-lg bg-red-500 rounded-md hover:bg-green-300 hover:text-black text-white
-          font-sans text-lg text-pretty font-bold"
-        >
-          <Link href={"/events/special/maharudram"} target="_blank">
-            {" "}
-            Click here - Maharudram{" "}
-          </Link>
-          <span className="absolute flex -top-4 -left-7 -mt-1 -mr-1 h-10 bg-yellow-500 text-black rounded-full px-2 py-1 text-xs items-center font-bold ">
-            New!
-          </span>
-        </Button>
+        
       </div>
 
       <main
@@ -91,8 +77,8 @@ export default async function HomePage() {
 
         {/* Upcoming events */}
         <Card className="w-[100%] h-auto md:p-10">
-          <div>
-            <h1 className="text-2xl md:text-4xl font-cormorant text-blue-500 ">
+          <div className="p-2">
+            <h1 className="text-2xl md:text-4xl font-cormorant text-blue-500">
               Upcoming Special Events
             </h1>
           </div>

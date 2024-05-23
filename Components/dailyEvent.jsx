@@ -2,19 +2,24 @@ import React from 'react';
 
 
 const EventCard = ({ events }) => {
-  const getDay = () => {
+  const dayOfTheWeek = () => {
     const today = new Date();
     const num = today.getDay();
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     return daysOfWeek[num];
   };
 
-  const currentDay = getDay();
+  const currentDay = dayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
 
   if (!data) {
-    return <div>No events for today</div>;
+    return <>
+    
+    <div>No events for today</div>;
+    </>
+    
   }
+
 
   return (
     <div>

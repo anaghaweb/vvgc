@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="inline-flex gap-2 items-center">
           <IoMdMail /> info@vvgc.org
         </div>
-        <p>11355, Monterey Hwy,</p>
+        <p>11355, Monterey Hwy</p>
         <p>San Martin, CA 95046</p>
       </section>
 
@@ -69,12 +69,12 @@ export default function Footer() {
             </p>
             <div className="flex  text-stone-300 items-center justify-center gap-3">
               <Link
-                href={`https://www.youtube.com/live/mAH6q0YPwso?si=nAC-_69uH-ndKIV2`}
+                href={`https://www.youtube.com/@vaidicavidhyaganapathicent2187`}
               >
                 <IoLogoYoutube size={25} />
               </Link>
               <Link
-                href={`https://www.instagram.com/explore/tags/vvgcsanmartin/`}
+                href={`https://www.instagram.com/vvgctemple/`}
               >
                 <AiFillInstagram size={25} />
               </Link>

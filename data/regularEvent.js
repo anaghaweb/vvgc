@@ -52,7 +52,7 @@ export const events = [
         "event4": ""
     },
     {
-        "day": "Thrusday",
+        "day": "Thursday",
         "time": "6:30PM",
         "event": "Shiva Abisheka, Aarthi and Manthra Pushpa",
         "time1": "7:30PM",
