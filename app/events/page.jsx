@@ -1,27 +1,29 @@
 import React from "react";
-import RenderEvent from "../../../Components/event";
-import { FetchData } from "../../../Components/fetchdata";
-import { cormorant } from "../../fonts";
+import { FetchData } from "../../Components/fetchdata";
+import localJsonData from "../../Components/staticData";
+import { cormorant } from "../fonts";
 import Link from "next/link";
-import Youtube from "../../../lib/icons/youtube";
-import Zoom from "../../../lib/icons/zoom";
-import FaceBook from "../../../lib/icons/facebook";
-import { Button } from "../../../Components/ui/button";
+import Youtube from "../../lib/icons/youtube";
+import Zoom from "../../lib/icons/zoom";
+import FaceBook from "../../lib/icons/facebook";
+
 import {
   Card,
   CardHeader,
   CardContent,
   CardTitle,
-} from "../../../Components/ui/card";
-import { EventTabs } from "../../../Components/eventTabs/eventTabs";
+} from "../../Components/ui/card";
+import { EventTabs } from "../../Components/eventTabs/eventTabs";
+
 
 export const metadata = {
-  title: "Special Events",
-  description: "Help us Grow",
+  title: "Events",
+  description: "Temple performs all types of events",
 };
 
 export default async function Event() {
   const data = await FetchData();
+  const regularEventData = await localJsonData();
   const heroimgURL =
     "https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0006_vhnxgu.jpg";
 
@@ -86,7 +88,7 @@ export default async function Event() {
         </div>
 
         <hr />
-        <EventTabs data={data} />
+        <EventTabs data={data} regularEventData={regularEventData}/>
       </main>
     </>
   );

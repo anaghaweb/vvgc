@@ -4,11 +4,11 @@ import CalenderLinks from "./calendarlinks";
 import Link from "next/link";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "./ui/card";
+import { Numans } from "next/font/google";
 
 
 
-
-export default async function RenderEvent({ data }) {
+export default function RenderEvent({ data }) {
 
 
   return (
@@ -19,7 +19,7 @@ export default async function RenderEvent({ data }) {
         <hr />
         {data.content.map((data, index) => (
           !!data.title ?
-            <Card key={index} className={`bg-blue-100 flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
+            <Card key={data?.title+index} className={`bg-blue-100 flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}>
 
               <CardHeader className=" text-2xl    text-cyan-950" >{new Date(data.date).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })}
 
@@ -33,32 +33,33 @@ export default async function RenderEvent({ data }) {
 
               {data.imageurl && <hr className=" my-2 " />}
 
-              <CardContent key={index + data.title} className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
+              <CardContent 
+                className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
                 {data.startTime && data.endTime && data.description ?
-                  <><div key={index + data.title} className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">{data.startTime}</div><div key={index + data.title} className="col-span-8 text-[13px] md:text-base ">{data.description}</div></>
+                  <><div className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">{data.startTime}</div><div className="col-span-8 text-[13px] md:text-base ">{data.description}</div></>
                   : data.startTime && !data.endTime ?
-                    <><div key={index + data.title} className="col-span-2 border-r-[1px] text-blue-900 text-[13px]
-                 md:text-base font-sans flex items-center justify-center px-[4px]">{data.startTime}:</div><div key={index + data.title} className="col-span-8 text-[13px] md:text-base">{data.description}</div></>
+                    <><div className="col-span-2 border-r-[1px] text-blue-900 text-[13px]
+                 md:text-base font-sans flex items-center justify-center px-[4px]">{data.startTime}:</div><div className="col-span-8 text-[13px] md:text-base">{data.description}</div></>
                     : data.startTime && data.endTime && !data.description ? ""
-                      : <div key={index + data.title} className="col-span-10 text-xl ">{data.description}<br /></div>
+                      : <div className="col-span-10 text-xl ">{data.description}<br /></div>
                 }
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((num, index) => (
                   data[`time_${num}`] ? (
                     <>
-                      <div key={num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
+                      <div key={data?.date+num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
                         {data[`time_${num}`]}:
                       </div>
-                      <div className="col-span-8 px-1 text-[13px] md:text-base w-full">
+                      <div key={index+num} className="col-span-8 px-1 text-[13px] md:text-base w-full">
                         {data[`event_${num}`]}
                       </div>
                     </>
                   ) : (
                     data[`event_${num}`] ? (
                       <>
-                        <div key={num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
+                        <div key={data?.date+num} className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1">
                           {"-"}
                         </div>
-                        <div key={index} className="col-span-8 font-inter text-[13px] md:text-base">
+                        <div key={index+num} className="col-span-8 font-inter text-[13px] md:text-base">
                           {data[`event_${num}`]}
                         </div>
                       </>

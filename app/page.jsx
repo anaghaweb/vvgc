@@ -8,9 +8,14 @@ export const metadata = {
     name: "BSK",
     
   }],
-  viewport: "width=device-width, initial-scale=1",
+  
   keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva","vvgc", "temples in california", "ganapathi temples in california"]
 };
+
+export const viewport = {
+  width:'device-width',
+  initialScale:1,
+}
 
 export default async function Home() {
 

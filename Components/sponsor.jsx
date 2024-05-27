@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 export default function SponsorEvent({ data, index }) {
   return (
     <Card
-      key={index + data.title}
+      key={data?.date}
       className={` flex flex-col w-full sm:w-full m-auto my-2 sm:p-2 bg-blue-100`}
     >
       <CardHeader className=" text-2xl   text-cyan-950">
@@ -63,7 +63,7 @@ export default function SponsorEvent({ data, index }) {
               {data.startTime}
             </div>
             <div
-              key={index + data.title}
+             
               className="col-span-8 text-[13px] md:text-base "
             >
               {data.description}
@@ -78,7 +78,7 @@ export default function SponsorEvent({ data, index }) {
               {data.startTime}:
             </div>
             <div
-              key={index + data.title}
+              
               className="col-span-8 text-[13px] md:text-base"
             >
               {data.description}
@@ -96,19 +96,19 @@ export default function SponsorEvent({ data, index }) {
           data[`time_${num}`] && data[`event_${num}`] ? (
             <>
               <div
-                key={num}
+                key={num+data.title}
                 className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
               >
                 {data[`time_${num}`]}:
               </div>
-              <div className="col-span-8 px-1 text-[13px] md:text-base w-full">
+              <div key={num+index+1} className="col-span-8 px-1 text-[13px] md:text-base w-full">
                 {data[`event_${num}`]}
               </div>
             </>
           ) : data[`event_${num}`] ? (
             <>
               <div
-                key={index}
+                key={index+1}
                 className="col-span-10 font-inter text-[13px] md:text-base"
               >
                 {data[`event_${num}`]}

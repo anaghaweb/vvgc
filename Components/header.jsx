@@ -28,7 +28,7 @@ const navLinks = [
 
   {
     name: "Events",
-    link: "/events/special",
+    link: "/events?type=special",
   },
   {
     name: "Pooja Services",

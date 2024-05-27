@@ -1,13 +1,12 @@
 import { Cormorant } from 'next/font/google'
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
-import localJsonData from './staticData';
 
 const cormorant = Cormorant({subsets: ['latin'], variable:'--font-cormorant', fallback: 'sans'})
 
-export default async function Regular() {
+export default function Regular({regularEventData}) {
 
-    const result = await localJsonData();
+    const result = regularEventData;
     if(!result){
         return <div>...No data found. Retry after some time.</div>
     }
