@@ -8,8 +8,9 @@ export async function FetchData() {
 
         {
             next: {
-                revalidate: 60
-            }
+                revalidate: 60,                
+            },
+            
         }
     );
 

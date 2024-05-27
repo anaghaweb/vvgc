@@ -94,7 +94,7 @@ export default async function HomePage() {
           </div>
           <CardFooter>
             <Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
-              <Link href="/events?type=regular#eventpagetabs">View Regular Events</Link>
+              <Link href="/events#eventpagetabs">View Regular Events</Link>
             </Button>
           </CardFooter>
         </Card>
