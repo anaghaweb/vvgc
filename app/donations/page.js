@@ -4,6 +4,7 @@ import Image from "next/image";
 
 
 import Link from "next/link";
+import { Card } from "../../Components/ui/card";
 
 
 export const metadata = {
@@ -24,31 +25,35 @@ export default function Donations() {
     return (
         <React.Fragment>
             < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-donations ${cormorant.variable} `}
+                    bg-hero-donations
+                     
+                     `}
             >
                 <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Support Us</h1>
             </div>
             {/* main section */}
 
 
-            <main className={`${cormorant.variable} mx-auto w-full max-w-full`}>
+            <main className={`mx-auto w-full max-w-full`}>
 
 
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
+                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6 px-3`}>
 
                         <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Build the Divine Abode</h1>
 
                         <hr />
 
-                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>Help Fund the Expansion and Maintenance of VallabhaMaha Ganapathi Temple</h3>
+                        <h3 className={`leading-8 my-2 md:text-xl md:text-center py:2 md:py-5`}>Help Fund the Expansion and Maintenance of VallabhaMaha Ganapathi Temple</h3>
 
                         <hr />
 
-                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>VVGC is a registered non-profit organization
+                        <h3 className={`leading-8 md:text-xl md:text-center  py:2 md:py-5`}>VVGC is a registered non-profit organization
                             (CA Tax ID: 61-1449457) and your donations are always 100% tax deductible.</h3>
 
                     </div>
+
+
                     <div className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}>
                         <Image src={`${divine_img}`} alt="Support Us" fill quality={75} sizes={'100vw'}
                             className=" object-contain m-auto" />
@@ -56,7 +61,55 @@ export default function Donations() {
 
                     </div >
                 </div>
+                <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div className="w-full">
+                        <h1 className={`text-2xl leading-8 font-[cormorant] font-medium `}>Choose your payment type</h1>
+                        <hr className="h-[1px] border-x-black w-full border-y-[1px] my-1 " />
+                    </div>
 
+                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
+
+                        <div className="text-center text-base font-normal md:px-5 md:w-3/4">
+                            <h3 className={` md:text-xl text-justify md:text-center md:py-5`}>
+                                Donate using PayPal Giving Fund (requires PayPal account) and 100% of
+                                your donations will go to the Temple. Click below</h3>
+                        </div>
+
+                        <Link href="https://www.paypal.com/US/fundraiser/charity/1269532" target="blank">
+                            <Card className="p-3 bg-yellow-300 w-72">
+                            <div className="mx-auto my-2 w-full ">
+                                <p className=" relative ">
+                                    Click Here to donate through</p>
+                                <div className="relative w-32 h-10 mx-auto">
+                                    <Image alt="paypal logo" src="/icons/paypal.png" className="object-scale-down" fill />
+                                </div>
+                            </div>
+                            </Card>
+                        </Link>
+                    </div >
+                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
+                    <div className="text-center text-base font-normal md:px-5 md:w-3/4">
+                            <h3 className={` md:text-xl text-justify md:text-center md:py-5`}>
+                            If you prefer to donate without logging into PayPal or if you don't have a PayPal account, click on the Donate button below. After a small credit/debit card processing fee, the rest of your donations will go to the Temple.</h3></div>
+
+                        <Link href="https://www.paypal.com/donate/?hosted_button_id=ZPJQND4F58NHE" target="blank">
+                            <Card className="p-3 bg-yellow-300 w-72">
+                            <div className="mx-auto my-2 w-full ">
+                                <p className=" relative ">
+                                Donate using Debit / Credit Cards </p>
+                                <div className="relative flex justify-between items-center w-32 h-10 mx-auto gap-x-1">
+                                    <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/003-american express.svg" className="object-scale-down" fill /></div>
+                                    <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/master-card.png" className="object-scale-down" fill /></div>
+                                    <div className="relative w-16 h-10"> <Image alt="paypal logo" src="/icons/visa.png" className="object-scale-down" fill /></div>
+                                </div>
+                            </div>
+                            </Card>
+                        </Link>
+                       
+
+                    </div>
+
+                </div>
 
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
@@ -77,27 +130,7 @@ export default function Donations() {
                     </div>
                 </div>
 
-                <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
 
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                        <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Choose your payment type</h1>
-                        <div className="text-center py-5 text-base font-normal md:px-5 font-opensans">
-                            <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>Donate using PayPal Giving Fund (requires PayPal account) and 100% of your donations will go to the Temple. Click below</h3></div>
-
-                        <div className="mx-auto">
-                            <Link className={`text-orange-500 font-[bold] text-xl`} href="https://www.paypal.com/US/fundraiser/charity/1269532">Click Here to donate through PayPal </Link>
-                        </div>
-                    </div >
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                        <div className="text-center  py-5 text-base font-normal md:px-5 font-opensans"> <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>If you prefer to donate without logging into PayPal or if you don't have a PayPal account, click on the Donate button below. After a small credit/debit card processing fee, the rest of your donations will go to the Temple.</h3></div>
-
-                        <div className="mx-auto">
-                            <Link className={`text-orange-500 font-[bold] text-xl`} href="https://www.paypal.com/donate?token=HYL-hpCzltaDvpErldKPbXdVDQQxQkJy0okO_jjIVqhutaOg-7Q3AITqcGhDiST1wyzB4HzlTgU5VeTv">Donate using Debit/ Credit Cards  </Link>
-                        </div>
-
-                    </div>
-
-                </div>
 
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
