@@ -1,6 +1,7 @@
 import React from "react";
 import { cormorant } from "../fonts"
 import Link from "next/link";
+import Divider from "../../Components/divider";
 
 export const metadata = {
     title: 'Pooja Services',
@@ -11,7 +12,7 @@ export default function Pooja() {
 
     const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLScUfVMwLiLHa8UuEFO9rz1-k9JcK01AWD7PMu0DP0NBxcbpAQ/viewform';
 
-    const iframeURL = 'https://docs.google.com/document/d/e/2PACX-1vRdSrMjEqc4pTuSYBsAGuCjqsa19IV38XbLasPhdv1POi02zAOniAg5Xv_0sx1SUw/pub?embedded=true';
+    const iframeURL = "https://docs.google.com/document/d/e/2PACX-1vRI8sKKzJyvmKWd7my0oH1yju-9ZpLDBm8IgbRcfvpEUa_bpyYjTLUYZtM5mQoR1Q/pub?embedded=true";
 
     
 
@@ -25,20 +26,36 @@ export default function Pooja() {
                      <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">Pooja Services </h1>
                 </div> 
             <main className={`${cormorant.variable} m-auto `}>
-                <section className="flex flex-col w-full max-w-screen-lg  h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-cormorant font-medium text-base md:text-2xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
-                    <h2>At VVGC, we perform a variety of poojas and events for our devotees. Our priests can conduct the events, both at home or at the temple premises.
-                    </h2>
-                    <hr />
-                    <h3>   Please provide us with the details of the event you would like to perform by filling this  <Link href={formURL} target="_blank"><span className="text-2xl text-orange-600 font-bold cursor-pointer">form</span></Link> and one of our priests will reach out to you.</h3>
-                    <hr />
-                    <h4 className="text-red-950 italic sm:text-xl">
-                        Note: that these are the dollar amounts that are set by the temple. Devotees are welcome to contribute additional dakshina directly to the priests during the event.
-                    </h4>
+                <section className="flex flex-col w-full max-w-screen-lg text-[1rem]  h-auto mx-auto my-10 p-5  shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
+                  <h3 className="text-[1.9rem] font-[cormorant]">Perform Events</h3>
+                    <Divider />
+                    <p className="sm:font-medium ">
+                  At VVGC, we perform a variety of poojas and events for our devotees. Our priests can conduct the events, 
+                  both at home or at the temple premises.
+                    </p> 
+                    
+                     <span >Please provide us with the details of the event you would like to perform by filling this : </span> 
+                     <Link href={formURL} target="_blank">
+                        <span className="text-2xl text-orange-600 font-bold cursor-pointer underline">form</span>
+                        </Link> 
+                     <p> One of our priests will reach out to you regarding the same.</p> 
+                    
+                        <div className="mt-1 p-3 bg-blue-200">
+                        <p>
+                       Note: that these are the dollar amounts that are set by the temple. Devotees are welcome to 
+                       contribute additional dakshina directly to the priests during the event.
+                        </p> 
+                        </div>
+                       
+                    
                 </section>
-                <section className="flex flex-col w-full max-w-screen-lg h-auto mx-auto my-10 p-5 gap-2 justify-center items-center text-center font-sans font-medium text-base md:text-xl text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
+                <section className="flex flex-col w-full max-w-screen-lg h-auto mx-auto my-10 p-5 gap-2  text-black shadow-slate-900 drop-shadow-md rounded-sm bg-slate-100">
+                    
                     <ul>
-                        <li className="md:text-2xl">For Poojas and Rituals Contact:</li>
-                        <hr />
+                        <li className="md:text-2xl font-[cormorant]">
+                            <h3 className="text-[1.9rem]">For Poojas and Rituals Contact:</h3></li>
+                        <Divider />
+                        
                         <li>Pandit Ganesh Shasthry</li>
                         <li>880, E Fremont Ave, Apt#302,</li>
                         <li>Sunnyvale, CA 94087</li>
