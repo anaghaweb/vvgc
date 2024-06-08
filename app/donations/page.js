@@ -36,40 +36,24 @@ export default function Donations() {
 
 
             <main className={`mx-auto w-full max-w-full`}>
-
-
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6 px-3`}>
-
                         <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Build the Divine Abode</h1>
-
-                        
-
                         <h3 className={`leading-8 my-2 md:text-xl md:text-center py:2 md:py-5`}>Help Fund the Expansion and Maintenance of VallabhaMaha Ganapathi Temple</h3>
-
-                       
-
                         <h3 className={`leading-8 md:text-xl md:text-center  py:2 md:py-5`}>VVGC is a registered non-profit organization
                             (CA Tax ID: 61-1449457) and your donations are always 100% tax deductible.</h3>
-
                     </div>
-
-
                     <div className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}>
                         <Image src={`${divine_img}`} alt="Support Us" fill quality={75} sizes={'100vw'}
                             className=" object-contain m-auto" />
-
-
                     </div >
                 </div>
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className="w-full">
                         <h1 className={`text-2xl leading-8 font-[cormorant] font-medium `}>Choose your payment type</h1>
-                        <Divider/>
+                        <Divider />
                     </div>
-
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-
                         <div className="text-center text-base font-normal md:px-5 md:w-3/4">
                             <h3 className={` md:text-xl text-justify md:text-center md:py-5`}>
                                 Donate using PayPal Giving Fund (requires PayPal account) and 100% of
@@ -78,62 +62,73 @@ export default function Donations() {
 
                         <Link href="https://www.paypal.com/US/fundraiser/charity/1269532" target="blank">
                             <Card className="p-3 bg-yellow-300 w-72">
-                            <div className="mx-auto my-2 w-full ">
-                                <p className=" relative ">
-                                    Click Here to donate through</p>
-                                <div className="relative w-32 h-10 mx-auto">
-                                    <Image alt="paypal logo" src="/icons/paypal.png" className="object-scale-down" fill />
+                                <div className="mx-auto my-2 w-full ">
+                                    <p className=" relative ">
+                                        Click Here to donate through</p>
+                                    <div className="relative w-32 h-10 mx-auto">
+                                        <Image alt="paypal logo" src="/icons/paypal.png" className="object-scale-down" fill />
+                                    </div>
                                 </div>
-                            </div>
                             </Card>
                         </Link>
                     </div >
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                    <div className="text-center text-base font-normal md:px-5 md:w-3/4">
+                        <div className="text-center text-base font-normal md:px-5 md:w-3/4">
                             <h3 className={` md:text-xl text-justify md:text-center md:py-5`}>
-                            If you prefer to donate without logging into PayPal or if you don't have a PayPal account, click on the Donate button below. After a small credit/debit card processing fee, the rest of your donations will go to the Temple.</h3></div>
+                                If you prefer to donate without logging into PayPal or if you don't have a PayPal account, click on the Donate button below. After a small credit/debit card processing fee, the rest of your donations will go to the Temple.</h3></div>
 
                         <Link href="https://www.paypal.com/donate/?hosted_button_id=ZPJQND4F58NHE" target="blank">
                             <Card className="p-3 bg-yellow-300 w-72">
-                            <div className="mx-auto my-2 w-full ">
-                                <p className=" relative ">
-                                Donate using Debit / Credit Cards </p>
-                                <div className="relative flex justify-between items-center w-32 h-10 mx-auto gap-x-1">
-                                    <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/003-american express.svg" className="object-scale-down" fill /></div>
-                                    <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/master-card.png" className="object-scale-down" fill /></div>
-                                    <div className="relative w-16 h-10"> <Image alt="paypal logo" src="/icons/visa.png" className="object-scale-down" fill /></div>
+                                <div className="mx-auto my-2 w-full ">
+                                    <p className=" relative ">
+                                        Donate using Debit / Credit Cards </p>
+                                    <div className="relative flex justify-between items-center w-32 h-10 mx-auto gap-x-1">
+                                        <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/003-american express.svg" className="object-scale-down" fill /></div>
+                                        <div className="relative w-16 h-10"><Image alt="paypal logo" src="/icons/master-card.png" className="object-scale-down" fill /></div>
+                                        <div className="relative w-16 h-10"> <Image alt="paypal logo" src="/icons/visa.png" className="object-scale-down" fill /></div>
+                                    </div>
                                 </div>
-                            </div>
                             </Card>
                         </Link>
-                       
+
 
                     </div>
 
                 </div>
                 {/* PHASE 2 CONSTRUCTION LOAN PLEDGE SECTION */}
 
-                <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                <div className={`flex flex-col max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
                         <div>
                             <h1 className={`text-xl leading-8 my-2 font-[cormorant] font-medium py:2`}>VVGC San Martin Loan Program</h1>
                         </div>
-                        <Divider/>
+                        <Divider />
                         <div>
-                          
-                            <h3 className={`my-2 text-left md:text-center  py:2 `}>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. <Link className={`text-orange-500 font-[bold]`} href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank">
+                            <h3 className={`my-2 md:w-3/4 mx-auto text-left md:text-center py:2 `}>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. 
+                                <Link className={`text-orange-500 font-[bold]`} href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank">
                                 <span>Click here</span></Link> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
                         </div>
                     </div>
-                    <div className={`flex flex-col text-medium text-blue-800 justify-items-center font-[cormorant] relative items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                    <h3>VVGC Phase II Construction </h3>
-                    <h3>Temple promissory Note</h3>
-                     <Link href={TPN} target="_blank"> <Image quality={75} src={TPN} width={300} height={400}
-                      sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw " className="object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>   
+
+
+                    <div className="grid relative grid-cols-1 md:grid-cols-2">
+                    <div className={`flex flex-col col-span-1 text-medium text-blue-800 justify-items-center font-[cormorant] relative items-center w-full max-w-full text-center font[opensans]  p-6`}>
+                        <h3>VVGC Stock Donation Details </h3>
+                            <p>(Click to enlarge)</p>
+                        <Link href="/images/donations/loan/2.jpeg" target="_blank"> <Image quality={75} src="/images/donations/loan/2-thumb.jpeg" width={125} height={200}
+                            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw " className="object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
+                    </div>
+                    <div className={`flex flex-col col-span-1 text-medium text-blue-800 justify-items-center font-[cormorant] relative items-center w-full max-w-full text-center font[opensans]  p-6`}>
+                        <h3>VVGC Phase II Construction </h3>
+                        <h3>Temple promissory Note</h3>
+                        <p>(Click to enlarge)</p>
+                        <Link href="/images/donations/loan/1.png" target="_blank"> <Image quality={75} src="/images/donations/loan/1-thumb.png" width={125} height={200}
+                            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw " className="object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
                     </div>
                 </div>
+            </div>
 
-                
+
 
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
@@ -146,10 +141,10 @@ export default function Donations() {
 
 
                         <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>
-                            At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.  
+                            At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.
                             <span><Link className={`text-orange-500 font-[bold]`} href={'https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList'} target="_blank">
-                                Click here</Link></span> 
-                                to learn more about the programs and how you can support them.</h3>
+                                Click here</Link></span>
+                            to learn more about the programs and how you can support them.</h3>
 
                     </div>
                     <div className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}>
@@ -162,7 +157,7 @@ export default function Donations() {
 
 
                 <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
-                    
+
                     <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
                         <div >
                             <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Stock Donations</h1>

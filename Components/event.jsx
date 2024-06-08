@@ -93,8 +93,8 @@ export default function RenderEvent({ data }) {
                     <CalenderLinks eventdata={{
                       startdate: data.date,
                       enddate: data.date,
-                      startTime: data.startTime,
-                      endTime: data.endTime,
+                      startTime: data.startTime ? data.startTime : '12:00AM',
+                      endTime: data.endTime ? data.endTime : '11:59PM',
                       summary: data.title === "" ? `Events on ${data.date}` : data.title,
                       description: data.description
                     }} />
