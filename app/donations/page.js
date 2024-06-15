@@ -95,79 +95,133 @@ export default function Donations() {
                     </div>
 
                 </div>
+
+
                 {/* PHASE 2 CONSTRUCTION LOAN PLEDGE SECTION */}
 
-                <div className={`flex flex-col max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                        <div>
-                            <h1 className={`text-xl leading-8 my-2 font-[cormorant] font-medium py:2`}>VVGC San Martin Loan Program</h1>
-                        </div>
-                        <Divider />
-                        <div>
-                            <h3 className={`my-2 md:w-3/4 mx-auto text-left md:text-center py:2 `}>If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term. 
-                                <Link className={`text-orange-500 font-[bold]`} href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank">
-                                <span>Click here</span></Link> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
-                        </div>
-                    </div>
 
-
-                    <div className="grid relative grid-cols-1 md:grid-cols-2">
-                    <div className={`flex flex-col col-span-1 text-medium text-blue-800 justify-items-center font-[cormorant] relative items-center w-full max-w-full text-center font[opensans]  p-6`}>
-                        <h3>VVGC Stock Donation Details </h3>
-                            <p>(Click to enlarge)</p>
-                        <Link href="/images/donations/loan/2.jpeg" target="_blank"> <Image quality={75} src="/images/donations/loan/2-thumb.jpeg" width={125} height={200}
-                            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw " className="object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
+                {/* <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div>
+                        <h1 className={`text-xl leading-8 my-2 font-[cormorant] font-medium py:2`}>
+                            VVGC San Martin Loan Program</h1>
                     </div>
-                    <div className={`flex flex-col col-span-1 text-medium text-blue-800 justify-items-center font-[cormorant] relative items-center w-full max-w-full text-center font[opensans]  p-6`}>
-                        <h3>VVGC Phase II Construction </h3>
-                        <h3>Temple promissory Note</h3>
+                    <Divider />
+                    <div>
+                        <h3 className={`my-2 md:w-3/4 mx-auto text-left md:text-center py:2 `}>
+                            If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term.
+                            <Link className={`text-orange-500 font-[bold]`} href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank">
+                                <span> Click here</span></Link> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
+                    </div>
+                    <div>
+                        <p>Temple promissory Note</p>
                         <p>(Click to enlarge)</p>
                         <Link href="/images/donations/loan/1.png" target="_blank"> <Image quality={75} src="/images/donations/loan/1-thumb.png" width={125} height={200}
                             sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw " className="object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
                     </div>
+                </div> */}
+
+                {/* SAN MARTIN PHASE ii CONSTRUCTION */}
+                <div className={`flex flex-col max-w-full text-justify md:text-center bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div>
+                        <h1 className={`text-xl leading-8 my-2 text-center font-[cormorant] font-medium py:2`}>
+                            VVGC San Martin Phase II Construction Donations</h1>
+                    </div>
+                    <Divider />
+                    <div>
+                        <p className="font-bold my-1">Special Fund raising for vvgc temple phase II expansion project:</p>
+                    </div>
+
+
+                    <p className="xs:text-[12px] text-base">We have updated the payment details Payments through Direct Bank transfers and Check Payments. Please read the flyer for further details. </p>
+
+
+                    <p className="text-center">(Click to enlarge)</p>
+                    <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[800px]">
+                        <Link href="/images/donations/expansion/1.webp" target="_blank">
+                            <Image quality={75} src="/images/donations/expansion/1.webp"
+                                fill sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw " className="absolute object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
+                    </div>
                 </div>
-            </div>
+
+                {/* LOAN PROGRAM PROMISSORY NOTE */}
+                <div className={`flex flex-col text-justify md:text-center max-w-full bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div>
+                        <h1 className={`text-xl text-center leading-8 my-2 font-[cormorant] font-medium py:2`}>VVGC San Martin Phase Loan Program</h1>
+                    </div>
+                    <Divider />
+                    <div>
+                        <h3 className={`my-2 md:w-3/4 mx-auto py:2 `}>
+                            If you would like to extend a loan to VVGC, you do so for a minimum of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset rate at the end of the term.
+                            <Link className={`text-orange-500 font-[bold]`} href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505" target="_blank">
+                                <span> Click here</span></Link> for the Temple promissory note. Please call the Temple for any qustions about this loan program.</h3>
+                    </div>
+                    <div>
+                        <p>Temple promissory Note</p>
+                        <p className="text-center">(Click to enlarge)</p>
+                        <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[800px]">
+                            <Link href="/images/donations/loan/1.png" target="_blank">
+                                <Image quality={75} src="/images/donations/loan/1-thumb.png" fill
+                                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+                                    className="absolute object-contain cursor-pointer" alt="vvgc san martin loan program" /></Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* STOCK DONATIONS */}
+                <div className={`flex flex-col text-justify md:text-center max-w-full bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div>
+                        <h1 className={`text-xl text-center leading-8 my-2 font-[cormorant] font-medium py:2`}>VVGC San Martin Stock Donations</h1>
+                    </div>
+                    <Divider />
+                    <div>
+                        <h3 className={`my-2 md:w-3/4 mx-auto  py:2 `}>
+                            You can save on your capital gains tax by directly donating your appreciated stock rather than cash. Brokerages such as Schwab provide facility for stock donations via their charities arm. Use the VVGC Tax ID 61-1449457 to direct the donation to the temple.</h3>
+                    </div>
+
+                    <p className="text-center">(Click to enlarge)</p>
+                    <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[800px]">
+                        <Link href="/images/donations/loan/2.jpeg" target="_blank">
+                            <Image quality={75} src="/images/donations/loan/2-thumb.jpeg"
+                                fill sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+                                className="absolute object-contain cursor-pointer"
+                                alt="vvgc san martin loan program" /></Link>
+
+                    </div>
+
+
+                </div>
 
 
 
-                <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
 
+                {/* GO SAMRAKSHANA PROGRAM */}
+                <div className={`flex flex-col text-center max-w-full bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
+                    <div>
                         <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Go Samrakshanam Program</h1>
+                    </div>
+                    <Divider />
+                    <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[300px]">
+                                            <Image quality={75} src={go_dhanam_img}
+                            fill sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+                            className="absolute object-contain cursor-pointer"
+                            alt="vvgc san martin loan program" />
 
-
-                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>
+                    </div>
+                    <div>
+                        <h3 className={`leading-8 md:text-xl text-center `}>
                             (Sustaining & Caring for Cows)</h3>
-
-
-                        <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>
+                        <h3 className={` md:text-xl text-justify md:text-center  py:2 md:py-5`}>
                             At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr breeds) are raised. We have a few initiatives as part of sustaining our Goshala to provide the best care and living experiences for our growing list of cattle.
-                            <span><Link className={`text-orange-500 font-[bold]`} href={'https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList'} target="_blank">
-                                Click here</Link></span>
+                            <span> <Link className={`text-orange-500 font-[bold]`} href={'https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList'} target="_blank">
+                                Click here </Link></span>
                             to learn more about the programs and how you can support them.</h3>
-
                     </div>
-                    <div className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}>
-                        <Image src={go_dhanam_img} alt="Support Us" fill quality={75} sizes={'100vw'}
-                            className="object-contain m-auto absolute" />
+                    
 
-                    </div>
+
                 </div>
 
 
-
-                <div className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}>
-
-                    <div className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6`}>
-                        <div >
-                            <h1 className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}>Stock Donations</h1>
-                        </div>
-
-                        <div>
-                            <h3 className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}>You can save on your capital gains tax by directly donating your appreciated stock rather than cash. Brokerages such as Schwab provide facility for stock donations via their charities arm. Use the VVGC Tax ID 61-1449457 to direct the donation to the temple.</h3>
-                        </div>
-                    </div>
-                </div>
 
 
             </main>
