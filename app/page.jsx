@@ -5,10 +5,8 @@ export const metadata = {
   title: "VVGC | Home",
   description: `A home for hindu devotees`,
   authors: [{
-    name: "BSK",
-    
-  }],
-  
+    name: "BSK",   
+  }], 
   keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva","vvgc", "temples in california", "ganapathi temples in california"]
 };
 

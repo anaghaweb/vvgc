@@ -12,7 +12,6 @@ import {
   CardDescription,
   CardFooter,
 } from "../Components/ui/card";
-import clsx from 'clsx';
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -20,7 +19,7 @@ const playfair = Playfair_Display({
   fallback: "serif",
 });
 
-export default function SponsorEvent({ data, index }) {
+export default function SpecialEvent({ data, index }) {
   return (
     <Card
       key={data?.date}
@@ -93,7 +92,7 @@ export default function SponsorEvent({ data, index }) {
             <br />
           </div>
         )}
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, index) =>
+        {[1, 2, 3, 4, 5, 6, 7, 8,9,10].map((num, index) =>
           data[`time_${num}`] && data[`event_${num}`] ? (
             <>
               <div
@@ -102,7 +101,7 @@ export default function SponsorEvent({ data, index }) {
               >
                 {data[`time_${num}`]}:
               </div>
-              <div key={num+index+1} className={"col-span-8 px-1 text-[13px] md:text-base w-full"}>
+              <div key={num+index+1} className="col-span-8 px-1 text-[13px] md:text-base w-full">
                 {data[`event_${num}`]}
               </div>
             </>
@@ -110,9 +109,7 @@ export default function SponsorEvent({ data, index }) {
             <>
               <div
                 key={index+1}
-                className={clsx("col-span-10 font-inter text-[13px] md:text-base",{
-                  'font-bold':num===8
-                })}
+                className="col-span-10 font-inter text-[13px] md:text-base"
               >
                 {data[`event_${num}`]}
               </div>
@@ -122,7 +119,7 @@ export default function SponsorEvent({ data, index }) {
             ""
           )
         )}
-        {data.special && <div className="col-span-10 px-1 text-[13px] md:text-base w-full">We will be having <b>FREE consultation and Diabetics & Hypertension screenings and Dental Exams</b> </div>}
+
         {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus accusantium ipsum beatae atque, animi cum ipsam et distinctio nemo vitae sapiente vel libero eos velit eaque veniam recusandae debitis. */}
       </CardContent>
       {/* sponsor event Link */}
