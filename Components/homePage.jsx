@@ -5,7 +5,7 @@ import { BiSolidNavigation } from "react-icons/bi";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import * as React from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { events } from "../data/regularEvent";
@@ -27,7 +27,6 @@ export default async function HomePage() {
           A Home For Spiritual Devotees{" "}
         </h1>
         {/* MAHARUDRAM BUTTON */}
-        
       </div>
 
       <main
@@ -76,28 +75,61 @@ export default async function HomePage() {
         </div>
 
         {/* Upcoming events */}
-        <Card className="w-[100%] h-auto md:p-10">
-          <div className="p-2">
-            <h1 className="text-2xl md:text-4xl font-cormorant text-blue-500">
-              Upcoming Special Events
-            </h1>
+
+        {/* Special Event & Special campaign section */}
+        <div className="grid grid-col-1 lg:grid-cols-2 p-4 gap-4 w-full">
+          {/* Special Event Card */}
+          <div className="col-span-1 w-full">
+            <Card className="w-[100%] h-auto md:p-10">
+              <div className="p-2">
+                <h1 className="text-2xl lg:text-3xl font-cormorant text-blue-500">
+                  Upcoming Special Events
+                </h1>
+              </div>
+              <hr className="h-[2px] bg-red-800 my-2 " />
+              <div className="my-[16px] w-[100%] ">
+                {data.content.map((data, index) => {
+                  return data.homepage === "sponsor" ? (
+                    <SponsorEvent data={data} key={index} />
+                  ) : (
+                    ""
+                  );
+                })}
+              </div>
+              <CardFooter>
+                <Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
+                  <Link href="/events#eventpagetabs">View Regular Events</Link>
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
-          <hr className="h-[2px] bg-red-800 my-2 " />
-          <div className="my-[16px] w-[100%] grid grid-cols-1 lg:grid-cols-2 lg:gap-6 ">
-            {data.content.map((data, index) => {
-              return data.homepage === "sponsor" ? (
-                <SponsorEvent data={data} key={index} />
-              ) : (
-                ""
-              );
-            })}
+          {/* Campaign */}
+          <div className="col-span-1 w-full ">
+          <Card className="h-auto w-full sm:p-2 text-green-950">
+            <CardContent className="">
+            <p className="mt-12 mb-2 font-bold text-3xl text-center  font-[cormorant]">
+              Plant a tree for our future
+            </p>
+            <hr className="h-[2px] bg-red-800 my-2" />
+           <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[800px] p-2">
+            <Link href="/images/home/services/2.jpeg" target="_blank">
+            <Image
+              src="/images/home/services/2.jpeg"
+              alt="Event"
+              fill
+              quality={75}
+              sizes={"100vw"}
+              className="absolute object-contain cursor-pointer"
+            />
+            </Link>
+            </div>
+            </CardContent>
+            </Card>
           </div>
-          <CardFooter>
-            <Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
-              <Link href="/events#eventpagetabs">View Regular Events</Link>
-            </Button>
-          </CardFooter>
-        </Card>
+        </div>
+
+        {/* gallery / sponsor other event and history cards section */}
+
         <Card
           className={`w-[100%] md:max-w-screen h-auto p-1 md:p-10 my-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4`}
         >
