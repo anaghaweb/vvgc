@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
 export default function SponsorEvent({ data, index }) {
   return (
     <Card
-      key={data?.date}
+      key={index}
       className={` flex flex-col w-full sm:w-full m-auto my-2 sm:p-2 bg-blue-100`}
     >
       <CardHeader className=" text-2xl   text-cyan-950">
@@ -34,11 +34,15 @@ export default function SponsorEvent({ data, index }) {
         })}
       </CardHeader>
 
-      <CardTitle className=" pl-4 text-xl   text-cyan-950">
+      <CardTitle className=" pl-4 text-xl my-1  text-cyan-950">
         {data.title}
+        {data.subtitle &&
+      <div className=" text-[13px] md:text-base ">
+             {data.subtitle}
+             
+           </div> }
       </CardTitle>
-
-      <hr className=" my-2 " />
+     
 
       {data.imageurl && (
         <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]">
@@ -55,9 +59,12 @@ export default function SponsorEvent({ data, index }) {
         </div>
       )}
 
-      {data.imageurl && <hr className=" my-2 " />}
-
+      
       <CardContent className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
+      {data.description &&  
+      <div className="col-span-8 text-[13px] md:text-base ">
+             {data.description}
+           </div> }
         {data.startTime && data.endTime && data.description ? (
           <>
             <div className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">
@@ -98,11 +105,11 @@ export default function SponsorEvent({ data, index }) {
             <>
               <div
                 key={num+data.title}
-                className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
+                className="col-span-2 border-r-[1px] text-[13px]  md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
               >
                 {data[`time_${num}`]}:
               </div>
-              <div key={num+index+1} className={"col-span-8 px-1 text-[13px] md:text-base w-full"}>
+              <div key={num+index+1} className={"col-span-8 px-1 text-[13px] md:text-base text-justify w-full"}>
                 {data[`event_${num}`]}
               </div>
             </>
@@ -110,7 +117,7 @@ export default function SponsorEvent({ data, index }) {
             <>
               <div
                 key={index+1}
-                className={clsx("col-span-10 font-inter text-[13px] md:text-base",{
+                className={clsx("col-span-10 font-inter text-[13px] text-justify md:text-base",{
                   'font-bold':num===8
                 })}
               >
