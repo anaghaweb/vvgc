@@ -2,7 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import Button from "@components/ui/Button";
+import { Button } from "@modules/common/components/ui/button";
 import { useState } from "react";
 import { SuccessfulSubmit } from "../success";
 import {
@@ -13,11 +13,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@components/ui/form";
+} from "@modules/common/components/ui/form";
 
-import { Textarea } from "@components/ui/textarea";
-import { Input } from "@components/ui/input";
-import { Card, CardHeader, CardContent, CardFooter } from "@components/ui/card";
+import { Textarea } from "@modules/common/components/ui/textarea";
+import { Input } from "@modules/common/components/ui/input";
+import { Card, CardHeader, CardContent, CardFooter } from "@modules/common/components/ui/card";
 import { Loader2 } from "lucide-react";
 
 export function FeedbackForm() {

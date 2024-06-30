@@ -1,6 +1,6 @@
-import {Card, CardHeader, CardFooter, CardContent} from '@components/ui/card'
+import {Card, CardHeader, CardFooter, CardContent} from '@modules/common/components/ui/card'
 import {FaCheckCircle} from "react-icons/fa";
-import {Button} from '@components/ui/button'
+import {Button} from '@modules/common/components/ui/button'
 import Link from "next/link";
 
 export function SuccessfulSubmit(){
