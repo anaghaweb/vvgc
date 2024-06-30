@@ -4,23 +4,10 @@ import {
   CardHeader,
 } from "@modules/common/components/ui/card";
 import React from "react";
+import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
 
 const DailyEventCard = ({ events }) => {
-  const dayOfTheWeek = () => {
-    const today = new Date();
-    const num = today.getDay();
-    const daysOfWeek = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    return daysOfWeek[num];
-  };
-
+  
   const currentDay = dayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
 

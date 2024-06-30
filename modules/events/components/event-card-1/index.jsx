@@ -11,7 +11,6 @@ import {
   CardDescription,
   CardFooter,
 } from "@modules/common/components/ui/card";
-import { Numans } from "next/font/google";
 
 export default function RenderEvent({ data }) {
   return (
@@ -24,10 +23,10 @@ export default function RenderEvent({ data }) {
         {data.content.map((data, index) =>
           !!data.title ? (
             <Card
-              key={data?.title + index}
+              key={data.id}
               className={`bg-blue-100 flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}
             >
-              <CardHeader className=" text-2xl    text-cyan-950">
+              <CardHeader className=" text-2xl  text-cyan-950">
                 {new Date(data.date).toLocaleDateString("en-US", {
                   weekday: "short",
                   month: "long",
@@ -54,6 +53,7 @@ export default function RenderEvent({ data }) {
               )}
 
               {data.imageurl && <hr className=" my-2 " />}
+              
 
               <CardContent className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
                 {data.startTime && data.endTime && data.description ? (

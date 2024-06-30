@@ -1,7 +1,7 @@
 import { Card } from '@modules/common/components/ui/card';
 import SponsorEvent from '@modules/events/components/sponsor-event-card';
 import React, {Fragment} from 'react'
-
+import PlantATree from '@modules/campaigns/components/plant-a-tree';
 const SectionTwo = ({data}) => {
   return (
     <Fragment>
@@ -26,6 +26,9 @@ const SectionTwo = ({data}) => {
               </div>
              
             </Card>
+            </div>
+            <div className="col-span-1 w-full">
+              <PlantATree />
             </div>
             </div>
     </Fragment>

@@ -3,7 +3,7 @@ import PoojaForm from "../components/pooja-form";
 import TempleContact from "../components/temple-contact";
 import PoojaList from "../components/pooja-list";
 
-const PoojaServicePage = () => {
+const PoojaServicePage = () => { 
   return (
     <Fragment>
       <PoojaForm />
