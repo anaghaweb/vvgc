@@ -1,8 +1,7 @@
-import Goshala from "../../Components/goshala";
-
+import GoshalaPageView from "@modules/goshala/page"
 export default function PageViewGoshala(){
 
     return(
-        <Goshala />
+        <GoshalaPageView />
     )
 }
