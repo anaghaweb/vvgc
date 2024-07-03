@@ -1,25 +1,24 @@
 import './globals.css'
 import Header from '@modules/layout/header/page';
 import Footer from '@modules/layout/footer/page';
-import { Open_Sans } from 'next/font/google';
+import { roboto, opensans, inter, roboto_mono, playfair, cormorant } from './fonts';
 import React from 'react'
 
-const opensans = Open_Sans({ subsets: ['latin'], variable: '--font-opensans', fallback: ['sans'] });
+
 export default function RootLayout({ children }:{children:React.ReactNode}) {
 
   return (
-    <html lang="en" >
+    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} 
+    ${roboto.variable} ${opensans.variable} ${playfair.variable} ${cormorant.variable}`}>
       <head>
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
      <link rel="icon" href="/icons/om-2.png" type="image/png"></link>
    </head>
 
-      <body className={`${opensans.variable} max-w-full font-sans box-border m-0`}>
-      
+      <body className={`max-w-full font-sans box-border m-0`}>      
           <Header />
           {children}
-          <Footer />
-        
+          <Footer />        
       </body>
     </html>
   )

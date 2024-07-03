@@ -10,6 +10,7 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -18,6 +19,14 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        roboto_mono: ['var(--font-roboto-mono)'],
+        playfair:['var(--font-playfair)'],
+        roboto:['var(--font-roboto)'],
+        opensans:['var(--font-opensans)'],
+        cormorant:['var(--font-cormorant)'],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

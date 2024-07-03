@@ -88,7 +88,7 @@ export default function EventSummaryCard({ eventdata }) {
                       'font-bold':num===8
                     })}
                   >
-                   {"-"} {data[`event_${num}`]}     
+                   {"-"} {data[`event_${num}`]}  <Link href={`/events/${data.id}`} className="text-blue-800 text-xl col-span-8">...Read More</Link>    
                   </div>
                   
                 </>
