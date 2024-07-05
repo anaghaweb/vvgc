@@ -1,11 +1,22 @@
 import React,{Fragment} from 'react'
 import { getCampaignData } from '@lib/server-actions/actions';
 import RightContentTemplate from '@modules/test/components/campaigns/components/right-content';
-export async function generateMetadata({ params }) {
+import type { Campaign } from 'types/global';
+import { notFound } from 'next/navigation';
+
+export async function generateMetadata({ params }:{
+  params:{
+    camid:string
+  }
+}) {
   try {
-    const campaign = await getCampaignData();
+    const campaign:Campaign[] = await getCampaignData(); 
+    if(!campaign)  {
+      notFound()
+    }
+    const result = campaign?.find((t)=>t.id === params.camid)
+    const title = result?.title;
     
-    const {title} = campaign.find((t)=>t.id === params.camid)
     console.log("title", title)
     const description =
     campaign[campaign.length - 1].description ??
@@ -14,19 +25,25 @@ export async function generateMetadata({ params }) {
     return {
       title: `${title} | VVGC`,
       description,
-      // alternates: {
-      //   canonical: `${params.camid.join("/")}`,
-      // },
+     
     }
   } catch (error) {
     console.log(error)
-    // notFound();
+     notFound();
   }
 }
 
-const CampaignDetailsPage = async ({params}) => {
+const CampaignDetailsPage = async ({params}:{
+  params:{camid:string}
+}) => {
   const campaign = await getCampaignData();
+  if(!campaign){
+    return notFound()
+  }
   const data = campaign.find(c=> c.id === params.camid)
+  if(!data){
+    return notFound()
+  }
   return (
     <RightContentTemplate camid={params.camid}  campaign={data}/>
   )
