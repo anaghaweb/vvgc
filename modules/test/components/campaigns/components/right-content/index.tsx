@@ -55,9 +55,9 @@ const RightContentTemplate = ({ camid, campaign}:
     I wish to Sponsor this campaign <ExternalLinkIcon className='w-4 h-4'/>
       </Link>
        
-       {/* <div className="inline-flex gap-2 items-center">
+       <div className="inline-flex gap-2 items-center">
         Share Campaign <UrlShareButton />
-       </div> */}
+       </div>
     </div>
    
   )
