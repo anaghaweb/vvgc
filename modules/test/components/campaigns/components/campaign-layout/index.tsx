@@ -15,7 +15,7 @@ const CampaignLayout = ({
 }) => {
   return (
     <div className="md:top-[10rem] md:left-0 container flex gap-2 p-4">
-      <CampaignSideNav camid={camid} campaign={campaign} />
+      {/* <CampaignSideNav camid={camid} campaign={campaign} /> */}
       <div className="flex flex-col p-2 mx-auto w-full md:max-w-[calc(100%-300px)]">
         {/* <CampaignCarousel camid={camid} campaign={campaign} />        */}
           {children}        

@@ -51,7 +51,10 @@ const CampaignDetailsPage = async ({params}:{
     return notFound()
   }
   return (
-    <RightContentTemplate camid={params.camid}  campaign={data}/>
+    // <RightContentTemplate camid={params.camid}  campaign={data}/>
+    <div>
+      {data.title}
+    </div>
   )
 }
 
