@@ -1,10 +1,7 @@
-import Image from "next/image";
+
 import React, { Fragment } from "react";
 import { Campaign } from "types/global";
-import { Card, CardContent } from "@modules/common/components/ui/card";
-import Link from "next/link";
 import CampaignSideNav from "../side-nav";
-import CampaignPageContent from "../right-content";
 import CampaignCarousel from "../carousel";
 
 const CampaignLayout = ({
