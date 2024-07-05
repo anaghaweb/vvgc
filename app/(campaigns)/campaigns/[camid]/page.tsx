@@ -5,11 +5,6 @@ import type { Campaign } from 'types/global';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-export const metadata:Metadata={
-  title:'Campaigns | VVGC',
-  description:"Donate to any of these campaigns to help us with perform various services to our community"
-}
-
 export async function generateMetadata({ params }:{
   params:{
     camid:string
