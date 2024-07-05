@@ -9,13 +9,14 @@ const Test = async ({params}:{
 }
 
 ) => {
-  // const campaign = await getCampaignData()
+  const campaign = await getCampaignData()
   return (
     <Fragment>
         <TestPage 
         // camid={params.camid} 
-        // campaign={campaign}
+         campaign={campaign}
         />
+
     </Fragment>
   )
 }

@@ -8,7 +8,7 @@ const TestPage = ({camid, campaign}:{
 }) => {
   return (
     <div className="h-[75vh] flex justify-start items-center">
-      Next Update Pending...
+      Next Update Pending... {campaign?.length}
     </div >
   )
 }
