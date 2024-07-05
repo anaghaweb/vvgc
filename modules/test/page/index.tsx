@@ -1,9 +1,15 @@
-import React from 'react'
-import { MenubarDemo } from '../components/navbar'
-import MainNavMenu from '../components/navbar/testmainnavbar'
-const TestPage = () => {
+import React,{Fragment} from 'react'
+import type { Campaign } from 'types/global';
+import CampaignCarousel from '@modules/test/components/campaigns/components/carousel';
+
+const TestPage = ({camid, campaign}:{
+  camid:string;
+  campaign:Campaign[]
+}) => {
   return (
-    <div className='container content-center text-center min-h-[60vh]'><MainNavMenu /></div>
+    <div className="h-[75vh] flex justify-start items-center">
+      <CampaignCarousel camid={camid} campaign={campaign} />
+    </div >
   )
 }
 

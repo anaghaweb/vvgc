@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import CreateMenu from "../create-menu";
 
 const MainNavMenu = ({navbarNavigation}) => {
-  const myref = useRef();
+  const myref = useRef();  
   const [menuStatus, setMenuStatus] = useState([]);
 
   useEffect(() => {
@@ -12,19 +12,16 @@ const MainNavMenu = ({navbarNavigation}) => {
       if (myref.current && !myref.current.contains(event.target)) {
         setMenuStatus([]);
       }
-    }
-    // function handleEscape(event) {
-    //   if (event.key === "Escape") {
-    //     setMenuStatus([]);
-    //   }
-    // }
+         }    
     window.addEventListener("mouseup", removeMenu);
-    // window.addEventListener("keydown", handleEscape);
+    
     return function cleanupListener() {
       window.removeEventListener("mouseup", removeMenu);
-      // window.removeEventListener("keydown", handleEscape);
+      
     };
   }, [myref]);
+
+
 
   return (
     <div className={`hidden lg:block flex-1`}>

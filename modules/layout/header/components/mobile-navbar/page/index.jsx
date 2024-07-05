@@ -10,7 +10,7 @@ import {
   SheetTrigger,
   } from "@modules/common/components/ui/sheet";
 import { Button } from '@modules/common/components/ui/button';
-import Seperator from '@modules/common/components/divider';
+import Divider from '@modules/common/components/divider';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { navbarNavigation } from "@lib/data/navigation";
 import MobileNavMenu from '../components/navbar-content';
@@ -31,7 +31,7 @@ const MobileNavigationMenu = () => {
                Welcome to VVGC
               </SheetDescription> */}
             </SheetHeader>
-            <Seperator />
+            <Divider />
           <MobileNavMenu navbarNavigation={navbarNavigation} />
             {/* <SheetFooter>
               <SheetClose asChild>

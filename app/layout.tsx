@@ -3,9 +3,19 @@ import Header from '@modules/layout/header/page';
 import Footer from '@modules/layout/footer/page';
 import { roboto, opensans, inter, roboto_mono, playfair, cormorant } from './fonts';
 import React from 'react'
+import { Toaster } from '@modules/common/components/ui/toaster';
+ import {
+  TooltipProvider,
+
+} from "@modules/common/components/ui/tooltip"
 
 
-export default function RootLayout({ children }:{children:React.ReactNode}) {
+export default function RootLayout({ children, params }:
+  {children:React.ReactNode
+  params:{
+    camid:string
+  }
+  }) {
 
   return (
     <html lang="en" className={`${inter.variable} ${roboto_mono.variable} 
@@ -15,10 +25,13 @@ export default function RootLayout({ children }:{children:React.ReactNode}) {
      <link rel="icon" href="/icons/om-2.png" type="image/png"></link>
    </head>
 
-      <body className={`max-w-full font-sans box-border m-0`}>      
+      <body className={`max-w-full font-sans box-border m-0`}>   
+        <TooltipProvider>
           <Header />
           {children}
-          <Footer />        
+          <Footer />    
+          <Toaster/>    
+          </TooltipProvider>   
       </body>
     </html>
   )

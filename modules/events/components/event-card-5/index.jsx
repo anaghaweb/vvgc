@@ -15,7 +15,7 @@ import {
 
 import clsx from 'clsx';
 import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
-import Divider from "@modules/common/components/divider-2/divider";
+import Divider from "@modules/common/components/divider";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],

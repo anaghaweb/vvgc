@@ -4,6 +4,7 @@ import {
   TriangleRightIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
     const handleMouseEnter = (item, depth) => {
@@ -14,10 +15,13 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
         setMenuStatus((prev) => [...prev, item.id]);
       }
     };
+   
+
     if (item.child) {
       return (
         <li
           onMouseEnter={(e) => handleMouseEnter(item, depth)}
+          
           className="relative px-2 py-1 hover:cursor-pointer hover:bg-orange-500 font-roboto 
            md:text-sm lg:text-base  font-light"
           ref={myref}
