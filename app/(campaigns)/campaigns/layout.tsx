@@ -8,9 +8,11 @@ export default async function CampaignLayoutPage({ children, params }:
       camid:string
     }
   }) {
-    const campaign = await getCampaignData()
+    // const campaign = await getCampaignData()
   return (    
-    <CampaignLayout camid={params.camid}  campaign={campaign}>
+    <CampaignLayout camid={params.camid}  
+    // campaign={campaign}
+    >
             {children}
     </CampaignLayout>          
          

@@ -42,18 +42,19 @@ export const metadata:Metadata={
 const CampaignDetailsPage = async ({params}:{
   params:{camid:string}
 }) => {
-  const campaign = await getCampaignData();
-  if(!campaign){
-    return notFound()
-  }
-  const data = campaign.find(c=> c.id === params.camid)
-  if(!data){
-    return notFound()
-  }
+  // const campaign = await getCampaignData();
+  // if(!campaign){
+  //   return notFound()
+  // }
+  // const data = campaign.find(c=> c.id === params.camid)
+  // if(!data){
+  //   return notFound()
+  // }
   return (
     // <RightContentTemplate camid={params.camid}  campaign={data}/>
     <div>
-      {data.title}
+      {/* {data.title} */}
+      Testing ...
     </div>
   )
 }

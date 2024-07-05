@@ -10,7 +10,7 @@ const CampaignLayout = ({
   children,
 }: {
   camid: string;
-  campaign: Campaign[];
+  campaign?: Campaign[];
   children: React.ReactNode;
 }) => {
   return (
