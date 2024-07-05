@@ -16,7 +16,7 @@ const Test = async ({params}:{
         // camid={params.camid} 
          campaign={campaign}
         />
-
+  
     </Fragment>
   )
 }
