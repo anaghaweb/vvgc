@@ -23,7 +23,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
           onMouseEnter={(e) => handleMouseEnter(item, depth)}
           
           className="relative px-2 py-1 hover:cursor-pointer hover:bg-orange-500 font-roboto 
-           md:text-sm lg:text-base  font-light"
+           md:text-sm lg:text-base  font-normal"
           ref={myref}
           key={item.id}
         >
@@ -62,7 +62,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
       return (
         <a key={item.id} href={item.url} >
         <li         
-          className="whitespace-nowrap px-2 py-1 hover:bg-orange-500  lg:text-base  font-roboto font-light"
+          className="whitespace-nowrap px-2 py-1 hover:bg-orange-500  lg:text-base  font-roboto font-normal"
         >     
             {item.title}
         </li>

@@ -1,5 +1,5 @@
 import React from 'react'
-import CampaignLayout from '@modules/test/components/campaigns/components/campaign-layout'
+import CampaignLayout from '@modules/campaigns/components/campaign-layout';
 import { getCampaignData } from '@lib/server-actions/actions';
 
 export default async function CampaignLayoutPage({ children, params }:

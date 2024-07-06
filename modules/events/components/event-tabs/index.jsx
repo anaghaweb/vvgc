@@ -1,23 +1,32 @@
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@modules/common/components/ui/tabs"
+import Link from "next/link";
 import RenderEvent from "../event-card-1"
 import Regular from "../event-card-2"
+import React, {Fragment} from 'react';
+import clsx from "clsx";
+import { Separator } from "@modules/common/components/ui/separator";
 
-export const EventTabs = ({data, regularEventData}) =>{   
+export const EventTabs = ({data, regularEventData, searchParams}) =>{   
+  const eventType = searchParams.evtype || 'special';
   return (    
-    <>
-      <div className="min-h-screen bg-white" id="eventpagetabs">
-      <Tabs defaultValue="regular" className="w-[full]">
-        <TabsList className="gap-x-4 p-4 h-auto" >
-          <TabsTrigger
-            
-          value="special" className="rounded-xl p-4 text-sm">Special Events</TabsTrigger>
-          <TabsTrigger  value="regular" className="rounded-xl p-4 text-sm">Regular Events</TabsTrigger>
-        </TabsList>
-        <TabsContent value="special"><RenderEvent data={data}/></TabsContent>
-      <TabsContent value="regular"><Regular regularEventData={regularEventData}/></TabsContent>
-      </Tabs>
-      </div>
-    </>
+    <Fragment>
+    <div className="flex justify-start items-center gap-2 border-b-[1px] md:ml-4 md:pt-6 text-sm md:text-xl ">
+     <Link href="/events/?evtype=special" shallow
+     className={clsx("",{
+      "border-b-2 font-semibold text-blue-900 border-blue-900": eventType === 'special'
+     })}
+     >Special Events</Link>
+     <Separator orientation="vertical"  className="h-8 border-r-[0.1rem] border-red-500" />
+     <Link href="/events/?evtype=regular" shallow
+      className={clsx("",{
+        "border-b-2 font-bold text-blue-900 border-blue-900": eventType === 'regular'
+       })}
+     >Regular Events</Link>
+     <Separator orientation="vertical" className="h-8 border-r-[0.1rem] border-red-500"/>
+    </div>
+    <div>
+        {eventType === 'special' && <RenderEvent data={data}/>}
+        {eventType === 'regular' && <Regular regularEventData={regularEventData} /> }
+    </div>
+    </Fragment>
   )
 }

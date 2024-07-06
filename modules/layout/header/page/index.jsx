@@ -13,7 +13,7 @@ export default function Header() {
   const campaigns = pathname.split('/').includes('campaigns');
   return (
     <header
-      className={clsx(`relative flex flex-col w-full h-44 md:h-40 bg-[#FF9933] min-w-full`,{
+      className={clsx(`relative flex flex-col w-full h-40 md:h-40 bg-[#FF9933] min-w-full`,{
         // 'fixed':campaigns,
         // 'relative':!campaigns
       })}

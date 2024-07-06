@@ -23,7 +23,7 @@ export async function getCampaignData(): Promise<Campaign[]> {
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.G_ID,
-      range: 'campaigns!A1:L1000', // Adjust the range as needed
+      range: 'campaigns!A1:Z1000', // Adjust the range as needed
     });
 
     const rows = response.data.values;

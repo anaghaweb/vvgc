@@ -1,6 +1,6 @@
 import React,{Fragment} from 'react'
 import { getCampaignData } from '@lib/server-actions/actions';
-import RightContentTemplate from '@modules/test/components/campaigns/components/right-content';
+import RightContentTemplate from '@modules/campaigns/components/right-content';
 import type { Campaign } from 'types/global';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -16,13 +16,11 @@ export async function generateMetadata({ params }:{
       notFound()
     }
     const result = campaign?.find((t)=>t.id === params.camid)
-    const title = result?.title;
-    
+    const title = result?.title;    
     console.log("title", title)
     const description =
     campaign[campaign.length - 1].description ??
       `${title}`
-
     return {
       title: `${title} | VVGC`,
       description,
