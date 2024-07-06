@@ -18,6 +18,12 @@ const TempleContact = () => {
           <li>Cell: 9252097637</li>
           <li>Email: srikalahatheeswara@yahoo.com</li>
         </ul>
+        <div className="mt-1 p-3 bg-blue-200 text-start text-sm font-roboto">
+          <p>
+            Note: Please note that these are the specified dollar amounts set by the temple. 
+            Devotees are welcome to make additional dakshina contributions directly to the priests during the event
+          </p>
+        </div>
       </section>
     </Fragment>
   );
