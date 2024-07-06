@@ -41,7 +41,7 @@ const RightContentTemplate = ({
       {/* Description */}
 
       {campaign.description && (
-        <p className="scroll-m-10 text-sm text-justify md:text-start font-normal text-black tracking-normal">
+        <p className="scroll-m-10 text-sm md:text-base text-justify md:text-center font-normal text-black tracking-normal">
           {campaign.description}
         </p>
       )}
