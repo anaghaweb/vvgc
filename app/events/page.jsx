@@ -1,6 +1,6 @@
 import React from "react";
 import { FetchData } from "@lib/utils/fetchdata";
-import localJsonData from "@lib/utils/staticData";
+import {localJsonData} from "@lib/utils/staticData";
 import { cormorant } from "app/fonts";
 import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
