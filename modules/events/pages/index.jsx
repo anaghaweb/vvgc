@@ -5,7 +5,7 @@ import { EventTabs } from '../components/event-tabs'
 const EventsPageView = ({data, regularEventData, searchParams}) => {
   return (
     <Fragment>
-        {/* <MediaCard /> */}
+        <MediaCard />
         <EventTabs data={data} regularEventData={regularEventData} searchParams={searchParams}/>
     </Fragment>
   )

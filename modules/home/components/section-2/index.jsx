@@ -10,7 +10,7 @@ const SectionTwo = ({data}) => {
           <div className="col-span-1 w-full">
          <Card className="w-[100%] h-auto md:p-10">
               <div className="p-2">
-                <h1 className="text-2xl lg:text-3xl font-cormorant text-blue-500">
+                <h1 className="text-2xl lg:text-3xl font-cormorant font-semibold text-sky-950">
                   Upcoming Special Events
                 </h1>
               </div>

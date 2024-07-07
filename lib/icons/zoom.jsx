@@ -2,8 +2,8 @@ import * as React from "react"
 const Zoom = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="4em"
-    height="4em"
+   width="2em"
+    height="2em"
     viewBox="0 0 80 80"
     {...props}
   >

@@ -6,8 +6,8 @@ import React, {Fragment} from 'react'
 const FeedBackFormPageLink = () => {
   return (
     <Fragment>
-         <Card className={`w-[100%] h-auto md:h-[400px] p-1 md:p-1`}>
-              <CardHeader className="text-2xl md:text-4xl font-cormorant text-blue-500">
+         <Card className={`w-[100%] h-auto mb-4 p-1 md:p-1`}>
+              <CardHeader className="text-2xl md:text-4xl font-cormorant text-sky-900">
                 Feedback
               </CardHeader>
               <CardContent className="flex flex-col gap-3">

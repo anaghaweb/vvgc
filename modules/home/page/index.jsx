@@ -4,6 +4,7 @@ import SectionTwo from '../components/section-2'
 import SectionThree from '../components/Section-3'
 import GoogleMap from '../components/section-4'
 import { cormorant, playfair } from "app/fonts";
+import Feedback from '../components/feedback'
 
 const HomePageView = ({data}) => {
   return (
@@ -17,6 +18,9 @@ const HomePageView = ({data}) => {
         <SectionTwo data={data} />
         {/* Gallery, History & Paybee link Cards */}
         <SectionThree />
+       
+        {/* Feedback */}
+        <Feedback />
         {/* Google Maps */}
         <GoogleMap />
         </main>

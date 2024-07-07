@@ -1,6 +1,6 @@
 import React from "react";
 import { FetchData } from "@lib/utils/fetchdata";
-import {localJsonData} from "@lib/utils/staticData";
+import { weeklyEventsList } from "@lib/data/regularEventData";
 import { cormorant } from "app/fonts";
 import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
@@ -26,7 +26,7 @@ export async function generateMetadata({ searchParams }) {
 
 export default async function Event({searchParams}) {
   const data = await FetchData();
-  const regularEventData = await localJsonData();
+  const regularEventData = weeklyEventsList;
 
   return (
     <>

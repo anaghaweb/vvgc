@@ -4,7 +4,6 @@ import { Card, CardHeader, CardTitle, CardContent } from '@modules/common/compon
 
 export default function Regular({regularEventData}) {
 
-    const result = regularEventData;
     if(!result){
         return <div>...No data found. Retry after some time.</div>
     }
@@ -14,7 +13,7 @@ export default function Regular({regularEventData}) {
         <Card className ={`${cormorant.variable} lg:w-[900px] mx-auto`} >
               <CardHeader className=' text-[2rem]  text-orange-600 border-b-2 border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold' >Regular Events</CardHeader>
             {
-                result.content.map((data, index) => {
+                regularEventData.map((data, index) => {
                     
                     return(  
                      <React.Fragment key={index}>                  

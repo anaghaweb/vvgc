@@ -1,67 +1,53 @@
-import React, {Fragment} from 'react';
-import { cormorant, opensans } from "app/fonts";
+import React, { Fragment } from "react";
 import Link from "next/link";
-import Youtube from '@lib/icons/youtube';
-import Zoom from '@lib/icons/zoom';
-import FaceBook from '@lib/icons/facebook';
-import { Card,  
+import watchLiveOnSocial from "@lib/data/liveMediaLinks";
+
+import {
+  Card,
   CardHeader,
   CardContent,
-  CardTitle, } from '@modules/common/components/ui/card';
-
+  CardTitle,
+} from "@modules/common/components/ui/card";
+import { Button } from "@modules/common/components/ui/button";
 
 const MediaCard = () => {
   return (
     <Fragment>
-    <div className="min-h-lvh  flex items-center bg-gray-100 ">
-          <Card className="flex flex-col w-full lg:w-[900px] my-5 mx-auto">
-            <CardHeader className=" font-opensans text-center lg:text-left text-sm bg-blue-300 text-blue-900 ">
-              Watch events live
-            </CardHeader>
-            <hr />
-            <CardContent className="w-full p-2 h-auto min-h-[100%] md:h-60 md:grid grid-cols-3 rounded border-slate-400 border-solid shadow-inner">
-              <div className=" h-10 col-span-1 flex flex-col justify-center items-center">
-                <Link
-                  href="https://www.youtube.com/@vaidicavidhyaganapathicent2187"
-                  target="_blank"
-                >
-                  <span className="text-sm text-sky-950">
-                    Youtube
-                  </span>
-                  <div className="flex justify-center">
-                    <Youtube />
-                  </div>
-                </Link>
-              </div>
-              <div className=" h-10 col-span-1 flex flex-col justify-center items-center">
-                <Link href="https://www.facebook.com/vvgctemple">
-                  <span className="text-sm text-sky-950">
-                    Facebook
-                  </span>
-                  <div className="flex justify-center">
-                    <FaceBook />
-                  </div>
-                </Link>
-              </div>
-              <div className=" h-10 col-span-1 flex flex-col justify-center items-center">
-                <span className="text-sm text-sky-950">Zoom</span>
-                <Link
-                  href="https://zoom.us/j/6233634720?pwd=OEY3K3U2ZEdNZTlaSTJVc1VZQklUdz09#success"
-                  target="_blank"
-                >
-                  {" "}
-                  <div className="flex justify-center">
-                    <Zoom />
-                  </div>
-                </Link>
-                <p>Meeting ID: 6233634720</p>
-                <p> Password : 040415</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        </Fragment>
-)
-}
+      <Card className="m-1">
+        <div className="text-xl pl-2 text-sky-950">Watch events live:</div>
 
-export default MediaCard
+       
+          <div className="flex pl-2 gap-4 my-2 items-center">
+            {watchLiveOnSocial.map((media, index) => {
+              return (
+                <div key={index} className="flex gap-1 items-center justify-start">             
+                  
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full border-gray-500 w-10 h-10 md:w-12 md:h-12 border-[1px]"
+                  >
+                    <Link href={media.url} target="_blank">
+                      {media.icon}
+                    </Link>
+                    
+                  </Button>
+                  {media.title === "Zoom" && (
+                    <div className="flex flex-col text-left text-[12px] md:text-sm font-roboto">
+                      <p className="underline">zoom login:</p>
+                      <p><span className="text-blue-950 font-semibold">Meeting-id:</span> {media.userid}</p>
+                      <p><span className="text-blue-950 font-semibold">Password:</span> {media.password}</p>
+                    </div>
+                  )}                  
+                  </div>
+                
+              );
+            })}
+         </div>
+        
+      </Card>
+    </Fragment>
+  );
+};
+
+export default MediaCard;
