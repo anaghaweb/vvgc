@@ -15,7 +15,7 @@ import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { navbarNavigation } from "@lib/data/navigation";
 import MobileNavMenu from '../components/navbar-content';
   
-const MobileNavigationMenu = () => {
+const MobileNavigationMenu = ({camid}) => {
   return (
     <Fragment>    
         <Sheet >
@@ -32,7 +32,7 @@ const MobileNavigationMenu = () => {
               </SheetDescription> */}
             </SheetHeader>
             <Divider />
-          <MobileNavMenu navbarNavigation={navbarNavigation} />
+          <MobileNavMenu navbarNavigation={navbarNavigation} camid={camid} />
             {/* <SheetFooter>
               <SheetClose asChild>
                 <Button type="submit">Save changes</Button>

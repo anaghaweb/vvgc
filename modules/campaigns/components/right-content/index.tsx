@@ -20,7 +20,7 @@ const RightContentTemplate = ({
         {campaign.title}
       </h3>
       {/* Image */}
-      <div className="relative w-[300px] h-[250px] md:w-[380px] md:h-[275px] mx-auto">
+      <div className="relative w-[250px] h-[200px] sm:w-[300px] sm:h-[250px] md:w-[380px] md:h-[275px] mx-auto">
         <Image
           // width={280}
           // height={250}

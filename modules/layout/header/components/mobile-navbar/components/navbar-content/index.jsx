@@ -20,13 +20,13 @@ import {
 } from "@modules/common/components/ui/sheet";
 
 import Link from "next/link";
-const MobileNavMenu = ({ navbarNavigation }) => {
+const MobileNavMenu = ({ navbarNavigation, camid }) => {
   return (
     <Fragment>
-      <ul className={`w-full sm:w-64 overflow-auto`}>
+      <ul className={`w-full sm:w-64 overflow-auto font-roboto`}>
         {navbarNavigation.map((item, index) => {
-          return <li className="py-1">
-            <CreateMenu item={item} key={index} />
+          return <li className="py-1 rounded-2xl">
+            <CreateMenu item={item} key={index} depth={0} camid={camid}/>
           </li> 
         })}
       </ul>
@@ -34,16 +34,16 @@ const MobileNavMenu = ({ navbarNavigation }) => {
   );
 };
 
-const CreateMenu = ({ item }) => {
+const CreateMenu = ({ item, depth, camid }) => {
   if (item.child) {
      return (
-      <li>
+      <li className="rounded-xl">
         <Accordion type="multiple" collapsible>
           <AccordionItem value="item.title">
             <AccordionTrigger>{item.title}</AccordionTrigger>
             {item.child.map((c1, i1) => (
               <AccordionContent key={i1}>
-                <CreateMenu item={c1} />
+                <CreateMenu item={c1} depth={depth + 1} camid={camid}/>
               </AccordionContent>
             ))}
           </AccordionItem>
@@ -54,7 +54,10 @@ const CreateMenu = ({ item }) => {
     return (
       <Fragment>
         <SheetClose asChild>
-          <Link href={item.url}  className={clsx("text-base")}>
+          <Link key={item.id} href={item.url}  className={clsx(" text-base rounded-xl",{            
+            'text-sm p-1': depth > 0 && !item.child,
+            'text-blue-900 bg-blue-100': item.url.split("/").includes(camid)
+          })}>
             {item.title}
           </Link>
         </SheetClose>

@@ -11,6 +11,8 @@ export default function Header() {
 
   const pathname = usePathname();
   const campaigns = pathname.split('/').includes('campaigns');
+    const {camid} = useParams();
+    console.log("camid", camid)
   return (
     <header
       className={clsx(`relative flex flex-col w-full h-40 md:h-40 bg-[#FF9933] min-w-full`,{
@@ -22,7 +24,7 @@ export default function Header() {
         <DesktopNavigationMenu />
 
         <div className="flex flex-col lg:hidden p-3">
-          <MobileNavigationMenu />
+          <MobileNavigationMenu camid={camid}/>
         </div>
 
         {/* Support us button leads to Donations page */}
