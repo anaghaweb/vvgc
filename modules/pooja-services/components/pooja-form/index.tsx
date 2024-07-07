@@ -27,13 +27,7 @@ const PoojaForm = () => {
         </Link>
         <p> One of our priests will reach out to you regarding the same.</p>
 
-        <div className="mt-1 p-3 bg-blue-200">
-          <p>
-            Note: that these are the dollar amounts that are set by the temple.
-            Devotees are welcome to contribute additional dakshina directly to
-            the priests during the event.
-          </p>
-        </div>
+       
       </section>
     </Fragment>
   );
