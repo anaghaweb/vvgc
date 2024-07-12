@@ -13,7 +13,7 @@ import { Button } from "@modules/common/components/ui/button";
 const MediaCard = () => {
   return (
     <Fragment>
-      <Card className="m-1">
+      <Card className="m-1 p-1 md:p-8">
         <div className="text-xl pl-2 text-sky-950">Watch events live:</div>
 
        

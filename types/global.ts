@@ -37,3 +37,25 @@ export type Campaign = {
     sponsor_link: string;
     register_link?: string;
   };
+
+  export type SpecialEvent = {
+    id:string,
+    date:Date,
+    title:string,
+    subtitle?:string,
+    description?:string,
+    name?:string,
+    startTime?:string,
+    endTime?:string,
+    event?:{
+        name:string,
+        startTime?:Date,
+        endTime?:Date,
+    }[],
+    imageUrl?:string,
+    sponsorLink?:string,
+    registerLink?:string,
+    display?:string,
+    type?:string,
+    location?:string,
+  }
