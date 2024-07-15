@@ -38,11 +38,9 @@ export default function SponsorEvent({ data, index }) {
         {data.title}
         {data.subtitle &&
       <div className=" text-[13px] md:text-base ">
-             {data.subtitle}
-             
+             {data.subtitle}             
            </div> }
-      </CardTitle>
-     
+      </CardTitle>     
 
       {data.imageurl && (
         <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]">

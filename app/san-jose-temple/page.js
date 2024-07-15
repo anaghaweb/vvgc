@@ -7,7 +7,7 @@ import Youtube from "../../lib/icons/youtube";
 import Zoom from "../../lib/icons/zoom";
 import FaceBook from "../../lib/icons/facebook";
 import { Card, CardHeader } from "../../Components/ui/card";
-   
+ import LakshmiGanapathiWeeklyEvents from "../../Components/weekly-events";  
 
 export const metadata = {
     title: 'Lakshmi Ganapathi Temple',
@@ -64,18 +64,19 @@ export default async function SanJose() {
                
 
                 <section className="w-[100%] h-auto md:h-auto  md:p-10">
-                    <div>
+                    {/* <div>
                         <h1 className="text-2xl md:text-3xl font-cormorant  px-2">We invite you to attends these upcoming events:</h1>
                     </div>
-                    <hr className="h-[2px] bg-red-800 my-2 " />
-                    <div className="my-4 w-[100%] grid grid-cols-1 md:grid-cols-2 ">
+                    <hr className="h-[2px] bg-red-800 my-2 " /> */}
+                    {/* <div className="my-4 w-[100%] grid grid-cols-1 md:grid-cols-2 ">
                         {data.content.map((data, index) => {
 
                             return (data.homepage === 'sponsor' ? <SponsorEvent data={data} key={index} /> : "")
                         })
                         }
-                    </div>
+                    </div> */}
 
+                    <LakshmiGanapathiWeeklyEvents />
                     <section className="my-5">
                         <iframe className="w-full h-[200px] md:h-[400px]" src={IframeURL} ></iframe>
                     </section>
