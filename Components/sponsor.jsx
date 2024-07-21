@@ -43,7 +43,7 @@ export default function SponsorEvent({ data, index }) {
       </CardTitle>     
 
       {data.imageurl && (
-        <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[500px]">
+        <div className="relative  w-[100%] h-[200px] md:w-[100%] md:h-[300px]">
           <Link href={data.imageurl} target="_blank">
             <Image
               src={data.imageurl}

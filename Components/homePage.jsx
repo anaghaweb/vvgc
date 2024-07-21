@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { FetchData } from "./fetchdata";
 import SponsorEvent from "./sponsor";
 import { cormorant, playfair } from "../app/fonts";
@@ -5,7 +6,13 @@ import { BiSolidNavigation } from "react-icons/bi";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import * as React from "react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { events } from "../data/regularEvent";
@@ -79,53 +86,55 @@ export default async function HomePage() {
         {/* Special Event & Special campaign section */}
         <div className="grid grid-col-1 lg:grid-cols-2 p-4 gap-4 w-full">
           {/* Special Event Card */}
-          <div className="col-span-1 w-full">
-            <Card className="w-[100%] h-auto md:p-10">
-              <div className="p-2">
-                <h1 className="text-2xl lg:text-3xl font-cormorant text-blue-500">
-                  Upcoming Special Events
-                </h1>
-              </div>
-              <hr className="h-[2px] bg-red-800 my-2 " />
-              <div className="my-[16px] w-[100%] ">
-                {data.content.map((data, index) => {
-                  return data.homepage === "sponsor" ? (
-                    <SponsorEvent data={data} key={index} />
-                  ) : (
-                    ""
-                  );
-                })}
-              </div>
-              <CardFooter>
-                <Button className="flex w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
-                  <Link href="/events#eventpagetabs">View Regular Events</Link>
-                </Button>
-              </CardFooter>
-            </Card>
+          <div className="p-2 col-span-full ">
+            <h1 className="text-2xl lg:text-3xl font-cormorant text-blue-500">
+              Upcoming Special Events
+            </h1>
+            <hr className="h-[2px] bg-red-800 my-2 " />
           </div>
-          {/* Campaign */}
-          <div className="col-span-1 w-full ">
+
+          {/* <div className="col-span-1 w-full"> */}
+          {data.content.map((event, index) => {
+            return event.homepage === "sponsor" ? (
+              <Fragment>
+                <Card className="w-[100%] h-auto md:p-10">
+                  <div className="my-[16px] w-[100%] ">
+                    <SponsorEvent data={event} key={index} />
+                  </div>
+                </Card>
+              </Fragment>
+            ) : null;
+          })}
+
+          {/* </div> */}
+          <div className="my-2 col-span-full w-full mx-auto text-center">
+            <Button className="w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
+              <Link href="/events#eventpagetabs">View Regular Events</Link>
+            </Button>
+          </div>
+        </div>
+        {/* Campaign */}
+        <div className=" w-full my-2 mx-auto">
           <Card className="h-auto w-full sm:p-2 text-green-950">
             <CardContent className="">
-            <p className="mt-12 mb-2 font-bold text-3xl text-center  font-[cormorant]">
-              Plant a tree for our future
-            </p>
-            <hr className="h-[2px] bg-red-800 my-2" />
-           <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[800px] p-2">
-            <Link href="/images/home/services/2.jpeg" target="_blank">
-            <Image
-              src="/images/home/services/2.jpeg"
-              alt="Event"
-              fill
-              quality={75}
-              sizes={"100vw"}
-              className="absolute object-contain cursor-pointer"
-            />
-            </Link>
-            </div>
+              <p className="mt-12 mb-2 font-bold text-3xl text-center  font-[cormorant]">
+                Plant a tree for our future
+              </p>
+              <hr className="h-[2px] bg-red-800 my-2" />
+              <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[800px] p-2">
+                <Link href="/images/home/services/2.jpeg" target="_blank">
+                  <Image
+                    src="/images/home/services/2.jpeg"
+                    alt="Event"
+                    fill
+                    quality={75}
+                    sizes={"100vw"}
+                    className="absolute object-contain cursor-pointer"
+                  />
+                </Link>
+              </div>
             </CardContent>
-            </Card>
-          </div>
+          </Card>
         </div>
 
         {/* gallery / sponsor other event and history cards section */}
