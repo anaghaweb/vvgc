@@ -1,5 +1,4 @@
-import { FeedbackForm } from "../../Components/feedback/feedback"
-
+import { FeedbackForm } from "@modules/feedback-form/components/feedback"
 export const metadata = {
     title: 'Feedback',
     description: 'VVGC- Temple',
@@ -7,7 +6,7 @@ export const metadata = {
 
 export default function FeedbackPage(){
     return(
-        <div className="min-h-[70dvh]  flex items-start justify-center bg-slate-800 py-10">
+        <div className="min-h-[70dvh] flex items-start justify-center bg-slate-800 py-10">
         <FeedbackForm />
         </div>
     )

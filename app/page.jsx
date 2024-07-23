@@ -1,6 +1,7 @@
-import HomePage from '../Components/homePage';
 import * as React from 'react';
-
+import HeroCard from '@modules/home/components/Hero-section';
+import HomePageView from '@modules/home/page';
+import { FetchData } from '@lib/utils/fetchdata';
 export const metadata = {
   title: "VVGC | Home",
   description: `A home for hindu devotees`,
@@ -16,9 +17,10 @@ export const viewport = {
 }
 
 export default async function Home() {
-
+  const data = await FetchData();
       return <React.Fragment>
-        <HomePage />
+        <HeroCard/>
+        <HomePageView data={data}/>        
     </React.Fragment>
   
 }

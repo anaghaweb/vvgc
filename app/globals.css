@@ -113,4 +113,8 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
+
+  .text-muted {
+    @apply text-base font-normal text-gray-600;
+  }
 }
