@@ -86,7 +86,7 @@ export async function getTemplateEventData(): Promise<SpecialEvent[]> {
     if (currentEvent) {
       events.push(currentEvent);
     }
-    console.log(events.length)
+    
     return events;
   } catch (error) {
     console.error(error);

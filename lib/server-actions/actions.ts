@@ -63,11 +63,8 @@ export async function getCampaignData(): Promise<Campaign[]> {
 
 {/**
     const headers = data[0];
-    const body = data.slice(1);
-  
-    
-    const result = [];
-    
+    const body = data.slice(1);   
+    const result = []; 
 
     body.map((r) =>{ 
             const newobj = {};

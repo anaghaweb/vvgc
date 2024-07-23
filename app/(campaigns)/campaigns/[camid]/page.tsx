@@ -15,7 +15,7 @@ export async function generateMetadata({ params }:{
     }
     const result = campaign?.find((t)=>t.id === params.camid)
     const title = result?.title;    
-    console.log("title", title)
+    
     const description =
     campaign[campaign.length - 1].description ??
       `${title}`
