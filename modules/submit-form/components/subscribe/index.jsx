@@ -64,6 +64,7 @@ export function SubscribeForm() {
     return <SubscribeSuccess />;
   } else {
     return (
+       <section  className="flex flex-col col-span-full items-center bg-blue-300 my-5">
       <div className="bg-blue-950 min-w-36">
         <Form {...form}>
           <div className=" min-w-56 ">
@@ -98,6 +99,7 @@ export function SubscribeForm() {
           </div>
         </Form>
       </div>
+      </section>
     );
   }
 }

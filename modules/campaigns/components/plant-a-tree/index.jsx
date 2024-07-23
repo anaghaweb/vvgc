@@ -5,8 +5,7 @@ import React, {Fragment} from 'react'
 
 const PlantATree = () => {
   return (
-    <Fragment>
-        
+    <Fragment>       
           <Card className="h-auto w-full sm:p-2 text-green-950">
             <CardContent className="">
             <p className="mt-12 mb-2 font-bold text-3xl text-center  font-[cormorant]">
