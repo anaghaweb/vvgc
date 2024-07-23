@@ -1,9 +1,7 @@
-import React,{Fragment} from 'react'
 import { getCampaignData } from '@lib/server-actions/actions';
 import RightContentTemplate from '@modules/campaigns/components/right-content';
 import type { Campaign } from 'types/global';
 import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }:{
   params:{

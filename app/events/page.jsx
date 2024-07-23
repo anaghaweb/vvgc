@@ -1,7 +1,5 @@
-import React from "react";
 import { FetchData } from "@lib/utils/fetchdata";
 import { weeklyEventsList } from "@lib/data/regularEventData";
-import { cormorant } from "app/fonts";
 import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
 
