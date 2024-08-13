@@ -19,13 +19,9 @@ const SectionTwo = ({ data }) => {
         {/* <div className="col-span-1 w-full"> */}
         {data.content.map((event, index) => {
           return event.homepage === "sponsor" ? (
-            <Fragment>
-              <Card className="w-[100%] h-auto md:p-10">
-                <div className="my-[16px] w-[100%] ">
+          
                   <SponsorEvent data={event} key={index} />
-                </div>
-              </Card>
-            </Fragment>
+              
           ) : null;
         })}
 

@@ -18,9 +18,9 @@ const SectionOne = ({eventdata}) => {
         </div>
         <Divider />
 
-           {data.title && <EventSummaryCard eventdata={data}/>}              
+           {data?.title && <EventSummaryCard eventdata={data}/>}              
             
-           {data.title && <p className=' md:pl-4 text-sm font-normal'>Below daily events will also be conducted if time permits</p>} 
+           {data?.title && <p className=' md:pl-4 text-sm font-normal'>Below daily events will also be conducted if time permits</p>} 
           </div>
 
           {/* Daily Events */}
