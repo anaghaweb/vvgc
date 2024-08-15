@@ -13,7 +13,7 @@ const HomePageView = ({data}) => {
       flex flex-col max-w-screen overflow-hidden 
       h-auto from-gray-100 via-blue-100 to-slate-100`}>
         
-        {/* Today's event & Feedback */}
+        {/* Today's event & Daily Maha Prasadam info */}
         <SectionOne eventdata={data}/>
 
         {/* Special and Sponsored events */}

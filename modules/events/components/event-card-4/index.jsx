@@ -11,13 +11,6 @@ const DailyEventCard = ({ events }) => {
   const currentDay = dayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
 
-  // if (!data) {
-  //   return (
-  //     <>
-  //       <div>No events for today</div>;
-  //     </>
-  //   );
-  // }
 
   return (
     <div className={`w-[100%] font-roboto h-auto md:h-full p-1 md:max-w-3xl md:p-1 text-sm `}>
@@ -35,7 +28,7 @@ const DailyEventCard = ({ events }) => {
 
           <div
             className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
           >
             {data.time}:
           </div>
@@ -45,7 +38,7 @@ const DailyEventCard = ({ events }) => {
 
           <div
             className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
           >
             {data.time1}:
           </div>
@@ -57,7 +50,7 @@ const DailyEventCard = ({ events }) => {
             <>
               <div
                 className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
               >
                 {data.time2}:
               </div>
@@ -71,7 +64,7 @@ const DailyEventCard = ({ events }) => {
             <>
               <div
                 className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
               >
                 {data.time3}:
               </div>
@@ -85,7 +78,7 @@ const DailyEventCard = ({ events }) => {
             <>
               <div
                 className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
               >
                 {data.time4}:
               </div>
@@ -99,7 +92,7 @@ const DailyEventCard = ({ events }) => {
             <>
               <div
                 className={`col-span-1   text-blue-950 flex items-center 
-                        justify-end px-1 py-0 border-r  md:leading-6 }`}
+                        justify-end px-1 py-0   md:leading-6 }`}
               >
                 {data.time5}:
               </div>
@@ -108,7 +101,7 @@ const DailyEventCard = ({ events }) => {
               </div>
             </>
           )}
-          <hr />
+          {/* <hr /> */}
         </div>
       </div>
     </div>
