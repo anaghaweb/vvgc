@@ -1,8 +1,8 @@
 import { Card } from "@modules/common/components/ui/card";
 import React, { Fragment } from "react";
-import GallerySection from "./gallery";
-import History from "./history";
-import PaybeeEventsLink from "./paybee-events";
+import GallerySection from "@modules/home/components/section-4/gallery";
+import History from "@modules/home/components/section-4/history";
+import PaybeeEventsLink from "@modules/home/components/section-4/paybee-events";
 
 const SectionFour = () => {
   return (
