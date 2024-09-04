@@ -1,8 +1,8 @@
 import React,{Fragment} from 'react'
 import SectionOne from '../components/section-1'
 import SectionTwo from '../components/section-2'
-import SectionThree from '../components/Section-3'
-import SectionFour from '../components/Section-4'
+import SectionThree from '../components/section-3'
+import SectionFour from '../components/section-4'
 import SectionFive from '../components/section-5'
 import { cormorant, playfair } from "app/fonts";
 import PlantATree from '@modules/campaigns/components/plant-a-tree'
