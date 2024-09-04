@@ -1,8 +1,9 @@
 import React,{Fragment} from 'react'
 import SectionOne from '../components/section-1'
 import SectionTwo from '../components/section-2'
-import SectionThree from '../components/Section-3'
-import GoogleMap from '../components/section-4'
+import SectionThree from '../components/section-3'
+import SectionFour from '../components/Section-4'
+import SectionFive from '../components/section-5'
 import { cormorant, playfair } from "app/fonts";
 import PlantATree from '@modules/campaigns/components/plant-a-tree'
 
@@ -17,16 +18,17 @@ const HomePageView = ({data}) => {
         <SectionOne eventdata={data}/>
 
         {/* Special and Sponsored events */}
-        <SectionTwo data={data} />
+        <SectionTwo data={data} />   
 
-         {/* Campaigns */}
-         <PlantATree/>
+          {/* Campaigns */}
+          <SectionThree />
 
         {/* Gallery, History & Paybee link Cards */}
-        <SectionThree />
+        <SectionFour /> 
        
         {/* Google Maps */}
-        <GoogleMap />
+        <SectionFive />
+        
         </main>
     </Fragment>
   )

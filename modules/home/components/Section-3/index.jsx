@@ -1,22 +1,19 @@
-import { Card } from "@modules/common/components/ui/card";
-import React, { Fragment } from "react";
-import GallerySection from "./gallery";
-import History from "./history";
-import PaybeeEventsLink from "./paybee-events";
+import React from 'react'
+import PlantATree from '@modules/campaigns/components/plant-a-tree'
+import KitchenVVGC from '@modules/campaigns/components/vvgc-kitchen';
+
 
 const SectionThree = () => {
   return (
-    <Fragment>
-      <Card
-        className={`w-[100%] md:max-w-screen h-auto p-1 md:p-10 
-        my-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 
-        justify-items-center gap-4`}>
-        <GallerySection />
-        <History />
-        <PaybeeEventsLink />
-      </Card>
-    </Fragment>
-  );
-};
+   <div className='grid grid-cols-1 xl:grid-cols-2'>
+    <div className='col-span-1'>
+    <KitchenVVGC />
+    </div>
+      <div className='col-span-1'>
+      <PlantATree />
+      </div>
+   </div>
+  )
+}
 
-export default SectionThree;
+export default SectionThree

@@ -5,7 +5,8 @@ import FeedBackFormPageLink from "@modules/feedback-form/page";
 import EventSummaryCard from "@modules/events/components/event-card-5";
 import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
 import Divider from "@modules/common/components/divider";
-import MahaPrasadamSanJose from "@modules/lakshmi-ganapathi-temple/components/daily-maha-prasadam";
+
+import MahaPrasadamSanMartin from "./maha-prasadam";
 
 const SectionOne = ({ eventdata }) => {
   const data = eventdata.content.find(
@@ -62,7 +63,7 @@ const SectionOne = ({ eventdata }) => {
           <p>Pandit Ganesh Shasthry  925 209 7637</p>
           <p>San Jose Temple  Number 408 226 3600</p>
         </div> */}
-        <MahaPrasadamSanJose />
+        <MahaPrasadamSanMartin />
       </div>
     </Fragment>
   );
