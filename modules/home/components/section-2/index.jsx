@@ -1,5 +1,6 @@
 import { Card } from "@modules/common/components/ui/card";
 import SponsorEvent from "@modules/events/components/sponsor-event-card";
+import RenderEvent from "@modules/events/components/event-card-1";
 import { Fragment } from "react";
 import { Button } from "@modules/common/components/ui/button";
 import Link from "next/link";

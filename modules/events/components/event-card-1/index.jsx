@@ -17,7 +17,7 @@ export default function RenderEvent({ data }) {
     <>
       <div className="flex flex-col max-w-full lg:w-[900px] mx-auto h-auto  px-1 relative">
         <CardHeader className=" text-[2rem] leading-7 px-1 py-2 md:text-4xl text-orange-600 border-b-2 border-b-indigo-800 md:leading-10 md:font-semibold">
-          Special Events 
+          Special Events
         </CardHeader>
         <hr />
         {data.content.map((data, index) =>
@@ -26,16 +26,21 @@ export default function RenderEvent({ data }) {
               key={data.id}
               className={`bg-blue-100 flex flex-col w-full sm:w-full m-auto h-auto my-2 sm:p-2`}
             >
-              <CardHeader className=" text-2xl  text-cyan-950">
+              <CardHeader className=" text-2xl  text-rose-800">
                 {new Date(data.date).toLocaleDateString("en-US", {
                   weekday: "short",
                   month: "long",
                   day: "numeric",
                 })}
               </CardHeader>
-              <CardTitle className=" pl-7 text-xl   text-cyan-950">
+              <p className=" pl-7 text-xl md:text-2xl font-semibold text-cyan-950">
                 {data.title}
-              </CardTitle>
+              </p>
+              {data.subtitle && (
+                <p className="pl-7 pb-1 font-roboto font-bold text-cyan-950">
+                  {data.subtitle}
+                </p>
+              )}
               <hr className=" my-2 " />
               {data.imageurl && (
                 <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[500px]">
@@ -53,19 +58,18 @@ export default function RenderEvent({ data }) {
               )}
 
               {data.imageurl && <hr className=" my-2 " />}
-              
 
               <CardContent className="grid grid-cols-10 gap-x-1 gap-y-3 my-5">
                 {data.startTime && data.endTime && data.description ? (
                   <>
-                    <div className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-opensans flex items-center justify-center px-[4px]">
+                    <div className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-roboto flex items-center justify-center px-[4px]">
                       {data.startTime}
                     </div>
                     <div className="col-span-8 text-[13px] md:text-base ">
                       {data.description}
                     </div>
                   </>
-                ) : data.startTime && !data.endTime ? (
+                ) : data.startTime && !data.endTime && data.description ? (
                   <>
                     <div
                       className="col-span-2 border-r-[1px] text-blue-900 text-[13px]
@@ -77,48 +81,52 @@ export default function RenderEvent({ data }) {
                       {data.description}
                     </div>
                   </>
-                ) : data.startTime && data.endTime && !data.description ? (
-                  ""
-                ) : (
-                  <div className="col-span-10 text-xl ">
+                ) : !data.startTime && !data.endTime && data.description ? (
+                  <div className="col-span-10 text-xl text-blue-950">
                     {data.description}
                     <br />
                   </div>
+                ) : (
+                  !data.description && ""
                 )}
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((num, index) =>
-                  data[`time_${num}`] ? (
-                    <>
-                      <div
-                        key={data?.date + num}
-                        className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
-                      >
-                        {data[`time_${num}`]}:
-                      </div>
-                      <div
-                        key={index + num}
-                        className="col-span-8 px-1 text-[13px] md:text-base w-full"
-                      >
-                        {data[`event_${num}`]}
-                      </div>
-                    </>
-                  ) : data[`event_${num}`] ? (
-                    <>
-                      <div
-                        key={data?.date + num}
-                        className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
-                      >
-                        {"-"}
-                      </div>
-                      <div
-                        key={index + num}
-                        className="col-span-8 font-inter text-[13px] md:text-base"
-                      >
-                        {data[`event_${num}`]}
-                      </div>
-                    </>
-                  ) : (
-                    ""
-                  )
+
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+                  (num, index) =>
+                    data[`time_${num}`] ? (
+                      <>
+                        <div
+                          key={data?.date + num}
+                          className="col-span-2 border-r-[1px] text-blue-900 text-[13px] md:text-base font-roboto flex items-center justify-center px-[4px]"
+                        >
+                          {data[`time_${num}`]}:
+                        </div>
+                        <div
+                          key={index + num}
+                          className="col-span-8 px-1 text-[13px] md:text-base w-full"
+                        >
+                          {data[`event_${num}`]}
+                        </div>
+                      </>
+                    ) : data[`event_${num}`] ? (
+                      <>
+                        {data[`time_${num}`] && (
+                          <div
+                            key={data?.date + num}
+                            className="col-span-2 border-r-[1px] text-[13px] md:text-base text-blue-900 flex items-center justify-center font-inter px-1"
+                          >
+                            {"-"}
+                          </div>
+                        )}
+                        <div
+                          key={index + num}
+                          className="col-span-full font-inter text-[13px] md:text-base text-center"
+                        >
+                          {data[`event_${num}`]}
+                        </div>
+                      </>
+                    ) : (
+                      ""
+                    )
                 )}
 
                 {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus accusantium ipsum beatae atque, animi cum ipsam et distinctio nemo vitae sapiente vel libero eos velit eaque veniam recusandae debitis. */}
