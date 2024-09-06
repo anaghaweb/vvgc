@@ -18,10 +18,8 @@ const SectionTwo = ({ data }) => {
 
         {/* <div className="col-span-1 w-full"> */}
         {data.content.map((event, index) => {
-          return event.homepage === "sponsor" ? (
-          
-                  <SponsorEvent data={event} key={index} />
-              
+          return event.homepage === "sponsor" ? (          
+                  <SponsorEvent data={event} key={index} />              
           ) : null;
         })}
 
