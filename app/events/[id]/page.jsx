@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FetchData } from "@lib/utils/fetchdata";
-import SingleEvent from "@modules/events/components/single-event-card";
+// import SingleEvent from "@modules/events/components/single-event-card";
 
 export async function generateMetadata ({params, parent})
 {
@@ -33,8 +33,13 @@ const SingleEventPage = async ({params}) =>
     
   return (
     <Fragment>
-        <SingleEvent data={data} />
-        
+        {/* <SingleEvent data={data} /> */}
+        <div className="h-48 w-full">
+
+          <Link href="/events" className="text-xl text-bold underline text-blue-800 m-auto">
+            View All Events
+          </Link>
+        </div>
     </Fragment>
   )
 }
