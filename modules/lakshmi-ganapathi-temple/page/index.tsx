@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import LakshmiGanapathiBanner from '../components/banner'
-import MediaCard from '@modules/events/components/media-card'
+import MediaCard from '@modules/events/components/mediaTab'
 import LakshmiGanapathiWeeklyEvents from '../components/weekly-events'
 import LakshmiGanapathiMapLocation from '../components/googleMapLocation'
 import MahaPrasadamSanJose from "@modules/lakshmi-ganapathi-temple/components/daily-maha-prasadam";

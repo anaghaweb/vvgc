@@ -1,7 +1,7 @@
 import React,{Fragment} from 'react'
 import type { Campaign } from 'types/global';
-import RenderEvent from '@modules/events/components/event-card-1';
-import Regular from '@modules/events/components/event-card-2';
+import RenderEvent from '@modules/events/components/specialEventsTab';
+import Regular from '@modules/events/components/dailyEventTab';
 import { FetchData } from '@lib/utils/fetchdata';
 import localJsonData from '@lib/utils/staticData';
 import Link from 'next/link';

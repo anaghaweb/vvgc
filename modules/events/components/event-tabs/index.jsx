@@ -1,11 +1,11 @@
 import Link from "next/link";
-import RenderEvent from "../event-card-1"
-import Regular from "../event-card-2"
+import SpecialEventTab from "../specialEventsTab"
+import DailyEventTab from "../dailyEventTab";
 import React, {Fragment} from 'react';
 import clsx from "clsx";
 import { Separator } from "@modules/common/components/ui/separator";
 
-export const EventTabs = ({data, regularEventData, searchParams}) =>{   
+export const EventTabs = ({data, dailyEventData, searchParams}) =>{   
   const eventType = searchParams.evtype || 'special';
   return (    
     <Fragment>
@@ -24,8 +24,8 @@ export const EventTabs = ({data, regularEventData, searchParams}) =>{
      <Separator orientation="vertical" className="h-8 border-r-[0.1rem] border-red-500"/>
     </div>
     <div>
-        {eventType === 'special' && <RenderEvent data={data}/>}
-        {eventType === 'regular' && <Regular regularEventData={regularEventData} /> }
+        {eventType === 'special' && <SpecialEventTab data={data}/>}
+        {eventType === 'regular' && <DailyEventTab dailyEventData={dailyEventData} /> }
     </div>
     </Fragment>
   )

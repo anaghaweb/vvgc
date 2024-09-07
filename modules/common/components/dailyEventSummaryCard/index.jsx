@@ -6,12 +6,9 @@ import {
 import React from "react";
 import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
 
-const DailyEventCard = ({ events }) => {
-  
+const DailyEventSummaryCard = ({ events }) => {  
   const currentDay = dayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
-
-
   return (
     <div className={`w-[100%] font-roboto h-auto md:h-full p-1 md:max-w-3xl md:p-1 text-sm `}>
       <div className="text-blue-600 ">
@@ -108,4 +105,4 @@ const DailyEventCard = ({ events }) => {
   );
 };
 
-export default DailyEventCard;
+export default DailyEventSummaryCard;

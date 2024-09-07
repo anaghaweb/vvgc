@@ -1,21 +1,12 @@
-import React, { Fragment } from "react";
-import { cormorant } from "app/fonts";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from "@modules/common/components/ui/card";
+import React from 'react'
+import { Card, CardContent, CardHeader } from '@modules/common/components/ui/card'
 
-export default function Regular({ regularEventData }) {
+const DailyEventCard = ({data}) => {
   return (
-    <Card className={`${cormorant.variable} lg:w-[900px] mx-auto`}>
-      <CardHeader className=" text-[2rem]  text-orange-600 border-b-2 border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold">
+    <Card >
+          <CardHeader className=" text-[2rem]  text-orange-600 border-b-2 border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold">
         Regular Events
       </CardHeader>
-      {regularEventData.map((data, index) => {
-        return (
-          <React.Fragment key={index}>
             <CardContent className="grid grid-cols-6 gap-x-1 gap-y-3 my-5 pl-6">
               <div
                 className="text-start col-span-full text-2xl font-medium leading-7 
@@ -101,9 +92,8 @@ export default function Regular({ regularEventData }) {
               )}
               <hr />
             </CardContent>
-          </React.Fragment>
-        );
-      })}
-    </Card>
-  );
+          </Card>
+  )
 }
+
+export default DailyEventCard

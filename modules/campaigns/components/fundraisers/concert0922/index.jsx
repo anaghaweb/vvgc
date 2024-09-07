@@ -2,6 +2,7 @@ import { Card, CardContent } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 
 const KumariSivaSriConcert = () => {
   return (
@@ -14,7 +15,8 @@ const KumariSivaSriConcert = () => {
             Sunday September 22nd 2024 Evening 5.00pm to 8.00pm
           </h3>  
         <hr className="h-[2px] bg-blue-800 my-2" />
-        <div className="flex flex-col text-rose-900 font-bold font-cormorant">
+       
+        {/* <div className="flex flex-col text-rose-900 font-bold font-cormorant">
         {section1.map((element, index) => (
            <>
            {
@@ -26,32 +28,45 @@ const KumariSivaSriConcert = () => {
            </>
           ))}
         </div>       
-       
+        */}
         <div className="font-roboto justify-center w-full items-center ">
-               
-
           {eventDetails.map((element, index) => (
             <p key={index}></p>
           ))}
         </div>
-        <div className="relative w-[100%] min-h-[200px] h-[200px] md:h-[300px] lg:h-[400px] p-2">
-          <Link href="/events/special/SivasriNamaYatra.jpg" target="_blank">
+        <div className="relative w-[100%] min-h-[300px] h-[300px] md:h-[300px] lg:h-[600px] p-2">
+          <Link href="/images/campaigns/namaYatra.png" target="_blank">
             <Image
-              src="/events/special/SivasriNamaYatra.jpg"
+              src="/images/campaigns/namaYatra.png"
               alt="Event"
-              fill
-              quality={75}
-              sizes={"100vw"}
-              className="absolute object-contain cursor-pointer"
+               fill
+              quality={100}
+              sizes={"100vw"}              
+              className="absolute object-scale-down cursor-pointer"
             />
           </Link>
+          
         </div>
-        <h4 className="py-2 text-center">
+         <div className="flex gap-2 items-center justify-center py-2 underline font-roboto text-xl text-blue-950 font-bold">
+        
+            <Link  className="py-2" target="_blank" href="https://paybee.io/@vvgc@71">
+              Register for FREE!
+            </Link>
+            <LiaExternalLinkSquareAltSolid/>
+        </div>
+         <div className="flex gap-2 items-center justify-center underline font-roboto text-xl text-blue-950 font-bold ">
+        
+            <Link  className="py-2" target="_blank" href="https://paybee.io/@vvgc@72">
+              Become a sponsor!
+            </Link>
+            <LiaExternalLinkSquareAltSolid/>
+        </div>
+        {/* <h4 className="py-2 text-center">
           Maha prasadam/ Priti Bhoj will be served after the Event
-        </h4>
-        <div className="flex flex-col font-cormorant text-blue-800 font-bold text-center">
+        </h4> */}
+        <div className="flex flex-col font-roboto_mono text-blue-800 font-bold text-center">
           {mediaLinks.map((element, index) => (
-            <Link key={index} target="_blank" href={element}>
+            <Link key={index} className="py-1" target="_blank" href={`https://${element}`}>
               {element}
             </Link>
           ))}

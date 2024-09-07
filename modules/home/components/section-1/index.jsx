@@ -1,11 +1,9 @@
 import React, { Fragment } from "react";
 import { weeklyEventsList } from "@lib/data/regularEventData";
-import DailyEventCard from "@modules/events/components/event-card-4";
-import FeedBackFormPageLink from "@modules/feedback-form/page";
-import EventSummaryCard from "@modules/events/components/event-card-5";
+import DailyEventSummaryCard from "@modules/common/components/dailyEventSummaryCard";
+import SpecialEventSummaryCard from "@modules/common/components/SpecialEventSummaryCard";
 import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
 import Divider from "@modules/common/components/divider";
-
 import MahaPrasadamSanMartin from "./maha-prasadam";
 
 const SectionOne = ({ eventdata }) => {
@@ -22,12 +20,12 @@ const SectionOne = ({ eventdata }) => {
           </div>
           <Divider />
 
-          {data?.title && <EventSummaryCard eventdata={data} />}
+          {data?.title && <SpecialEventSummaryCard eventdata={data} />}
 
           {/* {data?.title && <p className=' md:pl-4 text-sm font-normal'>Below daily events will also be conducted if time permits</p>}  */}
 
           {/* Daily Events */}
-          <DailyEventCard events={weeklyEventsList} />
+          <DailyEventSummaryCard events={weeklyEventsList} />
         </div>
         {/* <div className="h-auto my-4 md:my-0 flex-1 pl-2 md:pl-4 bg-green-400 col-span-1 text-center">
           <h1 className="text-xl md:text-2xl font-semibold">

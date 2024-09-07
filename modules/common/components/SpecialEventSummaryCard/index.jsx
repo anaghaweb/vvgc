@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
   fallback: "serif",
 });
 
-export default function EventSummaryCard({ eventdata }) {
+export default function SpecialEventSummaryCard({ eventdata }) {
   const data = eventdata;
   const currentDay = dayOfTheWeek();
   return (

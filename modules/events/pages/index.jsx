@@ -1,12 +1,12 @@
 import React, {Fragment} from 'react'
-import MediaCard from '../components/media-card'
+import MediaTabs from '../components/mediaTab'
 import { EventTabs } from '../components/event-tabs'
 
-const EventsPageView = ({data, regularEventData, searchParams}) => {
+const EventsPageView = ({data, dailyEventData, searchParams}) => {
   return (
     <Fragment>
-        <MediaCard />
-        <EventTabs data={data} regularEventData={regularEventData} searchParams={searchParams}/>
+        <MediaTabs />
+        <EventTabs data={data} dailyEventData={dailyEventData} searchParams={searchParams}/>
     </Fragment>
   )
 }
