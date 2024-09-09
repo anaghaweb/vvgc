@@ -18,7 +18,7 @@ const MahaPrasadamSanMartin = () => {
     </div>
     <div className='text-center font-opensans mb-3 mt-1'>
         <p className='text-center'>@</p>
-    <p>VVGC Sam Martin hundu Temple</p>
+    <p>VVGC San Martin hindu Temple</p>
     <p>Vaidica Vidhya Ganapathi Center Inc, San Martin</p>
     <p>11355 Monterey Hwy San Martin Ca 95046</p>
     
