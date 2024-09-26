@@ -1,48 +1,38 @@
-import React,{Fragment} from 'react'
-import type { Campaign } from 'types/global';
-import RenderEvent from '@modules/events/components/specialEventsTab';
-import Regular from '@modules/events/components/dailyEventTab';
-import { FetchData } from '@lib/utils/fetchdata';
-import localJsonData from '@lib/utils/staticData';
-import Link from 'next/link';
-import { Separator } from '@modules/common/components/ui/separator';
-import clsx from 'clsx';
-import { getTemplateEventData } from '@lib/server-actions/templateData';
+import { Fragment } from "react";
+import type { Campaign, CalendarEvent } from "types/global";
+import { AllEventsData } from "@lib/server-actions/mainEvents";
+import MainEventCard from "../components/eventCard";
 
-const TestPage =async ({camid, campaign, searchParams}:{
-  camid?:string;
-  campaign?:Campaign[]
-  searchParams:{
-    evtype: "regular" | "special" | "weekly" | 'festival'
-  }
+const TestPage = async ({
+  camid,
+  campaign,
+  searchParams,
+}: {
+  camid?: string;
+  campaign?: Campaign[];
+  searchParams: {
+    evtype: "regular" | "special" | "weekly" | "festival";
+  };
 }) => {
-  const eventType = searchParams.evtype || 'special';
-  // const data = await FetchData();
-  // const regularEventData = await localJsonData();
-  const templateEventData = await getTemplateEventData();
+  const eventType = searchParams.evtype || "special";
+  const templateEventData: CalendarEvent[] = await AllEventsData();
+  const dateToday = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"});
+  const yesterday = templateEventData.findIndex(
+    (e) => {       
+      return e.date.toLocaleString("en-US", {timeZone:"America/Los_Angeles"} ) === dateToday
+    }
+  );
+  
   return (
     <Fragment>
-    <div className="flex flex-col justify-start items-center gap-2">
-      {
-       templateEventData && templateEventData?.map((event, index)=>{
-          return (
-           event.id && <div className='flex flex-col items-center gap-2' key={event.id}>
-                <div>{event.title }</div>
-                <div>{event.description}</div>
-                <div>{event.id}</div>
-                <div>{new Date(event.date).toDateString()}</div>
-                {
-                 event.event && event.event?.map((item, index)=>(
-                   item.name ? <li key={index} className='list-style-none'>name: {item.name} </li> : ""
-                  ))
-                }
-            </div>
-          )
-        })
-      }
-    </div>
+      <div className="flex flex-col gap-2">
+        {templateEventData &&
+          templateEventData?.slice(0,5).map((event) => {
+            return <MainEventCard data={event} key={event.id} />;
+          })}
+      </div>
     </Fragment>
-  )
-}
+  );
+};
 
-export default TestPage
+export default TestPage;

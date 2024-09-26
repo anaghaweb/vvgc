@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment } from "react";
-import { opensans } from "app/fonts";
+import { opensans } from "@lib/fonts/fonts";
 import Divider from "@modules/common/components/divider";
 
 const GodhanamInDonation = ({ imageUrl }: { imageUrl: string }) => {

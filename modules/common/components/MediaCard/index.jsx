@@ -23,5 +23,4 @@ const MediaCard = ({media}) => {
     </div>  
   )
 }
-
 export default MediaCard

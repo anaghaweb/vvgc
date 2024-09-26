@@ -1,5 +1,5 @@
 import React from "react";
-import { cormorant } from "app/fonts";
+import { cormorant } from "@lib/fonts/fonts";
 import AboutUsPage from "@modules/about-us/page";
 
 export const metadata = {

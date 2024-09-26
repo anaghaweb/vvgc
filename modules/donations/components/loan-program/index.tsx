@@ -1,5 +1,5 @@
 import Divider from "@modules/common/components/divider";
-import { opensans } from "app/fonts";
+import { opensans } from "@lib/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment } from "react";

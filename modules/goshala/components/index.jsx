@@ -1,5 +1,5 @@
 import React from "react";
-import { cormorant, opensans } from "app/fonts";
+import { cormorant, opensans } from "@lib/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button";

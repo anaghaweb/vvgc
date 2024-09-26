@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { cormorant, opensans } from 'app/fonts'
+import { cormorant, opensans } from '@lib/fonts/fonts'
 import Image from "next/image";
 import Divider from "@modules/common/components/divider";
 import Link from "next/link";

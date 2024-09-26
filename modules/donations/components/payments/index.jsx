@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Card } from "@modules/common/components/ui/card";
 import Divider from "@modules/common/components/divider";
-import { opensans } from "app/fonts";
+import { opensans } from "@lib/fonts/fonts";
 
 const PaymentsContainer = () => {
   return (

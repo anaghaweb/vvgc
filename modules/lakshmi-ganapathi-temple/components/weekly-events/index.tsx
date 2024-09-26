@@ -25,7 +25,7 @@ const LakshmiGanapathiWeeklyEvents = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {weeklyEvents.map((event, index) => {
           return event.events.length > 0 ? (
-            <Card key={index} className="max-w-full md:min-w-[1/2] bg-amber-300 ">
+            <Card key={index} className={`max-w-full md:min-w-[1/2] bg-amber-200`}>
              {event.events && <CardTitle className="px-4 pt-4 pb-2 font-cormorant font-semibold text-2xl" >{event.day}</CardTitle>}
               <div className="flex flex-col p-4 text-sm md:text-base">
                 {event.events.map((e, i) => {

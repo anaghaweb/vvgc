@@ -5,10 +5,8 @@ import KumariSivaSriConcert from "@modules/campaigns/components/fundraisers/conc
 
 const SectionThree = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2">
-      <div className="col-span-1">
-        <KumariSivaSriConcert />
-      </div>
+    <div className="grid grid-cols-1">
+      
       <div className="col-span-1">
         <KitchenVVGC />
       </div>
