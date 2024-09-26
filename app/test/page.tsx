@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import TestPage from "@modules/test/page";
 import { getCampaignData } from "@lib/server-actions/actions";
 import { AllEventsData } from "@lib/server-actions/mainEvents";
-import { SpecialEvent } from "types/global";
+import { CalendarEvent } from "types/global";
 import LazyImageLoader from "@modules/common/components/LazyImageLoader";
 import CardUpdated from "@modules/test/components/eventCard";
 import {
@@ -26,7 +26,7 @@ const Test = async ({
   };
 }) => {
   const campaign = await getCampaignData();
-  const data: SpecialEvent[] = await AllEventsData();
+  const data: CalendarEvent[] = await AllEventsData();
 
   return (
     <Fragment>

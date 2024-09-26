@@ -2,7 +2,7 @@
   import MultipleEventsCard from "./multipleEvents";
   import SoloEventCard from "./soloEvent";
 import { Fragment } from "react";
-  const MainEventCard = ({ data, count }: { data: CalendarEvent, count:number }) => {    
+  const MainEventCard = ({ data, count }: { data: CalendarEvent, count?:number }) => {    
     return data.title ? (
       <Fragment>
        {

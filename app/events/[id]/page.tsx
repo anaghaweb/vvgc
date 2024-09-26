@@ -1,8 +1,9 @@
 import React, {Fragment} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { getTemplateEventData } from "@lib/server-actions/mainEvents";
-import type { SpecialEvent } from "types/global";
+import { AllEventsData } from "@lib/server-actions/mainEvents";
+import type { CalendarEvent } from "types/global";
+import MainEventCard from "@modules/events/components/mainEventsCard";
 // import SingleEvent from "@modules/events/components/single-event-card";
 
 export async function generateMetadata ({params}:{
@@ -11,8 +12,8 @@ export async function generateMetadata ({params}:{
   }
 })
 {
-  const event = await getTemplateEventData()
-  const event_title = event.find((e:SpecialEvent)=> e.id === params.id);
+  const event = await AllEventsData()
+  const event_title = event.find((e:CalendarEvent)=> e.id === params.id);
   return {
     title: {
       absolute: `${event_title?.title}`,
@@ -36,19 +37,17 @@ const SingleEventPage = async ({params}:{
   }
 }) => 
 {
-    const event = await getTemplateEventData();
-    const data = event.find((e:SpecialEvent)=> e.id === params.id)
+    const event = await AllEventsData();
+    const data = event.find((e:CalendarEvent)=> e.id === params.id)
     
   return (
     <Fragment>
         {/* <SingleEvent data={data} /> */}
-        <div className="h-48 w-full">
-          <div className="w-96 h-[200px] shadow-lg bg-stone-900 bg-gradient-to-bl text-center content-center">
-            <h1 className="text-blue-500 text-2xl font-bold font-cormorant">
-              {data?.title}
-            </h1>
+        
+          <div className="w-full h-full grid grid-cols-1 py-6 justify-items-center">
+           {data && <MainEventCard data={data}/>}
           </div>
-        </div>
+      
     </Fragment>
   )
 }
