@@ -27,7 +27,7 @@ export default async function Image() {
         <h3 className='text-xl font-inter max-w-96'>
         The Mission of Vaidica Vidhya Ganapathi Center (VVGC), a Sanatana Dharma Temple, is to provide a place for worship, educational and cultural services to the bay area community.
         </h3>
-        <img src={"./images/about-us/hero/hero.jpg"} height="300" width="300" alt = 'About VVGC'/>
+        <img src={"/images/about-us/hero/hero.jpg"} height="100" alt = 'About VVGC'/>
         <div className='flex flex-row gap-2'>
             <p>
                 Visit us at: 
