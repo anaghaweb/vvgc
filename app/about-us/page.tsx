@@ -30,7 +30,7 @@ export const metadata:Metadata = {
     description:
       "A guide on how to optimize SEO with static and dynamic metatags using Next.js 13's new Metadata API.",
       
-    images: "https://vvgc-test.vercel.app/about-us/twitter-image",
+    images: ["https://vvgc-test.vercel.app/about-us/twitter-image"],
   },
 }
 
@@ -41,9 +41,9 @@ export default function About() {
         {/* Hero Section */}
         <div
           className={`flex justify-center items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-about-us ${cormorant.variable} `}
+                    bg-hero-about-us font-cormorant `}
         >
-          <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">
+          <h1 className="text-[1.9rem] md:text-[4.5rem] ">
             About Us
           </h1>
         </div>
