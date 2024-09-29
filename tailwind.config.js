@@ -44,7 +44,7 @@ module.exports = {
       
         backgroundImage: theme => ({
           'hero-donations': "url('https://res.cloudinary.com/dixkqgqsi/image/upload/v1689678777/VVGC%20Images/image_10.jpg')",
-          'hero-about-us': "url('/images/about-use/hero/hero.jpg')",
+          'hero-about-us': "url('/images/about-us/hero/hero.jpg')",
           'hero-event': "url('https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0006_vhnxgu.jpg')",
           'hero-pooja': "url('/images/pooja-services/hero/hero.jpg')",
           'hero-prasadam': "url('https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914215/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0007_gsimyw.jpg')",
