@@ -1,11 +1,22 @@
 import { ImageResponse } from 'next/og'
-export const runtime = 'edge' 
+import fs from 'fs';
+import path from 'path';
+// export const runtime = 'edge' 
 // Image metadata
 export const alt = 'About VVGC'
-export const size = {
-  width: 1200,
-  height: 630,
-}
+
+// export const size = {
+//   width: 1200,
+//   height: 630,
+//    fonts: [
+//         {
+//           name: 'Inter',
+//           data: interBlack,
+//           style: 'normal',
+//         },
+//       ],
+// }[
+//]
  
 export const contentType = 'image/png'
 
@@ -14,7 +25,7 @@ export default async function Image() {
     // const flyerImage = await fetch(new URL('./images/about-us/hero/hero.jpg', import.meta.url)).then(
     //     (res) => res.arrayBuffer()
     //   )
-
+const interBlack = fs.readFileSync(path.join(process.cwd(), 'public/fonts/inter/static/Inter_18pt-Black.ttf'));
     
   return new ImageResponse(
     (
@@ -32,14 +43,24 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        Welcome to VVGC Hindu Temple
+       <h4>Welcome to VVGC Hindu Temple</h4> 
       </div>
       ),
     // ImageResponse options
     {
       // For convenience, we can re-use the exported opengraph-image
       // size config to also set the ImageResponse's width and height.
-      ...size,
-    }
+      
+  width: 1200,
+  height: 630,
+   fonts: [
+        {
+          name: 'Inter',
+          data: interBlack,
+          style: 'normal',
+        },
+      ],
+}
+    
   )
 }
