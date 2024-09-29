@@ -29,7 +29,7 @@ export const metadata = {
     description:
       "A guide on how to optimize SEO with static and dynamic metatags using Next.js 13's new Metadata API.",
     images: [
-      "https://vvgc-test.vercel.app/about-us/twitter-image",
+     {url: "https://vvgc-test.vercel.app/about-us/twitter-image",}
     ],
   },
 }
