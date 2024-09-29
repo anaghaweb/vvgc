@@ -32,7 +32,7 @@ export const metadata:Metadata = {
       
     images: ["https://vercel-test.vercel.app/api/og?title=Testing Twitter Card for VVGC"],
   },
-}
+} 
 
 
 export default function About() {

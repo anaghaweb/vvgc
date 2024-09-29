@@ -1,14 +1,12 @@
 import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server' 
-import fs from "fs";
-import path from "path";
  
 export const runtime = 'edge'
  
 export async function GET(request: NextRequest) {
-  const interBlack = fs.readFileSync(
-    path.join(process.cwd(), "public/fonts/inter/static/Inter_18pt-Black.ttf")
-  );
+  // const interBlack = fs.readFileSync(
+  //   path.join(process.cwd(), "public/fonts/inter/static/Inter_18pt-Black.ttf")
+  // );
 
   try {
     const { searchParams } = new URL(request.url)
@@ -57,14 +55,14 @@ export async function GET(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-        fonts: [
-          {
-            name: 'Inter',
-            data: await interBlack,
-            style: 'normal',
-            weight: 800,
-          },
-        ],        
+        // fonts: [
+        //   {
+        //     name: 'Inter',
+        //     data: await interBlack,
+        //     style: 'normal',
+        //     weight: 800,
+        //   },
+        // ],        
       },
     )
   } catch (e: any) {
