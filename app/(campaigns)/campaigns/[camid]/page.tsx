@@ -3,7 +3,6 @@ import { getCampaignData } from '@lib/server-actions/actions';
 import RightContentTemplate from '@modules/campaigns/components/right-content';
 import type { Campaign } from 'types/global';
 import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }:{
   params:{
@@ -23,8 +22,7 @@ export async function generateMetadata({ params }:{
       `${title}`
     return {
       title: `${title} | VVGC`,
-      description,
-     
+      description,     
     }
   } catch (error) {
     console.log(error)

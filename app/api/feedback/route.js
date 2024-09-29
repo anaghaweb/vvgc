@@ -1,12 +1,8 @@
 import {NextResponse} from 'next/server';
 import { google } from "googleapis";
 
-
-export async function POST(request){
-
-    
+export async function POST(request){    
     let payload = await request.json();
-
     try{      
         const auth = new google.auth.GoogleAuth({
             credentials:{
