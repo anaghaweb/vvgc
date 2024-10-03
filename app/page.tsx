@@ -22,7 +22,7 @@ export default async function Home() {
   const data:CalendarEvent[] = await AllEventsData();
   
       return <React.Fragment>
-        <HeroCard page="home"/>
+        <HeroCard page="home" text='A Home For Spiritual Devotees'/>
         <HomePageView data={data}/>        
     </React.Fragment>
   
