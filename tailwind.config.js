@@ -45,7 +45,7 @@ module.exports = {
       
         backgroundImage:{
           'hero-donations': 'url("/images/donations/banner/donationsBanner.jpg")',
-          'hero-about-us': 'url("/images/about-us/banner/aboutUsBanner.jpg")',
+          'hero-about-us': 'url("/images/about-us/banner/aboutusBanner.jpg")',
           'hero-event': 'url("/images/events/banner/eventsBanner.jpg")',
           'hero-pooja': 'url("/images/pooja-services/banner/poojaBanner.jpg")',
           'hero-prasadam': 'url("/images/prasadam-services/banner/prasadamBanner.jpg")',
