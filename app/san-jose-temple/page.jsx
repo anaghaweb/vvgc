@@ -10,7 +10,8 @@ export const metadata = {
 export default async function SanJose() {
  
     return (
-        <React.Fragment>          
+        <React.Fragment>   
+            
             <LakshmiGanapathiPageTemplate />
         </React.Fragment>
     );

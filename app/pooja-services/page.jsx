@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { cormorant } from "app/fonts";
+import { cormorant } from "@lib/fonts/fonts";
 import PoojaServicePage from "@modules/pooja-services/page";
 export const metadata = {
   title: "Pooja Services",

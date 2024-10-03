@@ -1,7 +1,7 @@
 "use client";
 import React, { Fragment } from "react";
 import { navbarNavigation } from "@lib/data/navigation";
-import { cormorant, opensans, inter, roboto, playfair } from "app/fonts";
+import { cormorant, opensans, inter, roboto, playfair } from "@lib/fonts/fonts";
 import clsx from "clsx";
 import {
   Accordion,

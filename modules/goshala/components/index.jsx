@@ -1,5 +1,4 @@
 import React from "react";
-import { cormorant, opensans } from "app/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button";
@@ -22,23 +21,23 @@ export default function Goshala() {
   return (
     <React.Fragment>
       <div
-        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-goshala ${cormorant.variable} `}
+        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white 
+          bg-center bg-no-repeat bg-cover m-px  bg-hero-goshala font-cormorant `}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           VVGC Goshala
         </h1>
       </div>
       {/* main section */}
 
       <main
-        className={`${cormorant.variable} mx-auto w-full max-w-full md:mt-4`}
+        className={` mx-auto w-full max-w-full md:mt-4`}
       >
         <div className={`grid relative grid-cols-1 max-w-full
            h-auto bg-white mx-auto  md:grid-cols-4 
            md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
            md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-            ${opensans.variable}`}>
+            `}>
           <div
             className={`flex flex-col justify-items-center 
             items-center w-full max-w-full 
@@ -72,7 +71,7 @@ export default function Goshala() {
          bg-white mx-auto  p-5 md:grid-cols-4 
          md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
          md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-          ${opensans.variable}`}>
+          `}>
           <div
             className={`flex flex-col justify-items-center 
               items-center gap-5 w-full max-w-full text-center 

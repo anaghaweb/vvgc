@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import Divider from "@modules/common/components/divider";
 import Image from "next/image";
-import { cormorant, opensans } from "app/fonts";
+import { cormorant, opensans } from "@lib/fonts/fonts";
 import Link from "next/link";
 
 const PhaseTwoConstruction = () => {

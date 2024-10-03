@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-
 import MobileNavigationMenu from '@modules/layout/header/components/mobile-navbar/page'
 import { getCampaignData } from '@lib/server-actions/actions';
 

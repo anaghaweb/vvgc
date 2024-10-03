@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { cormorant, opensans } from "app/fonts";
+import { cormorant, opensans } from "@lib/fonts/fonts";
 
 const DivineAbode = ({ imageUrl }: { imageUrl: string }) => {
   return (
