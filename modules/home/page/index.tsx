@@ -12,8 +12,7 @@ const HomePageView = ({data}:{
 }) => {
   return (
     <Fragment>
-      <main className={`${cormorant.variable} ${playfair.variable} 
-      flex flex-col max-w-screen overflow-hidden 
+      <main className={`flex flex-col max-w-screen overflow-hidden 
       h-auto from-gray-100 via-blue-100 to-slate-100`}>
         
         {/* Today's event & Daily Maha Prasadam info */}
