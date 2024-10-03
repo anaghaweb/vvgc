@@ -11,15 +11,14 @@ export const metadata:Metadata = {
 
 
 export default function About() {
-  return (
-         <React.Fragment>
-        {/* Hero Section */}
-        <HeroCard page="aboutus"/>
-        {/* Page Content */}
+  return (        
+       
         <main>
+        <HeroCard page="aboutus"/>     
+        
           <AboutUsPage />
         </main>
-      </React.Fragment>
+      
     
   );
 }
