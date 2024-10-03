@@ -43,7 +43,7 @@ import {
           { (
             <div>
               <div className="flex flex-col md:flex-row gap-2">
-                {singleEvent.startTime && (
+                {singleEvent.startTime && singleEvent.details && (
                   <p className="text-base font-roboto font-bold text-cyan-950">
                     {singleEvent.startTime}
                   </p>

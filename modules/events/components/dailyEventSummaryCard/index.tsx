@@ -5,6 +5,7 @@ import type {  WeeklyEvents } from "types/global";
 const DailyEventSummaryCard = ({ events }: { events: WeeklyEvents[] }) => {
   const currentDay = dayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
+  
   return (
     <div
       className={`w-[100%] font-roboto h-auto md:h-full p-1 md:max-w-3xl md:p-1 text-sm `}
