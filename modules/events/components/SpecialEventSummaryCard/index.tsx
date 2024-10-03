@@ -14,6 +14,11 @@ export default function SpecialEventSummaryCard({ eventdata }:{
         {" "}
         {eventdata.subtitle && eventdata.subtitle}
       </p>
+      {eventdata.eventList.length === 1 && 
+      (<p className="text-zinc-800 font-normal">
+        {" "}
+        {eventdata.eventList[0].startTime && eventdata.eventList[0].startTime} : {eventdata.eventList[0].details && eventdata.eventList[0].details}
+      </p>)}
       <Link
         href={`/events/?evtype=special`}
         className="text-blue-800 text-small inline-flex items-center"
