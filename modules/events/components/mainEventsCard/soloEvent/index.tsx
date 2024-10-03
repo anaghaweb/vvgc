@@ -78,9 +78,9 @@ import {
           )}
         </CardContent>
         {/* sponsor event Link */}
-        <div className="flex flex-col lg:flex-row bg-green-100 items-center justify-center lg:justify-evenly pt-4">
+        
           <GenerateCalendarLinks event={data} />
-        </div>
+        
       </Card>
     ) : null;
   };
