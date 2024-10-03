@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const HeroCard = ({page:string}) => {
+const HeroCard = ({page}:{page:string}) => {
   return (
     <Fragment>
       <div
