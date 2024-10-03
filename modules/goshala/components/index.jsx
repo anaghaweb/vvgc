@@ -1,5 +1,4 @@
 import React from "react";
-import { cormorant, opensans } from "@lib/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button";
@@ -23,9 +22,9 @@ export default function Goshala() {
     <React.Fragment>
       <div
         className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-goshala ${cormorant.variable} `}
+                    bg-hero-goshala font-cormorant `}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           VVGC Goshala
         </h1>
       </div>
