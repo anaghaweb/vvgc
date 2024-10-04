@@ -21,8 +21,8 @@ export default function Goshala() {
   return (
     <React.Fragment>
       <div
-        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white 
-          bg-center bg-no-repeat bg-cover m-px  bg-hero-goshala font-cormorant `}
+        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
+                    bg-hero-goshala font-cormorant `}
       >
         <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           VVGC Goshala
@@ -31,7 +31,7 @@ export default function Goshala() {
       {/* main section */}
 
       <main
-        className={` mx-auto w-full max-w-full md:mt-4`}
+        className={`mx-auto w-full max-w-full md:mt-4`}
       >
         <div className={`grid relative grid-cols-1 max-w-full
            h-auto bg-white mx-auto  md:grid-cols-4 
