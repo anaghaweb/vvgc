@@ -7,6 +7,7 @@ module.exports = {
     './app/**/*.{js,jsx, ts, tsx}',
     './src/**/*.{js,jsx,ts,tsx}',
     './lib/**/*.{js,jsx,ts,tsx}',
+    './tailwind.config.js',
   ],
   prefix: "",
   theme: {
@@ -42,7 +43,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       
-        backgroundImage: theme => ({
+        backgroundImage:{
           'hero-donations': 'url("/images/donations/banner/donationsBanner.png")',
           'hero-aboutus': 'url("/images/aboutus/banner/1.jpg")',
           'hero-event': 'url("/images/events/banner/eventsBanner.jpg")',
@@ -52,7 +53,7 @@ module.exports = {
           'hero-priests':'url("/images/priests/banner/priestsBanner.jpg")',
           'hero-home':'url("/images/home/banner/heroBanner.jpg")',
           'hero-goshala':'url("/images/goshala/banner/goshalaBanner.jpg")',
-        }),
+        },
     },
   },
   plugins: [require("tailwindcss-animate")],
