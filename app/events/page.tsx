@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }:{searchParams: EventType
 {
   try {    
      return {
-      title: `${searchParams.evtype + " " + 'events' ?? 'Events'} | VVGC`,
+      title: `${searchParams.evtype} ${ (searchParams.evtype === 'regular' || searchParams.evtype === 'special' || searchParams.evtype === 'weekly') ? 'Events' : '' } | VVGC`,
       description:'vvgc events',     
     }
   } catch (error) {

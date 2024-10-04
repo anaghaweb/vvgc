@@ -31,13 +31,13 @@ export default function Goshala() {
       {/* main section */}
 
       <main
-        className={`${cormorant.variable} mx-auto w-full max-w-full md:mt-4`}
+        className={`mx-auto w-full max-w-full md:mt-4`}
       >
         <div className={`grid relative grid-cols-1 max-w-full
            h-auto bg-white mx-auto  md:grid-cols-4 
            md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
            md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-            ${opensans.variable}`}>
+            `}>
           <div
             className={`flex flex-col justify-items-center 
             items-center w-full max-w-full 
@@ -71,7 +71,7 @@ export default function Goshala() {
          bg-white mx-auto  p-5 md:grid-cols-4 
          md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
          md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-          ${opensans.variable}`}>
+          `}>
           <div
             className={`flex flex-col justify-items-center 
               items-center gap-5 w-full max-w-full text-center 

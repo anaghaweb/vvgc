@@ -1,16 +1,24 @@
 import React, { Fragment } from "react";
 
-const HeroCard = ({page, text}:{page:string, text:string}) => {
+const HeroCard = ({ page, text }: { page: string; text?: string }) => {
   return (
     <Fragment>
       <div
-        className={`flex justify-center relative items-center w-full h-[75svh] 
-          text-3xl leading-9 text-white bg-hero-home bg-center bg-no-repeat bg-cover m-px
-                     font-playfair bg-[rgb(0,0,0,0.8)]`}
+        className={`flex flex-col justify-center items-center relative  
+          w-full h-24 sm:h-64 md:h-80
+            bg-hero-home bg-top bg-cover bg-no-repeat 
+          `}
       >
-        <h1 className="text-5xl md:text-7xl font-[playfair] text-wrap font-light text-center ">
-          {text}{" "}
-        </h1>
+        <div
+          className="flex flex-col justify-start items-center
+       text-3xl sm:text-5xl md:text-7xl leading-7 text-white
+        font-cormorant font-bold
+        "
+        >
+          <p>A Home</p>
+          <p>For Spiritual</p>
+          <p>Devotees</p>
+        </div>
       </div>
     </Fragment>
   );

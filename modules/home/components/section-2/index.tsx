@@ -1,8 +1,7 @@
 import { Fragment } from "react";
-import { Button } from "@modules/common/components/ui/button";
-import Link from "next/link";
 import MainEventCard from "@modules/events/components/mainEventsCard";
 import type { CalendarEvent } from "types/global";
+import LocalLinkWithBgColor from "@modules/common/components/LocalLinkWithBgColor";
 
 const SectionTwo = ({ data }:{
   data:CalendarEvent[]
@@ -18,20 +17,17 @@ const SectionTwo = ({ data }:{
           <hr className="h-[2px] bg-red-800 my-2" />
         </div>
 
-        {/* <div className="col-span-1 w-full"> */}
+       
         {data.map((event) => {
           return event.type === "sponsor" ? (          
             <MainEventCard data={event} key={event.id} />             
           ) : null;
         })}
-
-        {/* </div> */}
-        <div className="my-2 col-span-full w-full mx-auto text-center">
-          <Button className="w-full sm:w-44 mx-auto p-6 my-1 items-center text-white bg-green-700">
-            <Link href="/events?evtype=regular">View Regular Events</Link>
-          </Button>
-        </div>
+       
       </div>
+      <div className="my-2 flex justify-center  w-full">
+        <LocalLinkWithBgColor  text="View Regular Events List" href="/events?evtype=regular" />
+        </div>
     </Fragment>
   );
 };
