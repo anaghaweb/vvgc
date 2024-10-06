@@ -25,8 +25,8 @@ const SectionTwo = ({ data }:{
         })}
        
       </div>
-      <div className="my-2 flex justify-center  w-full">
-        <LocalLinkWithBgColor  text="View Regular Events List" href="/events?evtype=regular" />
+      <div className="my-2 flex justify-center w-full">
+        <LocalLinkWithBgColor text="View Regular Events List" href="/events?evtype=regular" />
         </div>
     </Fragment>
   );

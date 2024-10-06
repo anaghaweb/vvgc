@@ -1,4 +1,4 @@
-import FeedBackFormPageLink from "@modules/feedback-form/page";
+import FeedBackFormPageLink from "@modules/feedback/page";
 
 export default function Feedback(){        
     return (

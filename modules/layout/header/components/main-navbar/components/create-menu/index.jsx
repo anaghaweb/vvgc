@@ -15,12 +15,13 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
     return (
       <li
         onMouseEnter={(e) => handleMouseEnter(item, depth)}
-        className="relative px-2 py-1 hover:cursor-pointer hover:bg-orange-500 font-roboto 
-           md:text-sm lg:text-base  font-normal"
+        className="relative px-2 py-1 hover:cursor-pointer
+         bg-inherit hover:bg-orange-500 text-slate-950 
+           md:text-sm lg:text-base font-normal tracking-tight "
         ref={myref}
         key={item.id}
       >
-        <div className="inline-flex items-center justify-between gap-1">
+        <div className="flex flex-shrink-0 items-center justify-between gap-1 font-roboto font-normal text-slate-950 tracking-tight">
           <a href={item.url}>{item.title}</a>
           {item.child &&
             (depth === 0 ? <TriangleDownIcon /> : <TriangleRightIcon />)}
@@ -28,7 +29,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
 
         <ul
           className={clsx(
-            "z-10 absolute shadow-lg border-orange-500 rounded-md border-[0.1rem] transition-[height] duration-300 ease-in-out bg-[#FF9933]  min-w-40 font-roboto",
+            "z-10 absolute shadow-lg bg-inherit border-orange-500 rounded-md border-[0.1rem] transition-[height] duration-300 ease-in-out min-w-40 font-roboto",
             {
               "top-10 left-0": depth === 0,
               "left-0 top-2 ml-[calc(100%)]": depth > 0,
@@ -54,7 +55,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
   } else {
     return (
       <a key={item.id} href={item.url}>
-        <li className="whitespace-nowrap px-2 py-1 hover:bg-orange-500  lg:text-base  font-roboto font-normal">
+        <li className="whitespace-nowrap bg-inherit px-2 py-1 hover:bg-orange-500  font-roboto font-normal text-slate-950 tracking-tight">
           {item.title}
         </li>
       </a>

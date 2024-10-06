@@ -49,7 +49,7 @@ module.exports = {
           'hero-event': 'url("/images/events/banner/eventsBanner.jpg")',
           'hero-pooja': 'url("/images/pooja-services/banner/poojaBanner.jpg")',
           'hero-prasadam': 'url("/images/prasadam-services/banner/prasadamBanner.jpg")',
-          'hero-san-jose':'url("/images/sanjose/banner/sanjoseBanner.jpeg")',
+          'hero-san-jose':'url("/images/sanjose/banner/hero.jpg")',
           'hero-priests':'url("/images/priests/banner/priestsBanner.jpg")',
           'hero-home':'url("/images/home/banner/heroBanner.jpg")',
           'hero-goshala':'url("/images/goshala/banner/goshalaBanner.jpg")',

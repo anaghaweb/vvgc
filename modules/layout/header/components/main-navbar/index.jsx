@@ -1,15 +1,9 @@
-import React,{Fragment} from 'react'
+import React from "react";
 import MainNavMenu from "./components/main-component";
 import { navbarNavigation } from "@lib/data/navigation";
 
-
 const DesktopNavigationMenu = () => {
-  return (
-    <Fragment>
-      <MainNavMenu 
-    navbarNavigation={navbarNavigation}
-    /></Fragment>
-  )
-}
+  return <MainNavMenu navbarNavigation={navbarNavigation} />;
+};
 
-export default DesktopNavigationMenu
+export default DesktopNavigationMenu;

@@ -20,7 +20,7 @@ export default function SpecialEventSummaryCard({ eventdata }:{
         {eventdata.eventList[0].startTime && eventdata.eventList[0].startTime} : {eventdata.eventList[0].details && eventdata.eventList[0].details}
       </p>)}
       <Link
-        href={`/events/?evtype=special`}
+        href={`/events/${eventdata.id}`}
         className="text-blue-800 text-small inline-flex items-center"
       >
         click here for more details <TriangleRightIcon className="w-8 h-8" />

@@ -21,11 +21,9 @@ const MainNavMenu = ({navbarNavigation}) => {
     };
   }, [myref]);
 
-
-
   return (
-    <div className={`hidden lg:block flex-1`}>
-      <ul className="z-10 flex items-center justify-center gap-2 h-10 bg-[#FF9933] w-full">
+    <div className={`hidden xl:block flex-1`}>
+      <ul className="z-10 flex items-center justify-center gap-2 h-10 bg-inherit w-full">
         {navbarNavigation.map((item) => (
           <CreateMenu
             item={item}
@@ -40,7 +38,5 @@ const MainNavMenu = ({navbarNavigation}) => {
     </div>
   );
 };
-
-
 
 export default MainNavMenu;
