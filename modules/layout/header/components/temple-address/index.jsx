@@ -1,9 +1,9 @@
-import React,{Fragment} from 'react'
+import React, { Fragment } from "react";
 
 const TempleAddressHeader = () => {
   return (
     <Fragment>
-         <section className="py-1 my-1 flex flex-col justify-center h-24 text-center text-[#000033] tracking-tight">
+      <section className="py-1 mt-12 flex flex-col justify-center h-24 text-center text-[#000033] tracking-tight">
         <p
           className={`tracking-tight font-cormorant text-2xl md:text-2xl lg:text-3xl font-large`}
         >
@@ -21,7 +21,7 @@ const TempleAddressHeader = () => {
         </p>
       </section>
     </Fragment>
-  )
-}
+  );
+};
 
-export default TempleAddressHeader
+export default TempleAddressHeader;

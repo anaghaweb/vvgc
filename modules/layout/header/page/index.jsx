@@ -7,8 +7,8 @@ import LocalLinkWithBgColor from "@modules/common/components/LocalLinkWithBgColo
 import { useParams, usePathname } from "next/navigation";
 import clsx from "clsx";
 import Link from "next/link";
-import { Separator } from "@modules/common/components/ui/separator";
-import { MenubarSeparator } from "@modules/common/components/ui/menubar";
+import SubscribeToVVGCNewsLetter from "@modules/subscribe";
+import FeedbackByDevotees from "@modules/feedback/page";
 
 export default function Header() {
   const pathname = usePathname();
@@ -25,20 +25,25 @@ export default function Header() {
         }
       )}
     >
-      <nav className="justify-between lg:justify-center w-full h-14 flex items-center">
+      <nav className="z-10 justify-between xl:justify-center w-full bg-[#FF9933] h-12 flex items-center align-baseline fixed">
         <DesktopNavigationMenu />
 
-        <div className="flex flex-col lg:hidden p-3">
+        <div className="flex flex-col xl:hidden p-2">
           <MobileNavigationMenu camid={camid} />
         </div>
 
         {/* Support us button leads to Donations page */}
-        <div className="mr-2 flex items-center gap-1 md:gap-2">
-        {/* <Link href="/subscribe" target="_break" className="text-gray-800 text-[12px] sm:text-base font-cormorant font-bold text-base underline">Subscribe </Link> 
-        <div className="text-gray-800 font-thin">|</div>
-        <Link href="/feedback" target="_break" className="text-gray-800 text-[12px] sm:text-base font-cormorant font-bold text-base underline">Feedback </Link> 
-        <div className="text-gray-800 font-thin">|</div> */}
-        <LocalLinkWithBgColor  text="donate" href="/donations" />
+        <div className="mr-2 flex items-center gap-2 tracking-tight">
+          <SubscribeToVVGCNewsLetter />
+          <FeedbackByDevotees />
+         
+        {/* <Link href="/subscribe" target="_break" className="text-cyan-950 text-[12px] sm:text-base font-roboto 
+        text-sm md:text-base ">Subscribe </Link>  */}
+
+        {/* <Link href="/feedback" target="_break" className="text-cyan-950 text-[12px] sm:text-base font-roboto 
+        text-sm md:text-base ">Feedback </Link>  */}
+
+        <LocalLinkWithBgColor text="Donate" href="/donations" />
         </div>
 
         {/* {hamburger menu icon open and close } */}

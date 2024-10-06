@@ -1,5 +1,5 @@
 "use client";
-import { SubscribeForm } from "@modules/submit-form/components/subscribe";
+
 import { Separator } from "@modules/common/components/ui/separator";
 import { usePathname } from "next/navigation";
 import TempleTimings from "../components/temple-timings";
@@ -7,7 +7,6 @@ import SanJose from "../components/locations/san-jose";
 import SanMartin from "../components/locations/san-martin";
 import Copyright from "../components/copyright";
 import SocialMediaLinks from "../components/social-media";
-import FeedBackFormPageLink from "@modules/feedback-form/page";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -32,9 +31,6 @@ export default function Footer() {
         <section className="col-span-full gap-6">
         <Copyright />
           <div className="flex flex-col justify-start items-center md:flex-row md:justify-between">
-           
-            <SubscribeForm />
-            <FeedBackFormPageLink/>
             <SocialMediaLinks />
           </div>
         </section>

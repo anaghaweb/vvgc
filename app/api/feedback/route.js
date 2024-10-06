@@ -23,11 +23,11 @@ export async function POST(request){
 
         const response = await sheets.spreadsheets.values.append({
              spreadsheetId : process.env.G_ID,
-             range: 'feedback!A1:D1',
+             range: 'feedback!A1:B1',
             valueInputOption:'USER_ENTERED',
             requestBody:{
                 values:[
-                    [payload.username, payload.email, payload.phone, payload.message]
+                    [ payload.email, payload.message]
                 ]
               }
         });

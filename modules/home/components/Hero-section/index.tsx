@@ -5,14 +5,13 @@ const HeroCard = ({ page, text }: { page: string; text?: string }) => {
     <Fragment>
       <div
         className={`flex flex-col justify-center items-center relative  
-          w-full h-24 sm:h-64 md:h-80
-            bg-hero-home bg-top bg-cover bg-no-repeat 
+          w-full h-24 sm:h-64 md:h-80 bg-top bg-cover bg-no-repeat
+            bg-hero-home  
           `}
       >
         <div
           className="flex flex-col justify-start items-center
-       text-3xl sm:text-5xl md:text-7xl leading-7 text-white
-        font-cormorant font-bold
+       text-xl sm:text-5xl md:text-7xl leading-7 text-white font-playfair
         "
         >
           <p>A Home</p>

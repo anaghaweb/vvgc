@@ -1,12 +1,15 @@
 import {NextResponse} from 'next/server';
 import { google } from "googleapis";
 
-
-export async function POST(request){
-
-    
+export async function POST(request){    
     let payload = await request.json();
+    //query google sheets to check if email id already exists.
 
+    //Call function to check for valid email input by sending a confirmation link to email
+    
+    //if unsuccessful send a response to the user.
+    
+    //if successful execute below code which adds the emailid to google sheet named subscribe
     try{      
         const auth = new google.auth.GoogleAuth({
             credentials:{
@@ -19,12 +22,10 @@ export async function POST(request){
                 'https://www.googleapis.com/auth/spreadsheets'
             ]
         });
-
         const sheets = google.sheets({
             auth,
             version:'v4',
         })
-
         const response = await sheets.spreadsheets.values.append({
              spreadsheetId : process.env.G_ID,
              range: 'subscribe!A:A',
@@ -38,11 +39,9 @@ export async function POST(request){
         return NextResponse.json(
            { data:response.data}
         )
-
     }
     catch(error){
         console.error(error);
         return NextResponse.json({message:  'something went wrong'})}
-
 }
 

@@ -21,25 +21,28 @@ import { Card, CardHeader, CardContent, CardFooter } from "@modules/common/compo
 import { Loader2 } from "lucide-react";
 
 export function FeedbackForm() {
+
   const formSchema = z.object({
-    username: z.string().min(4, {
-      message: "Username must be at least 2 characters.",
-    }),
+    // username: z.string().min(4, {
+    //   message: "Username must be at least 2 characters.",
+    // }),
     email: z.string().email({ message: "Invalid email address" }),
-    phone: z.string().min(7, { message: "please enter a valid phone number" }),
+    // phone: z.string().min(7, { message: "please enter a valid phone number" }),
     message: z.string().min(4, {
-      message: "Message cannot be empty",
+      message: "type your feedback",
     }),
   });
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      // username: "",
       email: "",
-      phone: "",
+      // phone: "",
       message: "",
     },
   });
+
   const {
     isDirty,
     isValid,
@@ -77,13 +80,11 @@ export function FeedbackForm() {
     return <SuccessfulSubmit />;
   } else {
     return (
-      <Card>
-        <CardHeader className="text-center text-xl">Feedback Form</CardHeader>
-
-        <Form {...form}>
-          <CardContent className="min-w-80 sm:w-96">
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
+     
+        <Form {...form}>       
+          
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
+              {/* <FormField
                 control={form.control}
                 name="username"
                 render={({ field }) => (
@@ -92,11 +93,10 @@ export function FeedbackForm() {
                     <FormControl>
                       <Input placeholder="Username" {...field} />
                     </FormControl>
-
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
 
               {/* EMAIL */}
               <FormField
@@ -104,18 +104,17 @@ export function FeedbackForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                   
                     <FormControl>
-                      <Input placeholder="email" {...field} />
+                      <Input placeholder="Email Address" {...field} />
                     </FormControl>
-
                     <FormMessage />
                   </FormItem>
                 )}
               />
               {/* PHONE */}
 
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
@@ -128,7 +127,7 @@ export function FeedbackForm() {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
 
               {/* MESSAGE */}
 
@@ -137,32 +136,32 @@ export function FeedbackForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Feedback message</FormLabel>
+                    
                     <FormControl>
                       <Textarea
-                        placeholder="type your feedback here"
+                        placeholder="Your feedback..."
                         {...field}
                       />
                     </FormControl>
-
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <Button
-                className="bg-blue-800"
+                variant="secondary"
                 type="submit"
                 disabled={submitting}
+                className="bg-blue-700 hover:bg-blue-900 text-white"
               >
                 {submitting && (
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 )}
-                {submitting ? "Please wait " : "Submit"}
+                {submitting ? "Please wait " : "Send"}
               </Button>
             </form>
-          </CardContent>
+         
         </Form>
-      </Card>
+     
     );
   }
 }

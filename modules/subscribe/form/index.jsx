@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "@modules/common/components/ui/button";
 import { useState } from "react";
-import { SubscribeSuccess } from "../success";
+import { SubscribeSuccess } from "../successMessage";
 import { Input } from "@modules/common/components/ui/input"; 
 import { Loader2 } from "lucide-react";
 import {
@@ -64,11 +64,11 @@ export function SubscribeForm() {
     return <SubscribeSuccess />;
   } else {
     return (
-       <section  className="flex flex-col col-span-full items-center bg-blue-300 my-5">
-      <div className="bg-blue-950 min-w-36">
+       <section  className="flex flex-col gap-4 col-span-full items-center bg-inherit size-full">
+      <div className="bg-inherit min-w-36">
         <Form {...form}>
-          <div className=" min-w-56 ">
-            <FormLabel className="text-white">Subscribe to our weekly Newsletter</FormLabel>
+          <div className=" min-w-56">
+            {/* <FormLabel className="text-gray-200 tracking-tight font-thin font-roboto font-sm leading-5">Subscribe to our weekly Newsletter</FormLabel> */}
             <form
             className="flex flex-col gap-2"
               onSubmit={form.handleSubmit(onSubmit)}>
@@ -79,16 +79,17 @@ export function SubscribeForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Your Email id" {...field} />
+                      <Input placeholder="Email Address" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <Button
-                className="bg-green-700 border-none w-full rounded-none hover:bg-blue-700"
+                variant="secondary"
                 type="submit"
                 disabled={submitting}
+                className="bg-blue-700 hover:bg-blue-900 text-white max-w-fit"
               >
                 {submitting && (
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
