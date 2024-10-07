@@ -16,10 +16,10 @@ const SectionOne = ({ eventdata }:{
   );
   const currentDay = dayOfTheWeek();
   return (
-    <Fragment>
+    <div className="ring-[1px] ring-sky-500 rounded-sm p-6">
      
-      <div className="min-h-[300px] p-6 grid grid-cols-1 lg:grid-cols-2 ring-[1px] ring-sky-500 rounded-sm ">
-        <div className="h-auto flex-1 lg:pl-2 md:pl-4  col-span-1 ring-[1px] ring-sky-500 rounded-sm">
+      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 ">
+        <div className="h-auto flex-1 lg:pl-2 md:pl-4  col-span-1 ">
           <div className="  text-2xl md:text-3xl md:mt-2  text-sky-700 font-roboto">
             Today at the Temple, {currentDay}
           </div>
@@ -34,7 +34,7 @@ const SectionOne = ({ eventdata }:{
         <MahaPrasadamSanMartin />       
       </div>
       
-    </Fragment>
+    </div>
   );
 };
 
