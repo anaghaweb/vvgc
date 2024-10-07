@@ -20,7 +20,7 @@ const SectionOne = ({ eventdata }:{
      
       <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2">
         <div className="h-auto flex-1 p-2 lg:pl-2 md:pl-4  col-span-1">
-          <div className="text-2xl md:text-3xl md:mt-2  text-sky-700 font-roboto">
+          <div className=" ring-[1px] ring-sky-500 rounded-sm text-2xl md:text-3xl md:mt-2  text-sky-700 font-roboto">
             Today at the Temple, {currentDay}
           </div>
           <Divider />

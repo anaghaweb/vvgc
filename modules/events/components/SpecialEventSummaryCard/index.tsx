@@ -7,7 +7,7 @@ export default function SpecialEventSummaryCard({ eventdata }:{
 }) {
   
   return (
-    <div className={`ring-[1px] ring-sky-500 rounded-sm flex flex-col w-full sm:w-full m-auto sm:p-2 md:pl-4 text-sm md:text-base`}>
+    <div className={` flex flex-col w-full sm:w-full m-auto sm:p-2 md:pl-4 text-sm md:text-base`}>
       <p className="text-base text-cyan-800">{eventdata.title}</p>
       <p className="text-zinc-800 text-sm">
         {" "}
