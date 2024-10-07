@@ -2,10 +2,11 @@ import Divider from '@modules/common/components/divider'
 import React from 'react'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { Card } from '@modules/common/components/ui/card';
 
 const MahaPrasadamSanMartin = () => {
   return (
-    <div className="h-auto flex-1  md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base">
+    <Card className="h-auto flex-1  md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base">
     <h1 className="text-2xl md:text-3xl font-roboto  text-left text-sky-700  ">
       Starting From September 7th 2024 
     </h1>
@@ -53,7 +54,7 @@ const MahaPrasadamSanMartin = () => {
     <a href="tel:4087596183">San Martin Temple  Number <span className="text-blue-800 font-semibold">4087596183</span></a>
     <p className='font-cormorant font-semibold text-red-950 mx-2 text-xl text-center'>Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu </p>
     </div>
-  </div>
+  </Card>
   )
 }
 
