@@ -16,9 +16,9 @@ const SectionOne = ({ eventdata }:{
   );
   const currentDay = dayOfTheWeek();
   return (
-    <div className="border-[1px] border-sky-500 rounded-sm p-4">
+    <div className=" rounded-sm p-2">
      
-      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 ">
+      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 border-[1px] border-sky-500 p-2 ">
         <div className="h-auto flex-1 lg:pl-2 md:pl-4  col-span-1 ">
           <div className="  text-2xl md:text-3xl md:mt-2  text-sky-700 font-roboto">
             Today at the Temple, {currentDay}
