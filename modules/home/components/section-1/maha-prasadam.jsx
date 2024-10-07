@@ -7,12 +7,12 @@ import { Card } from '@modules/common/components/ui/card';
 const MahaPrasadamSanMartin = () => {
   return (
     <Card className="h-auto flex-1  md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base">
-    <h1 className="text-2xl md:text-3xl font-roboto  text-left text-sky-700  ">
+    <h1 className="text-2xl md:text-3xl font-roboto bg- text-left text-sky-700  ">
       Starting From September 7th 2024 
     </h1>
    
     <Divider />
-    <h4 className=" font-playfair font-semibold text-sm text-red-950 mb-1 text-center">
+    <h4 className=" text-center font-playfair font-semibold text-rose-900 my-1">
       Om Sree Mathre Namaha Om Gum Ganapathaye Namaha
     </h4>
     
@@ -52,7 +52,7 @@ const MahaPrasadamSanMartin = () => {
     <a href="tel:4087243577"> Pandit Siva Sankar Hemmanur <span className="text-blue-800 font-semibold">4087243577</span></a>
     <a href="tel:9252097637"> Pandit Ganesh Shasthry <span className="text-blue-800 font-semibold">9252097637</span></a>
     <a href="tel:4087596183">San Martin Temple  Number <span className="text-blue-800 font-semibold">4087596183</span></a>
-    <p className='font-cormorant font-semibold text-red-950 mx-2 text-xl text-center'>Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu </p>
+    <p className='text-center font-playfair font-semibold text-rose-900 my-1'>Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu </p>
     </div>
   </Card>
   )
