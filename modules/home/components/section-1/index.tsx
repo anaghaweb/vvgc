@@ -19,8 +19,8 @@ const SectionOne = ({ eventdata }:{
   return (
     <div className=" rounded-sm p-2">
      
-      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 p-2 ">
-        <Card className="h-auto flex-1 lg:pl-2 md:pl-4  col-span-1 ">
+      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 ">
+        <Card className="h-auto flex-1 lg:pl-2 md:pl-4  col-span-1 p-2 ">
           <div className="  text-2xl md:text-3xl  text-sky-700 font-roboto">
             Today at the Temple, {currentDay}
           </div>
