@@ -4,8 +4,9 @@ import SectionTwo from '@modules/home/components/section-2'
 import SectionThree from '@modules/home/components/section3'
 import SectionFour from '@modules/home/components/section4'
 import SectionFive from '@modules/home/components/section5'
-import { cormorant, playfair } from "@lib/fonts/fonts";
+
 import { CalendarEvent } from 'types/global'
+import { SubscribeToast } from '@modules/subscribe/ToastNotification'
 
 const HomePageView = ({data}:{
   data:CalendarEvent[]
@@ -29,7 +30,7 @@ const HomePageView = ({data}:{
        
         {/* Google Maps */}
         <SectionFive />
-        
+        <SubscribeToast />
         </main>
     </Fragment>
   )
