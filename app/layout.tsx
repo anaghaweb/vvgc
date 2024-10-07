@@ -10,9 +10,9 @@ import {
   cormorant,
 } from "../lib/fonts/fonts";
 import React from "react";
-import { Toaster } from "@modules/common/components/ui/toaster";
-import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 
+import { TooltipProvider } from "@modules/common/components/ui/tooltip";
+import { Toaster } from 'sonner';
 export default function RootLayout({
   children,
   params,
