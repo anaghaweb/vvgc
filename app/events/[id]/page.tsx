@@ -12,7 +12,7 @@ export async function generateMetadata ({params}:{
   }
 })
 {
-  const event = await AllEventsData()
+  const event = await AllEventsData();
   const event_title = event.find((e:CalendarEvent)=> e.id === params.id);
   return {
     title: {
