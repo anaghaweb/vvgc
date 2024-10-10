@@ -97,3 +97,13 @@ export type LazyImageLoaderProps = {
     timeZone:string,
     recurringRule?:[] | null;
   }
+
+  export type EMAIL_VERIFICATION = {
+    timestamp:string,
+    token:string,
+    email:string,
+  }
+
+  export type GOOGLESHEETDATA ={
+    rows: string | any[][] | null | undefined
+  }

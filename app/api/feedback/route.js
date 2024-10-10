@@ -6,7 +6,7 @@ export async function POST(request){
     try{      
         const auth = new google.auth.GoogleAuth({
             credentials:{
-                client_email :process.env.G_EMAIL,
+            client_email :process.env.G_EMAIL,
              private_key:process.env.G_PRIVATE_KEY?.replace(/\\n/g, '\n')
             },
             scopes: [
@@ -34,11 +34,9 @@ export async function POST(request){
         return NextResponse.json(
            { data:response.data}
         )
-
     }
     catch(error){
         console.error(error);
         return NextResponse.json({message:  'something went wrong'})}
-
 }
 
