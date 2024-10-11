@@ -6,7 +6,7 @@ import SectionFour from '@modules/home/components/section4'
 import SectionFive from '@modules/home/components/section5'
 
 import { CalendarEvent } from 'types/global'
-import { SubscribeToast } from '@modules/subscribe/ToastNotification'
+import { SubscribeToast } from '@modules/subscribe/notification'
 
 const HomePageView = ({data}:{
   data:CalendarEvent[]

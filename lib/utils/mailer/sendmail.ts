@@ -14,6 +14,7 @@ const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_bo
       };
       try{
         const result = await transporter.sendMail(mailOptions);
+        console.log(result.response);
         return result.response;
       }
       catch(error){
