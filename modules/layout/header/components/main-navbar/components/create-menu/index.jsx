@@ -16,7 +16,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
       <li
         onMouseEnter={(e) => handleMouseEnter(item, depth)}
         className="relative px-2 py-1 hover:cursor-pointer
-         bg-inherit hover:bg-orange-500 text-slate-950 
+          hover:bg-orange-500 text-slate-950 
            md:text-sm lg:text-base font-normal tracking-tight "
         ref={myref}
         key={item.id}
@@ -55,7 +55,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
   } else {
     return (
       <a key={item.id} href={item.url}>
-        <li className="whitespace-nowrap bg-inherit px-2 py-1 hover:bg-orange-500  font-roboto font-normal text-slate-950 tracking-tight">
+        <li className="whitespace-nowrap px-2 py-1 hover:bg-orange-500  font-roboto font-normal text-slate-950 tracking-tight">
           {item.title}
         </li>
       </a>

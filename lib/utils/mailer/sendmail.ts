@@ -8,8 +8,8 @@ const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_bo
     const mailOptions = {
         from: process.env.GMAIL_ACCOUNT_NAME,
         to: userEmail,
-        subject: 'Test Email No.3 with OAuth2',
-        text: 'Hello from Nodemailer using OAuth2!',
+        subject: 'VVGC Verification Link',
+        text: 'VVGC Verification Link',
         html: html_body_content,
       };
       try{

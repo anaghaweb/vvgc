@@ -4,6 +4,7 @@ import { SendVerificationLink } from "./sendVerificationLink";
 import EmailAlreadySubscribedCheck from "./emailAlreadySubscribedCheck";
 import { CreateVerificationToken } from "./createVerificationToken";
 import DeleteExpiredToken from "./deleteExpiredToken";
+import verificationTokenExists from "./tokenExists";
 
 export async function NewsLetterSubscription(
     _currentState:unknown,
@@ -50,6 +51,12 @@ export async function NewsLetterSubscription(
     
     if(isSubscribed){       
         return {Success:false, message:"Email ID already exists"};
+    }
+    //Check if a verification link has already been sent by checking if the verification token exists
+
+    const activeLinkExists = await verificationTokenExists({userInputEmailId, sheets});
+    if(activeLinkExists.Success){
+        return {Success: activeLinkExists.Success, message:activeLinkExists.message};
     }
 
     // Generate Token, 24 hour Timestamp and store it in gsheet along with email id
