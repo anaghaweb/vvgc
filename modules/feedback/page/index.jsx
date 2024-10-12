@@ -10,7 +10,7 @@ const FeedbackByDevotees = () => {
     <Popover>
       <PopoverTrigger asChild>
         <button
-          className="text-cyan-950 text-[12px] min-w-fit max-w-fit sm:text-base font-roboto text-sm md:text-base "
+          className="text-slate-800 hover:text-blue-800 text-[12px] min-w-fit max-w-fit font-roboto text-sm md:text-base "
         >
           Feedback{" "}
         </button>
