@@ -19,7 +19,6 @@
       "@lib/*": ["lib/*"],
       "@modules/*": ["modules/*"],
       "@pages/*": ["pages/*"],
-     
     },
       "plugins": [
         {
@@ -35,6 +34,7 @@
       "**/*.jsx",
       ".next/types/**/*.ts",
       "tailwind.config.js",
+      "./types/index.d.ts",
     ],
     "exclude": [
       "node_modules",

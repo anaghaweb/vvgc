@@ -13,10 +13,12 @@ import FeedbackByDevotees from "@modules/feedback/page";
 export default function Header() {
   const pathname = usePathname();
   const campaigns = pathname.split("/").includes("campaigns");
+  const verifyEmail = pathname.split("/").includes("verifyEmail");
   const { camid } = useParams();
   console.log("camid", camid);
   return (
-    <header
+    <>
+    {!verifyEmail && <header
       className={clsx(
         `relative flex flex-col w-full h-40 md:h-40 bg-[#FF9933] min-w-full`,
         {
@@ -52,5 +54,8 @@ export default function Header() {
       {/* Temple Title */}
       <TempleAddressHeader />
     </header>
+    }
+    </>
+   
   );
 }

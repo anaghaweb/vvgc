@@ -2,9 +2,8 @@
 import {CardHeader} from "@modules/common/components/ui/card";
 import MainEventCard from "@modules/events/components/mainEventsCard";
 import type { CalendarEvent, EventTypes } from "types/global";
-import LoadMore from "@modules/test/components/loadMore";
 import { useState } from "react";
-
+import LoadMoreButton from "../loadMoreButton";
 
 export default function SpecialEventTab({ data, searchParams }:
   {data: CalendarEvent[],
@@ -31,7 +30,7 @@ export default function SpecialEventTab({ data, searchParams }:
             null
           )
         )}
-          <LoadMore num={num} total={total} searchParams={searchParams} handleClick={handleClick}/>
+          <LoadMoreButton num={num} total={total} searchParams={searchParams} handleClick={handleClick}/>
       </div>
     
   );

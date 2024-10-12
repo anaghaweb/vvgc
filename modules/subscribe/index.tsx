@@ -4,7 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@modules/common/components/ui/popover";
-import { SubscribeForm } from "./form";
+import { SubscribeForm } from "./form/template";
 const SubscribeToVVGCNewsLetter = () => {
   return (
     <Popover>

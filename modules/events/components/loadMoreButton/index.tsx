@@ -3,7 +3,7 @@ import { Button } from "@modules/common/components/ui/button";
 import React from 'react'
 import type { EventTypes } from "types/global";
 
-const LoadMore = ({num, total, handleClick}:{handleClick:()=>void, num:number, total:number, searchParams:EventTypes}) => {
+const LoadMoreButton = ({num, total, handleClick}:{handleClick:()=>void, num:number, total:number, searchParams:EventTypes}) => {
     
   return (
     <>
@@ -14,4 +14,4 @@ const LoadMore = ({num, total, handleClick}:{handleClick:()=>void, num:number, t
   )
 }
 
-export default LoadMore
+export default LoadMoreButton
