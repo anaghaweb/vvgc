@@ -23,7 +23,7 @@ const MainNavMenu = ({navbarNavigation}) => {
 
   return (
     <div className={`hidden xl:block flex-1`}>
-      <ul className="z-10 flex items-center justify-center gap-2 h-10 bg-inherit w-full">
+      <ul className="z-10 flex items-center justify-center gap-2 h-10 w-full">
         {navbarNavigation.map((item) => (
           <CreateMenu
             item={item}
