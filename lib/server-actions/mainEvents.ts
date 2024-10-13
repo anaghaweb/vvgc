@@ -1,6 +1,6 @@
 "use server";
 import { google } from "googleapis";
-import { revalidatePath, revalidateTag } from "next/cache";
+
 import { CalendarEvent } from "types/global";
 
 export async function AllEventsData(): Promise<CalendarEvent[]> {
@@ -75,9 +75,6 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
     if (currentEvent) {
       events.push(currentEvent);
     }
-    console.log(events[0].id);
-   
-    revalidatePath("/", "page");
     return events;
   } catch (error) {
     console.error(error);
