@@ -16,7 +16,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
       <li
         onMouseEnter={(e) => handleMouseEnter(item, depth)}
         className={clsx((`relative px-2 py-1 hover:cursor-pointer
-           text-slate-950 
+           text-slate-950 bg-orange bg-[#FF9933]
            md:text-sm lg:text-base font-normal tracking-tight`),{
            
            })}
@@ -24,13 +24,11 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
         key={item.id}
       >
         <div className={clsx((`flex flex-shrink-0 items-center justify-between gap-1 
-        font-roboto font-normal text-slate-950 tracking-tight`),{
-         
-          'hover:border-b-2 hover:border-blue-950 text-blue-950':menuStatus,
+        font-roboto font-normal text-slate-950 tracking-tight`),{        
+          'hover:text-blue-950 hover-font-semibold':menuStatus,
         })}>
           <a href={item.url}
-           className={clsx((`active:text-blue-800 active:font-semibold`),{
-            
+           className={clsx((`active:text-blue-800 active:font-semibold`),{            
             })}
           >{item.title}</a>
           {item.child &&
@@ -39,7 +37,7 @@ const CreateMenu = ({ item, depth, menuStatus, setMenuStatus, myref }) => {
 
         <ul
           className={clsx(
-            (`z-10 absolute shadow-lg bg-inherit rounded-md ring-1 ring-pink-700
+            (`z-10 absolute shadow-lg bg-[#FF9933] rounded-md ring-1 ring-pink-700
               transition-[height] duration-300 ease-in-out min-w-40 font-roboto`),
             {
               "top-10 left-0": depth === 0,              
