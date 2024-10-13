@@ -4,6 +4,9 @@ import HomePageView from '@modules/home/page';
 import { FetchData } from '@lib/utils/fetchdata';
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { CalendarEvent } from "types/global";
+
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: "VVGC | Home",
   description: `A home for hindu devotees`,
