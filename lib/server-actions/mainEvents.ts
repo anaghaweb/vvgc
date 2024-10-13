@@ -1,5 +1,6 @@
 "use server";
 import { google } from "googleapis";
+
 import { CalendarEvent } from "types/global";
 
 export async function AllEventsData(): Promise<CalendarEvent[]> {
@@ -74,7 +75,6 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
     if (currentEvent) {
       events.push(currentEvent);
     }
-    console.log(events[0].id);
     return events;
   } catch (error) {
     console.error(error);
