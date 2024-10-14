@@ -73,10 +73,7 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
             registerLink: registerLink ? registerLink : "",
           });
         }
-        if(type){
-          revalidateTag("type");
-        }
-       
+             
     });
     
     if (currentEvent) {
