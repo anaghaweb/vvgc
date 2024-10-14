@@ -1,6 +1,6 @@
 "use server";
 import { google } from "googleapis";
-
+import {revalidateTag} from "next/cache";
 import { CalendarEvent } from "types/global";
 
 export async function AllEventsData(): Promise<CalendarEvent[]> {
@@ -23,9 +23,10 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
     });
 
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: process.env.G_ID,
-      range: "AllEvents!A1:Z1000",
-    });
+        spreadsheetId: process.env.G_ID,
+        range: "AllEvents!A1:Z1000",
+      });
+     
 
     const rows = response.data.values;
     if (!rows) return [];
@@ -61,6 +62,7 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
             location,
           };
         }
+        
         if (currentEvent) {
           currentEvent?.eventList?.push({
             details: details ? details : "",
@@ -71,10 +73,13 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
             registerLink: registerLink ? registerLink : "",
           });
         }
+             
     });
+    
     if (currentEvent) {
       events.push(currentEvent);
     }
+    
     return events;
   } catch (error) {
     console.error(error);

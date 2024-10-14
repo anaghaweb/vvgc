@@ -8,8 +8,9 @@ import SectionFive from '@modules/home/components/section5'
 import { CalendarEvent } from 'types/global'
 import { SubscribeToast } from '@modules/subscribe/notification'
 
-const HomePageView = ({data}:{
-  data:CalendarEvent[]
+const HomePageView = ({data, homePageData}:{
+  data:CalendarEvent[],
+  homePageData:CalendarEvent[]
 }) => {
   return (
     <Fragment>
@@ -20,7 +21,7 @@ const HomePageView = ({data}:{
         <SectionOne eventdata={data}/>
 
         {/* Special and Sponsored events */}
-        <SectionTwo data={data} />   
+        <SectionTwo data={homePageData} />   
 
           {/* Campaigns */}
           <SectionThree />

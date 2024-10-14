@@ -27,8 +27,9 @@ const KitchenVVGC = () => {
             </Link>
             <LiaExternalLinkSquareAltSolid/>
             </div>
-           <div className="relative w-[100%] min-h-[300] h-[200px] md:h-[300px] lg:h-[500px] p-2">
             <Link href="/images/campaigns/kitchen.jpeg" target="_blank">
+           <div className="relative w-[100%] min-h-[300] h-[200px] md:h-[300px] lg:h-[500px] p-2">
+            
             <Image
               src="/images/campaigns/kitchen.jpeg"
               alt="Event"
@@ -37,8 +38,9 @@ const KitchenVVGC = () => {
               sizes={"100vw"}
               className="absolute object-contain cursor-pointer"
             />
-            </Link>
+            
             </div>
+            </Link>
             
             </CardContent>
             </Card>

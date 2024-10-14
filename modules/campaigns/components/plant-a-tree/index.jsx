@@ -12,8 +12,9 @@ const PlantATree = () => {
               Plant a tree for our future
             </p>
             <hr className="h-[2px] bg-red-800 my-2" />
-           <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[800px] p-2">
+           
             <Link href="/images/home/services/2.jpeg" target="_blank">
+            <div className="relative w-[100%] h-[200px] md:w-[100%] md:h-[800px] p-2">
             <Image
               src="/images/home/services/2.jpeg"
               alt="Event"
@@ -21,9 +22,9 @@ const PlantATree = () => {
               quality={75}
               sizes={"100vw"}
               className="absolute object-contain cursor-pointer"
-            />
-            </Link>
+            />            
             </div>
+            </Link>
             </CardContent>
             </Card>
           
