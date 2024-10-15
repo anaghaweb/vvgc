@@ -5,13 +5,13 @@ import { LazyImageLoaderProps } from "types/global";
 
 const LazyImageLoader = ({
   imageUrl,
-  width="100%",
-  minHeight="200px",
-  maxHeight="500px",
+  width = "100%",
+  minHeight = "200px",
+  maxHeight = "500px",
 }: LazyImageLoaderProps) => {
   return (
-    <div className={`relative w-[${width}] h-[${minHeight}] md:h-[${maxHeight}]`}>
-      <Link href={imageUrl} target="_blank">
+    <Link href={imageUrl} target="_blank">
+      <div className={`relative w-[${width}] h-[${minHeight}] md:h-[${maxHeight}]`}>
         <Image
           src={`${imageUrl}`}
           alt="Event"
@@ -20,8 +20,8 @@ const LazyImageLoader = ({
           sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
           className="absolute object-contain cursor-pointer"
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
