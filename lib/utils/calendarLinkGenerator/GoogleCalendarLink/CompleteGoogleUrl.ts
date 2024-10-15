@@ -15,5 +15,4 @@ function CompleteGoogleUrl(newCalendarEvent: Calendar) {
     Link += "&ctz=" + newCalendarEvent.timeZone;
     return Link;
   }
-
   export default CompleteGoogleUrl;
