@@ -5,12 +5,12 @@ import MainEventCard from "@modules/events/components/mainEventsCard";
 
 // export const dynamic = 'force-dynamic';
 
-export async function generateStaticParams(){
-  const events = await AllEventsData();
-  return events.map((event)=>({
-    id:event.id
-  }))
-}
+// export async function generateStaticParams(){
+//   const events = await AllEventsData();
+//   return events.map((event)=>({
+//     id:event.id
+//   }))
+// }
 
 export async function generateMetadata ({params}:{
   params:{
