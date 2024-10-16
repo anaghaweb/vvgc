@@ -7,7 +7,7 @@ export default function Image(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: "url(https://vvgc-test.vercel.app/images/og/hsbanner.jpg)",         
+        backgroundImage: `url("${process.env.BASE_URL}/images/og/hsbanner.jpg")`,         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
@@ -16,7 +16,7 @@ export default function Image(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>About Opengraph</p>
+        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>vvgc</p>
         </div>,
         {
             width:1200,
