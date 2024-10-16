@@ -30,7 +30,7 @@ export async function generateMetadata ({params}:{
       template: `%s | ${EVENT?.title}`,
     },
     description: `${EVENT?.subtitle || EVENT?.title}`,
-    metadataBase:new URL(`${process.env.BASE_URL}/eventS/${id}/`),
+    metadataBase:new URL(`${process.env.BASE_URL}/events/${id}/`),
     
     openGraph:{ 
         title:`${EVENT?.title}`,
