@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { ImageResponse } from "next/og"; 
-export const alt = "it is not working";
+export const alt = "VVGC events";
 export const contentType = "image/png";
 export const runtime = "edge";
 
@@ -20,7 +20,11 @@ const size = {
 export default async function OpenGraphEventImage({params}:{params:{id:string}}){
     const {id} =params;
     const events = await AllEventsData();
-    const event = events.find(e=>e.id === id)
+    const event = events.find(e=>e.id === id);
+    const localImage = `${process.env.BASE_URL}/images/og/inner.jpg`;
+    const cl = event?.eventList.map((e)=> e.imageUrl);
+    const cloudImage = cl && `${cl[0]}`;
+    const image = cloudImage ? cloudImage : localImage;
     try{
         return new ImageResponse(
             (
@@ -59,7 +63,7 @@ export default async function OpenGraphEventImage({params}:{params:{id:string}})
               <img
                 width="200"
                 height="200"
-                src="https://sm-cards.vercel.app/icons/om.png"
+                src={image}
                 alt="Social Media Card Image"
               />
               </a>
