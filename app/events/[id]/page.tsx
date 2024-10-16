@@ -3,6 +3,8 @@ import { AllEventsData } from "@lib/server-actions/mainEvents";
 import type { CalendarEvent } from "types/global";
 import MainEventCard from "@modules/events/components/mainEventsCard";
 
+export const dynamic = 'force-dynamic';
+
 export async function generateStaticParams(){
   const events = await AllEventsData();
   return events.map((event)=>({
@@ -23,6 +25,7 @@ export async function generateMetadata ({params}:{
   const cl = EVENT?.eventList.map((e)=> e.imageUrl);
   const cloudImage = cl && `${cl[0]}`;
   const image = cloudImage ? cloudImage : localImage;
+  
   return {
     title: {
       absolute: `${EVENT?.title}`,
