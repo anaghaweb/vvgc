@@ -1,9 +1,9 @@
 import { ImageResponse } from "next/og"; 
 export const alt = "it is not working";
 export const contentType = "image/png";
+export const runtime = "edge";
 
-
-export default function Image(){
+export default function TwitterImage(){
     
     return new ImageResponse (
        <div style={{
