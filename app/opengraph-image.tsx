@@ -7,7 +7,7 @@ export default function Image(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: "url(https://sm-cards.vercel.app/images/og/hsbanner.jpg)",         
+        backgroundImage: "url(https://vvgc-test.vercel.app/images/og/hsbanner.jpg)",         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
