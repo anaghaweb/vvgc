@@ -3,7 +3,7 @@ import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { ImageResponse } from "next/og"; 
 export const alt = "VVGC events";
 export const contentType = "image/png";
-export const runtime = "edge";
+// export const runtime = "edge";
 
 const size = {
     width: 1200,

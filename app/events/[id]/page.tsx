@@ -3,7 +3,7 @@ import { AllEventsData } from "@lib/server-actions/mainEvents";
 import type { CalendarEvent } from "types/global";
 import MainEventCard from "@modules/events/components/mainEventsCard";
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams(){
   const events = await AllEventsData();
@@ -25,7 +25,7 @@ export async function generateMetadata ({params}:{
   const cl = EVENT?.eventList.map((e)=> e.imageUrl);
   const cloudImage = cl && `${cl[0]}`;
   const image = cloudImage ? cloudImage : localImage;
-  
+
   return {
     title: {
       absolute: `${EVENT?.title}`,
@@ -33,7 +33,7 @@ export async function generateMetadata ({params}:{
       template: `%s | ${EVENT?.title}`,
     },
     description: `${EVENT?.subtitle || EVENT?.title}`,
-    metadataBase:new URL(`${process.env.BASE_URL}/events/${id}`),
+    metadataBase:new URL(`${process.env.BASE_URL}/events/${id}/`),
     
     openGraph:{ 
         title:`${EVENT?.title}`,

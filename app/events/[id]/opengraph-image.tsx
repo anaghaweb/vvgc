@@ -3,7 +3,7 @@ import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { ImageResponse } from "next/og"; 
 export const alt = "VVGC events";
 export const contentType = "image/png";
-export const runtime = "edge";
+// export const runtime = "edge";
 
 const size = {
     width: 1200,
@@ -55,11 +55,11 @@ export default async function OpenGraphEventImage({params}:{params:{id:string}})
                   gap:4,
                 }}
               >
-                <a href={`${process.env.BASE_URL}/events/${id}`} target="_break" style={{color:'black', fontFamily:'inherit', fontSize:'2rem'}}>
+                <p style={{color:'black', fontFamily:'inherit', fontSize:'2rem'}}>
                {event?.title}
-               </a>
+               </p>
               </div>
-              <a href={`${process.env.BASE_URL}/events/${id}`} target="_break">
+              <a href={`${process.env.BASE_URL}/events/${id}/`} target="_break">
               <img
                 width="200"
                 height="200"
