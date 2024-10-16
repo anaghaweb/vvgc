@@ -46,7 +46,7 @@ export async function generateMetadata ({params}:{
         card:"summary_large_image",
         title:`${EVENT?.title}`,
         description:`${EVENT?.title}`,
-        images:image,
+        images:[image],
     }  
   } 
 }
