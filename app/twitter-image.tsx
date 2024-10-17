@@ -16,7 +16,7 @@ export default function TwitterImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        Welcome to VVGC
+        twitter
         </div>,
         {
             width:1200,

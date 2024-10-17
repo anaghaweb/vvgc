@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     name: "BSK",
   }],
   keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva", "vvgc", "temples in california", "ganapathi temples in california"],
-  metadataBase: new URL(`${process.env.BASE_URL}`),
+  metadataBase: new URL(`${process.env.BASE_URL}/`),
   openGraph: {
-    title: "VVGC Hindu Temple, San Martin",
+    title: "VVGC Hindu Temple,Opengraph",
     description: "11355 Monterey Rd, San Martin, CA 95046",
     images: [{
       url: opengraphURL,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VVGC | Home",
+    title: "VVGC | Twitter",
     description: "A home for hindu devotees",
     images: [twitterURL],
 

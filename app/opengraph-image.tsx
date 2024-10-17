@@ -16,7 +16,7 @@ export default function OpenGraphImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-       "VVGC Hindu Temple"
+       "Opengraph"
         </div>,
         {
             width:1200,
