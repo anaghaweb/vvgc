@@ -7,7 +7,7 @@ export default function OpenGraphImage(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url("${process.env.BASE_URL}/images/og/hsbanner.jpg")`,         
+        backgroundImage: `url(${process.env.BASE_URL}/images/og/hsbanner.jpg)`,         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
@@ -16,7 +16,7 @@ export default function OpenGraphImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>vvgc</p>
+       "VVGC Hindu Temple"
         </div>,
         {
             width:1200,

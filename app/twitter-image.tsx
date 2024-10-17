@@ -7,7 +7,7 @@ export default function TwitterImage(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url("${process.env.BASE_URL}/images/og/hsbanner.jpg")`,         
+        backgroundImage: `url(${process.env.BASE_URL}/images/og/hsbanner.jpg)`,         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
@@ -16,7 +16,7 @@ export default function TwitterImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>Welcome to VVGC</p>
+        Welcome to VVGC
         </div>,
         {
             width:1200,
