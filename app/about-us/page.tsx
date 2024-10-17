@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "About Us",
     description: "VVGC- Temple",
-    metadataBase: new URL(`${process.env.BASE_URL}/about-us`),
+    metadataBase: new URL(`${process.env.BASE_URL}/about-us/`),
     openGraph: {
       title: "About Us",
       description: "VVGC- Temple",
