@@ -9,11 +9,11 @@ import { Metadata } from "next"
 
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
-  const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+  const twitterURL = `https://vvgc.org/images/og/inner.jpg`;
   return {
     title: "VVGC Priests",
     description: "VVGC- Temple",
-    metadataBase: new URL(`${process.env.BASE_URL}/priests/`),
+    metadataBase: new URL(`https://vvgc.org/priests/`),
     openGraph: {
       title: "VVGC Priests",
       description: "VVGC- Temple",
@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: "VVGC Priests",
       description: "VVGC- Temple",
-      images: [twitterURL],
+      images: twitterURL,
     }
   }
 }
@@ -46,8 +46,7 @@ export default function Priest() {
         <React.Fragment>
 
             < div className={`flex justify-center relative items-center w-full h-[75svh] 
-            text-3xl leading-9 text-white  bg-hero-priests bg-center bg-no-repeat bg-cover m-px
-                     `}
+            text-3xl leading-9 text-white font-playfair  bg-hero-priests bg-center bg-no-repeat bg-cover m-px `}
             >
                 <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">VVGC Priests </h1>
             </div>

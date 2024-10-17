@@ -4,12 +4,12 @@ import DonationsPageView from "@modules/donations/page";
 import { Metadata } from "next"
 
 export async function generateMetadata(): Promise<Metadata> {
-  const opengraphURL = `${process.env.BASE_URL}/images/og/donations.jpg`;
-  const twitterURL = `${process.env.BASE_URL}/images/og/donations.jpg`;
+  const opengraphURL = "https://vvgc.org/images/og/donation.jpg";
+  const twitterURL = "https://vvgc.org/images/og/donation.jpg";
   return {
     title: "Donations",
     description: "Help us Grow",
-    metadataBase: new URL(`${process.env.BASE_URL}/donations`),
+    metadataBase: new URL(`https://vvgc.org/donations/`),
     openGraph: {
       title: "Donations",
       description: "Help us Grow",

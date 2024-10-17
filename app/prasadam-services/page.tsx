@@ -39,9 +39,8 @@ export default function Prasadam() {
     <React.Fragment>
       <div
         className={`flex justify-center relative items-center w-full h-[75svh] text-3xl 
-          leading-9 text-white 
-          bg-hero-prasadam bg-center bg-no-repeat bg-cover m-px
-                     font-cormorant`}
+          leading-9 text-white font-playfair
+          bg-hero-prasadam bg-center bg-no-repeat bg-cover m-px`}
       >
         <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           Prasadam Services{" "}

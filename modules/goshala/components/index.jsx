@@ -22,7 +22,7 @@ export default function Goshala() {
     <React.Fragment>
       <div
         className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-goshala font-cormorant `}
+                    bg-hero-goshala font-playfair `}
       >
         <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           VVGC Goshala

@@ -7,7 +7,7 @@ export default function OpenGraphImage(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url(${process.env.BASE_URL}/images/og/hsbanner.jpg)`,         
+        backgroundImage: 'url("https://vvgc.org/images/og/hsbanner.jpg")',          
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',

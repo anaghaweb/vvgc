@@ -7,8 +7,8 @@ import getHomePageEventsData from '@lib/server-actions/homePageEvents';
 import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const opengraphURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
-  const twitterURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
+  const opengraphURL = "https://vvgc.org/images/og/hsbanner.jpg";
+  const twitterURL = "https://vvgc.org/images/og/hsbanner.jpg";
   return {
     title: "VVGC | Home",
     description: `A home for hindu devotees`,
@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
       name: "BSK",
     }],
     keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva", "vvgc", "temples in california", "ganapathi temples in california"],
-    metadataBase: new URL(`${process.env.BASE_URL}`),
+    metadataBase: new URL( "https://vvgc.org/images/og/inner.jpg"),
     openGraph: {
       title: "VVGC Hindu Temple, San Martin",
       description: "11355 Monterey Rd, San Martin, CA 95046",
