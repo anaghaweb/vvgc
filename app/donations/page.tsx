@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Donations",
     description: "Help us Grow",
-    metadataBase: new URL(`https://vvgc.org/donations/`),
+    metadataBase: new URL(`https://vvgc.org/donations`),
     openGraph: {
       title: "Donations",
       description: "Help us Grow",
