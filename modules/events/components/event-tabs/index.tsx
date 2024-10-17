@@ -29,7 +29,7 @@ export const EventTabs = ({data, weeklyEventsData, searchParams}:{
      <Separator orientation="vertical" className="h-8 border-r-[0.1rem] border-red-500"/>
     </div>
     <div>
-        {eventType === 'special' && <SpecialEventTab data={data} searchParams={searchParams}/>}
+        {eventType === 'special' && <SpecialEventTab data={data} numberOfEvents={searchParams.numberofevents ? searchParams.numberofevents : '5'}/>}
         {eventType === 'regular' && <DailyEventTab weeklyEventsData={weeklyEventsData} /> }
     </div>
     </Fragment>

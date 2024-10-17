@@ -5,11 +5,11 @@ import type { CalendarEvent, EventTypes } from "types/global";
 import { useState } from "react";
 import LoadMoreButton from "../loadMoreButton";
 
-export default function SpecialEventTab({ data, searchParams }:
+export default function SpecialEventTab({ data, numberOfEvents }:
   {data: CalendarEvent[],
-    searchParams:EventTypes,
+    numberOfEvents:string,
   }) {
-  const count = searchParams.numberofevents ? parseInt(searchParams.numberofevents, 10) : 5;
+  const count = parseInt(numberOfEvents,10);
   const total = data.length;
   const [num, setNum] = useState(count);
   const handleClick=()=>{
@@ -30,7 +30,7 @@ export default function SpecialEventTab({ data, searchParams }:
             null
           )
         )}
-          <LoadMoreButton num={num} total={total} searchParams={searchParams} handleClick={handleClick}/>
+          <LoadMoreButton num={num} total={total} handleClick={handleClick}/>
       </div>
     
   );
