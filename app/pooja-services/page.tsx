@@ -34,15 +34,16 @@ export default function PoojaServices() {
   return (
     <Fragment>
       <div
-        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat 
-          bg-cover m-px
-                    bg-hero-pooja ${cormorant.variable} `}
+        className={`flex justify-center relative items-center w-full h-[75svh] 
+          bg-hero-pooja bg-center bg-no-repeat bg-cover
+          text-3xl leading-9 text-white font-cormorant
+           m-px `}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           Pooja Services{" "}
         </h1>
       </div>
-      <main className={`${cormorant.variable} m-auto `}>
+      <main className={`font-cormorant m-auto `}>
         <PoojaServicePage />
       </main>
     </Fragment>

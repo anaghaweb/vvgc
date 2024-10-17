@@ -5,8 +5,8 @@ const HeroCard = ({ page, text }: { page: string; text?: string }) => {
     <Fragment>
       <div
         className={`flex flex-col justify-center items-center relative  
-          w-full h-24 sm:h-64 md:h-80 bg-top bg-cover bg-no-repeat
-            bg-hero-home  
+          w-full h-24 sm:h-64 md:h-80  bg-hero-home bg-top bg-cover bg-no-repeat
+             
           `}
       >
         <div

@@ -1,5 +1,5 @@
 import React from "react";
-import { cormorant } from "@lib/fonts/fonts";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button"; 
@@ -45,15 +45,19 @@ export default function Priest() {
     return (
         <React.Fragment>
 
-            < div className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-priests ${cormorant.variable} `}
+            < div className={`flex justify-center relative items-center w-full h-[75svh] 
+            text-3xl leading-9 text-white  bg-hero-priests bg-center bg-no-repeat bg-cover m-px
+                     `}
             >
-                <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">VVGC Priests </h1>
+                <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">VVGC Priests </h1>
             </div>
-            <main className={cormorant.variable}>
+            <main className="font-roboto">
 
                 <div className={`flex flex-col justify-center items-center`}>
-                    <h2 className={`text-xl w-5/5 px-8 py-4 text-justify`}>Their selfless service forms the foundation of our temple's spiritual offerings, and their presence enriches our lives in countless ways. We would like to express our deep appreciation for the priests and acknowledge the invaluable role they play in maintaining the sanctity and vibrancy of our Temple.
+                    <h2 className={`text-xl w-5/5 px-8 py-4 text-justify`}>Their selfless service forms the 
+                    foundation of our temple's spiritual offerings, and their presence enriches our lives in
+                     countless ways. We would like to express our deep appreciation for the priests and acknowledge 
+                     the invaluable role they play in maintaining the sanctity and vibrancy of our Temple.
                     </h2>
                     <h3 className={`text-xl w-5/5 px-8 py-4 text-justify`}>
                         If you would like to give Guru Dakshana to our priests, you can do so using GoFundMe.

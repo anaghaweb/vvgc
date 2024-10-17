@@ -37,7 +37,7 @@ export default function Donations() {
             w-full h-[75svh] text-3xl leading-9 text-white bg-center 
             bg-no-repeat bg-cover m-px bg-hero-donations`}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-[cormorant]">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
           Support Us
         </h1>
       </div>
