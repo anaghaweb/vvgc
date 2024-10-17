@@ -16,7 +16,7 @@ export default function TwitterImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        twitter
+        Welcome to VVGC Hindu Temple
         </div>,
         {
             width:1200,

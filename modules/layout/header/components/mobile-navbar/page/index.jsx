@@ -14,6 +14,7 @@ import Divider from '@modules/common/components/divider';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { navbarNavigation } from "@lib/data/navigation";
 import MobileNavMenu from '../components/navbar-content';
+import OM_SVG from "@lib/icons/om";
   
 const MobileNavigationMenu = () => {
   return (
@@ -26,7 +27,7 @@ const MobileNavigationMenu = () => {
           </SheetTrigger>
           <SheetContent side="left" className="overflow-y-auto">
             <SheetHeader>
-              <SheetTitle>Welcome to VVGC</SheetTitle>
+              <SheetTitle className="flex flex-shrink-0 items-baseline justify-center gap-x-1 py-2 font-cormorant" ><OM_SVG w={12} h={12} color="grey"/> Welcome to VVGC <OM_SVG w={12} h={12} color="grey"/></SheetTitle>
               {/* <SheetDescription className="font-sans">
                Welcome to VVGC
               </SheetDescription> */}

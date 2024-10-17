@@ -1,13 +1,12 @@
 import { ImageResponse } from "next/og"; 
 export const alt = "it is not working";
 export const contentType = "image/png";
-export const runtime = "edge"
 
-export default function OpenGraphImage(){
+export default function Image(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url(${process.env.BASE_URL}/images/og/hsbanner.jpg)`,         
+        backgroundImage: `url(${process.env.BASE_URL}/images/og/inner.jpg)`,         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
@@ -16,7 +15,7 @@ export default function OpenGraphImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-       A home for hindu devotees
+        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>About Us</p>
         </div>,
         {
             width:1200,
