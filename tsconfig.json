@@ -1,12 +1,15 @@
 {
     "compilerOptions": {
-      "target": "es5",
+      "target": "ESNext",
       "lib": ["dom", "dom.iterable", "esnext"],
       "allowJs": true,
       "skipLibCheck": true,
       "strict": true,
+      "strictNullChecks": true,
       "forceConsistentCasingInFileNames": true,
       "noEmit": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
       "esModuleInterop": true,
       "module": "esnext",
       "moduleResolution": "node",
@@ -33,7 +36,7 @@
       "**/*.js",
       "**/*.jsx",
       ".next/types/**/*.ts",
-      "tailwind.config.js",
+      "tailwind.config.ts",
       "./types/index.d.ts",
     ],
     "exclude": [

@@ -1,7 +1,5 @@
 import React from "react";
-
 import PrasadamServicesPageView from "@modules/prasadam-services/page";
-
 import { Metadata } from "next"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -31,11 +29,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Prasadam() {
-  const prasadamListURL =
-    "https://docs.google.com/document/d/e/2PACX-1vQOl-51RHrgRT9dbGG6A3xVG2SRBI-QmcXNn-0LiycySp_JuNTHfdG1BHLVUl6KAFPuPMvQ5s_WF0Fz/pub?embedded=true";
+  // const prasadamListURL =
+  //   "https://docs.google.com/document/d/e/2PACX-1vQOl-51RHrgRT9dbGG6A3xVG2SRBI-QmcXNn-0LiycySp_JuNTHfdG1BHLVUl6KAFPuPMvQ5s_WF0Fz/pub?embedded=true";
 
-  const CustomPrasadamBookingFormURL =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfnXHyH_O2Y5qwF_OTLhTaoKqrZDmRP5_4vLGh89aQWPK1lzg/viewform";
+  // const CustomPrasadamBookingFormURL =
+  //   "https://docs.google.com/forms/d/e/1FAIpQLSfnXHyH_O2Y5qwF_OTLhTaoKqrZDmRP5_4vLGh89aQWPK1lzg/viewform";
 
   return (
     <React.Fragment>
