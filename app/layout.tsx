@@ -14,13 +14,9 @@ import React from "react";
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 import { Toaster } from 'sonner';
 export default function RootLayout({
-  children,
-  params,
+  children
 }: {
-  children: React.ReactNode;
-  params: {
-    camid: string;
-  };
+  children: React.ReactNode
 }) {
   return (
     <html
@@ -33,7 +29,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
-        
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
           rel="icon"

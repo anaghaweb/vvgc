@@ -1,25 +1,10 @@
 import { Fragment } from "react";
 import TestPage from "@modules/test/page";
 
-const Test = async ({
-  params,
-  searchParams,
-}: {
-  params: {
-    camid: string;
-  };
-  searchParams: {
-    evtype: "regular" | "special" | "weekly" | "festival";
-  };
-}) => {
- 
-
+const Test = async () => {
   return (
     <Fragment>
-      <TestPage 
-     
-        />
-     
+      <TestPage />
     </Fragment>
   );
 };

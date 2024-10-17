@@ -11,30 +11,30 @@ import { CalendarEvent, type EventTypes } from "types/global";
 //   description: "Temple performs all types of events",
 // };
 
-export async function generateMetadata({ searchParams }:{searchParams: EventTypes}) 
-{
-  try {    
-     return {
-      title: `${searchParams.evtype} ${ (searchParams.evtype === 'regular' || searchParams.evtype === 'special' || searchParams.evtype === 'weekly') ? 'Events' : '' } | VVGC`,
-      description:'vvgc events',     
+export async function generateMetadata({ searchParams }: { searchParams: EventTypes }) {
+  try {
+    return {
+      title: `${searchParams.evtype} ${(searchParams.evtype === 'regular' || searchParams.evtype === 'special' || searchParams.evtype === 'weekly') ? 'Events' : ''} | VVGC`,
+      description: 'vvgc events',
     }
   } catch (error) {
     console.log(error)
-     notFound();
+    notFound();
   }
 }
 
-export default async function Event({searchParams}:
-  {searchParams:EventTypes
-}
+export default async function Event({ searchParams }:
+  {
+    searchParams: EventTypes
+  }
 ) {
-  
+
   const templateEventData: CalendarEvent[] = await AllEventsData();
 
   return (
     <>
       <main className="mx-auto py-4 bg-neutral-100">
-        <EventsPageView data={templateEventData} weeklyEventsData={weeklyEventsDataList} searchParams={searchParams}/>
+        <EventsPageView data={templateEventData} weeklyEventsData={weeklyEventsDataList} searchParams={searchParams} />
       </main>
     </>
   );
