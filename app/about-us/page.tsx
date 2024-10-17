@@ -1,13 +1,7 @@
 import React from "react";
-import { cormorant } from "@lib/fonts/fonts";
 import AboutUsPage from "@modules/about-us/page";
 import { Metadata } from "next";
 
-
-export const metadata:Metadata = {
-  title: "About Us",
-  description: "VVGC- Temple",
-};
 export async function generateMetadata():Promise<Metadata>{
   const opengraphURL = `${process.env.BASE_URL}/about-us/opengraph-image`;
   const twitterURL = `${process.env.BASE_URL}/about-us/twitter-image`;
