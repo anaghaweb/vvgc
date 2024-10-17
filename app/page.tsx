@@ -36,8 +36,8 @@ import type { Metadata } from 'next';
 // };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const opengraphURL = `${process.env.BASE_URL}/opengraph-image`;
-  const twitterURL = `${process.env.BASE_URL}/twitter-image`;
+  const opengraphURL = `${process.env.BASE_URL}`;
+  const twitterURL = `${process.env.BASE_URL}`;
   return {
     title: "VVGC | Home",
     description: `A home for hindu devotees`,
