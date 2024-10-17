@@ -3,12 +3,12 @@ import AboutUsPage from "@modules/about-us/page";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const opengraphURL = `${process.env.BASE_URL}/about-us`;
-  const twitterURL = `${process.env.BASE_URL}/about-us`;
+  const opengraphURL = `${process.env.BASE_URL}/about-us/opengraph-image`;
+  const twitterURL = `${process.env.BASE_URL}/about-us/twitter-image`;
   return {
     title: "About Us",
     description: "VVGC- Temple",
-    metadataBase: new URL(`${process.env.BASE_URL}/about-us/`),
+    metadataBase: new URL(`${process.env.BASE_URL}/about-us`),
     openGraph: {
       title: "About Us",
       description: "VVGC- Temple",
