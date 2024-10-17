@@ -7,7 +7,7 @@ export default function TwitterImage(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url(${process.env.BASE_URL}/images/og/hsbanner.jpg)`,         
+        backgroundImage: `url(${process.env.BASE_URL}/images/og/inner.jpg)`,         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
