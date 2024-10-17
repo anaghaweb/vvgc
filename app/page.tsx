@@ -7,7 +7,7 @@ import getHomePageEventsData from '@lib/server-actions/homePageEvents';
 import type { Metadata } from 'next';
 
 // const opengraphURL = `${process.env.BASE_URL}/opengraph-image`;
-// const twitterURL = `${process.env.BASE_URL}/twitter-image`;
+ const twitterURL = `${process.env.BASE_URL}/twitter-image`;
 // export const metadata: Metadata = {
 //   title: "VVGC | Home",
 //   description: `A home for hindu devotees`,
@@ -37,7 +37,7 @@ import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
-  const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+  //const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
   return {
     title: "VVGC | Home",
     description: `A home for hindu devotees`,

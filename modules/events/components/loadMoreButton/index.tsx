@@ -1,6 +1,6 @@
 import { Button } from "@modules/common/components/ui/button";
 import React from 'react'
-import { useSearchParams } from "next/navigation";
+
 const LoadMoreButton = ({num, total, handleClick}:{handleClick:()=>void, num:number, total:number}) => {
     
   return (
