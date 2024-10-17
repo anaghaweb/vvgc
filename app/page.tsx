@@ -36,12 +36,8 @@ import type { Metadata } from 'next';
 // };
 
 export async function generateMetadata(): Promise<Metadata> {
-  
-  const BURL = process.env.NODE_ENV === "test" ? "https://vvgc-test.vercel.app/" : 
-  process.env.NODE_ENV === "production" ? "https://vvgc.org/" : 
-  process.env.NODE_ENV === "development" && "http://192.168.0.101:3000";
-  const opengraphURL = `${BURL}`;
-  const twitterURL = `${BURL}`;
+  const opengraphURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
+  const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
   return {
     title: "VVGC | Home",
     description: `A home for hindu devotees`,
@@ -49,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
       name: "BSK",
     }],
     keywords: ["temple", "hindu", "devotees", "home", "ganesha", "ganapathi", "shiva", "vvgc", "temples in california", "ganapathi temples in california"],
-    metadataBase: new URL(`${BURL}`),
+    metadataBase: new URL(`${process.env.BASE_URL}`),
     openGraph: {
       title: "VVGC Hindu Temple, San Martin",
       description: "11355 Monterey Rd, San Martin, CA 95046",

@@ -4,18 +4,16 @@ import MobileNavigationMenu from "../components/mobile-navbar/page";
 import TempleAddressHeader from "../components/temple-address";
 import DesktopNavigationMenu from "../components/main-navbar";
 import LocalLinkWithBgColor from "@modules/common/components/LocalLinkWithBgColor";
-import { useParams, usePathname } from "next/navigation";
+import {  usePathname } from "next/navigation";
 import clsx from "clsx";
-import Link from "next/link";
+
 import SubscribeToVVGCNewsLetter from "@modules/subscribe";
 import FeedbackByDevotees from "@modules/feedback/page";
 
 export default function Header() {
   const pathname = usePathname();
-  const campaigns = pathname.split("/").includes("campaigns");
   const verifyEmail = pathname.split("/").includes("verifyEmail");
-  const { camid } = useParams();
-  console.log("camid", camid);
+ 
   return (
     <>
     {!verifyEmail && <header
@@ -31,7 +29,7 @@ export default function Header() {
         <DesktopNavigationMenu />
 
         <div className="flex flex-col xl:hidden p-2">
-          <MobileNavigationMenu camid={camid} />
+          <MobileNavigationMenu  />
         </div>
 
         {/* Support us button leads to Donations page */}
