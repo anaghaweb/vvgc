@@ -1,7 +1,7 @@
 'use client'
 import {CardHeader} from "@modules/common/components/ui/card";
 import MainEventCard from "@modules/events/components/mainEventsCard";
-import type { CalendarEvent, EventTypes } from "types/global";
+import type { CalendarEvent } from "types/global";
 import { useState } from "react";
 import LoadMoreButton from "../loadMoreButton";
 
