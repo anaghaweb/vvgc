@@ -15,7 +15,7 @@ import Link from "next/link";
 const MobileNavMenu = ({ navbarNavigation }) => {
   return (
     <Fragment>
-      <ul className={`w-full flex flex-col sm:w-64 overflow-auto font-roboto`}>
+      <ul className={`w-full flex flex-col space-y-1 sm:w-64 overflow-auto font-roboto`}>
         {navbarNavigation.map((item, index) => {
           return <CreateMenu item={item} key={index} depth={0} />
           
