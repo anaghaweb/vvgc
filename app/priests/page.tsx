@@ -5,9 +5,32 @@ import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button"; 
 import { Card, CardContent, CardHeader } from "@modules/common/components/ui/card";
 
-export const metadata = {
-    title: 'Priest',
-    description: 'VVGC- Temple',
+import { Metadata } from "next"
+
+export async function generateMetadata(): Promise<Metadata> {
+  const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+  const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+  return {
+    title: "VVGC Priests",
+    description: "VVGC- Temple",
+    metadataBase: new URL(`${process.env.BASE_URL}/priests/`),
+    openGraph: {
+      title: "VVGC Priests",
+      description: "VVGC- Temple",
+      images: [{
+        url: opengraphURL,
+        width: 1200,
+        height: 630,
+        alt: `About Us Image`,
+      }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: "VVGC Priests",
+      description: "VVGC- Temple",
+      images: [twitterURL],
+    }
+  }
 }
 
 const goFundMeURL = 'https://www.gofundme.com/f/vvgc-priests-guru-dakshana?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer';

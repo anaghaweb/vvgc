@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og"; 
 export const alt = "it is not working";
 export const contentType = "image/png";
-
+export const runtime = "edge";
 
 export default function Image(){
     
@@ -16,7 +16,7 @@ export default function Image(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>About Us</p>
+        <p style={{color:'white', fontFamily:'inherit', fontSize:'2rem'}}>Welcome to VVGC</p>
         </div>,
         {
             width:1200,
