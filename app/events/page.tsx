@@ -6,16 +6,33 @@ import { notFound } from "next/navigation";
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { CalendarEvent, type EventTypes } from "types/global";
 
-// export const metadata = {
-//   title: "Events",
-//   description: "Temple performs all types of events",
-// };
+import { Metadata } from "next"
 
-export async function generateMetadata({ searchParams }: { searchParams: EventTypes }) {
+
+export async function generateMetadata({ searchParams }: { searchParams: EventTypes }):Promise<Metadata> {
+  const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+  const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
   try {
     return {
       title: `${searchParams.evtype} ${(searchParams.evtype === 'regular' || searchParams.evtype === 'special' || searchParams.evtype === 'weekly') ? 'Events' : ''} | VVGC`,
       description: 'vvgc events',
+      metadataBase: new URL(`${process.env.BASE_URL}/events`),
+      openGraph: {
+        title: "Events",
+        description: "Help us Grow",
+        images: [{
+          url: opengraphURL,
+          width: 1200,
+          height: 630,
+          alt: `About Us Image`,
+        }],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: "Events",
+        description: "Help us Grow",
+        images: [twitterURL],
+      }
     }
   } catch (error) {
     console.log(error)

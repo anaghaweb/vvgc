@@ -2,8 +2,8 @@ import React from 'react'
 import type { Metadata } from 'next';
 import ConfirmSubscription from '@modules/subscribe/form/components/confirmSubscription';
 import VerifyEmailPageView from '@modules/verifyEmail';
-import getSheetfromGoogleAPI from '@lib/utils/googleSheetApiHandler';
-import DeleteExpiredToken from '@modules/subscribe/form/components/deleteExpiredToken';
+// import getSheetfromGoogleAPI from '@lib/utils/googleSheetApiHandler';
+// import DeleteExpiredToken from '@modules/subscribe/form/components/deleteExpiredToken';
 
 export const metadata:Metadata = {
     title:  "Verify Email | VVGC",

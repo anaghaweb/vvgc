@@ -13,6 +13,35 @@ import React from "react";
 
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 import { Toaster } from 'sonner';
+
+import { Metadata } from "next"
+
+export async function generateMetadata(): Promise<Metadata> {
+  const opengraphURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
+  const twitterURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
+  return {
+    title: 'VVGC Hindu Temple, San Martin',
+    description: 'A home for hindu devotees',
+    metadataBase: new URL(`${process.env.BASE_URL}`),
+    openGraph: {
+      title: 'VVGC Hindu Temple, San Martin',
+      description: 'A home for hindu devotees',
+      images: [{
+        url: opengraphURL,
+        width: 1200,
+        height: 630,
+        alt: `About Us Image`,
+      }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'VVGC Hindu Temple, San Martin',
+      description: 'A home for hindu devotees',
+      images: [twitterURL],
+    }
+  }
+}
+
 export default function RootLayout({
   children
 }: {

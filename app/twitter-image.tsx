@@ -7,7 +7,7 @@ export default function TwitterImage(){
     
     return new ImageResponse (
        <div style={{
-        backgroundImage: `url(${process.env.BASE_URL}/images/og/inner.jpg)`,         
+        backgroundImage: 'url("https://vvgc.org/images/og/hsbanner.jpg")',         
         backgroundSize:'100% 100%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center center',
@@ -16,7 +16,7 @@ export default function TwitterImage(){
         display: "flex",
         alignItems: "center",
         justifyContent: "center",}}>
-        twitter
+        Welcome to VVGC Hindu Temple
         </div>,
         {
             width:1200,
