@@ -7,12 +7,13 @@ import { FaInstagram } from "react-icons/fa";
 import { ShareOnFacebook, shareOnTwitter, ShareOnWhatsApp, ShareOnInstagram } from './social-media';
 import { CgClose } from "react-icons/cg";
 import { useEffect } from "react";
+
+
 const DialogForSharingLinks = ({ handleClick, completeURL, dialogue, diaRef, toggleDialog }: {
   handleClick: () => void,
   completeURL: string,
   dialogue: boolean,
   diaRef: React.MutableRefObject<HTMLDialogElement | null>,
-  setDialog?: React.Dispatch<React.SetStateAction<boolean>>,
   toggleDialog: () => void;
 }) => {
   // Remove BACKGROUND SCROLL WHEN DIALOG IS OPEN
@@ -31,7 +32,7 @@ const DialogForSharingLinks = ({ handleClick, completeURL, dialogue, diaRef, tog
   return <dialog ref={diaRef} id="dial"
     className={`z-10 w-full min-h-screen grid justify-center items-center overflow-y-hidden
       fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity
-      ${dialogue ? " block " : "hidden "}`}>
+      ${dialogue ? "block" : "hidden"}`}>
 
     <div className={`p-1 font-roboto text-sm rounded-md shadow-md  
     min-h-60 min-w-64 max-w-sm top-auto bottom-auto mx-auto border-2 bg-slate-50

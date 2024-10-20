@@ -38,7 +38,7 @@ import Share from "../../share-Url";
             ))}
         </CardContent>
         {/* sponsor event Link */}
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-center bg-green-500">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center ">
          <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
         </div>        
