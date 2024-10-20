@@ -50,21 +50,20 @@ const Share = ({ id }: { id: string }) => {
 
   return (    
      
-        <div className='inline-flex relative items-center justify-center p-2 gap-2'>
+        <div className='inline-flex relative items-center justify-center px-2 gap-2'>
           <p >Share </p>
           <button 
         className="size-8 bg-gradient-to-r from-purple-700 via-fuchsia-800 backdrop-filter to-violet-800 backdrop-brightness-50 rounded-full flex justify-center items-center"
         onClick={toggleDialog}         
           > <IoMdShare size={18} className='text-white mx-auto font-semibold'/>
-          </button>
-           
+          </button>           
             <DialogForSharingLinks
             handleClick={handleClick}
             completeURL={completeURL} 
             dialogue={dialogue} 
             diaRef={diaRef}
             toggleDialog={toggleDialog} />
-        </div>       
+        </div>      
     
   )
 }

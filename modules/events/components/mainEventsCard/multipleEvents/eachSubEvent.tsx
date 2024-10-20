@@ -51,7 +51,7 @@ const SubEventList = ({ event }:{event:EventListProps }
       </div>
 
       {/* EVENT IMAGE LOADED FROM CLOUDINARY */}
-      <div className={`col-span-full justify-items-center`}>
+      <div className={`col-span-full`}>
         { event.imageUrl && <LazyImageLoader imageUrl={event.imageUrl} maxHeight="300px"/>}
       </div>      
     </div>

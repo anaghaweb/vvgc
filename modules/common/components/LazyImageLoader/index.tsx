@@ -11,9 +11,15 @@ const LazyImageLoader = ({
 }: LazyImageLoaderProps) => {
   return (
     <Link href={imageUrl} target="_blank">
-      <div className={`relative w-[${width}] h-[${minHeight}] md:h-[${maxHeight}]`}>
+      <div className={`relative w-[${width}] min-h-[${minHeight}] md:max-h-[${maxHeight}]`}
+      style={{width:width ? width : '100%', 
+        minHeight:minHeight ? minHeight : '200px',
+        maxHeight: maxHeight ? maxHeight : '300px,',
+        height: maxHeight,
+        }}
+      >
         <Image
-          src={`${imageUrl}`}
+          src={imageUrl || '/images/og/inner.jpg'}
           alt="Event"
           fill
           quality={75}

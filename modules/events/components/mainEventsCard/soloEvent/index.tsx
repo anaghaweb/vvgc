@@ -72,15 +72,14 @@ import Share from "../../share-Url";
               {singleEvent.imageUrl && (
                 <LazyImageLoader
                   imageUrl={singleEvent.imageUrl}
-                  maxHeight="500px"
+                  maxHeight="300px"
                 />
               )}
             </div>
           )}
         </CardContent>
         {/* sponsor event Link */}
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-
+        <div className="flex flex-col md:flex-row gap-2 items-center justify-center">
           <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
         </div>
