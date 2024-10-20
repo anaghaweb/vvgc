@@ -8,6 +8,7 @@ import {
   import type { CalendarEvent } from "types/global";
   import ExternalLink from "@modules/common/components/ExternalLink";
   import LazyImageLoader from "@modules/common/components/LazyImageLoader";
+import Share from "../../share-Url";
   
   const SoloEventCard = ({ data }: { data: CalendarEvent }) => {
     const singleEvent = data.eventList[0];
@@ -78,8 +79,11 @@ import {
           )}
         </CardContent>
         {/* sponsor event Link */}
-        
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center bg-green-500">
+
+          <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
+        </div>
         
       </Card>
     ) : null;
