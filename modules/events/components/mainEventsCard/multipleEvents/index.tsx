@@ -7,6 +7,7 @@ import {
   import GenerateCalendarLinks from "@modules/common/components/CalendarLinks";
 import type { CalendarEvent } from "types/global";
 import ListEachEvent from "./eachSubEvent";
+import Share from "../../share-Url";
   
   const MultipleEventsCard = ({ data }: { data: CalendarEvent }) => {
     return data.title ? (
@@ -24,7 +25,7 @@ import ListEachEvent from "./eachSubEvent";
             {data.title}
           </p>
           {data.subtitle && (
-            <p className="text-base font-roboto  text-cyan-950">
+            <p className="text-base font-roboto text-cyan-950">
               {data.subtitle}{" "}
             </p>
           )}
@@ -37,9 +38,10 @@ import ListEachEvent from "./eachSubEvent";
             ))}
         </CardContent>
         {/* sponsor event Link */}
-        
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center ">
+         <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
-        
+        </div>        
       </Card>
     ) : null;
   };

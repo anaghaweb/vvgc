@@ -19,7 +19,7 @@ const GenerateCalendarLinks = ({event}:{event:CalendarEvent}) => {
     const appleCalendarLink = AppleCalendarLinkGenerator(event);
     const outlookCalendarLink  = OutlookCalendarLinkGenerator(event);
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center py-4">
+    <div className="flex flex-col md:flex-row items-center justify-center p-4 ">
       <div className="justify-center font-roboto md:text-left text-blue-950 pr-2">
         Add to Calendar:{" "}
       </div>

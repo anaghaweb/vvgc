@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Lakshmi Ganapathi Temple',
     description: 'San Jose',
-    metadataBase: new URL(`${process.env.BASE_URL}/san-jose-temple`),
+    metadataBase: new URL(`${process.env.BASE_URL}/san-jose-temple/`),
     openGraph: {
       title: 'Lakshmi Ganapathi Temple',
       description: 'San Jose',
