@@ -4,7 +4,7 @@
 import { Fragment } from "react";
   const MainEventCard = ({ data }: { data: CalendarEvent }) => {    
     return data.title ? (
-      <Fragment>
+      <div>
        {
         data.eventList.length === 1 ?
         <SoloEventCard data={data} />
@@ -14,7 +14,7 @@ import { Fragment } from "react";
         :
         null
        }         
-      </Fragment>
+      </div>
     ) : null;
   };
   export default MainEventCard;
