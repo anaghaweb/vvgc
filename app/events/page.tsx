@@ -1,12 +1,11 @@
 import React from "react";
-
+import { Metadata } from "next"
 import { weeklyEventsDataList } from "@lib/data/weeklyEventData";
 import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { CalendarEvent, type EventTypes } from "types/global";
 
-import { Metadata } from "next"
 
 
 export async function generateMetadata({ searchParams }: { searchParams: EventTypes }):Promise<Metadata> {

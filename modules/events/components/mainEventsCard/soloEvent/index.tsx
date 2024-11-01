@@ -8,14 +8,16 @@ import {
   import type { CalendarEvent } from "types/global";
   import ExternalLink from "@modules/common/components/ExternalLink";
   import LazyImageLoader from "@modules/common/components/LazyImageLoader";
-import Share from "../../share-Url";
+  import Share from "../../share-Url";
   
   const SoloEventCard = ({ data }: { data: CalendarEvent }) => {
     const singleEvent = data.eventList[0];
     return data.title && data.eventList.length === 1 ? (
       <Card
         key={data.id}
-        className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full m-auto h-full my-2 sm:p-2 `}
+        className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
+         bg-white text-gray-900 text-justify
+          m-auto h-full my-2 sm:p-2`}
       >
         <CardHeader className="text-2xl text-rose-800">
           {new Date(data.date).toLocaleDateString("en-US", {
@@ -27,7 +29,7 @@ import Share from "../../share-Url";
             {data.title}
           </p>
           {data.subtitle && (
-            <p className="text-base font-roboto  text-cyan-950">
+            <p className="text-base font-roboto text-cyan-950">
               {data.subtitle}{" "}
             </p>
           )}
@@ -82,8 +84,7 @@ import Share from "../../share-Url";
         <div className="flex flex-col md:flex-row gap-2 items-center justify-center">
           <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
-        </div>
-        
+        </div>        
       </Card>
     ) : null;
   };

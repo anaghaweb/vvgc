@@ -9,7 +9,7 @@ const SubscribeToVVGCNewsLetter = () => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button
+        <button title="Subscribe to Newsletter!"
           className="text-slate-800 hover:text-blue-800 text-[12px] min-w-fit max-w-fit font-roboto text-sm md:text-base "
         >
           Subscribe{" "}

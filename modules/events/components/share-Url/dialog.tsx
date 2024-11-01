@@ -58,10 +58,15 @@ const DialogForSharingLinks = ({ handleClick, completeURL, dialogue, diaRef, tog
       <button onClick={handleClick}>
         <input value={completeURL} readOnly className='overflow-hidden text-clip w-full p-1 text-[0.7rem] font-roboto text-gray-800 text-center active:bg-blue-200 focus:bg-blue-200 border-none outline-none' />
       </button>
-      <button onClick={handleClick} className='inline-flex flex-shrink-0 justify-center items-center gap-2 max-w-fit mx-auto px-2 py-2 rounded-md font-roboto text-[0.8rem] bg-gray-100 text-blue-800'>
+      <button onClick={handleClick} 
+      className={`inline-flex flex-shrink-0 justify-center items-center gap-2 max-w-fit mx-auto rounded-l-full rounded-r-full font-roboto font-semibold  bg-blue-200 bg-opacity-75 transition-opacity hover:bg-gray-300 py-2 px-4
+        text-[0.8rem] text-indigo-800 hover:text-blue-900`}
+      >
         <IoMdLink size={24}/> <span>Copy Link</span></button>
     </div>
-    <button className="top-2 right-2 text-white absolute" onClick={toggleDialog}><CgClose size={36} /></button>
+    <button className="top-2 right-2 text-white absolute" onClick={toggleDialog}>
+    <CgClose size={36} />
+    </button>
   </dialog>
 }
 

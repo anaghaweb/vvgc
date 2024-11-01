@@ -107,3 +107,5 @@ export type LazyImageLoaderProps = {
   export type GOOGLESHEETDATA ={
     rows: string | any[][] | null | undefined
   }
+
+  

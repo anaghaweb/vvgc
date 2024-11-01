@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@modules/common/components/ui/button";
 
-const MediaCard = ({media}) => {
+const MediaCard = ({media}:{media:MediaProps}) => {
   return (
     <div className="flex gap-1 items-center justify-start">                
     <Button

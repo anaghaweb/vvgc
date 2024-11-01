@@ -13,7 +13,7 @@ const config:Config = {
   prefix: "",
   theme: {
     container: {
-      center: true,
+      center: false,
       padding: {
         DEFAULT: "1rem",
         sm: "2rem",
