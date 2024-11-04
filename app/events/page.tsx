@@ -5,7 +5,7 @@ import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { CalendarEvent, type EventTypes } from "types/global";
-
+import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 
 
 export async function generateMetadata({ searchParams }: { searchParams: EventTypes }):Promise<Metadata> {
@@ -45,7 +45,7 @@ export default async function Event({ searchParams }:
   }
 ) {
 
-  const templateEventData: CalendarEvent[] = await AllEventsData();
+  const templateEventData = await getMainEventsData();
 
   return (
     <>
