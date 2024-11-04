@@ -85,4 +85,6 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
     console.error(error);
     throw new Error("Something went wrong");
   }
-}
+
+
+}export default AllEventsData;

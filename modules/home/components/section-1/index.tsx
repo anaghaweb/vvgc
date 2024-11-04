@@ -7,7 +7,8 @@ import Divider from "@modules/common/components/divider";
 import MahaPrasadamSanMartin from "./maha-prasadam";
 import { CalendarEvent } from "types/global";
 import { Card } from "@modules/common/components/ui/card";
-import LazyImageLoader from "@modules/common/components/LazyImageLoader";
+
+
 import Image from "next/image";
 import Link from "next/link";
 
