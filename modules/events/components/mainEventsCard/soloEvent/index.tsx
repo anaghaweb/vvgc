@@ -16,7 +16,7 @@ import {
       <Card
         key={data.id}
         className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
-         bg-white text-gray-900 text-justify
+         bg-white text-gray-900 text-left
           m-auto h-full my-2 sm:p-2`}
       >
         <CardHeader className="text-2xl text-rose-800">
