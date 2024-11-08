@@ -8,26 +8,26 @@ const DailyEventSummaryCard = ({ events }: { events: WeeklyEvents[] }) => {
   
   return (
     <div
-      className={`w-[100%] font-roboto h-auto md:h-full p-1 md:max-w-3xl md:p-1 text-sm `}
+      className={`w-[100%]  h-auto my-4 font-roboto p-1 md:max-w-3xl md:p-1 text-base`}
     >
-      <div className="text-blue-600 "></div>
-      <div className="flex flex-col gap-6">
-        <div className="grid grid-cols-6 gap-x-1 gap-y-3 my-5 pl-6 md:pl-0">
+     
+      <div className="flex flex-col gap-4">
+        
           {data?.events.map((event, index) => (
-            <Fragment key={index}>
-              <div
-                className={`col-span-1 text-blue-950 flex items-center 
+            <div className="grid grid-cols-6 gap-x-1 pl-6 md:pl-0" key={index}>
+              <time
+                className={`col-span-1 text-blue-950 flex items-start  
                         justify-end px-1 py-0 md:leading-6 }`}
               >
                 {event.time}:
-              </div>
-              <div className="col-span-5  w-full text-start px-1 py-0  md:leading-6">
+              </time>
+              <div className="col-span-5 w-full text-start px-1 py-0 md:leading-6">
                 {event.details}
               </div>
-            </Fragment>
+            </div>
           ))}
           {/* <hr /> */}
-        </div>
+        
       </div>
     </div>
   );
