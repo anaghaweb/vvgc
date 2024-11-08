@@ -35,9 +35,9 @@ const SectionOne = ({ eventdata }:{
           <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           
-          <Link className="" href={`/images/home/services/skandaShashtiUtsavam.jpeg`} target="_blank">
+          <Link className="" href={`/images/home/services/kartikaChandramana.jpg`} target="_blank">
           <div className="relative w-full h-[300px] md:h-[400px] ">
-          <Image src="/images/home/services/skandaShashtiUtsavam.jpeg"
+          <Image src="/images/home/services/kartikaChandramana.jpg"
           alt="event" 
              sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
           className="object-contain cursor-pointer mx-auto sm:w-full"
