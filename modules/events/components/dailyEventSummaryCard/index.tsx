@@ -7,12 +7,8 @@ const DailyEventSummaryCard = ({ events }: { events: WeeklyEvents[] }) => {
   const data = events.find((event) => event.day === currentDay);
   
   return (
-    <div
-      className={`w-[100%]  h-auto my-4 font-roboto p-1 md:max-w-3xl md:p-1 text-base`}
-    >
-     
-      <div className="flex flex-col gap-4">
-        
+    <div className={`w-[100%] h-auto my-4 font-roboto p-1 md:max-w-3xl md:p-1 text-base`}>     
+      <div className="flex flex-col gap-4">        
           {data?.events.map((event, index) => (
             <div className="grid grid-cols-6 gap-x-1 pl-6 md:pl-0" key={index}>
               <time
