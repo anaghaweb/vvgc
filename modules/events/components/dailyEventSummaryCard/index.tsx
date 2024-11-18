@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
+import { getDayOfTheWeek } from "@lib/utils/formatDate";
 import type {  WeeklyEvents } from "types/global";
 
 const DailyEventSummaryCard = ({ events }: { events: WeeklyEvents[] }) => {
-  const currentDay = dayOfTheWeek();
+  const currentDay = getDayOfTheWeek();
   const data = events.find((event) => event.day === currentDay);
   
   return (
