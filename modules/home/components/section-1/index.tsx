@@ -2,13 +2,11 @@ import React, { Fragment } from "react";
 import { weeklyEventsDataList } from "@lib/data/weeklyEventData";
 import DailyEventSummaryCard from "@modules/events/components/dailyEventSummaryCard";
 import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSummaryCard";
-import dayOfTheWeek from "@lib/utils/deyOfTheWeek";
+import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
 import MahaPrasadamSanMartin from "./maha-prasadam";
 import { CalendarEvent } from "types/global";
 import { Card } from "@modules/common/components/ui/card";
-
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,10 +14,12 @@ import Link from "next/link";
 const SectionOne = ({ eventdata }:{
   eventdata:CalendarEvent[]
 }) => {
+  
+  const currentDay = getDayOfTheWeek();
+  const currentDate = getCurrentDate();
   const data = eventdata.find(
-    (event) => new Date(event.date).getDate() === new Date().getDate()
+    (event) => new Date(event.date).getDate() === currentDate.getDate()
   );
-  const currentDay = dayOfTheWeek();
   return (
     <div className=" rounded-sm p-2">     
       <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 ">
