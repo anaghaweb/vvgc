@@ -40,8 +40,7 @@ export type WeeklyEvents =
   day:string,
   events:
     {
-      time:string,
-      
+      time:string,      
       details:string,
     }[]  
 }

@@ -18,7 +18,13 @@ const SectionOne = ({ eventdata }:{
   const currentDay = getDayOfTheWeek();
   const currentDate = getCurrentDate();
   const data = eventdata.find(
-    (event) => new Date(event.date).getDate() === currentDate.getDate()
+    (event) => {
+      let eventDate =  new Date(event.date).getDate();
+      let eventYear = new Date(event.date).getFullYear();
+      let currentYear = new Date().getFullYear();
+      
+      return (eventDate === currentDate.getDate() && eventYear === currentYear)
+    }
   );
   return (
     <div className=" rounded-sm p-2">     
