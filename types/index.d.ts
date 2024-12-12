@@ -8,3 +8,11 @@ declare type MediaProps = {
     password?: string;
     icon: JSX.Element;     
 };
+
+declare type SlokaSequenceLinks = {
+    title: string;
+    slokasLinks: {
+        lang: string;
+        url: string;
+    }[];
+}[]

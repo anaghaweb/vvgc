@@ -7,7 +7,7 @@ import { Card } from '@modules/common/components/ui/card';
 const MahaPrasadamSanMartin = () => {
   return (
     <Card className="h-auto flex-1 my-4 md:my-0 p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base">
-    <h1 className="text-2xl md:text-3xl font-roboto bg- text-left ">
+    <h1 className="text-2xl md:text-3xl font-roboto text-indigo-950 text-left ">
       Starting From October 29th 2024 
     </h1>
    
@@ -17,7 +17,7 @@ const MahaPrasadamSanMartin = () => {
     </h4>
     
     <div className=' font-roboto mb-3 py-2'> 
-    <p className="font-semibold   ">
+    <p className="font-semibold">
     Maha Prasadam  / Anna Dhanam / Priti Bhoj
     </p>       
     <p>VVGC San Martin hindu Temple</p>
