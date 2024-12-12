@@ -1,15 +1,15 @@
-import React, { Fragment } from "react";
+
 import { weeklyEventsDataList } from "@lib/data/weeklyEventData";
 import DailyEventSummaryCard from "@modules/events/components/dailyEventSummaryCard";
 import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSummaryCard";
 import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
-import MahaPrasadamSanMartin from "./maha-prasadam";
+
 import { CalendarEvent } from "types/global";
 import { Card } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-
+import MargazhiParayanam from "./margazhiParayanam";
 
 const SectionOne = ({ eventdata }:{
   eventdata:CalendarEvent[]
@@ -52,7 +52,8 @@ const SectionOne = ({ eventdata }:{
           </div>
           </Link>
         </Card>
-        <MahaPrasadamSanMartin />       
+        <MargazhiParayanam />
+        
       </div>
       
     </div>
