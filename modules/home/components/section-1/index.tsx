@@ -41,7 +41,7 @@ const SectionOne = ({ eventdata }:{
           <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           
-          <Link className="" href={`/events/special/AnjaneyaMurthiSthapane.jpg`} target="_blank">
+          {/* <Link className="" href={`/events/special/AnjaneyaMurthiSthapane.jpg`} target="_blank">
           <div className="relative w-full h-[300px] md:h-[400px] ">
           <Image src="/events/special/AnjaneyaMurthiSthapane.jpg"
           alt="event" 
@@ -50,7 +50,7 @@ const SectionOne = ({ eventdata }:{
           fill
           />
           </div>
-          </Link>
+          </Link> */}
         </Card>
         <MargazhiParayanam />
         
