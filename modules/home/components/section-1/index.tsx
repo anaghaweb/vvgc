@@ -41,16 +41,16 @@ const SectionOne = ({ eventdata }:{
           <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           
-          {/* <Link className="" href={`/events/special/AnjaneyaMurthiSthapane.jpg`} target="_blank">
+          <Link className="" href={`/images/events/20241230.jpeg`} target="_blank">
           <div className="relative w-full h-[300px] md:h-[400px] ">
-          <Image src="/events/special/AnjaneyaMurthiSthapane.jpg"
+          <Image src="/images/events/20241230.jpeg"
           alt="event" 
              sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
           className="object-contain cursor-pointer mx-auto sm:w-full"
           fill
           />
           </div>
-          </Link> */}
+          </Link>
         </Card>
         <MargazhiParayanam />
         
