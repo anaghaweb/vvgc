@@ -6,13 +6,13 @@ import { Card } from '@modules/common/components/ui/card';
 
 const MahaPrasadamSanMartin = () => {
   return (
-    <Card className="h-auto flex-1 my-4 md:my-0 p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base">
+    <Card className="h-auto flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3 ">
     <h1 className="text-2xl md:text-3xl font-roboto text-indigo-950 text-left ">
       Starting From October 29th 2024 
     </h1>
    
     <Divider />
-    <h4 className=" text-center font-playfair font-semibold text-rose-900 my-1">
+    <h4 className=" text-left text-lg font-playfair font-semibold text-rose-900 my-1">
       Om Sree Mathre Namaha Om Gum Ganapathaye Namaha
     </h4>
     
@@ -34,7 +34,7 @@ Both Saturdays And Sundays</p>
     <p>Jai Jagadeesha Hare Aarati And Maha Prasadam served at:</p>
     <p>Weekends <time className="text-gray-900 font-bold font-roboto"> 12:00pm</time> </p>
     <p>Weekdays <time className="text-gray-900 font-bold font-roboto"> 4:00pm</time> </p>
-    <p className="text-center font-playfair font-semibold text-rose-900 my-1">All Are Welcome To Participate With Family Friends And Get Blessings </p>
+    <p className="text-left font-playfair font-semibold text-rose-900 my-1">All Are Welcome To Participate With Family Friends And Get Blessings </p>
     </div>
 
     <div className=' font-roboto py-2'>
@@ -59,7 +59,7 @@ Both Saturdays And Sundays</p>
     <a href="tel:4087243577"> Pandit Siva Sankar Hemmanur <span className="text-blue-800 font-semibold">4087243577</span></a>
     <a href="tel:9252097637"> Pandit Ganesh Shasthry <span className="text-blue-800 font-semibold">9252097637</span></a>
     <a href="tel:4087596183">San Martin Temple  Number <span className="text-blue-800 font-semibold">4087596183</span></a>
-    <p className='text-center font-playfair font-semibold text-rose-900 my-1'>Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu </p>
+    <p className='text-left font-playfair font-semibold text-rose-900 my-1'>Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu </p>
     </div>
   </Card>
   )

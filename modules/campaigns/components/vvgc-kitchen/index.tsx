@@ -7,7 +7,7 @@ import {LiaExternalLinkSquareAltSolid} from "react-icons/lia";
 const KitchenVVGC = () => {
   return (
     <Fragment>       
-          <Card className="h-auto w-full sm:p-2 text-red-950">
+          <Card className="h-auto w-full md:w-2/3 mx-auto sm:p-2 text-red-950">
             <CardContent className="">
             <p className="mt-12 mb-2 font-bold text-3xl text-center font-[cormorant]">
               Kitchen at VVGC San Martin
