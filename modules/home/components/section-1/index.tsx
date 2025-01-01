@@ -52,8 +52,7 @@ const SectionOne = ({ eventdata }:{
           </div>
           </Link>
         </Card>
-        <MargazhiParayanam />
-        
+        <MargazhiParayanam />        
       </div>
       
     </div>
