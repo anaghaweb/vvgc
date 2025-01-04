@@ -42,11 +42,11 @@ const SectionOne = ({ eventdata }:{
           }
           <article >
           <p className="font-playfair">
-            <time dateTime="15:00" className='font-bold font-sans text-indigo-900'>3:00 PM: </time>
+            <time dateTime="15:00" className='font-bold font-sans text-gray-900'>3:00 PM: </time>
             Sri Venkateswara Abhisheka Sri Vishnu Sahasra Nama Chanting Aarati And Manthra Pushpa
           </p>
           <p className="font-playfair">
-          <time dateTime="17:00" className='font-bold font-sans text-indigo-900'>5:00 PM: </time>
+          <time dateTime="17:00" className='font-bold font-sans text-gray-900'>5:00 PM: </time>
             Sani Dev/Sani Bhagwan Sthapana Murthy Prana Prathishtapan Ceremony Abhisheka Aarati Sani Chalisa Aarati
           </p>
 
