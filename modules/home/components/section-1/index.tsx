@@ -40,9 +40,19 @@ const SectionOne = ({ eventdata }:{
           :          
           <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
-          
+          <article className="font-playfair font-medium">
+          <p>
+            <time dateTime="15:00" className='font-bold font-sans text-indigo-900'>3:00 PM: </time>
+            Sri Venkateswara Abhisheka Sri Vishnu Sahasra Nama Chanting Aarati And Manthra Pushpa
+          </p>
+          <p>
+          <time dateTime="17:00" className='font-bold font-sans text-indigo-900'>5:00 PM: </time>
+            Sani Dev/Sani Bhagwan Sthapana Murthy Prana Prathishtapan Ceremony Abhisheka Aarati Sani Chalisa Aarati
+          </p>
+
           <Link className="" href={`/images/events/20250101.jpeg`} target="_blank">
-          <div className="relative w-full h-[300px] md:h-[400px] ">
+          <div className="relative w-full h-[300px] md:h-[400px] flex flex-col my-2 md:my-4 p-1">
+          
           <Image src="/images/events/20250101.jpeg"
           alt="event" 
              sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
@@ -51,6 +61,7 @@ const SectionOne = ({ eventdata }:{
           />
           </div>
           </Link>
+          </article>
         </Card>
         <MargazhiParayanam />        
       </div>
