@@ -18,8 +18,9 @@ const OutlookCalendarLinkGenerator = (event: CalendarEvent): string => {
     location: event.location || "VVGC San Martin Temple",
     recurringRule: null, //to be implemented
   };
-  const completedGoogleCalendarLink = CompleteOutlookUrl(newCalendarEvent);
-  return completedGoogleCalendarLink;
+  const completedOutlookCalendarLink = CompleteOutlookUrl(newCalendarEvent);
+  
+  return completedOutlookCalendarLink;
 };
 
 export default OutlookCalendarLinkGenerator;

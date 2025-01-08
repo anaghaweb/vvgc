@@ -12,7 +12,6 @@ const UrlShareButton = () => {
   const pathname = usePathname();
   // const url = `${window.location.origin}${pathname}`;
 
-
   // const handleShare = async (e:React.SyntheticEvent) => {
   //   e.preventDefault()    
   //   try {
@@ -23,25 +22,25 @@ const UrlShareButton = () => {
   //     console.log(error);
   //   }};
 
-    // const copyToClipboard = () => {
-    //   const textField = document.createElement('textarea');
-    //   textField.innerText = url;
-    //   document.body.appendChild(textField);
-    //   textField.select();
-    //   document.execCommand('copy');
-    //   textField.remove();
-    // };
+  // const copyToClipboard = () => {
+  //   const textField = document.createElement('textarea');
+  //   textField.innerText = url;
+  //   document.body.appendChild(textField);
+  //   textField.select();
+  //   document.execCommand('copy');
+  //   textField.remove();
+  // };
 
-    const copyToClipboard = (e:React.SyntheticEvent) => {
-      e.preventDefault()
-      setCopied(true);
-      navigator.clipboard.writeText(window.location.toString()) 
-      toast({variant:"default", title: "Url copied!" });  
-      setTimeout(()=>{setCopied(false)},5000)         
-    }
+  const copyToClipboard = (e: React.SyntheticEvent) => {
+    e.preventDefault()
+    setCopied(true);
+    navigator.clipboard.writeText(window.location.toString())
+    toast({ variant: "default", title: "Url copied!" });
+    setTimeout(() => { setCopied(false) }, 5000)
+  }
 
-  const { toast } = useToast();   
-  
+  const { toast } = useToast();
+
   return (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -51,7 +50,7 @@ const UrlShareButton = () => {
           onClick={copyToClipboard}
           className="rounded-full bg-green-400 hover:bg-green-300 border-[0.1rem]"
         >
-         {copied ? <CheckIcon className="w-4 h-4"/> : <Link2Icon className="w-4 h-4" />} 
+          {copied ? <CheckIcon className="w-4 h-4" /> : <Link2Icon className="w-4 h-4" />}
         </Button>
       </TooltipTrigger>
       <TooltipContent className="bg-blue-900 text-white">

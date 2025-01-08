@@ -20,6 +20,7 @@ const GoogleCalendarLinkGenerator = (event: CalendarEvent): string => {
   };
 
   const completedGoogleCalendarLink = CompleteGoogleUrl(newCalendarEvent);
+ 
   return completedGoogleCalendarLink;
 };
 

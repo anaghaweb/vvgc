@@ -1,13 +1,15 @@
 const GoogleDateFormat = (data: Date): string => {
-    const formattedDate = data.toLocaleDateString().split("/").reverse();
-    if (parseInt(formattedDate[1]) < 10) {
-      formattedDate[1] = "0" + formattedDate[1];
+    // const formattedDate = data.toLocaleDateString().split("/").reverse();
+    let y = data.getFullYear().toString();
+    let m = (data.getMonth() + 1).toString();
+    let d = data.getDate().toString();
+    if (parseInt(m) < 10) {
+      m = "0" + m;
     }
-    if (parseInt(formattedDate[2]) < 10) {
-      formattedDate[2] = "0" + formattedDate[2];
+    if (parseInt(d) < 10) {
+     d = "0" + d;
     }
-    const result = formattedDate.join("");
-    
+    const result = y+m+d;
     return result;
   };
 

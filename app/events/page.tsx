@@ -11,9 +11,10 @@ import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 export async function generateMetadata({ searchParams }: { searchParams: EventTypes }):Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
   const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
+
   try {
     return {
-      title: `${searchParams.evtype} ${(searchParams.evtype === 'regular' || searchParams.evtype === 'special' || searchParams.evtype === 'weekly') ? 'Events' : ''} | VVGC`,
+      title: `${searchParams.evtype ?? ""} events | VVGC`,
       description: 'vvgc events',
       metadataBase: new URL(`${process.env.BASE_URL}/events`),
       openGraph: {
