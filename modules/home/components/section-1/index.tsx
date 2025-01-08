@@ -40,6 +40,10 @@ const SectionOne = ({ eventdata }: {
               :
               <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
+          <>
+          <h3 className="">
+            Next special Event:
+          </h3>
           <article className="flex flex-col md:flex-row gap-2">
           {/* <External_Link 
               text="Registeration Form"
@@ -67,6 +71,7 @@ const SectionOne = ({ eventdata }: {
             </div> */}
             
           </article>
+          </>
         </Card>
         <MargazhiParayanam />
       </div>

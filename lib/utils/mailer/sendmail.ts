@@ -4,7 +4,6 @@ import nodemailer from 'nodemailer';
 const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_body_content:string})=>{
     const accessToken = await GetGoogleAccessToken();
     const transporter = createTransporter({accessToken});
-
     const mailOptions = {
         from: process.env.GMAIL_ACCOUNT_NAME,
         to: userEmail,
@@ -12,13 +11,13 @@ const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_bo
         text: 'VVGC Verification Link',
         html: html_body_content,
       };
+
       try{
         const result = await transporter.sendMail(mailOptions);
-        console.log(result.response);
         return result.response;
       }
       catch(error){
-        console.log(error)
+        console.info(error)
         return null
       }          
 }

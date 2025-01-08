@@ -30,7 +30,7 @@ export default function SpecialEventTab({ data}:
         )       
         } */}
         {
-          data.map(data=>(
+          data.slice(0,1).map(data=>(
             !!data.title ? <MainEventCard data={data} key={data.id}  /> : null
           ))
         }

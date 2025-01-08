@@ -7,15 +7,13 @@ const GetGoogleAccessToken = async () => {
     const oAuth2Client = new OAuth2(
       "11487989684-i8gnupak7i99vdpvursgiio35e6mse3e.apps.googleusercontent.com",
       "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",
-      'https://developers.google.com/oauthplayground' 
-      
+      'https://developers.google.com/oauthplayground'       
     );
     oAuth2Client.setCredentials({
       refresh_token: process.env.GOOGLE_REFRESH_TOKEN, // Replace with your stored refresh token
     });
     try {
-      const { token } = await oAuth2Client.getAccessToken();
-      
+      const { token } = await oAuth2Client.getAccessToken();      
       return token;
     } catch (error) {
       console.error('Error refreshing access token:', error);

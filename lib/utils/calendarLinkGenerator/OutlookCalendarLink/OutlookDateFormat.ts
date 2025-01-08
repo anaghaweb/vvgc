@@ -7,7 +7,7 @@ const OutlookDateFormat = (data: Date): string => {
       formattedDate[2] = "0" + formattedDate[2];
     }
     const result = formattedDate.join("-");
-    
+   
     return result;
   };
 
