@@ -5,6 +5,7 @@ import type Error from "next/error";
 import { CalendarEvent } from "types/global";
 
 export async function AllEventsData(): Promise<CalendarEvent[]> {
+  const sheet_name = process.env.GSHEET_NAME;
   try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -25,7 +26,7 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.G_ID,
-      range: "AllEvents!A1:Z1000",
+      range: `${sheet_name}!A1:Z1000`,
     });
 
     const rows = response.data.values;

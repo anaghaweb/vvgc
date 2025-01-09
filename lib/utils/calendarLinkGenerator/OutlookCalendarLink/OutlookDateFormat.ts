@@ -11,5 +11,4 @@ const OutlookDateFormat = (data: Date): string => {
     const result = y+"-"+m+"-"+d;   
     return result;
   };
-
   export default OutlookDateFormat;
