@@ -46,7 +46,7 @@ export default async function Home() {
   // const data: CalendarEvent[] = await AllEventsData();
   const homePageData = await getHomePageEventsData();
   const data = await getMainEventsData();
-  console.log(homePageData[0].date, data[0].date)
+  
   return (
   <React.Fragment>
     <HeroCard page="home" text='A Home For Spiritual Devotees' />
