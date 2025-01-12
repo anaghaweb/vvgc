@@ -19,7 +19,7 @@ const KitchenVVGC = () => {
               We are seeking loan to complete our Kitchen at VVGC temple.
             </p>
             <p >
-              Estimated completetion cost is around <span className="font-bold">250,000$</span>.
+              Estimated completion cost is around <span className="font-bold">250,000$</span>.
             </p>
             <p >
               Please note that we have obtained the necessary permits from relavent authorities to build a kitchen at out temple.
