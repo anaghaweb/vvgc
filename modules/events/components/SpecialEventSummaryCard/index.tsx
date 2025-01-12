@@ -9,14 +9,14 @@ export default function SpecialEventSummaryCard({ eventdata }:{
   return (
     <div className={` flex flex-col w-full sm:w-full m-auto sm:p-2 md:pl-4 text-sm md:text-base`}>
       <p className="text-base text-black font-semibold">{eventdata.title}</p>
-      <p className="text-zinc-800 text-sm">
+      <p className="text-zinc-800 text-base">
         {" "}
         {eventdata.subtitle && eventdata.subtitle}
       </p>
       {eventdata.eventList.length === 1 && 
-      (<p className="text-zinc-800 ">
+      (<p className="text-zinc-800">
         {" "}
-        <span className="text-blue-800 text-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>  : {eventdata.eventList[0].details && eventdata.eventList[0].details}
+        <span className="font-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>  : {eventdata.eventList[0].details && eventdata.eventList[0].details}
       </p>)}
       <Link
         href={`/events/${eventdata.id}`}

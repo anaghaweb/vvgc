@@ -8,7 +8,7 @@ const PlantATree = () => {
     <Fragment>       
           <Card className="h-auto w-full md:w-2/3 mx-auto sm:p-2 text-green-950">
             <CardContent className="">
-            <p className="mt-12 mb-2 font-bold text-3xl text-center  font-[cormorant]">
+            <p className="mt-12 mb-2 font-roboto font-semibold text-2xl md:text-3xl text-left text-cyan-950">
               Plant a tree for our future
             </p>
             <hr className="h-[2px] bg-red-800 my-2" />

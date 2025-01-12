@@ -9,13 +9,13 @@ import { Card } from '@modules/common/components/ui/card';
 const MargazhiParayanam = () => {
     return (
         <Card className="text-base flex flex-col p-2 gap-4 md:pl-4  font-roboto leading-5">
-            <h1 className=" text-2xl md:text-3xl font-roboto text-indigo-950 text-center md:text-left ">Margazhi/Dhanur Masa Parayanam
+            <h1 className=" text-2xl md:text-3xl font-roboto text-cyan-950 text-center md:text-left ">Margazhi/Dhanur Masa Parayanam
 
-            <Divider />
+                <Divider />
             </h1>
-            
+
             <Image src="/images/events/sloka.jpg" alt="abc" width={200} height={200} sizes="100vw" className="mx-auto md:hidden"
-                
+
             />
             <p><strong>Where:</strong> VVGC Temple, San Martin, CA</p>
             <p><strong>When:</strong> Daily in this month 7AM - 8AM (Dec 15th to Jan 14th 2024)</p>
@@ -69,7 +69,6 @@ function SlokaLinks() {
                     <div className='flex flex-wrap p-4 gap-4 items-center justify-evenly bg-blue-200' >
                         {
                             ele.slokasLinks.map((ele, index) =>
-
                                 <Link key={index} href={ele.url} target="_blank" rel="noopener noreferrer"
                                     className='font-base text-base pl-2 inline-flex items-center gap-1 text-blue-900 underline break-words'
                                 >

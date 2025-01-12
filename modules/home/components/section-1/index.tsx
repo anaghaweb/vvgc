@@ -28,9 +28,9 @@ const SectionOne = ({ eventdata }: {
   );
   return (
     <div className=" rounded-sm p-2">
-      <div className="min-h-[300px]  grid grid-cols-1 lg:grid-cols-2 ">
+      <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
         <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
-          <p className="  text-2xl md:text-3xl text-sky-700 font-roboto">
+          <p className="font-roboto font-semibold text-2xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </p>
           <Divider />
@@ -41,35 +41,23 @@ const SectionOne = ({ eventdata }: {
               <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           <>
-          <h3 className="">
+          <h3 className="font-roboto font-semibold">
             Next special Event:
           </h3>
-          <article className="flex flex-col md:flex-row gap-2">
-          {/* <External_Link 
+          <External_Link 
               text="Registeration Form"
-              url="https://forms.gle/4rqX9UzEXQNcxJZj6"
-            /> */}
+              url="https://forms.gle/4rqX9UzEXQNcxJZj6"/>
+          <article className="flex flex-col md:flex-row gap-2">
             <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-              <Link className="" href={`/images/events/20250110.jpeg`} target="_blank">
-                <Image src="/images/events/20250110.jpeg"
+              <Link className="" href={`/images/events/20250112.jpeg`} target="_blank">
+                <Image src="/images/events/20250112.jpeg"
                   alt="event"
                   sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                   className="object-contain cursor-pointer mx-auto sm:w-full"
                   fill
                 />
               </Link>
-            </div>
-            {/* <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-              <Link className="" href={`/images/events/20250111.jpeg`} target="_blank">
-                <Image src="/images/events/20250111.jpeg"
-                  alt="event"
-                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
-                  className="object-contain cursor-pointer mx-auto sm:w-full"
-                  fill
-                />
-              </Link>
-            </div> */}
-            
+            </div>         
           </article>
           </>
         </Card>
