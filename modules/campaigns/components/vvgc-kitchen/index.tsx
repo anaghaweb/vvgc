@@ -14,7 +14,7 @@ const KitchenVVGC = () => {
             Kitchen at VVGC San Martin
           </p>
           <hr className="h-[2px] bg-gray-900 my-2" />
-          <div className="py-2 font-roboto lg:text-xl text-left text-gray-900">
+          <div className="flex flex-col gap-4 font-roboto lg:text-xl text-left text-gray-900">
             <p>
               We are seeking loan to complete our Kitchen at VVGC temple.
             </p>
@@ -26,10 +26,11 @@ const KitchenVVGC = () => {
             </p>
             <p >
               We would like to start this project at the earliest. Kindly help us to raise this loan amount.
-              <span className='font-semibold text-cyan-950'>
-                We are ready to pay interest of up to 10%.
-              </span>
+              
             </p>
+            <p className='font-semibold text-cyan-950'>
+                We are ready to pay interest of up to 10%.
+              </p>
           </div>
 
           <External_Link url="https://paybee.io/@vvgc@7" text='Donate' />
