@@ -41,24 +41,24 @@ const SectionOne = ({ eventdata }: {
               <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           <>
-          <h3 className="font-roboto font-semibold">
-            Next special Event:
-          </h3>
-          <External_Link 
+            <h3 className="font-roboto text-gray-800 font-semibold">
+              Next special Event:
+            </h3>
+            {/* <External_Link
               text="Registeration Form"
-              url="https://forms.gle/4rqX9UzEXQNcxJZj6"/>
-          <article className="flex flex-col md:flex-row gap-2">
-            <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-              <Link className="" href={`/images/events/20250112.jpeg`} target="_blank">
-                <Image src="/images/events/20250112.jpeg"
-                  alt="event"
-                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
-                  className="object-contain cursor-pointer mx-auto sm:w-full"
-                  fill
-                />
-              </Link>
-            </div>         
-          </article>
+              url="https://forms.gle/4rqX9UzEXQNcxJZj6" /> */}
+            <article className="flex flex-col md:flex-row gap-2">
+              <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
+                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1736836509/VVGC%20Events/20250114.jpg`} target="_blank">
+                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1736836509/VVGC%20Events/20250114.jpg"
+                    alt="event"
+                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
+                    className="object-contain cursor-pointer mx-auto sm:w-full"
+                    fill
+                  />
+                </Link>
+              </div>
+            </article>
           </>
         </Card>
         <MargazhiParayanam />
