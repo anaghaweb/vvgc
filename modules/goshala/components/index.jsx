@@ -24,7 +24,7 @@ export default function Goshala() {
         className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
                     bg-hero-goshala font-playfair `}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-serif">
           VVGC Goshala
         </h1>
       </div>

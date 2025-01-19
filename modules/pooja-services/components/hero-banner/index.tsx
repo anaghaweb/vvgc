@@ -6,7 +6,7 @@ const PoojaServicesHeroBanner = () => {
         className={`flex justify-center relative items-center w-full h-[75svh] bg-hero-pooja bg-center bg-no-repeat bg-cover
            text-3xl leading-9 text-white font-playfair m-px `}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-playfair">
           Pooja Services{" "}
         </h1>
       </div>

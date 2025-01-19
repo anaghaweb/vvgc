@@ -24,12 +24,21 @@ const DonationsPageView = () => {
 
     <Fragment>
          {/* Divine Abode */}
+         <div className="md:max-w-screen-lg mx-auto">
          <DivineAbode imageUrl={divine_img} />
+         <Divider className="border-rose-200" />
          <PaymentsContainer />
+         <Divider className="border-rose-200" />
         <PhaseTwoConstruction />
+        <Divider className="border-rose-200" />
         <LoanProgram />
+        <Divider className="border-rose-200" />
         <StockDonation />
+        <Divider className="border-rose-200" />
         <GodhanamInDonation imageUrl={go_dhanam_img}  />
+        <Divider className="border-rose-200" />
+        <div className="h-20"></div>
+         </div>
     </Fragment>
 
 

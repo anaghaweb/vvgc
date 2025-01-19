@@ -9,30 +9,37 @@ import { CalendarEvent } from "types/global";
 import { Card } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import MargazhiParayanam from "./margazhiParayanam";
-import External_Link from "@modules/common/components/external-link";
+import MahaPrasadamSanMartin from "@modules/campaigns/components/maha-prasadam/maha-prasadam";
 
 const SectionOne = ({ eventdata }: {
   eventdata: CalendarEvent[]
 }) => {
-  const currentDay = getDayOfTheWeek();
-  const currentDate = getCurrentDate();
-  const data = eventdata.find(
-    (event) => {
-      let eventDate = new Date(event.date).getDate();
-      let eventYear = new Date(event.date).getFullYear();
-      let currentYear = new Date().getFullYear();
+  let currentDay = getDayOfTheWeek();
+  let currentDate = getCurrentDate();
+  let data;
 
-      return (eventDate === currentDate.getDate() && eventYear === currentYear)
-    }
-  );
+  try{
+    data = eventdata.find(
+      (event) => {
+        let eventDate = new Date(event.date).getDate();
+        let eventYear = new Date(event.date).getFullYear();
+        let currentYear = new Date().getFullYear();  
+        if(eventDate === currentDate.getDate() && eventYear === currentYear)
+          return (eventDate === currentDate.getDate() && eventYear === currentYear)
+        else 
+          return null;
+      }
+    );
+  }catch(error:any){
+    console.log(error.name)
+  }
   return (
     <div className=" rounded-sm p-2">
       <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
         <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
-          <p className="font-roboto font-semibold text-2xl md:text-3xl text-left text-cyan-950">
+          <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
-          </p>
+          </h2>
           <Divider />
           {
             data?.title ?
@@ -44,9 +51,7 @@ const SectionOne = ({ eventdata }: {
             <h3 className="font-roboto text-gray-800 font-semibold">
               Next special Event:
             </h3>
-            {/* <External_Link
-              text="Registeration Form"
-              url="https://forms.gle/4rqX9UzEXQNcxJZj6" /> */}
+           
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
                 <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1736836509/VVGC%20Events/20250114.jpg`} target="_blank">
@@ -61,7 +66,8 @@ const SectionOne = ({ eventdata }: {
             </article>
           </>
         </Card>
-        <MargazhiParayanam />
+       
+        <MahaPrasadamSanMartin  />
       </div>
     </div>
   );

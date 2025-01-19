@@ -1,41 +1,46 @@
 import React from "react";
 import Image from "next/image";
-import { cormorant, opensans } from "@lib/fonts/fonts";
+import Divider from "@modules/common/components/divider";
 
 const DivineAbode = ({ imageUrl }: { imageUrl: string }) => {
   return (
     <div
-      className={`grid relative grid-cols-1 max-w-full h-auto bg-white mx-auto my-5 p-5 md:grid-cols-4 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}
+      className={`bg-white my-5 p-5 md:max-w-screen-lg mx-auto`}
     >
       <div
-        className={`flex flex-col justify-items-center items-center w-full max-w-full text-center font[opensans] col-span-2 p-6 px-3`}
+        className={`flex flex-col w-full mx-auto p-6 px-3 leading-6 font-roboto bg-purple-100 text-center`}
       >
-        <h1
-          className={`text-3xl leading-8 my-2 font-[cormorant] font-medium py:2 md:py-5`}
+        <h2
+          className={`text-2xl md:text-4xl font-serif text-cyan-950`}
         >
           Build the Divine Abode
-        </h1>
-        <h3 className={`leading-8 my-2 md:text-xl md:text-center py:2 md:py-5`}>
-          Help Fund the Expansion and Maintenance of VallabhaMaha Ganapathi
-          Temple
-        </h3>
-        <h3 className={`leading-8 md:text-xl md:text-center  py:2 md:py-5`}>
-          VVGC is a registered non-profit organization (CA Tax ID: 61-1449457)
-          and your donations are always 100% tax deductible.
-        </h3>
+        </h2>
+        <Divider className="border-purple-950" />
+        <p className={`py:2 my-4 font-semibold `}>
+          Help Fund the Expansion and Maintenance of Vallabha Maha Ganapathi
+          Temple.
+        </p>
+        <div className={` py:2 my-4 font-semibold text-purple-900 `}>
+
+        <p >
+          VVGC is a registered non-profit organization
+        </p>
+        <p>(CA Tax ID: 61-1449457)</p>
+        <p>and your donations are always 100% tax deductible.</p>
+        </div>
       </div>
-      <div
-        className={`relative col-span-1 w-full max-w-full h-auto md:col-span-2`}
+      {/* <div
+        className={`col-span-1 md:col-span-4 relative bg-black`}
       >
         <Image
           src={`${imageUrl}`}
           alt="Support Us"
-          fill
+         fill
           quality={75}
-          sizes={"100vw"}
-          className=" object-contain m-auto"
+          sizes="(max-width: 600px) 480px, (max-width: 1024px) 800px, 1200px"
+          className="object-cover"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
