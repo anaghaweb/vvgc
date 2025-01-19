@@ -17,7 +17,7 @@ export default function SpecialEventTab({ data}:
   
   return (   
       <div className="flex flex-col max-w-full lg:w-[900px] mx-auto h-auto  px-1 relative">
-        <CardHeader className=" text-[2rem] leading-7 px-1 py-2 md:text-4xl text-orange-600 border-b-2 border-b-indigo-800 md:leading-10 md:font-semibold">
+        <CardHeader className="font-serif text-[2rem] leading-7 px-1 py-2 md:text-4xl text-cyan-950 border-b-2 border-b-indigo-800 md:leading-10">
           Special Events
         </CardHeader>
         <hr />

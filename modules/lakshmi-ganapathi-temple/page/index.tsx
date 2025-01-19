@@ -8,7 +8,7 @@ const LakshmiGanapathiPageTemplate = () => {
   return (
     <Fragment>
         <LakshmiGanapathiBanner />
-        <main className='flex flex-col mt-4 gap-4'>        
+        <main className='flex flex-col mt-4 gap-4 md:max-w-screen-md mx-auto'>        
         <MediaCard />
         <MahaPrasadamSanJose />
         <LakshmiGanapathiWeeklyEvents /> 

@@ -10,7 +10,7 @@ const KitchenVVGC = () => {
     <Fragment>
       <Card className="h-auto w-full md:w-2/3 mx-auto sm:p-2">
         <CardContent className="">
-          <p className="mt-12 mb-2 font-roboto font-semibold text-2xl md:text-3xl text-left text-cyan-950">
+          <p className="mt-12 mb-2 font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Kitchen at VVGC San Martin
           </p>
           <hr className="h-[2px] bg-gray-900 my-2" />

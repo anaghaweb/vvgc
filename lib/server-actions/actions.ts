@@ -60,28 +60,3 @@ export async function getCampaignData(): Promise<Campaign[]> {
     throw new Error('Something went wrong');
   }
 }
-
-{/**
-    const headers = data[0];
-    const body = data.slice(1);
-  
-    
-    const result = [];
-    
-
-    body.map((r) =>{ 
-            const newobj = {};
-            for(let i=0;i<headers.length;i++){           
-            newobj[headers[i]]=r[i];      
-                 
-        }
-       result.push(newobj);
-    });
-   let obj = {};
-
-  obj.content = result; 
-  console.log(headers);
-  console.log(obj);
-    
-    
-    */}

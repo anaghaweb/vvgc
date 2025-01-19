@@ -9,7 +9,7 @@ const HeroCard = ({ page, text }: { page: string; text?: string }) => {
       >
         <div
           className={`flex flex-col justify-start items-center 
-       text-xl sm:text-5xl md:text-7xl leading-7 text-white font-playfair`}
+       text-xl sm:text-5xl md:text-7xl leading-7 text-white font-serif`}
         >
           <p>A Home</p>
           <p>For Spiritual</p>
