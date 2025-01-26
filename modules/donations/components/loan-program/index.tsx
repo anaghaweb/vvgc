@@ -8,23 +8,22 @@ const LoanProgram = () => {
   return (
     <Fragment>
       <div
-        className={`flex flex-col text-justify md:text-center max-w-full bg-white mx-auto my-5 p-5 md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%] ${opensans.variable}`}
+        className={`flex flex-col w-full font-sans gap-4 p-6 px-3 leading-6 md:max-w-screen-md mx-auto`}
       >
         <div>
-          <h1
-            className={`text-xl text-center leading-8 my-2 font-[cormorant] font-medium py:2`}
-          >
+          <h1 className={`text-2xl md:text-4xl font-serif text-cyan-950`}>
             VVGC San Martin Phase Loan Program
           </h1>
+          <Divider />
         </div>
-        <Divider />
+
         <div>
-          <h3 className={`my-2 md:w-3/4 mx-auto py:2 `}>
+          <p>
             If you would like to extend a loan to VVGC, you do so for a minimum
-            of $10,000 on a 4 year term or more. VVGC will pay a 5% intereset
+            of $10,000 on a 4 year term or more. VVGC will pay a 5% interest
             rate at the end of the term.
             <Link
-              className={`text-orange-500 font-[bold]`}
+              className={`text-blue-500 font-bold underline`}
               href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/bb4e1d3d-27ca-4f16-b54a-beb70d73e21a/a1414168-d09b-4818-8b5f-3163cffab505"
               target="_blank"
             >
@@ -32,10 +31,12 @@ const LoanProgram = () => {
             </Link>{" "}
             for the Temple promissory note. Please call the Temple for any
             qustions about this loan program.
-          </h3>
+          </p>
         </div>
         <div>
-          <p>Temple promissory Note</p>
+          <p className="text-center font-semibold text-cyan-950">
+            Temple Promissory Note
+          </p>
           <p className="text-center">(Click to enlarge)</p>
           <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[800px]">
             <Link href="/images/donations/loan/1.png" target="_blank">

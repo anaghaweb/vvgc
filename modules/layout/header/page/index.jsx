@@ -33,7 +33,7 @@ export default function Header() {
         </div>
 
         {/* Support us button leads to Donations page */}
-        <div className="mr-2 flex items-center gap-2 tracking-tight">
+        <div className="mr-2 flex gap-2 tracking-tight">
           <SubscribeToVVGCNewsLetter />
           <FeedbackByDevotees />
          

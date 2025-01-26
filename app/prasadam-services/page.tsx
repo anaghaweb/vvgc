@@ -42,7 +42,7 @@ export default function Prasadam() {
           leading-9 text-white font-playfair
           bg-hero-prasadam bg-center bg-no-repeat bg-cover m-px`}
       >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-serif">
           Prasadam Services{" "}
         </h1>
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@modules/common/components/ui/button";
+
+import Divider from "@modules/common/components/divider";
 
 export const metadata = {
   title: "Goshala - VVGC",
@@ -21,96 +22,79 @@ export default function Goshala() {
   return (
     <React.Fragment>
       <div
-        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center bg-no-repeat bg-cover m-px
-                    bg-hero-goshala font-playfair `}
-      >
-        <h1 className="text-[1.9rem] md:text-[4.5rem] font-cormorant">
+        className={`flex justify-center relative items-center w-full h-[75svh] text-3xl leading-9 text-white bg-center 
+          bg-no-repeat bg-cover m-px bg-hero-goshala font-serif `}>
+        <h1 className="text-[1.9rem] md:text-[4.5rem] font-serif">
           VVGC Goshala
         </h1>
       </div>
       {/* main section */}
 
-      <main
-        className={`mx-auto w-full max-w-full md:mt-4`}
+      <div
+        className={`flex flex-col w-full font-sans gap-6 p-6 px-3 leading-6 md:max-w-screen-md mx-auto`}
       >
-        <div className={`grid relative grid-cols-1 max-w-full
-           h-auto bg-white mx-auto  md:grid-cols-4 
-           md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
-           md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-            `}>
-          <div
-            className={`flex flex-col justify-items-center 
-            items-center w-full max-w-full 
-            text-center font[opensans] col-span-2 p-6`}>
-            <h1 className={`text-3xl leading-8  font-[cormorant] font-medium py:2 `}>
-              Go Samrakshanam Program
-            </h1>
-
-            <h3
-              className={`leading-8 my-2 md:text-xl text-justify md:text-center  py:2 md:py-5`}
+        <div>
+          <h1 className={`text-2xl md:text-4xl font-serif text-cyan-950`}>
+            Go Samrakshanam Program
+          </h1>
+          <Divider />
+        </div>
+        <p className="md:max-w-screen-md">
+          At VVGC San Martin, we maintain a Goshala where indigenous cows (Gyr
+          breeds) are raised. We have a few initiatives as part of sustaining
+          our Goshala to provide the best care and living experiences for our
+          growing list of cattle.
+          <span>
+            {" "}
+            <Link
+              className={`underline text-blue-500 font-bold`}
+              href={
+                "https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList"
+              }
+              target="_blank"
             >
-              (Sustaining & Caring for Cows)
-            </h3>
-
-            <h3 className={`leading-8 my-2 text-justify py:2`}>
-              At VVGC San Martin, we maintain a Goshala where indigenous cows
-              (Gyr breeds) are raised. We have a few initiatives as part of
-              sustaining our Goshala to provide the best care and living
-              experiences for our growing list of cattle.
-            </h3>
-          </div>
-          <div
-            className={`relative col-span-1 w-72 h-72 sm:min-w-full 
-              sm:h-auto md:col-span-2 mx-auto object-cover`}
-          >
-            <Image src={go_dhanam_img} alt="Support Us" quality={75} fill />
-          </div>
+              Click here{" "}
+            </Link>
+          </span>
+          to learn more about the programs and how you can support them.
+        </p>
+        <p className="text-center">(Click to enlarge)</p>
+        <div className="relative w-[95%] h-48 md:h-[500px] mx-auto">
+        <Link href={godhanam_donate_img} target="_blank">
+          <Image
+            quality={75}
+            src={godhanam_donate_img}
+            fill
+            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+            className="object-contain"
+            alt="vvgc san martin loan program"
+          />
+        </Link>
+          
+        </div>
+        <div className="relative w-[95%] h-40 md:h-80 mx-auto">
+          <Image
+            quality={75}
+            src={"/goshala/goshala-2.jpg"}
+            fill
+            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+            className="object-contain"
+            alt="vvgc san martin loan program"
+          />
         </div>
 
-        <div className={`grid relative grid-cols-1 max-w-full
-         bg-white mx-auto  p-5 md:grid-cols-4 
-         md:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)] 
-         md:[filter:drop-shadow(0_10px_8px_rgb(0_0_0_/_0.04))_drop-shadow(0_4px_3px_rgb(0_0_0_/_0.1))] lg:w-[90%]
-          `}>
-          <div
-            className={`flex flex-col justify-items-center 
-              items-center gap-5 w-full max-w-full text-center 
-              font[opensans] col-span-2 p-6`}
-          >
-            <div className=" flex flex-col gap-4 mx-auto min-h-fit 
-            md:h-56 items-center justify-around">
-              <h2 className="text-lg  my-2 text-justify">
-                To learn more about our programs and how you can support them,
-                please visit
-              </h2>
-              <div>
-                <Button
-                  className={`bg-orange-400 text-white width-full sm:w-fit font-[bold] text-xl`}
-                >
-                  <Link
-                    href="https://paybee.io/quickpay.html?handle=vvgc&ppid=8#optionList"
-                    target="_blank"
-                  >
-                    Click here{" "}
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`relative col-span-1 w-full max-w-full h-72 md:col-span-2`}
-          >
-            <Image
-              src={"/goshala/goshala-2.jpg"}
-              alt="Support Us"
-              fill
-              quality={75}
-              sizes={"100vw"}
-              className="object-contain m-auto absolute"
-            />
-          </div>
+        <div className="relative w-[95%] h-40 md:h-80 mx-auto">
+          <Image
+            quality={75}
+            src={go_dhanam_img}
+            fill
+            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
+            className="object-contain"
+            alt="vvgc san martin loan program"
+          />
+          
         </div>
-      </main>
+      </div>
     </React.Fragment>
   );
 }

@@ -83,7 +83,7 @@ export async function AllEventsData(): Promise<CalendarEvent[]> {
     return events;
   } catch (error:any) {
     console.error(error);
-   return error.message
+   return error.name
   }
 }
 export default AllEventsData;

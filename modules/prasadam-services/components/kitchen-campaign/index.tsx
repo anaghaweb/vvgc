@@ -8,9 +8,9 @@ const KitchenCampaignFlyer = () => {
     <Fragment>
       <section className="flex flex-col w-full py-3 my-3 px-2 mx-auto">
         <div>
-          <p className="text-center text-xl md:text-3xl font-cormorant ">
+          <h2 className="text-center text-xl md:text-3xl font-serif text-cyan-950 ">
             An appeal for Standard Kitchen
-          </p>
+          </h2>
         </div>
         <Divider />
 
