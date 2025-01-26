@@ -47,15 +47,16 @@ const SectionOne = ({ eventdata }: {
               :
               <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
+          {/* NEXT SPECIAL EVENT CARD */}
           <>
-            <h3 className="font-roboto text-gray-800 font-semibold">
+            {/* <h3 className="font-roboto text-gray-800 font-semibold">
               Next special Event:
-            </h3>
+            </h3> */}
            
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1736836509/VVGC%20Events/20250114.jpg`} target="_blank">
-                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1736836509/VVGC%20Events/20250114.jpg"
+                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1737886255/VVGC%20Images/goshala/goshala_1_.jpg`} target="_blank">
+                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1737886255/VVGC%20Images/goshala/goshala_1_.jpg"
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
