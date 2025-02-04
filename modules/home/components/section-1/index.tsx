@@ -17,7 +17,7 @@ const SectionOne = ({ eventdata }: {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-
+  const image_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738687734/VVGC%20Events/20250226.jpg`;
   try{
     data = eventdata.find(
       (event) => {
@@ -53,14 +53,13 @@ const SectionOne = ({ eventdata }: {
           <Divider className="my-4"/>
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
               Maha Shivratri Mahotsavam
-          </h2>
-           
+          </h2>           
            
 
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250301.jpg`} target="_blank">
-                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250301.jpg"
+                <Link className="" href={image_url} target="_blank">
+                  <Image src={image_url}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -68,9 +67,7 @@ const SectionOne = ({ eventdata }: {
                   />
                 </Link>
               </div>
-               <p className="font-serif md:max-w-screen-md my-2 text-base text-center">
-              All are welcome to participate with family, friends, children and Get Blessings.
-            </p>
+              
             </article>
           </div>
         </Card>
