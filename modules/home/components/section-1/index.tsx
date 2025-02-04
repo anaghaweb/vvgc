@@ -48,26 +48,19 @@ const SectionOne = ({ eventdata }: {
               <DailyEventSummaryCard events={weeklyEventsDataList} />
           }
           {/* NEXT SPECIAL EVENT CARD */}
-          <div className="leading-6 tracking-tighter">
+          <div className="leading-6">
+
           <Divider className="my-4"/>
-            
-            <h3 className="font-sans font-semibold md:max-w-screen-md my-2 text-lg text-left text-blue-950">
-              Sri Vallabha Maha Ganapathi Temple, VVGC San Martin Hindu Temple along with ICE Foundation and Ari Vallabha Maha Ganapathi Temple Presents:
-            </h3>
-            <p className="font-sans md:max-w-screen-md my-2 text-base text-left text-gray-950">
-            <span className="font-serif text-xl  text-orange-950"> Vasantha Panchami Saraswathi Pooja  
-            </span>
-            <span className="text-xl"> & </span>
-              <span className="font-serif text-xl  text-orange-950"> Aksharabhyasam Ceremony</span> from <span className="font-semibold"> 11:00 AM </span> to <span className="font-semibold"> 2:00 PM </span> followed by <span className="font-semibold"> Mahaprasadam & Priti Bhoj </span>
-            </p>
-            <p className="font-serif md:max-w-screen-md my-2 text-base text-center">
-              All are welcome to participate with family, friends, children and Get Blessings.
-            </p>
+            <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
+              Maha Shivratri Mahotsavam
+          </h2>
+           
+           
 
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1738200389/VVGC%20Events/20250202.jpg`} target="_blank">
-                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1738200389/VVGC%20Events/20250202.jpg"
+                <Link className="" href={`https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250301.jpg`} target="_blank">
+                  <Image src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250301.jpg"
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -75,6 +68,9 @@ const SectionOne = ({ eventdata }: {
                   />
                 </Link>
               </div>
+               <p className="font-serif md:max-w-screen-md my-2 text-base text-center">
+              All are welcome to participate with family, friends, children and Get Blessings.
+            </p>
             </article>
           </div>
         </Card>
