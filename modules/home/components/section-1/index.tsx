@@ -17,7 +17,7 @@ const SectionOne = ({ eventdata }: {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-  const image_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738687734/VVGC%20Events/20250226.jpg`;
+  const image_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250315.jpg`
   try{
     data = eventdata.find(
       (event) => {
@@ -52,7 +52,7 @@ const SectionOne = ({ eventdata }: {
 
           <Divider className="my-4"/>
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Maha Shivratri Mahotsavam
+              Holi Celebrations
           </h2>           
            
 
