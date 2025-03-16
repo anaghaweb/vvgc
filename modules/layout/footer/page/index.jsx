@@ -10,8 +10,8 @@ import SocialMediaLinks from "../components/social-media";
 
 export default function Footer() {
   const pathname = usePathname();
-  const campaign = pathname.split("/").includes("campaigns");
-  const verifyEmail = pathname.split("/").includes("verifyEmail");
+  // const campaign = pathname.split("/").includes("campaigns");
+  // const verifyEmail = pathname.split("/").includes("verifyEmail");
   return (
     
       <footer className="w-full max-w-full grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-5  bg-sky-950 max-h-full h-auto  px-4 py-4">
