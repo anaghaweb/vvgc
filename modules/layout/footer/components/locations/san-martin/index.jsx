@@ -15,10 +15,7 @@ const SanMartin = () => {
             <IoMdMail size={20} />
             <a href={`mailto:info@vvgc.org`}>info@vvgc.org </a>
           </div>
-          <div className="text-blue-300 font-bold inline-flex place-items-center gap-1">
-            <IoMdMail size={20} />
-            <a href={`mailto:priests@vvgc.org`}>priests@vvgc.org </a>
-          </div>
+         
         </div>
         <div>
           <p>11355, Monterey Hwy</p>

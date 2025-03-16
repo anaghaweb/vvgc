@@ -21,8 +21,14 @@ const TempleContact = () => {
           <li>Cell: <a href="tel:9252097637" className="text-blue-800 font-semibold">9252097637</a></li>
           <li>Email:{" "}
             <a href="mailto:srikalahatheeswara@yahoo.com" className="text-blue-800 font-semibold">
+          priests@vvgc.org
+            </a></li>
+          <li>Email:{" "}
+            <a href="mailto:srikalahatheeswara@yahoo.com" className="text-blue-800 font-semibold">
           srikalahatheeswara@yahoo.com
             </a></li>
+            
+            
         </ul>
         <div className="mt-1 p-3 bg-blue-200 font-sans">
           <p>
