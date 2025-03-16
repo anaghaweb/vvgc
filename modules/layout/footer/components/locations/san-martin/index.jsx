@@ -4,22 +4,42 @@ import { IoMdMail } from "react-icons/io";
 const SanMartin = () => {
   return (
     <>
-    
-  <section className="text-stone-300 flex flex-col col-span-1 text-sm ">
-    <p className="font-bold text-base">VVGC San Martin</p>
-    <div className="inline-flex gap-2 items-center">
-      <FaPhoneAlt /> 4087596183
-    </div>
-    <div className="inline-flex gap-2 items-center">
-      <IoMdMail /> info@vvgc.org
-    </div>
-    <p>11355, Monterey Hwy</p>
-    <p>San Martin, CA 95046</p>
-  </section>
+      <section className="text-stone-300 flex flex-col text-sm font-sans gap-2 ">
+        <p className="font-bold text-xl">VVGC San Martin</p>
+        
+        <div className="text-blue-300 font-bold inline-flex place-items-center gap-1">
+              <FaPhoneAlt /> <a href="tel:4087596183">4087596183</a> 
+            </div>
+        <div className="flex flex-col gap-2">
+          <div className="text-blue-300 font-bold inline-flex place-items-center gap-1">
+            <IoMdMail size={20} />
+            <a href={`mailto:info@vvgc.org`}>info@vvgc.org </a>
+          </div>
+          <div className="text-blue-300 font-bold inline-flex place-items-center gap-1">
+            <IoMdMail size={20} />
+            <a href={`mailto:priests@vvgc.org`}>priests@vvgc.org </a>
+          </div>
+        </div>
+        <div>
+          <p>11355, Monterey Hwy</p>
+          <p>San Martin, CA 95046</p>
+        </div>
+        <section className="text-stone-300 flex flex-col text-sm gap-2">
+          <p className="font-bold text-base">Temple Timings:</p>
+          <div>
+            <p className="underline">Weekdays:</p>
+            <p> 10:00AM to 12:00PM</p>
+            <p> 6:00PM to 8:00PM</p>
+          </div>
+          <div>
+            <p className="underline">Weekends & Holidays</p>
+            <p> 10:00AM to 8:00PM</p>
+          </div>
+        </section>
+        
+      </section>
+    </>
+  );
+};
 
-  
-  </>
-  )
-}
-
-export default SanMartin   
+export default SanMartin;
