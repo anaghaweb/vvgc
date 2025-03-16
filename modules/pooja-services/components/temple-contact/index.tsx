@@ -24,6 +24,7 @@ const TempleContact = () => {
               priests@vvgc.org
             </a>
             <a href="mailto:srikalahatheeswara@yahoo.com" className="text-blue-800 font-semibold">
+            srikalahatheeswara@yahoo.com
             </a>
           </li>
 
