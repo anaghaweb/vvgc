@@ -52,7 +52,7 @@ const SectionOne = ({ eventdata }: {
 
           <Divider className="my-4"/>
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Holi Celebrations
+              Upcoming Special Event
           </h2>           
            
 
