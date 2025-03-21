@@ -26,9 +26,8 @@ const MahaPrasadamSanJose = () => {
 
     <div className=' font-sans mb-3 mt-1'>
     <p>Jai Jagadeesha Hare Aarati And Maha Prasadam served</p>
-    <h6>Weekdays from 4:00 PM to 8:00 PM</h6>
-    
-    <h6>Weekends from 12:00 PM to 8:00 PM</h6>
+    <h6> <span className='font-semibold'>Weekdays</span>  - 6:00 PM to 8:00 PM</h6>    
+    <h6> <span className='font-semibold'>Weekends</span> - 6:00 PM to 8:00 PM</h6>
     
     <p>All Are Welcome To Participate With Family Friends And Get Blessings </p>
     </div>

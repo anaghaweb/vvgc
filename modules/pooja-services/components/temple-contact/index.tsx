@@ -10,7 +10,6 @@ const TempleContact = () => {
             <h3 className="text-lg md:text-3xl font-serif mb-4">For Poojas and Rituals Contact:</h3>
           </li>
           <Divider className="my-4" />
-
           <li>Pandit Ganesh Shasthry</li>
           <li>880, E Fremont Ave, Apt#302,</li>
           <li>Sunnyvale, CA 94087</li>
@@ -28,9 +27,6 @@ const TempleContact = () => {
             srikalahatheeswara@yahoo.com
             </a>
           </li>
-
-
-
         </ul>
         <div className="mt-1 p-3 bg-blue-200 font-sans">
           <p>
