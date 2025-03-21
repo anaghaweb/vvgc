@@ -17,7 +17,7 @@ const SectionOne = ({ eventdata }: {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-  const image_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738477286/VVGC%20Events/20250315.jpg`
+  const image_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`
   try{
     data = eventdata.find(
       (event) => {
