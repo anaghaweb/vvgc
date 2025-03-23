@@ -29,7 +29,7 @@ const SanJose = () => {
         <div>
           <p className="underline">Friday</p>
           <p> 8:00 AM - 10:00 AM</p>
-          <p> 5:00 PM - 8:00 PM</p>
+          <p> 5:30 PM - 8:00 PM</p>
         </div>
         <div>
           <p className="underline">Saturday & Sunday</p>
