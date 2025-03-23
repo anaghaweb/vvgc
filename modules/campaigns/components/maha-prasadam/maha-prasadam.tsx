@@ -8,7 +8,7 @@ const MahaPrasadamSanMartin = () => {
   return (
     <Card className="h-auto flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full">
     <h2 className="text-2xl md:text-3xl font-serif text-indigo-950">
-      Starting From October 29th 2024 
+      Daily Maha Prasadam 
     </h2>
    
     <Divider />

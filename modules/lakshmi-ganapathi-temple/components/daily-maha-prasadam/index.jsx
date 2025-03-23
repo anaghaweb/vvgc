@@ -6,7 +6,7 @@ const MahaPrasadamSanJose = () => {
   return (
     <div className="h-auto my-4 md:my-0 flex-1 p-4 col-span-1 bg-teal-50">
     <h1 className="text-2xl md:text-3xl md:mt-2 font-serif  text-cyan-950">
-      Starting From August 17th 2024 
+      Daily Maha Prasadam 
     </h1>
    
     <Divider />
