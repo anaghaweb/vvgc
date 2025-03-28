@@ -28,7 +28,7 @@ const SanJose = () => {
         </div>
         <div>
           <p className="underline">Friday</p>
-          <p> 8:00 AM - 10:00 AM</p>
+          <p> 10:00 AM - 12:00 noon</p>
           <p> 5:30 PM - 8:00 PM</p>
         </div>
         <div>
