@@ -14,8 +14,7 @@ const TempleContact = () => {
           <li>880, E Fremont Ave, Apt#302,</li>
           <li>Sunnyvale, CA 94087</li>
           <li>Home: <a href="tel:4082455443" className="text-blue-800 font-semibold">4082455443</a>
-            {" / "}
-            <a href="tel:4082455443" className="text-blue-800 font-semibold">4082455443</a>
+           
           </li>
           <li>Cell: <a href="tel:9252097637" className="text-blue-800 font-semibold">9252097637</a></li>
           <li>Email:{" "}
