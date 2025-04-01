@@ -77,13 +77,11 @@ const SectionOne = ({ eventdata }: {
         </Card>
         <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
          
-          {/* NEXT SPECIAL EVENT CARD */}
-
-           
+          {/* NEXT SPECIAL EVENT CARD */}  
 
 
             <article className="flex flex-col md:flex-row gap-2">
-              <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
+              <div className="relative w-full h-[300px] md:h-[600px] lg:h-[650px] flex flex-col my-2 md:my-4 p-1">
                 <Link className="" href={cdn_cloudinary_urls[2]} target="_blank">
                   <Image src={cdn_cloudinary_urls[2]}
                     alt="event"

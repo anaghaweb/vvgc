@@ -2,11 +2,13 @@ import Divider from '@modules/common/components/divider'
 import React from 'react'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { Card } from '@modules/common/components/ui/card';
+import { Card, CardContent } from '@modules/common/components/ui/card';
 
 const MahaPrasadamSanMartin = () => {
   return (
-    <Card className="h-auto flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full">
+    <Card className="h-auto flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
+      <CardContent className="">
+
     <h2 className="text-2xl md:text-3xl font-serif text-indigo-950">
       Daily Maha Prasadam 
     </h2>
@@ -61,6 +63,7 @@ Both Saturdays And Sundays</p>
     <a href="tel:4087596183">San Martin Temple  Number <span className="text-blue-800 font-semibold">4087596183</span></a>
     <p className='text-center text-lg font-playfair font-semibold text-rose-900 p-4'>|| Subham Bhuyath Mangalani Bhavanthu Loka Samastha Sukino Bhavanthu ||</p>
     </div>
+      </CardContent>
   </Card>
   )
 }
