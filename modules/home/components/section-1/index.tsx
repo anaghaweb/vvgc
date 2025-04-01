@@ -17,22 +17,26 @@ const SectionOne = ({ eventdata }: {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-  const url_1 = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`;
-  const url_2 = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743392787/VVGC%20Events/vasanthaNavaratriCelebrations.jpg`;
-  const image_url = url_2;
-  try{
+
+
+  const cdn_cloudinary_urls = [
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743392787/VVGC%20Events/vasanthaNavaratriCelebrations.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743493296/VVGC%20Events/ramNavami2025.jpg`,]
+
+  try {
     data = eventdata.find(
       (event) => {
         let eventDate = new Date(event.date).getDate();
         let eventYear = new Date(event.date).getFullYear();
-        let currentYear = new Date().getFullYear();  
-        if(eventDate === currentDate.getDate() && eventYear === currentYear)
+        let currentYear = new Date().getFullYear();
+        if (eventDate === currentDate.getDate() && eventYear === currentYear)
           return (eventDate === currentDate.getDate() && eventYear === currentYear)
-        else 
+        else
           return null;
       }
     );
-  }catch(error:any){
+  } catch (error: any) {
     console.log(error.name)
   }
   return (
@@ -52,16 +56,14 @@ const SectionOne = ({ eventdata }: {
           {/* NEXT SPECIAL EVENT CARD */}
           <div className="leading-6">
 
-          <Divider className="my-4"/>
+            <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
               Upcoming Special Event
-          </h2>           
-           
-
+            </h2>
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={image_url} target="_blank">
-                  <Image src={image_url}
+                <Link className="" href={cdn_cloudinary_urls[0]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[0]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -69,12 +71,32 @@ const SectionOne = ({ eventdata }: {
                   />
                 </Link>
               </div>
-              
+
             </article>
           </div>
         </Card>
-       
-        <MahaPrasadamSanMartin  />
+        <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
+         
+          {/* NEXT SPECIAL EVENT CARD */}  
+
+
+            <article className="flex flex-col md:flex-row gap-2">
+              <div className="relative w-full h-[300px] md:h-[600px] lg:h-[650px] flex flex-col my-2 md:my-4 p-1">
+                <Link className="" href={cdn_cloudinary_urls[2]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[2]}
+                    alt="event"
+                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
+                    className="object-contain cursor-pointer mx-auto sm:w-full"
+                    fill
+                  />
+                </Link>
+              </div>
+
+            </article>
+          
+        </Card>
+
+        {/* <MahaPrasadamSanMartin /> */}
       </div>
     </div>
   );

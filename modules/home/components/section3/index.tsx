@@ -6,7 +6,9 @@ import MahaPrasadamSanMartin from "@modules/campaigns/components/maha-prasadam/m
 const SectionThree = () => {
   return (
     <div className="grid grid-cols-1">
-      
+      <div className="col-span-1">
+        <MahaPrasadamSanMartin />
+      </div>
       <div className="col-span-1">
         <KitchenVVGC />
       </div>
