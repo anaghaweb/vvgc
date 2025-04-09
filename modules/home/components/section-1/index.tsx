@@ -82,8 +82,8 @@ const SectionOne = ({ eventdata }: {
 
             <article className="flex flex-col md:flex-row gap-2">
               <div className="relative w-full h-[300px] md:h-[600px] lg:h-[650px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={cdn_cloudinary_urls[2]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[2]}
+                <Link className="" href={cdn_cloudinary_urls[1]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[1]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
