@@ -9,7 +9,7 @@ import { CalendarEvent } from "types/global";
 import { Card } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import MahaPrasadamSanMartin from "@modules/campaigns/components/maha-prasadam/maha-prasadam";
+import Vijayashri_Satsanga_Mela from "@modules/campaigns/components/vijayashri-satsanga-mela";
 
 const SectionOne = ({ eventdata }: {
   eventdata: CalendarEvent[]
@@ -22,9 +22,13 @@ const SectionOne = ({ eventdata }: {
   const cdn_cloudinary_urls = [
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743392787/VVGC%20Events/vasanthaNavaratriCelebrations.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743493296/VVGC%20Events/ramNavami2025.jpg`,]
-
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744426815/VVGC%20Events/hanumaanJayanthi250415.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`,
+  ]
+  const paypal_emailid = "Vijayashri.usa@gmail.com";
+  const paypal_link = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${paypal_emailid}&currency_code=USD&item_name=Donation`
   try {
+
     data = eventdata.find(
       (event) => {
         let eventDate = new Date(event.date).getDate();
@@ -42,7 +46,7 @@ const SectionOne = ({ eventdata }: {
   return (
     <div className=" rounded-sm p-2">
       <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
-        <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
+        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
           <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
@@ -61,9 +65,9 @@ const SectionOne = ({ eventdata }: {
               Upcoming Special Event
             </h2>
             <article className="flex flex-col md:flex-row gap-2">
-              <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={cdn_cloudinary_urls[0]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[0]}
+              <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
+                <Link className="" href={cdn_cloudinary_urls[2]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[2]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -74,27 +78,15 @@ const SectionOne = ({ eventdata }: {
 
             </article>
           </div>
-        </Card>
-        <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
-         
-          {/* NEXT SPECIAL EVENT CARD */}  
+        </div>
+        {/* <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
+        </Card> */}
+          {/* NEXT SPECIAL EVENT CARD */}
+          {/* <article className="flex flex-col gap-2"></article> */}
 
-
-            <article className="flex flex-col md:flex-row gap-2">
-              <div className="relative w-full h-[300px] md:h-[600px] lg:h-[650px] flex flex-col my-2 md:my-4 p-1">
-                <Link className="" href={cdn_cloudinary_urls[1]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[1]}
-                    alt="event"
-                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
-                    className="object-contain cursor-pointer mx-auto sm:w-full"
-                    fill
-                  />
-                </Link>
-              </div>
-
-            </article>
+          <Vijayashri_Satsanga_Mela cdn_cloudinary_urls={cdn_cloudinary_urls}/>
+          {/* VIJAYASHREE SATSANGA MELA */}
           
-        </Card>
 
         {/* <MahaPrasadamSanMartin /> */}
       </div>
