@@ -22,7 +22,7 @@ const SectionOne = ({ eventdata }: {
   const cdn_cloudinary_urls = [
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743392787/VVGC%20Events/vasanthaNavaratriCelebrations.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744426815/VVGC%20Events/hanumaanJayanthi250415.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`,
   ]
   const paypal_emailid = "Vijayashri.usa@gmail.com";
