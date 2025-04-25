@@ -10,6 +10,7 @@ import { Card } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import Vijayashri_Satsanga_Mela from "@modules/campaigns/components/vijayashri-satsanga-mela";
+import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
 
 const SectionOne = ({ eventdata }: {
   eventdata: CalendarEvent[]
@@ -24,6 +25,7 @@ const SectionOne = ({ eventdata }: {
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745566188/VVGC%20Events/srimadBhagawatKathaSaar20250510.jpg`
   ]
   const paypal_emailid = "Vijayashri.usa@gmail.com";
   const paypal_link = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${paypal_emailid}&currency_code=USD&item_name=Donation`
@@ -59,15 +61,16 @@ const SectionOne = ({ eventdata }: {
           }
           {/* NEXT SPECIAL EVENT CARD */}
           <div className="leading-6">
-
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Upcoming Special Event
+              Maha Rudra Yagnam
             </h2>
             <article className="flex flex-col md:flex-row gap-2">
+            <MahaRudraYagnaVideo />
+            <Divider />
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
-                <Link className="" href={cdn_cloudinary_urls[2]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[2]}
+                <Link className="" href={cdn_cloudinary_urls[4]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[4]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -77,6 +80,8 @@ const SectionOne = ({ eventdata }: {
               </div>
 
             </article>
+            
+           
           </div>
         </div>
         {/* <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
