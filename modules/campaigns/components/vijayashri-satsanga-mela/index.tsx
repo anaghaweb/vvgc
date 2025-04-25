@@ -68,7 +68,7 @@ const Vijayashri_Satsanga_Mela = ({ cdn_cloudinary_urls }: { cdn_cloudinary_urls
 
       </div>
 
-      <div className="relative w-full h-[300px] md:h-[500px] flex flex-col my-2 md:my-4 p-1">
+      <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
         <Link className="" href={cdn_cloudinary_urls[3]} target="_blank">
           <Image src={cdn_cloudinary_urls[3]}
             alt="event"
