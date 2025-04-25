@@ -5,8 +5,8 @@ const MahaRudraYagnaVideo = () => {
   return (
 
     <video  
-      width="300" height="240"
-      controls      
+      controls
+      className='mx-auto sm:w-80 md:w-96 lg:w-[400px]'      
     >
       <source src={url} type="video/mp4"/>  
       Watch This

@@ -66,6 +66,7 @@ const SectionOne = ({ eventdata }: {
               Maha Rudra Yagnam
             </h2>
             <article className="flex flex-col gap-2">
+              <p className="text-center font-semibold font-serif">Watch video below..</p>
             <MahaRudraYagnaVideo />
             <Divider />
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
