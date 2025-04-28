@@ -25,10 +25,10 @@ const SectionOne = ({ eventdata }: {
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`,
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745566188/VVGC%20Events/srimadBhagawatKathaSaar20250510.jpg`
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745566188/VVGC%20Events/srimadBhagawatKathaSaar20250510.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745822800/VVGC%20Events/akshayaTritiya_20250503.jpg`,
   ]
-  const paypal_emailid = "Vijayashri.usa@gmail.com";
-  const paypal_link = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${paypal_emailid}&currency_code=USD&item_name=Donation`
+ 
   try {
 
     data = eventdata.find(
@@ -63,15 +63,13 @@ const SectionOne = ({ eventdata }: {
           <div className="leading-6">
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Maha Rudra Yagnam
+              Akshaya Tritiya 2025
             </h2>
             <article className="flex flex-col gap-2">
-              <p className="text-center font-semibold font-serif">Watch video below..</p>
-            <MahaRudraYagnaVideo />
             <Divider />
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
-                <Link className="" href={cdn_cloudinary_urls[4]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[4]}
+                <Link className="" href={cdn_cloudinary_urls[5]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[5]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -90,11 +88,11 @@ const SectionOne = ({ eventdata }: {
           {/* NEXT SPECIAL EVENT CARD */}
           {/* <article className="flex flex-col gap-2"></article> */}
 
-          <Vijayashri_Satsanga_Mela cdn_cloudinary_urls={cdn_cloudinary_urls}/>
-          {/* VIJAYASHREE SATSANGA MELA */}
+        
+        <MahaRudraYagnaVideo />
           
 
-        {/* <MahaPrasadamSanMartin /> */}
+        
       </div>
     </div>
   );
