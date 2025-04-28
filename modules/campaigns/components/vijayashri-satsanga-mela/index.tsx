@@ -6,7 +6,7 @@ import Divider from "@modules/common/components/divider";
 import { Card } from '@modules/common/components/ui/card';
 
 const Vijayashri_Satsanga_Mela = () => {
-  const cloudinary_cdn_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`;
+  const cloudinary_cdn_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`;
 
   const paypal_emailid = "Vijayashri.usa@gmail.com";
   const paypal_link = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${paypal_emailid}&currency_code=USD&item_name=Donation`
