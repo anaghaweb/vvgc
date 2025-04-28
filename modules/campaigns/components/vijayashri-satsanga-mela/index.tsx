@@ -3,15 +3,17 @@ import Link from 'next/link';
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Divider from "@modules/common/components/divider";
+import { Card } from '@modules/common/components/ui/card';
 
-const Vijayashri_Satsanga_Mela = ({ cdn_cloudinary_urls }: { cdn_cloudinary_urls: string[] }) => {
+const Vijayashri_Satsanga_Mela = () => {
+  const cloudinary_cdn_url = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`;
 
   const paypal_emailid = "Vijayashri.usa@gmail.com";
   const paypal_link = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${paypal_emailid}&currency_code=USD&item_name=Donation`
 
 
   return (
-    <article className="flex flex-col gap-2 text-center text-gray-900">
+    <Card className="h-auto flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
       <div className="h-auto flex-1 flex flex-col gap-2 p-2 md:pl-4  track-tight text-sm lg:text-base w-full font-serif">
         <h2 className="text-2xl md:text-3xl font-serif text-indigo-950 text-center">
         🪔 A very happy Tamil new year to you all! 🪔
@@ -69,8 +71,8 @@ const Vijayashri_Satsanga_Mela = ({ cdn_cloudinary_urls }: { cdn_cloudinary_urls
       </div>
 
       <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
-        <Link className="" href={cdn_cloudinary_urls[3]} target="_blank">
-          <Image src={cdn_cloudinary_urls[3]}
+        <Link className="" href={cloudinary_cdn_url} target="_blank">
+          <Image src={cloudinary_cdn_url}
             alt="event"
             sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
             className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -78,7 +80,7 @@ const Vijayashri_Satsanga_Mela = ({ cdn_cloudinary_urls }: { cdn_cloudinary_urls
           />
         </Link>
       </div>
-    </article>
+    </Card>
   )
 }
 
