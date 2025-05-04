@@ -4,12 +4,9 @@ import DailyEventSummaryCard from "@modules/events/components/dailyEventSummaryC
 import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSummaryCard";
 import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
-
 import { CalendarEvent } from "types/global";
-import { Card } from "@modules/common/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import Vijayashri_Satsanga_Mela from "@modules/campaigns/components/vijayashri-satsanga-mela";
 import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
 
 const SectionOne = ({ eventdata }: {
@@ -18,19 +15,11 @@ const SectionOne = ({ eventdata }: {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-
-
   const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1743392787/VVGC%20Events/vasanthaNavaratriCelebrations.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1738286259/VVGC%20Events/Maharudra-2025.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745029610/VVGC%20Events/bhaktiMarga20250525.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1744599039/vijayaSatsangMela.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745566188/VVGC%20Events/srimadBhagawatKathaSaar20250510.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1745822800/VVGC%20Events/akshayaTritiya_20250503.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296406/VVGC%20Events/bababalaknath20250504.jpg`
   ]
- 
-  try {
 
+  try {
     data = eventdata.find(
       (event) => {
         let eventDate = new Date(event.date).getDate();
@@ -66,10 +55,10 @@ const SectionOne = ({ eventdata }: {
               Akshaya Tritiya 2025
             </h2>
             <article className="flex flex-col gap-2">
-            <Divider />
+              <Divider />
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
-                <Link className="" href={cdn_cloudinary_urls[5]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[5]}
+                <Link className="" href={cdn_cloudinary_urls[0]} target="_blank">
+                  <Image src={cdn_cloudinary_urls[0]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
@@ -77,22 +66,14 @@ const SectionOne = ({ eventdata }: {
                   />
                 </Link>
               </div>
-
             </article>
-            
-           
           </div>
         </div>
         {/* <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
         </Card> */}
-          {/* NEXT SPECIAL EVENT CARD */}
-          {/* <article className="flex flex-col gap-2"></article> */}
-
-        
+        {/* NEXT SPECIAL EVENT CARD */}
+        {/* <article className="flex flex-col gap-2"></article> */}
         <MahaRudraYagnaVideo />
-          
-
-        
       </div>
     </div>
   );
