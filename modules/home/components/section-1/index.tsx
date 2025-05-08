@@ -1,4 +1,3 @@
-
 import { weeklyEventsDataList } from "@lib/data/weeklyEventData";
 import DailyEventSummaryCard from "@modules/events/components/dailyEventSummaryCard";
 import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSummaryCard";
@@ -9,30 +8,25 @@ import Image from "next/image";
 import Link from "next/link";
 import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
 
-const SectionOne = ({ eventdata }: {
-  eventdata: CalendarEvent[]
-}) => {
+const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296406/VVGC%20Events/bababalaknath20250504.jpg`
-  ]
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296084/VVGC%20Events/vvgcfundraising20250511.jpg`,
+  ];
 
   try {
-    data = eventdata.find(
-      (event) => {
-        let eventDate = new Date(event.date).getDate();
-        let eventYear = new Date(event.date).getFullYear();
-        let currentYear = new Date().getFullYear();
-        if (eventDate === currentDate.getDate() && eventYear === currentYear)
-          return (eventDate === currentDate.getDate() && eventYear === currentYear)
-        else
-          return null;
-      }
-    );
+    data = eventdata.find((event) => {
+      let eventDate = new Date(event.date).getDate();
+      let eventYear = new Date(event.date).getFullYear();
+      let currentYear = new Date().getFullYear();
+      if (eventDate === currentDate.getDate() && eventYear === currentYear)
+        return eventDate === currentDate.getDate() && eventYear === currentYear;
+      else return null;
+    });
   } catch (error: any) {
-    console.log(error.name)
+    console.log(error.name);
   }
   return (
     <div className=" rounded-sm p-2">
@@ -42,12 +36,11 @@ const SectionOne = ({ eventdata }: {
             Today at the Temple, {currentDay}
           </h2>
           <Divider />
-          {
-            data?.title ?
-              <SpecialEventSummaryCard eventdata={data} />
-              :
-              <DailyEventSummaryCard events={weeklyEventsDataList} />
-          }
+          {data?.title ? (
+            <SpecialEventSummaryCard eventdata={data} />
+          ) : (
+            <DailyEventSummaryCard events={weeklyEventsDataList} />
+          )}
           {/* NEXT SPECIAL EVENT CARD */}
           <div className="leading-6">
             <Divider className="my-4" />
@@ -57,8 +50,13 @@ const SectionOne = ({ eventdata }: {
             <article className="flex flex-col gap-2">
               <Divider />
               <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
-                <Link className="" href={cdn_cloudinary_urls[0]} target="_blank">
-                  <Image src={cdn_cloudinary_urls[0]}
+                <Link
+                  className=""
+                  href={cdn_cloudinary_urls[0]}
+                  target="_blank"
+                >
+                  <Image
+                    src={cdn_cloudinary_urls[0]}
                     alt="event"
                     sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
                     className="object-contain cursor-pointer mx-auto sm:w-full"
