@@ -13,7 +13,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296084/VVGC%20Events/msthirukutsavam20250517.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296079/VVGC%20Events/everysatpooja.jpg`,
   ];
 
   try {
