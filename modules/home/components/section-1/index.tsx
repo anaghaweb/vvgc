@@ -45,7 +45,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
           <div className="leading-6">
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Next Event
+              Upcoming Special Event:
             </h2>
             <article className="flex flex-col gap-2">
               <Divider />
