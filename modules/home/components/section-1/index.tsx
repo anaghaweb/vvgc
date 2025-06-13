@@ -13,7 +13,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1746296079/VVGC%20Events/everysatpooja.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753748/vvgc/images/2025/june/21/namasankeerthanam.jpg`,
   ];
 
   try {
@@ -45,7 +45,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
           <div className="leading-6">
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Next Event
+              Upcoming Event:
             </h2>
             <article className="flex flex-col gap-2">
               <Divider />
