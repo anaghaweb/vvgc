@@ -5,6 +5,8 @@ import Link from 'next/link'
 import React, { Fragment } from 'react'
 import { FcExternal } from 'react-icons/fc';
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
+import Build_Kitchen from '@modules/campaigns/components/vvgc-kitchen/build-kitchen';
+
 const KitchenVVGC = () => {
   return (
     <Fragment>
@@ -47,6 +49,7 @@ const KitchenVVGC = () => {
               />
             </div>
           </Link>
+          <Build_Kitchen />
 
         </CardContent>
       </Card>
