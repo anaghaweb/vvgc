@@ -6,7 +6,7 @@ import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
 import Image from "next/image";
 import Link from "next/link";
-import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
+import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
@@ -71,7 +71,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         </Card> */}
         {/* NEXT SPECIAL EVENT CARD */}
         {/* <article className="flex flex-col gap-2"></article> */}
-        <MahaRudraYagnaVideo />
+        <Vijay_Satsang_Mela />
       </div>
     </div>
   );
