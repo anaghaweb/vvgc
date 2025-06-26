@@ -7,13 +7,14 @@ import { CalendarEvent } from "types/global";
 import Image from "next/image";
 import Link from "next/link";
 import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
+import YoutubeVideoPLayer from "@modules/video-player";
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753748/vvgc/images/2025/june/21/namasankeerthanam.jpg`,
+    'https://res.cloudinary.com/dixkqgqsi/image/upload/v1750440339/vvgc/images/2025/june/20/july02_7to9pm.jpg',
   ];
 
   try {
@@ -29,7 +30,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     console.log(error.name);
   }
   return (
-    <div className=" rounded-sm p-2">
+    <div className="p-2">
       <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
         <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
           <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
@@ -47,20 +48,22 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
               Upcoming Event:
             </h2>
+            <YoutubeVideoPLayer />
             <article className="flex flex-col gap-2">
+              
               <Divider />
-              <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] flex flex-col my-2 md:my-4 lg:my-auto p-1">
+              <div className="w-full overflow-hidden shadow h-auto my-4">
                 <Link
                   className=""
                   href={cdn_cloudinary_urls[0]}
                   target="_blank"
                 >
-                  <Image
+                  <img
                     src={cdn_cloudinary_urls[0]}
                     alt="event"
-                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
-                    className="object-contain cursor-pointer mx-auto sm:w-full"
-                    fill
+                    
+                    className="w-full object-cover"
+                    
                   />
                 </Link>
               </div>
