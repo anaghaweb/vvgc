@@ -3,15 +3,16 @@ import React from 'react';
 
 const imageUrls = [
   
-  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1750440338/vvgc/images/2025/june/20/july01_8to9pm.jpg',
-  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1750440339/vvgc/images/2025/june/20/july1_2.jpg',
+  
+  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
+  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
 ];
 
 
 const ImageTileGrid = ({ images }:{images:string[]}) => {
   return (
     
-    <div className="max-w-full lg:max-w-[512px] xl:max-w-[648px] mx-auto  space-y-5">
+    <div className="max-w-full lg:max-w-[400px] xl:max-w-[512px] mx-auto  space-y-5">
       {images.map((src, index) => (
         <Link href={src} key={index}>
           <div className="w-full overflow-hidden shadow h-auto my-4">
