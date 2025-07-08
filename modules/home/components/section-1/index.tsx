@@ -15,7 +15,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
-    'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
+    'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751992707/vvgc/images/2025/July/08/bhagwati_jagran.jpg',
   ];
 
   try {
@@ -75,7 +75,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         </Card> */}
         {/* NEXT SPECIAL EVENT CARD */}
         {/* <article className="flex flex-col gap-2"></article> */}
-        <MahaRudraYagnaVideo />
+        <Vijay_Satsang_Mela/>
       </div>
     </div>
   );

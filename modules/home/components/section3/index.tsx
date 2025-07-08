@@ -8,9 +8,9 @@ import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam"
 const SectionThree = () => {
   return (
     <div className="grid grid-cols-1">
-      {/* <div className="col-span-1">
+      <div className="col-span-1">
       <MahaRudraYagnaVideo />
-      </div> */}
+      </div>
       <div className="col-span-1">
         <MahaPrasadamSanMartin />
       </div>
