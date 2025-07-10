@@ -15,6 +15,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDate = getCurrentDate();
   let data;
   const cdn_cloudinary_urls = [
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752117553/vvgc/images/2025/July/10/guru_poornima.jpg`,
     'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751992707/vvgc/images/2025/July/08/bhagwati_jagran.jpg',
   ];
 
@@ -61,6 +62,21 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
                 >
                   <img
                     src={cdn_cloudinary_urls[0]}
+                    alt="event"
+                    
+                    className="w-full object-cover"
+                    
+                  />
+                </Link>
+              </div>
+               <div className="w-full overflow-hidden shadow h-auto my-4">
+                <Link
+                  className=""
+                  href={cdn_cloudinary_urls[1]}
+                  target="_blank"
+                >
+                  <img
+                    src={cdn_cloudinary_urls[1]}
                     alt="event"
                     
                     className="w-full object-cover"
