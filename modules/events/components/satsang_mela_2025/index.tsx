@@ -12,7 +12,7 @@ const imageUrls = [
 const ImageTileGrid = ({ images }:{images:string[]}) => {
   return (
     
-    <div className="max-w-full lg:max-w-[400px] xl:max-w-[512px] mx-auto  space-y-5">
+    <div className="max-w-full lg:max-w-[500px] xl:max-w-[612px] mx-auto  space-y-5">
       {images.map((src, index) => (
         <Link href={src} key={index}>
           <div className="w-full overflow-hidden shadow h-auto my-4">
