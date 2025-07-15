@@ -9,15 +9,14 @@ import Link from "next/link";
 import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
 import YoutubeVideoPLayer from "@modules/video-player";
 import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
+import Image_Grid from "@modules/common/components/image_grid";
+import VishwaShanthiHomamEvent from "@modules/events/components/vishwaShantiHomam";
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
   let currentDate = getCurrentDate();
   let data;
-  const cdn_cloudinary_urls = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752117553/vvgc/images/2025/July/10/guru_poornima.jpg`,
-    'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751992707/vvgc/images/2025/July/08/bhagwati_jagran.jpg',
-  ];
+
 
   try {
     data = eventdata.find((event) => {
@@ -51,48 +50,18 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Event:
             </h2>
             {/* <YoutubeVideoPLayer /> */}
-            <article className="flex flex-col gap-2">
-              
-              <Divider />
-              <div className="w-full overflow-hidden shadow h-auto my-4">
-                <Link
-                  className=""
-                  href={cdn_cloudinary_urls[0]}
-                  target="_blank"
-                >
-                  <img
-                    src={cdn_cloudinary_urls[0]}
-                    alt="event"
-                    
-                    className="w-full object-cover"
-                    
-                  />
-                </Link>
-              </div>
-               <div className="w-full overflow-hidden shadow h-auto my-4">
-                <Link
-                  className=""
-                  href={cdn_cloudinary_urls[1]}
-                  target="_blank"
-                >
-                  <img
-                    src={cdn_cloudinary_urls[1]}
-                    alt="event"
-                    
-                    className="w-full object-cover"
-                    
-                  />
-                </Link>
-              </div>
+            <article className="flex flex-col gap-2 w-full ">
+              <VishwaShanthiHomamEvent />              
             </article>
           </div>
         </div>
-        {/* <Card className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
-        </Card> */}
-        {/* NEXT SPECIAL EVENT CARD */}
-        {/* <article className="flex flex-col gap-2"></article> */}
+       
         <Vijay_Satsang_Mela/>
+        
       </div>
+      <Divider />
+      <Image_Grid />
+      <Divider />
     </div>
   );
 };
