@@ -28,7 +28,7 @@ const SangamamHikeEvent = () => {
                     <p className="mb-4">
                         By the blessings of Vallabha Ganapathy, <span className="font-bold text-blue-600">VVGC Temple</span> is thrilled to announce its
                         first-ever community hike/walk at Harvey Bear Ranch, San Martin, CA. Join us for a refreshing outdoor experience and help strengthen our
-                        community, with the <span className="font-bold text-blue-600">Honorable Mayor of San Martin, Mark Turner</span>, as our special guest!
+                        community, with the <span className="font-bold text-blue-600">Honorable Mayor of Morgan Hill, Mark Turner</span>, as our special guest!
                     </p>
 
                     <p className="mb-4">
