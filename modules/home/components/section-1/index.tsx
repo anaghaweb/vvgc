@@ -11,6 +11,7 @@ import YoutubeVideoPLayer from "@modules/video-player";
 import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
 import Image_Grid from "@modules/common/components/image_grid";
 import VishwaShanthiHomamEvent from "@modules/events/components/vishwaShantiHomam";
+import SangamamHikeEvent from "@modules/events/components/sangamam_2025";
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
@@ -59,6 +60,8 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         <Vijay_Satsang_Mela/>
         
       </div>
+      <Divider />
+      <SangamamHikeEvent />
       <Divider />
       <Image_Grid />
       <Divider />
