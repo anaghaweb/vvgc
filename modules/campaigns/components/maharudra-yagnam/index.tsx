@@ -6,7 +6,7 @@ import Build_Kitchen from '@modules/campaigns/components/vvgc-kitchen/build-kitc
 const MahaRudraYagnaVideo = () => {
   const url="https://res.cloudinary.com/dixkqgqsi/video/upload/v1745828806/VVGC%20Events/rom_web.mp4";
   return (
-    <div className="h-auto lg:border-l-2 flex-1 my-4 md:my-0 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base gap-4">
+    <div className="h-auto md:w-2/3 bg-green-50 shadow-sm flex-1 my-4 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base gap-4">
       
       <div>
 

@@ -3,8 +3,7 @@ import React from 'react';
 
 const imageUrls = [
   
-  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751992707/vvgc/images/2025/July/08/bhagwati_jagran.jpg',
-  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752862159/vvgc/images/2025/July/17/varamahalakshmi_vratha.jpg`,
+    
   'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
   `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
 ];

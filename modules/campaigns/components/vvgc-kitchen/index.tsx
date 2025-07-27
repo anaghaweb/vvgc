@@ -1,5 +1,5 @@
 import External_Link from '@modules/common/components/external-link';
-import { Card, CardContent } from '@modules/common/components/ui/card'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { Fragment } from 'react'
@@ -10,8 +10,8 @@ import Build_Kitchen from '@modules/campaigns/components/vvgc-kitchen/build-kitc
 const KitchenVVGC = () => {
   return (
     <Fragment>
-      <Card className="h-auto w-full md:w-2/3 mx-auto sm:p-2">
-        <CardContent className="">
+      <div className="h-auto flex-1 my-4 bg-yellow-50 shadow-sm mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
+        <div>
           <p className="mt-12 mb-2 font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Kitchen at VVGC San Martin
           </p>
@@ -51,8 +51,8 @@ const KitchenVVGC = () => {
           </Link>
           <Build_Kitchen />
 
-        </CardContent>
-      </Card>
+        </div>
+      </div>
 
     </Fragment>
   )
