@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@modules/common/components/ui/card'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React, {Fragment} from 'react'
@@ -6,8 +6,8 @@ import React, {Fragment} from 'react'
 const PlantATree = () => {
   return (
     <Fragment>       
-          <Card className="h-auto w-full md:w-2/3 mx-auto sm:p-2 text-green-950">
-            <CardContent className="">
+          <div className="h-auto flex-1 my-4 bg-sky-100 shadow-sm mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
+            
             <p className="mt-12 mb-2 font-serif text-2xl md:text-3xl text-left text-cyan-950">
               Plant a tree for our future
             </p>
@@ -25,8 +25,8 @@ const PlantATree = () => {
             />            
             </div>
             </Link>
-            </CardContent>
-            </Card>
+           
+            </div>
           
     </Fragment>
   )
