@@ -4,15 +4,15 @@ import React from 'react';
 const imageUrls = [
   
   
-  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1752598948/vvgc/images/2025/July/14/vmy_1.png',
-  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752598947/vvgc/images/2025/July/14/vmy_2.png`,
+  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1754189530/vvgc/images/2025/august/upakarma.jpg',
+  
 ];
 
 
 const ImageTileGrid = ({ images }:{images:string[]}) => {
   return (
     
-    <div className="max-w-full lg:max-w-[384px] m-auto space-y-5">
+    <div className="max-w-full lg:max-w-[575px] m-auto space-y-5">
       {images.map((src, index) => (
         <Link href={src} key={index}>
           <div className="w-full overflow-hidden shadow h-auto my-4">
