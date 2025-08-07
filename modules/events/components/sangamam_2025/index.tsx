@@ -1,14 +1,18 @@
 import React from "react";
 
 import Link from "next/link";
+import React_Video_Player from "@modules/common/components/react-video-player";
 
 const SangamamHikeEvent = () => {
     const iurl = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752861135/vvgc/images/2025/July/17/sangamam_2025.jpg`;
     return (
-        <div className="max-w-6xl mx-auto p-4 bg-white shadow-sm text-gray-800">
-            <h1 className="text-3xl font-bold text-green-700 text-center mb-6">
+        <>
+            <h1 className="text-2xl md:text-3xl font-bold text-green-700 text-center my-6">
                 VVGC Sangamam' 2025 - A Hike/Walk Event
             </h1>
+             <React_Video_Player />
+        <div className="mx-auto p-4 bg-white shadow-sm text-gray-800">
+           
 
             <div className="flex flex-col md:flex-row gap-6 justify-evenly">
                 <div className="md:w-1/2">
@@ -24,7 +28,7 @@ const SangamamHikeEvent = () => {
                     </Link>
                 </div>
 
-                <div className="md:w-1/2">
+                <div className="lg:w-1/3">
                     <p className="mb-4">
                         By the blessings of Vallabha Ganapathy, <span className="font-bold text-blue-600">VVGC Temple</span> is thrilled to announce its
                         first-ever community hike/walk at Harvey Bear Ranch, San Martin, CA. Join us for a refreshing outdoor experience and help strengthen our
@@ -80,6 +84,7 @@ const SangamamHikeEvent = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
