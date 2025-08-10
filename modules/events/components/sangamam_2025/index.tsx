@@ -5,12 +5,13 @@ import React_Video_Player from "@modules/common/components/react-video-player";
 
 const SangamamHikeEvent = () => {
     const iurl = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1752861135/vvgc/images/2025/July/17/sangamam_2025.jpg`;
+    const vurl = 'https://youtube.com/shorts/R4S0e6DoZRc?si=-Gd46Eb-Bki6HtcN';
     return (
         <>
             <h1 className="text-2xl md:text-3xl font-bold text-green-700 text-center my-6">
                 VVGC Sangamam' 2025 - A Hike/Walk Event
             </h1>
-             <React_Video_Player />
+             <React_Video_Player vsrc={vurl}/>
         <div className="mx-auto p-4 bg-white shadow-sm text-gray-800">
            
 

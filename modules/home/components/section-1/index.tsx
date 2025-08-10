@@ -34,7 +34,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   return (
     <div className="p-2">
       <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
-        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-1 p-2 ">
+        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-2 p-2 ">
           <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
@@ -57,7 +57,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
           </div>
         </div>
        
-        <Vijay_Satsang_Mela/>
+        {/* <Vijay_Satsang_Mela/> */}
         
       </div>
       <Divider />
