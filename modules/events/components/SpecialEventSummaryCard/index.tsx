@@ -13,7 +13,7 @@ export default function SpecialEventSummaryCard({ eventdata }:{
         {" "}
         {eventdata.subtitle && eventdata.subtitle}
       </p>
-      {eventdata.eventList.length === 1 && 
+      {eventdata.eventList.length > 1 && 
       (<p className="text-zinc-800">
         {" "}
         <span className="font-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>  : {eventdata.eventList[0].details && eventdata.eventList[0].details}

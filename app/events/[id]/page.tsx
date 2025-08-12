@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import { AllEventsData } from "@lib/server-actions/mainEvents";
 import type { CalendarEvent } from "types/global";
 import MainEventCard from "@modules/events/components/mainEventsCard";
+import Link from "next/link";
 
 // export const dynamic = 'force-dynamic';
 
@@ -28,7 +29,7 @@ export async function generateMetadata ({params}:{
 
   return {
     title: {
-      absolute: `${EVENT?.title}`,
+      absolute: `${EVENT?.title ? EVENT?.title : 'VVGC'}`,
       default: "VVGC Event",
       template: `%s | ${EVENT?.title}`,
     },
@@ -66,7 +67,15 @@ const SingleEventPage = async ({params}:{
         {/* <SingleEvent data={data} /> */}
         
           <div className="w-full h-full grid grid-cols-1 py-6 justify-items-center">
-           {data && <MainEventCard data={data}/>}
+           {data ? 
+           <MainEventCard data={data}/> 
+           :
+            <div className="w-full h-full grid grid-cols-1 py-6 justify-items-center">
+              This event does not exist.
+              <div>
+                <Link href={'/'} className="font-bold text-blue-600 underline">Go Back</Link>
+              </div>
+            </div>}
           </div>
       
     </Fragment>
