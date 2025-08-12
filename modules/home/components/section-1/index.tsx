@@ -24,7 +24,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
       let eventDate = new Date(event.date).getDate();
       let eventYear = new Date(event.date).getFullYear();
       let currentYear = new Date().getFullYear();
-      console.log(`${eventDate } = ${currentDate.getDate()}, ${eventYear}, ${currentYear}`);
+      
       if (eventDate === currentDate.getDate() && eventYear === currentYear)
         {
           
@@ -32,7 +32,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
       }
       else return null;
     });
-    console.log(data);
+    
   } catch (error: any) {
     console.log(error.name);
   }
