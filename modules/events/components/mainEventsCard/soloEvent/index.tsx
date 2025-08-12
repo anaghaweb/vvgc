@@ -16,10 +16,11 @@ import {
       <Card
         key={data.id}
         className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
-         bg-white text-gray-900 text-left
+         bg-gradient-to-r from-green-50 via-slate-50 to-blue-50
+         text-gray-900 text-left
           m-auto h-full my-2 sm:p-2`}
       >
-        <CardHeader className="text-2xl text-rose-800">
+        <CardHeader className="text-2xl text-rose-800 ">
           {new Date(data.date).toLocaleDateString("en-US", {
             weekday: "short",
             month: "long",
@@ -29,35 +30,37 @@ import {
             {data.title}
           </p>
           {data.subtitle && (
-            <p className="text-base font-roboto text-cyan-950">
+            <p className="text-sm font-roboto text-cyan-950">
               {data.subtitle}{" "}
             </p>
           )}
           { !singleEvent.details &&
               singleEvent.startTime && (
-                <p className="text-base font-roboto font-bold text-cyan-950">
+                <p className="text-sm font-roboto font-bold text-cyan-950">
                   Timings: {singleEvent?.startTime}{" "}
                   {singleEvent?.endTime && ` to ${singleEvent?.endTime}`}
                 </p>
               )
             }
-        </CardHeader>
+        </CardHeader> 
         <CardContent>
           { (
             <div>
-              <div className="flex flex-col md:flex-row gap-2">
+              <div className="grid grid-cols-12 gap-2">
                 {singleEvent.startTime && singleEvent.details && (
-                  <p className="text-base font-roboto font-bold text-cyan-950">
-                    {singleEvent.startTime}
-                  </p>
+                  <div className="col-span-full md:col-span-2 text-sm md:text-end font-roboto font-bold text-cyan-950 ">
+                    <p>
+                      {singleEvent.startTime}
+                      </p>
+                  </div>
                 )}
                 {singleEvent.details && (
-                  <p className="text-base text-pretty font-roboto text-cyan-950">
+                  <div className="col-span-full md:col-span-10 text-sm text-pretty font-roboto text-cyan-950">
                     {singleEvent.details}
-                  </p>
+                  </div>
                 )}
               </div>
-              <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+              <div className="col-span-full flex flex-col md:flex-row gap-4 items-center justify-center">
                 {singleEvent.sponsorLink && (
                   <ExternalLink
                     href={singleEvent.sponsorLink}

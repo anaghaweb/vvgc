@@ -15,21 +15,24 @@ const SubEventList = ({ event }:{event:EventListProps }
    ) => {
   return (
 
-    <div className="grid grid-cols-10 mb-2 font-roboto">  
+    <div className="grid grid-cols-12 mb-2 font-roboto ">  
       {/* EVENT TIMINGS */}
       {event.details ?      
-      <div className="col-span-full md:col-span-2 text-blue-950 font-bold md:text-center inline-block px-[4px] ">
+      <div className="col-span-full md:col-span-2 text-sm text-blue-950 font-bold md:text-right inline-block px-[4px] content-normal">
         {( event.startTime) ? event.startTime : ""}
         { event.endTime ? ` to ${event.endTime} ` : ""}
       </div>      
       :
-      event.startTime && <div className="col-span-full text-blue-950 font-bold px-[4px] content-center">
+      event.startTime && <div className="col-span-full text-blue-950 text-sm font-bold px-[4px] content-normal">
       Timings: {(event.startTime) ? event.startTime : ""}{ event.endTime ? ` to ${event.endTime}` : ""}
     </div> 
     }      
           {/* Event DETAILS */}
-      <div className={`col-span-full gap-y-2 px-1 text-base w-full text-pretty content-center 
-        ${event.startTime ? "md:col-span-8" : "md:col-span-full" }`}>
+      <div className={`col-span-full md:col-span-10 gap-y-2 px-1 text-sm w-full text-pretty content-normal 
+       
+        `}
+        >
+          
         {event.details ? event.details : ""}
        </div>
        {/* Event DETAILS */}
