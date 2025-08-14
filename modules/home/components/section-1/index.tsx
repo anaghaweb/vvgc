@@ -43,7 +43,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
          
         `}>
         <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full p-2">
-          <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
+          <h2 className="font-serif text-xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
           <Divider />
