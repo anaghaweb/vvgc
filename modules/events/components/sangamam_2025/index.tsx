@@ -12,7 +12,7 @@ const SangamamHikeEvent = () => {
                 VVGC Sangamam' 2025 - A Hike/Walk Event
             </h1>
              <React_Video_Player vsrc={vurl}/>
-        <div className="mx-auto p-4 bg-white shadow-sm text-gray-800">
+        <div className="mx-auto p-4 shadow-sm text-gray-800">
            
 
             <div className="flex flex-col md:flex-row gap-6 justify-evenly">
