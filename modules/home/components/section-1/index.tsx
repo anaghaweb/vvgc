@@ -22,13 +22,14 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   try {
     data = eventdata.find((event) => {
       let eventDate = new Date(event.date).getDate();
+      let eventMonth = new Date(event.date).getMonth();
       let eventYear = new Date(event.date).getFullYear();
       let currentYear = new Date().getFullYear();
       
-      if (eventDate === currentDate.getDate() && eventYear === currentYear)
+      if (eventDate === currentDate.getDate() && eventYear === currentYear && eventMonth === currentDate.getMonth()) 
         {
           
-        return eventDate === currentDate.getDate() && eventYear === currentYear;
+        return eventDate === currentDate.getDate() && eventYear === currentYear ;
       }
       else return null;
     });
@@ -37,9 +38,11 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     console.log(error.name);
   }
   return (
-    <div className="p-2">
-      <div className="min-h-[300px] grid grid-cols-1 lg:grid-cols-2 ">
-        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-2 p-2 ">
+    <div className=" bg-gradient-to-r from-white via-slate-50-50 to-yellow-50 p-2">
+      <div className={`min-h-[300px] grid grid-cols-1 lg:grid-cols-2
+         
+        `}>
+        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full p-2">
           <h2 className="font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
@@ -56,7 +59,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Event:
             </h2>
             {/* <YoutubeVideoPLayer /> */}
-            <article className="flex flex-col gap-2 w-full ">
+            <article className="flex flex-col gap-2 w-full">
               <VishwaShanthiHomamEvent />              
             </article>
           </div>

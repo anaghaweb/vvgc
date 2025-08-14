@@ -81,6 +81,7 @@ export type CalendarEvent = {
 export type LazyImageLoaderProps = {
     imageUrl: string;
     width?: string ;
+    maxWidth?:string;
     minHeight?: string ;
     maxHeight?: string ;
   };
