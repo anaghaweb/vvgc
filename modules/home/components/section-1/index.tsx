@@ -4,14 +4,11 @@ import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSumm
 import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
-import Image from "next/image";
-import Link from "next/link";
-import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
-import YoutubeVideoPLayer from "@modules/video-player";
-import MahaRudraYagnaVideo from "@modules/campaigns/components/maharudra-yagnam";
 import Image_Grid from "@modules/common/components/image_grid";
-import VishwaShanthiHomamEvent from "@modules/events/components/vishwaShantiHomam";
-import SangamamHikeEvent from "@modules/events/components/sangamam_2025";
+
+
+import Upcoming_Event from "./upcoming_event";
+import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
@@ -25,15 +22,14 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
       let eventMonth = new Date(event.date).getMonth();
       let eventYear = new Date(event.date).getFullYear();
       let currentYear = new Date().getFullYear();
-      
-      if (eventDate === currentDate.getDate() && eventYear === currentYear && eventMonth === currentDate.getMonth()) 
-        {
-          
-        return eventDate === currentDate.getDate() && eventYear === currentYear ;
+
+      if (eventDate === currentDate.getDate() && eventYear === currentYear && eventMonth === currentDate.getMonth()) {
+
+        return eventDate === currentDate.getDate() && eventYear === currentYear;
       }
       else return null;
     });
-    
+
   } catch (error: any) {
     console.log(error.name);
   }
@@ -60,16 +56,16 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
             </h2>
             {/* <YoutubeVideoPLayer /> */}
             <article className="flex flex-col gap-2 w-full">
-              <VishwaShanthiHomamEvent />              
+              <Upcoming_Event />
             </article>
           </div>
         </div>
-       
+
         {/* <Vijay_Satsang_Mela/> */}
-        
+
       </div>
       <Divider />
-      <SangamamHikeEvent />
+      {/* <SangamamHikeEvent /> */}
       <Divider />
       <Image_Grid />
       <Divider />
