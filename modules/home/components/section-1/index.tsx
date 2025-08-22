@@ -8,7 +8,7 @@ import Image_Grid from "@modules/common/components/image_grid";
 
 
 import Upcoming_Event from "./upcoming_event";
-import Vijay_Satsang_Mela from "@modules/events/components/satsang_mela_2025";
+
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
