@@ -1,108 +1,113 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@modules/common/components/ui/card";
-import { Calendar, MapPin, Clock } from "lucide-react";
 import Image from "next/image";
+import GaneshaPoojaStreaming from "./streaming-links";
 import Link from "next/link";
-import { FaArrowCircleRight } from "react-icons/fa";
-
-
+import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function GaneshaChaturthi_2025() {
   return (
-    <div className="flex justify-center md:m-6 mb-8">
-      <Card className="max-w-5xl w-full shadow-sm rounded-2xl">
-        <CardHeader className="text-center space-y-2">
-          <CardTitle className="text-2xl font-bold text-orange-700">
-            <a
-              href="https://res.cloudinary.com/dixkqgqsi/image/upload/v1756010438/vvgc/images/2025/august/ganesha_chaturthi.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:text-orange-800"
-            >
-              Ganesha Chaturthi 2025
-            </a>
-          </CardTitle>
-          <p className="text-gray-600">
-            Sri Vallaba Ganapathi Temple, San Martin
+    <div className={
+      `flex items-center justify-center md:m-6 mb-8
+         relative pt-8`
+    }>
+      <div
+        className="absolute inset-0 bg-chains bg-no-repeat bg-contain bg-top blur-xs opacity-30"
+        aria-hidden="true"
+      ></div>
+      
+      <div className={`max-w-7xl w-full
+         
+        `}>
+        {/* Header Section */}
+        {/* <div className="text-center space-y-2 ">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-orange-700">
+              Sri Ganesha Chaturthi Celebrations
+            </h2>
+            <p className="text-md md:text-lg text-gray-700 font-medium">
+              16 days of Ganesha Chaturthi Celebrations <br />
+              <span className="font-semibold">
+                August 23, 2025 – September 7, 2025
+              </span>
+            </p>
+          </div>
+          <div className="space-y-2 text-sm md:text-base">
+            <div className="flex justify-start items-baseline md:justify-center gap-2">
+              <FaCalendarAlt className="text-orange-600 w-3 h-3" />
+              <span>Daily Nithya Ganapathi Homam</span>
+            </div>
+            <div className="flex justify-start items-baseline md:justify-center gap-2">
+              <FaClock className="text-orange-600 w-3 h-3" />
+              <span>Weekdays 6 PM • Weekends 4 PM</span>
+            </div>
+            <div className="flex justify-start items-baseline md:justify-center gap-2">
+              <FaMapMarkerAlt className="text-orange-600 w-3 h-3" />
+              <span>VVGC – 1355 Monterey Hwy, San Martin, CA 95046</span>
+            </div>
+          </div>
+        </div> */}
+        <div className="text-left md:text-center space-y-4">
+          {/* Main Heading */}
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-700 tracking-wide">
+            Sri Ganesha Chaturthi Celebrations
+          </h2>
+
+          {/* Subheading */}
+          <p className="text-base md:text-lg text-gray-600 font-medium">
+            16 days of Ganesha Chaturthi Celebrations <br />
           </p>
-            <div className={`p-4 inline-flex items-center justify-center gap-2 mx-auto 
-                bg-indigo-500 shadow-lg shadow-indigo-500/50 text-white
+          <p className="font-semibold text-gray-800">
+            August 23, 2025 – September 7, 2025
+          </p>
 
-                `}>
-                <Link
-                  href="https://paybee.io/quickpay.html?handle=vvgc&ppid=31"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold underline"
-                >
-                  Register and donate for Sankalpam
-                </Link>
-                <FaArrowCircleRight  size={28} className="animate-pulse" color="white"/>
-              </div>
-        </CardHeader>
 
-        <CardContent className="space-y-6 text-gray-700">
-          <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-            <div className="flex-1 items-center">
+
+          {/* Event Details */}
+          <div className="space-y-3 w-full md:max-w-fit p-2 text-sm md:text-base mx-0 md:mx-auto bg-yellow-50" >
+            <div className="flex items-center gap-3 justify-start md:justify-center">
+              <FaCalendarAlt className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <span className="text-gray-800">Daily Nithya Ganapathi Homam</span>
+            </div>
+            <div className="flex items-center gap-3 justify-start md:justify-center">
+              <FaClock className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <span className="text-gray-800">Weekdays 6 PM • Weekends 4 PM</span>
+            </div>
+            <div className="flex items-center gap-3 justify-start md:justify-center">
+              <FaMapMarkerAlt className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <span className="text-gray-800">
+                VVGC – 1355 Monterey Hwy, San Martin, CA 95046
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Main Content */}
+        <div className="space-y-6 text-gray-700">
+          <div className="flex flex-col items-center xl:flex-row gap-6">
+            {/* Streaming Component */}
+            
+            <div className="flex-1 w-full">
+              {/* Divider */}
+              <GaneshaPoojaStreaming />
+            </div>
+            
+            {/* Event Poster */}
+            <Link
+              className="flex-1 items-center"
+              target="_blank"
+              href="https://res.cloudinary.com/dixkqgqsi/image/upload/v1756010438/vvgc/images/2025/august/ganesha_chaturthi.jpg"
+            >
               <Image
                 src="https://res.cloudinary.com/dixkqgqsi/image/upload/v1756010438/vvgc/images/2025/august/ganesha_chaturthi.jpg"
                 alt="ganesha_chaturthi"
                 width={600}
                 height={800}
-                className="rounded-xl shadow-md mx-auto"
+                className="rounded-xl mx-auto object-contain"
               />
-            </div>
-
-            {/* <div className="flex-1 space-y-4">
-              <p>
-                <strong>Create your own Ganesha Murti with clay!</strong>
-              </p>
-
-              <p>
-                As a tradition, Ganesha Murthi is handmade, worshiped, and
-                immersed in wells, ponds, lakes, and rivers. Murtis made with
-                natural clay are preferred over plaster of Paris. Chemical colors
-                are extremely harmful to our environment. Let’s go green to save
-                our environment!
-              </p>
-
-              <p>
-                Come and join us at the workshop! <strong>All are welcome!</strong> Children 8 and under will need parental assistance. All materials will be provided. <span className="font-semibold">Workshop is FREE!</span>
-              </p>
-
-              <p>
-                Donations as cash or check are welcome to support such SEVA activities! (Checks can be made to VVGC)
-              </p>
-
-              <div className="bg-orange-50 p-4 rounded-xl space-y-2">
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-orange-600" />
-                  <span className="font-medium">Date:</span> 24th August, Sunday
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-orange-600" />
-                  <span className="font-medium">Time:</span> 10:00 AM – 12:00 PM
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-orange-600" />
-                  <span className="font-medium">Venue:</span> VVGC – 1355 Monterey Hwy, San Martin, CA 95046
-                </div>
-              </div>
-
-              <div className="space-y-1">
-                <h3 className="font-semibold text-orange-700">Aim of the workshop</h3>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>Cultivate love for Lord Ganesha</li>
-                  <li>Learn the art of murti making with clay</li>
-                  <li>Do your part to save the environment</li>
-                  <li>Spread the message to extended family and friends</li>
-                </ul>
-              </div>
-
-              
-            </div> */}
+            </Link>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }
