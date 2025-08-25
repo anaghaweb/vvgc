@@ -55,17 +55,16 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Event:
             </h2>
             {/* <YoutubeVideoPLayer /> */}
-            <article className="flex flex-col gap-2 w-full">
+            {/* <article className="flex flex-col gap-2 w-full">
               <GaneshaWorkshop/>
               
-            </article>
+            </article> */}
             <article className="flex flex-col gap-2 w-full">
               <GaneshaChaturthi_2025 />
-              </article>
-             <article className="flex flex-col gap-2 w-full">
-
-        <Upcoming_Event />
-             </article>
+            </article>
+            <article className="flex flex-col gap-2 w-full">
+              <Upcoming_Event />
+            </article>
           </div>
         </div>
 
