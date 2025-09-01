@@ -59,12 +59,13 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               <GaneshaWorkshop/>
               
             </article> */}
+            {/* <article className="flex flex-col gap-2 w-full">
+              <Upcoming_Event />
+            </article> */}
             <article className="flex flex-col gap-2 w-full">
               <GaneshaChaturthi_2025 />
             </article>
-            <article className="flex flex-col gap-2 w-full">
-              <Upcoming_Event />
-            </article>
+           
           </div>
         </div>
 

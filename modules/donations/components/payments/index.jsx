@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Card } from "@modules/common/components/ui/card";
 import Divider from "@modules/common/components/divider";
 import { opensans } from "@lib/fonts/fonts";
+import ZellePayment from "./zelle-payment";
 
 const PaymentsContainer = () => {
   return (
@@ -82,6 +83,8 @@ const PaymentsContainer = () => {
           </div>
         </Card>
       </Link>
+     
+        <ZellePayment />
     </div>
   );
 };
