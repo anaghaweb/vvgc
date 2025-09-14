@@ -10,6 +10,7 @@ import Image_Grid from "@modules/common/components/image_grid";
 import Upcoming_Event from "./upcoming_event";
 import GaneshaWorkshop from "./ganesha-workshop-event";
 import GaneshaChaturthi_2025 from "./ganesha-chaturthi";
+import Dasara_2025 from "./dasara-2025";
 
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
@@ -59,11 +60,11 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               <GaneshaWorkshop/>
               
             </article> */}
-            {/* <article className="flex flex-col gap-2 w-full">
-              <Upcoming_Event />
-            </article> */}
             <article className="flex flex-col gap-2 w-full">
-              <GaneshaChaturthi_2025 />
+              <Upcoming_Event />
+            </article>
+            <article className="flex flex-col gap-2 w-full">
+              <Dasara_2025 />
             </article>
            
           </div>

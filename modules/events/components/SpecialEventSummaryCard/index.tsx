@@ -21,7 +21,7 @@ export default function SpecialEventSummaryCard({ eventdata }:{
       {eventdata.eventList.length > 1 && 
       (<p className="text-zinc-800">
         {" "}
-        <span className="font-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>  : {eventdata.eventList[0].details && eventdata.eventList[0].details}
+        <span className="font-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>   {eventdata.eventList[0].details && eventdata.eventList[0].details}
       </p>)}
       <Link
         href={`/events/${eventdata.id}`}
