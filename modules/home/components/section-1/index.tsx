@@ -5,12 +5,9 @@ import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
 import Image_Grid from "@modules/common/components/image_grid";
-
-
 import Upcoming_Event from "./upcoming_event";
-import GaneshaWorkshop from "./ganesha-workshop-event";
-import GaneshaChaturthi_2025 from "./ganesha-chaturthi";
 import Dasara_2025 from "./dasara-2025";
+import Image_Tiles from "@modules/common/components/image_tiles";
 
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
@@ -18,6 +15,16 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDate = getCurrentDate();
   let data;
 
+const urlset = [ 
+    
+  'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
+  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
+];
+
+const urlset_dasara = [
+  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758093475/vvgc/images/2025/september/navaratri_2025.jpg`,
+`https://res.cloudinary.com/dixkqgqsi/image/upload/v1757855271/vvgc/images/2025/september/dasara2025.jpg`,
+];
 
   try {
     data = eventdata.find((event) => {
@@ -63,9 +70,9 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
             <article className="flex flex-col gap-2 w-full">
               <Upcoming_Event />
             </article>
-            <article className="flex flex-col gap-2 w-full">
+            {/* <article className="flex flex-col gap-2 w-full">
               <Dasara_2025 />
-            </article>
+            </article> */}
            
           </div>
         </div>
@@ -73,9 +80,12 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
 
       </div>
       <Divider />
-      {/* <SangamamHikeEvent /> */}
+       <Dasara_2025 />
+        <Divider />
+      <Image_Tiles urlset={urlset_dasara}/>
+      
       <Divider />
-      <Image_Grid />
+      <Image_Tiles urlset={urlset}/>
       <Divider />
     </div>
   );
