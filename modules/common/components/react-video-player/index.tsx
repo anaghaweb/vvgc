@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 const React_Video_Player = ({vsrc}:{vsrc:string}) => {
   return (
     
-    <div className='w-full md:max-w-96 mx-auto'>
+    <div className='w-full md:max-w-xl mx-auto py-4'>
       <ReactPlayer controls 
       src={vsrc} 
       width="100%"

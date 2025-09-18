@@ -1,9 +1,13 @@
+import React_Video_Player from "@modules/common/components/react-video-player";
+
 export default function NavratriEvent() {
+   const url = `https://youtube.com/shorts/RCR6BQ7x5zE`;
   return (
     
-      <div className="w-full max-w-6xl bg-white shadow-xs rounded-t-2xl border border-orange-300">
+      <div className="w-full max-w-4xl bg-white shadow-xs border ">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-900 via-orange-900 to-yellow-800 rounded-t-2xl text-center">
+       
+        <div className="bg-gradient-to-r from-violet-500 via-purple-600 to-fuchsia-700  text-center">
           <h1 className="p-2 text-lg sm:text-2xl md:text-5xl font-extrabold text-yellow-100 tracking-wide drop-shadow-lg flex flex-wrap justify-center gap-1">
             <span className="text-xs sm:text-xl md:text-3xl">🎇 🎇 </span>
             <span className="mx-1 font-playfair"> NAVRATRI CELEBRATIONS </span>
@@ -13,7 +17,7 @@ export default function NavratriEvent() {
             Join Our Community and Celebrate the Divine Nine Nights at San Martin Hindu Temple!
           </p>
         </div>
-
+         <React_Video_Player vsrc={url}/>
         <div className="p-4 sm:p-6 md:p-10 space-y-6">
           {/* Location */}
           <div className="bg-orange-200 rounded-xl p-3 md:p-6 shadow-md">

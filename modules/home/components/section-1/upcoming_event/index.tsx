@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Next_Event from "./main";
 
 const Upcoming_Event = () => {
 
@@ -8,30 +9,34 @@ const Upcoming_Event = () => {
   ];
   
   return (
-    <div className="w-full lg:max-w-7xl mx-auto md:p-6 
+    // <div className="w-full lg:max-w-7xl mx-auto md:p-6 
     
-     text-gray-800">
-      <h2 className="text-2xl md:text-3xl text-center font-bold text-orange-700">
-        Bhagwati Jagran, 19th Sept
-      </h2>
+    //  text-gray-800">
+    //   <h2 className="text-2xl md:text-3xl text-center font-bold text-orange-700">
+    //     Bhagwati Jagran, 19th Sept
+    //   </h2>
      
-       <div className="w-full overflow-hidden h-auto my-4 mx-auto">
-        <Link
-          className=""
-          href={cdn_cloudinary_urls[0]}
-          target="_blank"
-        >
-          <img
-            src={cdn_cloudinary_urls[0]}
-            alt="event"
-            className="w-full mx-auto max-w-[500px] object-contain"
-          />
+    //    <div className="w-full overflow-hidden h-auto my-4 mx-auto">
+    //     <Link
+    //       className=""
+    //       href={cdn_cloudinary_urls[0]}
+    //       target="_blank"
+    //     >
+    //       <img
+    //         src={cdn_cloudinary_urls[0]}
+    //         alt="event"
+    //         className="w-full mx-auto max-w-[500px] object-contain"
+    //       />
           
-        </Link>
-      </div>
+    //     </Link>
+    //   </div>
      
-    </div>
+    // </div>
+    <Next_Event />
   );
 };
 
 export default Upcoming_Event;
+
+
+
