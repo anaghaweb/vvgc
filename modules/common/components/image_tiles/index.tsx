@@ -1,14 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 
-const imageUrls = [ 
-    
-  `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758093475/vvgc/images/2025/september/navaratri_2025.jpg`,
-
-`https://res.cloudinary.com/dixkqgqsi/image/upload/v1757855271/vvgc/images/2025/september/dasara2025.jpg`,
-];
-
-
 const Image_Tiles = ({ urlset }:{urlset:string[]}) => {
   return (
     
@@ -26,12 +18,8 @@ const Image_Tiles = ({ urlset }:{urlset:string[]}) => {
           </div>
         </Link>
       ))}
-    </div>
-    
+    </div>    
   );
 };
-
-
-
 export default Image_Tiles;
 
