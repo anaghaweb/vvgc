@@ -29,7 +29,7 @@ interface EventHeaderProps {
 }
 const EventHeader: FC<EventHeaderProps> = ({ title }) => (
     <>
-        <div className="flex items-center justify-center gap-2 relative z-10">
+        <div className="flex items-center justify-center gap-2 relative z-5">
             <LotusIcon className="w-5 h-5 md:w-6 md:h-6 text-yellow-700" />
             <h2 className="text-2xl md:text-3xl text-center font-extrabold text-red-900 tracking-wide">
                 {title}
@@ -81,11 +81,11 @@ const EventImage: FC<EventImageProps> = ({ src, href }) => (
 // -----------------------------
 // Main Component
 // -----------------------------
-const Next_Event: FC = () => {
-   
+const Next_Event: FC = () => { 
 
     const cdn_cloudinary_urls: string[] = [
-        `https://res.cloudinary.com/dixkqgqsi/image/upload/v1757855271/vvgc/images/2025/september/bhagwati_jagran_sept19.jpg`,
+        `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg`,
+        `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758608189/vvgc/images/2025/september/dandiya_2025.jpg`,
     ];
 
     return (
@@ -93,21 +93,23 @@ const Next_Event: FC = () => {
       bg-gradient-to-b from-amber-100 via-orange-50 to-amber-50 border-2 border-yellow-600 relative overflow-hidden">
 
             {/* Header */}
-            <EventHeader title="Bhagwati Jagran, 19th Sept" />
+            <EventHeader title="Dandiya and Garbha Dance with live music" />
+             <EventHeader title="Lalitha Abhishekam and Parayanam" />
 
             {/* Event Image */}
             <EventImage
                 src={cdn_cloudinary_urls[0]}
                 href={cdn_cloudinary_urls[0]}
             />
+             <EventImage
+                src={cdn_cloudinary_urls[1]}
+                href={cdn_cloudinary_urls[1]}
+            />
 
             {/* Footer Note */}
             <p className="text-center text-base md:text-lg text-red-800 font-semibold mt-2">
                 Join us for an evening of devotion, bhajans, and divine blessings.
             </p>
-
-
-
         </div>
     );
 };
