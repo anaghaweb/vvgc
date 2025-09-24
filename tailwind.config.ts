@@ -33,6 +33,10 @@ const config:Config = {
         roboto:['var(--font-roboto)'],
         opensans:['var(--font-opensans)'],
         cormorant:['var(--font-cormorant)'],
+        noto_sans:['var(--font-noto_sans)'],
+        noto_sans_display:['var(--font-noto_sans_display)'],
+        noto_serif_display:['var(--font-noto_serif_display)'],
+        noto_serif:['var(--font-noto_serif)'],
       },
       keyframes: {
         "accordion-down": {
