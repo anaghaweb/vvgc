@@ -44,15 +44,15 @@ const Next_event_Grid: FC = () => {
   const events = [
     {
       title: "Lalitha Abhishekam and Parayanam",
-      date: "Sept 26 - 27, 2025",
+      date: "Every Friday",
       time: "6:00 PM - 9:00 PM",
       image: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
       href: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
     },
     {
       title: "Dandiya and Garbha Dance with live music",
-      date: "Every Friday",
-      time: "9:00 PM - 11:00 PM",
+      date: "Sept 26 - 27, 2025",
+      time: "8:00 PM - 11:00 PM",
       image: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758608189/vvgc/images/2025/september/dandiya_2025.jpg",
       href: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758608189/vvgc/images/2025/september/dandiya_2025.jpg",
     },
