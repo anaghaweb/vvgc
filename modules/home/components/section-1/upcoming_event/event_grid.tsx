@@ -24,7 +24,7 @@ const EventCard: FC<EventImageProps> = ({ src, href, title, date, time }) => (
       alt={title}
       className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
     />
-    <div className="p-4 bg-white">
+    <div className="p-4 bg-white font-noto_serif">
       <h3 className="text-lg font-bold text-red-900">{title}</h3>
       <p className="text-sm text-gray-700">{date}</p>
       <p className="text-sm text-gray-700">{time}</p>

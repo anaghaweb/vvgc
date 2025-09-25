@@ -7,10 +7,10 @@ export default function NavratriEvent() {
       <div className="w-full max-w-4xl bg-white shadow-xs border ">
         {/* Header */}
        
-        <div className="bg-gradient-to-r from-violet-500 via-purple-600 to-fuchsia-700  text-center">
-          <h1 className="p-2 text-lg sm:text-2xl md:text-5xl font-extrabold text-yellow-100 tracking-wide drop-shadow-lg flex flex-wrap justify-center gap-1">
+        <div className="bg-gradient-to-r from-violet-500 via-purple-600 to-fuchsia-700 text-center">
+          <h1 className="p-2 text-lg sm:text-2xl md:text-4xl font-bold text-yellow-100 tracking-wide drop-shadow-lg flex flex-wrap justify-center gap-1">
             <span className="text-xs sm:text-xl md:text-3xl">🎇 🎇 </span>
-            <span className="mx-1 font-playfair"> NAVRATRI CELEBRATIONS </span>
+            <span className="mx-1 font-noto_serif"> NAVRATRI CELEBRATIONS </span>
             <span className="text-xs sm:text-xl md:text-3xl"> 🎇 🎇</span>
           </h1>
           <p className="p-2 mt-2 text-xs sm:text-sm md:text-xl text-orange-100 font-semibold italic">
