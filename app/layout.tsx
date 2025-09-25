@@ -8,7 +8,8 @@ import {
   roboto_mono,
   playfair,
   cormorant,
-} from "../lib/fonts/fonts";
+  noto_sans, noto_sans_display, noto_serif, noto_serif_display
+} from "@lib/fonts/fonts";
 import React from "react";
 
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
@@ -49,10 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
-      className={`${inter.variable} ${roboto_mono.variable} 
-    ${roboto.variable} ${opensans.variable} ${playfair.variable} ${cormorant.variable}`}
-    >
+      lang="en" >
       <head>
         <meta
           name="viewport"
@@ -74,7 +72,11 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`max-w-full font-sans box-border m-0`}>
+      <body className={`max-w-full font-sans box-border m-0
+    ${inter.variable} ${roboto_mono.variable} 
+    ${noto_sans.variable} ${noto_sans_display.variable} ${noto_serif.variable} ${noto_serif_display.variable}
+    ${roboto.variable} ${opensans.variable} ${playfair.variable} ${cormorant.variable}`
+      }>
         <TooltipProvider>
           <Header />
           {children}
