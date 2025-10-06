@@ -67,10 +67,10 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         </div>
       </div>
       <Divider />
-      <Dasara_2025 />
+      {/* <Dasara_2025 />
       <Divider />
       <Image_Tiles urlset={urlset_dasara} />
-      <Divider />
+      <Divider /> */}
       <Image_Tiles urlset={urlset} />
       <Divider />
     </div>
