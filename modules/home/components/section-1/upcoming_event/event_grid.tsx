@@ -43,19 +43,20 @@ const EventCard: FC<EventImageProps> = ({ src, href, title, date, time }) => (
 const Next_event_Grid: FC = () => {
   const events = [
     {
-      title: "Lalitha Abhishekam and Parayanam",
-      date: "Every Friday",
-      time: "6:00 PM - 9:00 PM",
-      image: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
-      href: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
-    },
-    {
       title: "Dandiya and Garbha Dance with live music",
       date: "Sept 26 - 27, 2025",
       time: "8:00 PM - 11:00 PM",
       image: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758608189/vvgc/images/2025/september/dandiya_2025.jpg",
       href: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758608189/vvgc/images/2025/september/dandiya_2025.jpg",
     },
+    {
+      title: "Lalitha Abhishekam and Parayanam",
+      date: "Every Friday",
+      time: "6:00 PM - 9:00 PM",
+      image: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
+      href: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg",
+    },
+    
 
   ];
 
@@ -63,17 +64,17 @@ const Next_event_Grid: FC = () => {
     <div className={`w-full max-w-4xl mx-auto md:p-6 font-inter
         rounded-lg border-2 border-yellow-600 bg-gradient-to-b from-amber-100 via-orange-50 to-amber-50 p-4 shadow-md    
     `}>
-      <SpecialEventCard
-        title="SPECIAL LIVE MUSIC EVENT!"
-        performers="SARGAM SANGEET GROUP featuring PALAK & ASHISH VYAS"
-        dates="September 26th & 27th"
+      {/* <SpecialEventCard
+        title="Sri Sarada navaratri Festival 2025"
+        performers="details in the flyer"
+        dates="22nd Sept - 9th Oct"
         time="8:00 PM - 11:00 PM"
         location="VVGC San Martin Hindu Temple, 11355 Monterey Hwy, San Martin, CA 95046"
         description={[`Join us for live musical celebrations that will make your Navratri experience truly magical. These talented artists will fill the air with beautiful sounds that celebrate the Divine Mother and bring our community together in joy and devotion.`,
 
           `Bring your family and friends for an evening of Dandiya, Garbha, divine music, and community celebration.`,
         ]}
-      />
+      /> */}
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
