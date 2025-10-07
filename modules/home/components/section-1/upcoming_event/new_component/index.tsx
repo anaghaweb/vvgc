@@ -1,12 +1,6 @@
 import React from "react";
-import Head from "next/head";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Share2,
-} from "lucide-react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
 
 interface SponsorLink {
   url: string;
@@ -20,7 +14,7 @@ interface NewEventCardProps {
   time?: string;
   imageUrl?: string;
   description?: string;
-   sponsorLinks?: SponsorLink[];
+  sponsorLinks?: SponsorLink[];
 }
 
 const NewEventCard: React.FC<NewEventCardProps> = ({
@@ -53,9 +47,9 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
   return (
     <>
-     
 
-      <article className=" w-full mx-auto bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200 p-4 md:p-8">
+
+      <article className=" w-full md:max-w-4xl md:mx-auto bg-yellow-50 shadow-sm  overflow-hidden border border-gray-200 p-4 md:p-8">
         {/* Heading */}
         <header>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
@@ -97,71 +91,23 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
         {/* Sponsor Links (Grid Layout) */}
         {sponsorLinks && sponsorLinks.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          <div className="flex flex-col md:flex-row gap-3 mb-6">
             {sponsorLinks.map((link, index) => (
-              <a
+              <Link
                 key={index}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 underline hover:bg-blue-700 text-blue-600 border-2 rounded-lg font-medium"
+                className="px-4 py-2 underline-offset-4  hover:underline hover:bg-green-100 rounded-sm text-blue-500  hover:text-blue-800 font-medium"
               >
-                {link.name}
-              </a>
+                 {link.name}               
+                <FaExternalLinkAlt className="inline-block ml-2 align-baseline"/>
+
+              </Link>
             ))}
           </div>
         )}
         
-
-        {/* Social Sharing */}
-        {/* <footer>
-          <div className="flex items-center gap-3 text-gray-500">
-            <Share2 className="w-5 h-5" />
-            <span className="text-sm font-medium">Share:</span>
-            <div className="flex gap-3">
-              <a
-                href={shareLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={shareLinks.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-sky-500"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href={shareLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-700"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href={shareLinks.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-600"
-              >
-                <span className="text-lg">🟢</span>
-              </a>
-              <a
-                href={shareLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-        </footer> */}
       </article>
     </>
   );

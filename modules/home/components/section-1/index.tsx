@@ -4,9 +4,7 @@ import SpecialEventSummaryCard from "@modules/events/components/SpecialEventSumm
 import { getDayOfTheWeek, getCurrentDate } from "@lib/utils/formatDate";
 import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
-import Image_Grid from "@modules/common/components/image_grid";
 import Upcoming_Event from "./upcoming_event";
-import Dasara_2025 from "./dasara-2025";
 import Image_Tiles from "@modules/common/components/image_tiles";
 
 
@@ -19,11 +17,6 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg`,
     'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
-  ];
-
-  const urlset_dasara = [
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758093475/vvgc/images/2025/september/navaratri_2025.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1757855271/vvgc/images/2025/september/dasara2025.jpg`,
   ];
 
   try {
@@ -44,7 +37,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   return (
     <div className=" bg-gradient-to-r from-white via-slate-50 to-yellow-50 p-2">
       <div className={`min-h-[300px] grid grid-cols-1 lg:grid-cols-2`}>
-        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full p-2">
+        <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full">
           <h2 className="font-serif text-xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
@@ -67,10 +60,6 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         </div>
       </div>
       <Divider />
-      {/* <Dasara_2025 />
-      <Divider />
-      <Image_Tiles urlset={urlset_dasara} />
-      <Divider /> */}
       <Image_Tiles urlset={urlset} />
       <Divider />
     </div>

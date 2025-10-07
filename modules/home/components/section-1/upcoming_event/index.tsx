@@ -5,7 +5,7 @@ const Upcoming_Event = () => {
   
   return (   
     // <Next_event_Grid />
-    <div className="min-h-screen bg-gray-50 p-4 sm:p-8">
+    <div className="min-h-screen bg-gray-50">
       <NewEventCard
         heading="SRI SARADHA NAVARATRI FESTIVAL 2025"
         subtitle="VVGC SAN MARTIN"
