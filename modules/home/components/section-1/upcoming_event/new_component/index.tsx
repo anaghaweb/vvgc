@@ -47,20 +47,20 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
   return (
     <>
-
-
-      <article className=" w-full md:max-w-4xl md:mx-auto bg-yellow-50 shadow-sm  overflow-hidden border border-gray-200 p-4 md:p-8">
+      <article className={`w-full md:max-w-4xl md:mx-auto shadow-sm overflow-hidden border border-white p-4 md:p-8
+        bg-gradient-to-tr from-violet-800 via-purple-800 to-fuchsia-800
+        `}>
         {/* Heading */}
         <header>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+          <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-white mb-2">
             {heading}
           </h1>
-          <h2 className="text-lg sm:text-xl text-gray-600 mb-4">{subtitle}</h2>
+          <h2 className="text-lg sm:text-xl text-white font-noto_sans mb-4">{subtitle}</h2>
         </header>
 
         {/* Date & Time */}
         {(date || time) && (
-          <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex flex-wrap gap-4 text-sm text-white mb-4">
             {date && <span className="font-medium">📅 {date}</span>}
             {time && <span className="font-medium">⏰ {time}</span>}
           </div>
@@ -84,7 +84,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
         {/* Description */}
         {description && (
-          <p className="text-gray-700 text-base sm:text-lg mb-4">
+          <p className="text-white text-base sm:text-lg mb-4">
             {description}
           </p>
         )}
@@ -102,12 +102,10 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
               >
                  {link.name}               
                 <FaExternalLinkAlt className="inline-block ml-2 align-baseline"/>
-
               </Link>
             ))}
           </div>
-        )}
-        
+        )}        
       </article>
     </>
   );

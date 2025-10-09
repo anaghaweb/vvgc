@@ -8,7 +8,7 @@ export default function SpecialEventSummaryCard({ eventdata }: {
 
   return (
     <div className={`flex flex-col w-full sm:w-full m-auto sm:p-2 md:pl-4 text-sm md:text-base`}>
-      <p className="text-2xl lg:text-3xl text-indigo-800 font-noto_sans_display font-bold">
+      <p className="text-2xl lg:text-3xl text-indigo-800 font-noto_sans_display font-semibold">
         {eventdata.title}
       </p>
       <p className="text-zinc-800 text-base">
@@ -18,7 +18,7 @@ export default function SpecialEventSummaryCard({ eventdata }: {
       {eventdata.eventList.length > 1 &&
         (<p className="text-zinc-800">
           {" "}
-          <span className="font-semibold">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>   {eventdata.eventList[0].details && eventdata.eventList[0].details}
+          <span className="font-semibold font-noto_serif">{eventdata.eventList[0].startTime && eventdata.eventList[0].startTime}</span>   {eventdata.eventList[0].details && eventdata.eventList[0].details}
         </p>)}
       <Link
         href={`/events/${eventdata.id}`}
