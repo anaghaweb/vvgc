@@ -38,7 +38,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     <div className=" bg-gradient-to-r from-white via-slate-50 to-yellow-50 p-2">
       <div className={`min-h-[300px] grid grid-cols-1 lg:grid-cols-2`}>
         <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full">
-          <h2 className="font-serif text-xl md:text-3xl text-left text-cyan-950">
+          <h2 className="font-noto_sans_display text-xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
           </h2>
           <Divider />
