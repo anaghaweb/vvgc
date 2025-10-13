@@ -12,10 +12,10 @@ const SectionTwo = ({ data }: {
     <Fragment>
       {
         data ?
-          <div className="grid grid-col-1 lg:grid-cols-2 md:p-4 gap-4 w-full">
+          <div className="grid grid-col-1 md:p-4 gap-4 w-full max-w-[1440] mx-auto">
             {/* Special Event Card */}
             <div className="p-2 col-span-full ">
-              <h1 className="text-2xl lg:text-3xl font-serif text-cyan-950">
+              <h1 className="text-xl lg:text-2xl font-serif text-cyan-950">
                 Upcoming Special Events
               </h1>
               <hr className="h-[2px] bg-red-800 my-2" />

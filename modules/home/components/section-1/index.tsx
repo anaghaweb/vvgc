@@ -17,6 +17,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg`,
     'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1759988293/vvgc/images/2025/october/everysatpooja.jpg`,
   ];
 
   try {
@@ -35,7 +36,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     console.log(error.name);
   }
   return (
-    <div className=" bg-gradient-to-r from-white via-slate-50 to-yellow-50 p-2">
+    <div className=" bg-gradient-to-r from-white via-slate-50 to-yellow-50 p-2 max-w-[1440] mx-auto">
       <div className={`min-h-[300px] grid grid-cols-1 lg:grid-cols-2`}>
         <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full">
           <h2 className="font-noto_sans_display text-xl md:text-3xl text-left text-cyan-950">
@@ -51,7 +52,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
           <div className="leading-6">
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Upcoming Event:
+              Upcoming Events:
             </h2>
             <article className="flex flex-col gap-2 w-full">
               <Upcoming_Event />
@@ -60,6 +61,9 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
         </div>
       </div>
       <Divider />
+      <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
+              Weekly Poojas:
+            </h2>
       <Image_Tiles urlset={urlset} />
       <Divider />
     </div>
