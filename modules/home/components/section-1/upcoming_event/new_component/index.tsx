@@ -15,6 +15,7 @@ interface NewEventCardProps {
   imageUrl?: string;
   description?: string;
   sponsorLinks?: SponsorLink[];
+  bgcolor?:string;
 }
 
 const NewEventCard: React.FC<NewEventCardProps> = ({
@@ -25,6 +26,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
   imageUrl,
   description,
   sponsorLinks,
+  bgcolor="bg-yellow-50",
 }) => {
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
@@ -47,20 +49,20 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
   return (
     <>
-      <article className={`w-full md:max-w-4xl md:mx-auto shadow-sm overflow-hidden border border-white p-4 md:p-8
-        bg-gradient-to-tr from-violet-800 via-purple-800 to-fuchsia-800
+      <article className={`w-full md:max-w-md md:mx-auto shadow-sm overflow-hidden border border-yellow-100 p-4 md:p-8
+       ${bgcolor}
         `}>
         {/* Heading */}
         <header>
-          <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-white mb-2">
+          <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-indigo-950 mb-2">
             {heading}
           </h1>
-          <h2 className="text-lg sm:text-xl text-white font-noto_sans mb-4">{subtitle}</h2>
+          <h2 className="text-lg sm:text-xl  font-noto_sans mb-4">{subtitle}</h2>
         </header>
 
         {/* Date & Time */}
         {(date || time) && (
-          <div className="flex flex-wrap gap-4 text-sm text-white mb-4">
+          <div className="flex flex-wrap gap-4 text-sm text-red-800 mb-4">
             {date && <span className="font-medium">📅 {date}</span>}
             {time && <span className="font-medium">⏰ {time}</span>}
           </div>
@@ -84,7 +86,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
         {/* Description */}
         {description && (
-          <p className="text-white text-base sm:text-lg mb-4">
+          <p className="font-noto_serif text-base sm:text-lg mb-4 italic">
             {description}
           </p>
         )}
@@ -98,8 +100,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 underline-offset-4  hover:underline hover:bg-green-100 rounded-sm text-blue-500  hover:text-blue-800 font-medium"
-              >
+                className="px-4 py-2 underline-offset-4 hover:underline hover:bg-green-100 rounded-sm text-blue-500  hover:text-blue-800 font-medium">
                  {link.name}               
                 <FaExternalLinkAlt className="inline-block ml-2 align-baseline"/>
               </Link>
