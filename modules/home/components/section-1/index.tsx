@@ -57,15 +57,16 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
             <article className="flex flex-col gap-2 w-full">
               <Upcoming_Event />
             </article>
+            <Divider className="my-4" />
+            <h2 className="font-serif text-xl md:text-2xl text-left my-4 text-indigo-950">
+              Weekly Poojas:
+            </h2>
+            <article className="flex flex-col gap-2 w-full">
+              <Image_Tiles urlset={urlset} />
+            </article>
           </div>
         </div>
       </div>
-      <Divider />
-      <h2 className="font-serif text-xl md:text-2xl text-left text-amber-900">
-              Weekly Poojas:
-            </h2>
-      <Image_Tiles urlset={urlset} />
-      <Divider />
     </div>
   );
 };
