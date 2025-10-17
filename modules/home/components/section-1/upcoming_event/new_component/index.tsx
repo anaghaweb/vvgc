@@ -1,6 +1,8 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
+import { FcCalendar } from "react-icons/fc";
+import { FcClock } from "react-icons/fc";
 
 interface SponsorLink {
   url: string;
@@ -63,8 +65,14 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         {/* Date & Time */}
         {(date || time) && (
           <div className="flex flex-wrap gap-4 text-sm text-red-800 mb-4">
-            {date && <span className="font-medium">📅 {date}</span>}
-            {time && <span className="font-medium">⏰ {time}</span>}
+            {date &&
+            <div className="flex gap-2 justify-center items-center">
+              <FcCalendar /><span className="font-medium"> {date}</span>
+            </div>}
+            {time && 
+              <div className="flex gap-2 justify-center items-center">
+              <FcClock /><span className="font-medium"> {time}</span>
+              </div>}
           </div>
         )}
 

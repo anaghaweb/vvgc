@@ -1,17 +1,5 @@
 export const upcoming_events = [
-   {
-    heading: "Sri Shirdi Sai 107th Maha Samadhi Utsav Day",
-    subtitle: "@ Vvgc San Martin",
-    date: "October 16th",
-    time: "6:30PM",
-    imageUrl:
-      "https://res.cloudinary.com/dixkqgqsi/image/upload/v1760335852/vvgc/images/2025/october/saisamadhiutsav_107.jpg",
-    description: "",
-    // sponsorLinks: [
-    //   { url: "https://paybee.io/@vvgc@33", name: "Suvasini Pooja Registration link" },
-    //   { url: "https://paybee.io/@vvgc@34", name: "Chandi Homam Sponsorship link" },
-    // ],
-  },
+  
      {
     heading: "Bhagwati Jagran",
     subtitle: "Every 3rd friday @ Vvgc San Martin",
