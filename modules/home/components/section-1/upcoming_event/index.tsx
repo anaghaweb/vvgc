@@ -4,8 +4,7 @@ import NewEventCard from "./new_component";
 import { upcoming_events } from "./data";
 const Upcoming_Event = () => {
   
-  return (   
-    
+  return (       
     <div className={`flex flex-col lg:flex-row gap-4 justify-around`}>
      {
       upcoming_events.map((event)=>{

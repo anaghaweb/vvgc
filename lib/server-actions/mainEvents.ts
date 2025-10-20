@@ -1,7 +1,5 @@
 "use server";
 import { google } from "googleapis";
-import { revalidateTag } from "next/cache";
-import type Error from "next/error";
 import { CalendarEvent } from "types/global";
 
 export async function AllEventsData(): Promise<CalendarEvent[]> {
