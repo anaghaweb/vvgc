@@ -1,30 +1,40 @@
 export const upcoming_events = [
-  {
-    heading: "Deepavali Celebrations 2025",
-    subtitle: "@ Vvgc San Martin",
-    date: "October 20th & 21st",
-    time: "3PM onwards",
-    imageUrl:
-      "https://res.cloudinary.com/dixkqgqsi/image/upload/v1760335909/vvgc/images/2025/october/diwali_2025.jpg",
-    description: "Join us for an evening of lights, music, bhajans, and festive joy as we celebrate the festival of lights.",
-    // sponsorLinks: [
-    //   { url: "https://paybee.io/@vvgc@37", name: "Annadanam Sponsorship" },
-    //   { url: "https://paybee.io/@vvgc@38", name: "Cultural Program Support" },
-    // ],
-  },
-  {
-    heading: "Sri Skandha Shashti Festival Celebrations",
-    subtitle: "",
-    date: "From 22nd Oct to 27th Oct",
-    time: "6:00PM",
-    imageUrl:
-      "https://res.cloudinary.com/dixkqgqsi/image/upload/v1760977179/vvgc/images/2025/october/skanda_sashti.jpg",
-    description: `Skanda Shasti marks the triumph of Lord Murugan over evil and the victory of divine virtue.
-Celebrate this sacred occasion at the temple with devotion and joy.`
-    // sponsorLinks: [
-    //   { url: "https://paybee.io/@vvgc@35", name: "Archana Sponsorship" },
-    //   { url: "https://paybee.io/@vvgc@36", name: "Pooja Sponsorship" },
-    // ],
-  },
   
+  
+  {
+    heading: "Tulsi Vivah",
+    subtitle: "Tulsi Vivah celebrates the divine wedding of the sacred Tulsi plant and Lord Vishnu, a celestial union that marks the triumph of devotion over darkness and heralds the dawn of the auspicious Hindu wedding season.",
+    date: ["Sunday November 2nd 2025"],
+    time: "Evening at 5:00pm",
+    imageUrl:
+      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1761909994/vvgc/images/2025/october/tulsi_vivah.jpg`,
+    description: [`Sri Vallabha Maha Ganapathi Temple vvgc San Martin hindu temple usa bay area California Tulasi Vivah.`,
+      `All Are Welcome to participate with family friends and Get Blessings followed by Maha prasadam Priti Bhoj`,
+    ],
+    sponsorLinks: [
+      // { url: "", name: "" },
+    ],
+  },
+  {
+    heading: "Kartika Masa Somavara Ekadasa Vara Sri Rudra Abhisheka",
+    subtitle: "Karthika Masa is a sacred month of divine light and devotion, when every flame lit honors Lord Shiva and Lord Vishnu, purifying the soul and illuminating the path toward spiritual awakening and inner peace.",
+    date: [
+     
+      "November 3rd 2025",
+      "November 10th 2025",
+      "November 17th 2025",
+      "Last Monday Kartika Masa - November 24th 2025"
+    ],
+    time: "Every 4th Monday evening at 6.30 pm",
+    imageUrl:
+      "https://res.cloudinary.com/dixkqgqsi/image/upload/v1761913503/vvgc/images/2025/october/kartika_masa.jpg",
+    description: [  `All Are Welcome to participate with family friends and Get Blessings followed by Maha rasadam`
+    ],
+    sponsorLinks: [
+      { url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=39#optionList`, name: "Sponsor this event" },
+      
+    ],
+  },
+
 ];
+
