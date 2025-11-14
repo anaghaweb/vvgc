@@ -1,20 +1,18 @@
-export const upcoming_events = [
+export const upcoming_events = [  
   
-  
-  // {
-  //   heading: "Tulsi Vivah",
-  //   subtitle: "Tulsi Vivah celebrates the divine wedding of the sacred Tulsi plant and Lord Vishnu, a celestial union that marks the triumph of devotion over darkness and heralds the dawn of the auspicious Hindu wedding season.",
-  //   date: ["Sunday November 2nd 2025"],
-  //   time: "Evening at 5:00pm",
-  //   imageUrl:
-  //     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1761909994/vvgc/images/2025/october/tulsi_vivah.jpg`,
-  //   description: [`Sri Vallabha Maha Ganapathi Temple vvgc San Martin hindu temple usa bay area California Tulasi Vivah.`,
-  //     `All Are Welcome to participate with family friends and Get Blessings followed by Maha prasadam Priti Bhoj`,
-  //   ],
-  //   sponsorLinks: [
-  //     // { url: "", name: "" },
-  //   ],
-  // },
+  {
+    heading: "Bhagwati Jagran",
+    subtitle: "Join us for a blessed Bhagwati Jagran at the temple and receive the divine grace of Maa Durga.",
+    date: ["Friday, November 21st 2025"],
+    time: "Starts at 7:00PM",
+    imageUrl:
+      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1763104601/vvgc/images/2025/november/bhagwati_jagran.jpg`,
+    description: [`All Are Welcome to participate with family friends and Get Blessings followed by Maha prasadam Priti Bhoj`,
+    ],
+    sponsorLinks: [
+      // { url: "", name: "" },
+    ],
+  },
   {
     heading: "Kartika Masa Somavara Ekadasa Vara Sri Rudra Abhisheka",
     subtitle: "Karthika Masa is a sacred month of divine light and devotion, when every flame lit honors Lord Shiva and Lord Vishnu, purifying the soul and illuminating the path toward spiritual awakening and inner peace.",
