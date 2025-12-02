@@ -61,7 +61,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           </h1>
           <div className="bg-red-100 p-4">
 
-          <h2 className="text-xl text-red-950 font-semibold font-cormorant italic">{subtitle}</h2>
+            <h2 className="text-xl text-red-950 font-semibold font-cormorant italic">{subtitle}</h2>
           </div>
         </header>
 
@@ -70,13 +70,13 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           <div className="flex flex-wrap gap-4 text-sm text-red-800 mb-4">
             <div className="flex flex-col gap-4 place-items-start">
 
-            {date &&
-              date.map((ele) =>
-                <div key={ele} className="flex gap-2 justify-center items-center">
-                  <FcCalendar /><span className="font-medium">{ele}</span>
-                </div>
-              )
-            }
+              {date &&
+                date.map((ele) =>
+                  <div key={ele} className="flex gap-2 justify-center items-center">
+                    <FcCalendar /><span className="font-medium">{ele}</span>
+                  </div>
+                )
+              }
             </div>
             {time &&
               <div className="flex gap-2 justify-center items-center">
@@ -120,7 +120,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 underline-offset-4 hover:underline hover:bg-green-100 rounded-sm text-blue-500  hover:text-blue-800 font-medium">
-                
+
                 <span>{link.name}</span>
                 <FaExternalLinkAlt className="inline-block ml-2 align-baseline" />
               </Link>
