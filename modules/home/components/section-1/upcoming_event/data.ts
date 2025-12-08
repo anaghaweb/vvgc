@@ -1,13 +1,26 @@
 export const upcoming_events = [  
   
   {
-    heading: "Arpanaa",
-    subtitle: "A musical offering by students of Smt.Krithika Rajagopal",
-    date: ["Saturday, December 06th 2025"],
-    time: "10:00 AM to 11:30 AM",
+    heading: "Special Sri Ayyappa Mandala Pooja",
+    subtitle: "Special Sri Ayyappa Mandala Pooja Aarati And Mantra Pushpa",
+    date: ["Weekends evening at 7:00 PM"],
+    time: "",
     imageUrl:
-      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1764680010/vvgc/images/2025/december/arpanaa2025dec.jpg`,
-    description: [`All are welcome to attend this celebration of carnatic music.`,
+      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1765174458/vvgc/images/2025/december/swamy-2.jpg`,
+    description: [`All Are Welcome To Participate With Family Friends And Get Blessings Followed By Maha Prasadam `,
+    ],
+    sponsorLinks: [
+      // { url: "", name: "" },
+    ],
+  },
+    {
+    heading: "Dhanurmasa Pooja",
+    subtitle: "Daily Tiruppavai Pasuram Chanting. Watch live on Zoom, Facebook And Youtube",
+    date: ["December 16th 2025 - January 14th 2026"],
+    time: "Evening 7:00PM",
+    imageUrl:
+      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1765176991/vvgc/images/2025/december/dhanurmasa-pooja-2025.jpg`,
+    description: [`Lord Krishna declares in the Bhagavad Gita: "I manifest the most in the month of Margashira" (also known as Dhanurmasam)`,
     ],
     sponsorLinks: [
       // { url: "", name: "" },

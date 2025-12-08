@@ -51,7 +51,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
   return (
     <>
-      <article className={`w-full md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-100 p-4 md:p-8
+      <article className={`w-full md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
        ${bgcolor}
         `}>
         {/* Heading */}
@@ -59,16 +59,15 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-indigo-950 mb-2">
             {heading}
           </h1>
-          <div className="bg-red-100 p-4">
-
-            <h2 className="text-xl text-red-950 font-semibold font-cormorant italic">{subtitle}</h2>
+          <div className="">
+            <h2 className="text-base text-zinc-900 font-semibold font-sans">{subtitle}</h2>
           </div>
         </header>
 
         {/* Date & Time */}
         {(date || time) && (
-          <div className="flex flex-wrap gap-4 text-sm text-red-800 mb-4">
-            <div className="flex flex-col gap-4 place-items-start">
+          <div className="flex flex-wrap gap-4 text-sm bg-yellow-100 text-red-800 mb-4">
+            <div className="flex flex-col gap-4 place-items-start p-2">
 
               {date &&
                 date.map((ele) =>
@@ -104,9 +103,11 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         {/* Description */}
         {description && (
           description.map((ele) =>
-            <p key={ele} className="font-noto_serif text-base sm:text-lg mb-4 italic">
+            <div key={ele} className="p-4 bg-yellow-100 text-center">
+            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
               {ele}
             </p>
+            </div>
           )
         )}
 
@@ -120,7 +121,6 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 underline-offset-4 hover:underline hover:bg-green-100 rounded-sm text-blue-500  hover:text-blue-800 font-medium">
-
                 <span>{link.name}</span>
                 <FaExternalLinkAlt className="inline-block ml-2 align-baseline" />
               </Link>
