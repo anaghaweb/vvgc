@@ -48,7 +48,6 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
     )}`,
     instagram: "https://www.instagram.com/", // placeholder
   };
-
   return (
     <>
       <article className={`w-full md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
@@ -63,23 +62,21 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
             <h2 className="text-base text-zinc-900 font-semibold font-sans">{subtitle}</h2>
           </div>
         </header>
-
         {/* Date & Time */}
         {(date || time) && (
-          <div className="flex flex-wrap gap-4 text-sm bg-yellow-100 text-red-800 mb-4">
-            <div className="flex flex-col gap-4 place-items-start p-2">
-
+          <div className="flex flex-wrap gap-4 text-sm bg-yellow-100 text-red-800 mb-2 p-2">
+            <div className="flex flex-col gap-2 place-items-start">
               {date &&
                 date.map((ele) =>
-                  <div key={ele} className="flex gap-2 justify-center items-center">
-                    <FcCalendar /><span className="font-medium">{ele}</span>
+                  <div key={ele} className="flex p-2 gap-2 justify-center items-center">
+                    <FcCalendar className="h-4 w-4"/><span className="font-medium">{ele}</span>
                   </div>
                 )
               }
             </div>
             {time &&
-              <div className="flex gap-2 justify-center items-center">
-                <FcClock /><span className="font-medium"> {time}</span>
+              <div className="flex p-2 gap-2 justify-center items-center">
+                <FcClock className="h-4 w-4" /><span className="font-medium"> {time}</span>
               </div>}
           </div>
         )}
@@ -110,7 +107,6 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
             </div>
           )
         )}
-
         {/* Sponsor Links (Grid Layout) */}
         {sponsorLinks && sponsorLinks.length > 0 && (
           <div className="flex flex-col md:flex-row gap-3 mb-6">
