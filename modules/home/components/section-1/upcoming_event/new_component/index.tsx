@@ -64,7 +64,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         </header>
         {/* Date & Time */}
         {(date || time) && (
-          <div className="flex flex-wrap gap-4 text-sm bg-yellow-100 text-red-800 mb-2 p-2">
+          <div className="flex flex-wrap text-sm bg-yellow-100 text-red-800 mb-2 p-2">
             <div className="flex flex-col gap-2 place-items-start">
               {date &&
                 date.map((ele) =>
