@@ -26,19 +26,7 @@ export const upcoming_events = [
       // { url: "", name: "" },
     ],
   },
-  {
-    heading: "Hanuman Jayanti",
-    subtitle: "Hanuman Chalisa followed by Aarti and Prasadam",
-    date: ["Friday 19th, Dec"],
-    time: "Evening 6:00PM - 7:30PM",
-    imageUrl:
-      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1765344501/vvgc/images/2025/december/hanumanchalisa.jpg`,
-    description: [`All Are Welcome To Participate With Family Friends And Get Blessings Followed By Maha Prasadam `,
-    ],
-    sponsorLinks: [
-      // { url: "", name: "" },
-    ],
-  },
+  
    {
     heading: "New Year Jagran",
     subtitle: "New year Jagran and Priti Bhoj on the eve of new year",
