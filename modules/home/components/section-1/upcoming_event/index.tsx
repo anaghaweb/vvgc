@@ -5,7 +5,7 @@ import { upcoming_events } from "./data";
 const Upcoming_Event = () => {
   
   return (       
-    <div className={`flex flex-col lg:flex-row gap-4 justify-around`}>
+    <div className={`grid grid-cols-1 lg:grid-cols-2`}>
      {
       upcoming_events.map((event)=>{
       return <NewEventCard
