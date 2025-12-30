@@ -113,7 +113,7 @@ export const upcoming_events = [
     videoUrl: "",
     sponsorLinks: [
       { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      { url: "https://paybee.io@vvgc@73", name: "Make a donation" },
+      { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
 
