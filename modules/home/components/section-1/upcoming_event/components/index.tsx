@@ -19,6 +19,7 @@ interface NewEventCardProps {
   videoUrl?:string;
   description?: string[];
   sponsorLinks?: SponsorLink[];
+  details?:string[];
   bgcolor?: string;
 }
 
@@ -31,26 +32,12 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
   videoUrl,
   description,
   sponsorLinks,
+  details,
   bgcolor = "bg-yellow-50",
 }) => {
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
-  // Sharing URLs
-  const shareLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      currentUrl
-    )}`,
-    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-      currentUrl
-    )}&text=${encodeURIComponent(heading)}`,
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-      currentUrl
-    )}`,
-    whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(
-      heading + " " + currentUrl
-    )}`,
-    instagram: "https://www.instagram.com/", // placeholder
-  };
+  
   return (
     <>
       <article className={`w-full min-w-72 md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
@@ -122,7 +109,18 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           </a>
         )}
 
-
+        {/* Details */}
+        {
+          details && (
+            details.map((ele)=>
+              <div key={ele} className="p-4 bg-yellow-100 text-center">
+            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
+              {ele}
+            </p>
+            </div>
+            )
+          )
+        }
 
         {/* Description */}
         {description && (

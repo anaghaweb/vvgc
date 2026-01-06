@@ -70,6 +70,8 @@ const config:Config = {
           'gar2':'url("/images/home/ganesha/garland.png")',
           'rangoli':'url("/images/home/ganesha/rangoli.avif")',
           'chains':'url("/images/home/ganesha/chains.png")',
+          'trishul':'url("/images/home/maharudrayagnam/trishul_4.png")',
+          'shiva':'url("/images/home/maharudrayagnam/shiva.png")',
         },
     },
   },

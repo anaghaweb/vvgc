@@ -1,7 +1,7 @@
 import React from "react";
 // import Next_event_Grid from "./event_grid";
-import NewEventCard from "./new_component";
-import { upcoming_events } from "./data";
+import NewEventCard from "./components";
+import { upcoming_events } from "./components/data";
 const Upcoming_Event = () => {
   
   return (       
