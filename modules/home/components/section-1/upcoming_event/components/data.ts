@@ -31,6 +31,21 @@ export const upcoming_events = [
     ],
   },
   {
+    heading: "Bhagwati Jagran",
+    subtitle: "",
+    date: ["January 16th"],
+    time: "7:00 PM",
+    imageUrl:
+      `https://res.cloudinary.com/dixkqgqsi/image/upload/v1768102017/vvgc/images/2026/jan/bhagwati_jagran_20260116.jpg`,
+    videoUrl: "",
+    description: [`Priti Bhoj sponsored by Badoni Family`,`All Are Welcome To Participate With Family Friends And Get Blessings Followed By Maha Prasadam `,
+    ],
+    details:[],
+    sponsorLinks: [
+      // { url: "", name: "" },
+    ],
+  },
+  {
     heading: "Maha Rudra Yagnam 2026",
     subtitle: "At this event 121 Ritwiks reciting the Sri Rudra 11 times for a total of 1331 times along with Rudra Abhishekam with 11 kinds of Dravyams. This will be followed by Rudra Homam",
     date: ["18th April 2026"],
