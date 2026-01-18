@@ -8,13 +8,13 @@ import { CalendarEvent, type EventTypes } from "types/global";
 import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 
 
-export async function generateMetadata({ searchParams }: { searchParams: EventTypes }):Promise<Metadata> {
+export async function generateMetadata({ searchParams }: { searchParams: EventTypes }): Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
   const twitterURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
 
   try {
     return {
-      title: `${searchParams.evtype ?? ""} events | VVGC`,
+      title: `Events | VVGC`,
       description: 'vvgc events',
       metadataBase: new URL(`${process.env.BASE_URL}/events`),
       openGraph: {
@@ -51,7 +51,9 @@ export default async function Event({ searchParams }:
   return (
     <>
       <main className="mx-auto py-4 bg-neutral-100">
-        <EventsPageView data={templateEventData} weeklyEventsData={weeklyEventsDataList} searchParams={searchParams} />
+        <EventsPageView data={templateEventData} 
+        weeklyEventsData={weeklyEventsDataList} 
+        searchParams={searchParams} />
       </main>
     </>
   );
