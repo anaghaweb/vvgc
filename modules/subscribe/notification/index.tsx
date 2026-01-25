@@ -11,13 +11,13 @@ export const SubscribeToast = () => {
         <div
           className={`mt-12 p-3 text-black h-20 w-84 flex flex-shrink-0 items-start
         gap-4 text-sm text-left font-roboto rounded-md shadow-md tracking-tighter leading-5
-        bg-gradient-to-r  from-orange-400 to-orange-500
+        bg-gradient-to-r  from-blue-200 to-purple-300
         `}
         >
           <p className="items-center align-baseline">
             Get the latest event details in your inbox! <br />
-            Tap{" "}
-            <span className="font-bold text-cyan-700">
+            click{" "}
+            <span className="font-bold text-red-900">
               {" "}
               &apos;SUBSCRIBE&apos;{" "}
             </span>

@@ -7,27 +7,29 @@ const ConfirmSubscription = async ({
   verificationToken: string;
 }) => {
   const TokenList: { timestamp: string; token: string; email: string }[] = [];
+  let tokenExists = null;
+  const auth = new google.auth.GoogleAuth({
+    credentials: {
+      client_email: process.env.G_EMAIL,
+      private_key: process.env.G_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+    },
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+  const sheets = google.sheets({
+    auth,
+    version: "v4",
+  });
   try {
-    const auth = new google.auth.GoogleAuth({
-      credentials: {
-        client_email: process.env.G_EMAIL,
-        private_key: process.env.G_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-      },
-      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-    });
-    const sheets = google.sheets({
-      auth,
-      version: "v4",
-    });
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.G_ID,
-      range: `VerificationToken!A1:Z`,
+      range: `VerificationToken!A:Z`,
     });
     const rows = response.data.values;
+    console.log("rows",rows)
 
     if (!rows) {
-      return {Success:false, message:"Network Error"};
+      return {Success:false, message:"Verification Link has expired. Please enter your email id again"};
     }
 
     rows.map((e: string[], i: number) => {
@@ -35,8 +37,8 @@ const ConfirmSubscription = async ({
         TokenList.push({ timestamp: e[0], token: e[1], email: e[2] });
       }
     });
-
-    const tokenExists = TokenList.find(
+    console.log("tokenlist",TokenList)
+    tokenExists = TokenList.find(
       (ele) => ele.token === verificationToken
     );
 
@@ -48,8 +50,8 @@ const ConfirmSubscription = async ({
         requestBody: {
           values: [[tokenExists.email]],
         },
-      });
-      await deleteUsedToken({ token: tokenExists?.token, sheets });
+      });   
+
       return {Success:true, message:"subscribed"};
     } 
     else{
@@ -59,9 +61,12 @@ const ConfirmSubscription = async ({
   } catch (err) {
     if (typeof err === "string") {
       console.log(err);
-    }
+    }   
     return {Success:false, message:"Something went wrong"};
   }
+   finally{
+      await deleteUsedToken({ token: tokenExists?.token, sheets });
+    }
 };
 
 

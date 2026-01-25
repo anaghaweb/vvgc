@@ -50,7 +50,7 @@ export async function NewsLetterSubscription(
     const isSubscribed = EmailAlreadySubscribedCheck(subscribedEmailList, userInputEmailId);  
     
     if(isSubscribed){       
-        return {Success:false, message:"Email ID already exists"};
+        return {Success:false, message:"You are already subscribed"};
     }
     //Check if a verification link has already been sent by checking if the verification token exists
 

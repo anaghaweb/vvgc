@@ -1,6 +1,6 @@
 'use server'
 import { sheets_v4 } from "googleapis";
-const crypto = require ("crypto");
+import crypto from "crypto";
 
 export async function CreateVerificationToken({userInputEmailId, sheets}:{userInputEmailId:string, sheets: sheets_v4.Sheets}):Promise<string | null>{
 
@@ -9,7 +9,7 @@ export async function CreateVerificationToken({userInputEmailId, sheets}:{userIn
     
     const vToken = await sheets.spreadsheets.values.append({
         spreadsheetId : process.env.G_ID,
-        range: 'VerificationToken!A1:C1',
+        range: 'VerificationToken!A2:C2',
        valueInputOption:'USER_ENTERED',
        requestBody:{
            values:[
