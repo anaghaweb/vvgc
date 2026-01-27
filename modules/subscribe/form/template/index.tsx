@@ -3,6 +3,7 @@ import { SubscribeMessage } from "../components/formattedResponse";
 import { useFormState } from "react-dom";
 import { NewsLetterSubscription } from "@modules/subscribe/form/components/initiateSubProcess";
 import SubscribeSubmitButton from "../components/subscribeSubmitButton";
+import { FormLabel } from "@modules/common/components/ui/form";
 
 export function SubscribeForm() {
   const [message, formAction] = useFormState(NewsLetterSubscription, null);
@@ -16,8 +17,8 @@ export function SubscribeForm() {
     return (
      
         <div className="flex flex-col items-center gap-2 bg-inherit w-full p-1 ">         
-            {/* <FormLabel className="text-gray-200 tracking-tight font-thin font-roboto font-sm leading-5">Subscribe to our weekly Newsletter</FormLabel> */}
-            <p className="leading-5 tracking-tighter from-neutral-800 text-sm">We will send a verification link to your email. Click the link and get subscribed.</p>
+            {/* <FormLabel className="text-gray-200 tracking-tight font-thin font-roboto font-sm leading-5">Email Id:</FormLabel> */}
+            <p className="leading-5 tracking-tighter from-neutral-800 text-sm text-left">Email Id:</p>
             <form className="flex flex-col gap-2 w-full" action={formAction}>
               {/* EMAIL */}
               <input

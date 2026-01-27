@@ -6,7 +6,7 @@ import { google } from "googleapis";
     const oAuth2Client = new OAuth2(
       process.env.OAUTH2_CLIENT_ID,
       process.env.OAUTH2_CLIENT_SECRET,
-      'https://developers.google.com/oauthplayground' 
+      process.env.BASE_URL
       
     );
     
@@ -35,7 +35,7 @@ import { google } from "googleapis";
 
   // Save tokens to your environment or a secure storage
 
- getToken('4/0AVG7fiRSnildWCpN-d7uAEf61jQe2nNH_aSJDUkOZYTNZagGvc6TjglviTe7QonBZbrStA'); // After visiting the URL and authorizing, replace 'YOUR_AUTHORIZATION_CODE' with the code from the URL.
+ getToken('YOUR_AUTH_CODE_RECEIVED_FROM_STEP_ONE'); // After visiting the URL and authorizing, replace 'YOUR_AUTHORIZATION_CODE' with the code from the URL.
  }
 
 createOauth2Credentials();

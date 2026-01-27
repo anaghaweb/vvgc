@@ -16,7 +16,6 @@ const page = async ({params}:{params:{token:string}}) => {
     // await DeleteExpiredToken({sheets});
     const response = await ConfirmSubscription({verificationToken});
     
-    
   return (
     <VerifyEmailPageView response={response}/>
   )

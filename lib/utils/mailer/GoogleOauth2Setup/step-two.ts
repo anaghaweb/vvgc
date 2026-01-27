@@ -5,9 +5,9 @@ const GetGoogleAccessToken = async () => {
     const OAuth2 = google.auth.OAuth2;
     // Fill in the values noted from Step 2
     const oAuth2Client = new OAuth2(
-      "11487989684-i8gnupak7i99vdpvursgiio35e6mse3e.apps.googleusercontent.com",
-      "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",
-      'https://developers.google.com/oauthplayground'       
+      process.env.OAUTH2_CLIENT_ID,
+      process.env.OAUTH2_CLIENT_SECRET,
+      process.env.BASE_URL       
     );
     oAuth2Client.setCredentials({
       refresh_token: process.env.GOOGLE_REFRESH_TOKEN, // Replace with your stored refresh token

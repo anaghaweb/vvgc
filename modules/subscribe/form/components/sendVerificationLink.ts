@@ -1,3 +1,4 @@
+import GetGoogleAccessToken from "@lib/utils/mailer/GoogleOauth2Setup/step-two";
 import SendMail from "@lib/utils/mailer/sendmail";
 export async function SendVerificationLink({
   token,
@@ -19,8 +20,11 @@ export async function SendVerificationLink({
     </td>
   </tr>
 </table>`;
-
-  const result = await SendMail({ userEmail: email, html_body_content });
+  const accessToken = await GetGoogleAccessToken();
+  let result = null;
+  if(accessToken){
+    result = await SendMail({ userEmail: email, html_body_content, accessToken });
+  }
   if (result) return true;
   else return false;
 }

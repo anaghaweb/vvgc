@@ -1,8 +1,8 @@
-import GetGoogleAccessToken from "./GoogleOauth2Setup/step-two"
+
 import nodemailer from 'nodemailer';
 
-const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_body_content:string})=>{
-    const accessToken = await GetGoogleAccessToken();
+const SendMail = async({userEmail, html_body_content, accessToken}:{userEmail:string, html_body_content:string, accessToken:string})=>{
+    
     const transporter = createTransporter({accessToken});
     const mailOptions = {
         from: process.env.GMAIL_ACCOUNT_NAME,
@@ -22,7 +22,7 @@ const SendMail = async({userEmail, html_body_content}:{userEmail:string, html_bo
       }          
 }
 
-const createTransporter = ({accessToken}:{accessToken:string | null | undefined})=>{
+const createTransporter = ({accessToken}:{accessToken:string})=>{
     const transporter = nodemailer.createTransport({
          service: 'gmail',
         auth: {
@@ -31,7 +31,7 @@ const createTransporter = ({accessToken}:{accessToken:string | null | undefined}
           clientId: process.env.OAUTH2_CLIENT_ID,
           clientSecret: process.env.OAUTH2_CLIENT_SECRET,
           refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-          accessToken: accessToken, // Access token retrieved dynamically
+          //accessToken: accessToken, // Access token retrieved dynamically
         },
       });    
       return transporter;
