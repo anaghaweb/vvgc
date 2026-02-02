@@ -10,12 +10,18 @@ interface SponsorLink {
   name: string;
 }
 
+interface imageArray {
+  url: string;
+  alt:string;
+  id:number;
+}
+
 interface NewEventCardProps {
   heading: string;
   subtitle: string;
   date?: string[];
   time?: string;
-  imageUrl?: string;
+  imageArray?: imageArray[];
   videoUrl?:string;
   description?: string[];
   sponsorLinks?: SponsorLink[];
@@ -28,7 +34,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
   subtitle,
   date,
   time,
-  imageUrl,
+  imageArray,
   videoUrl,
   description,
   sponsorLinks,
@@ -94,20 +100,27 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           )
         }
         {/* Image */}
-        {imageUrl && (
-          <a
-            href={imageUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mb-4"
-          >
-            <img
-              src={imageUrl}
-              alt={heading}
-              className="w-full h-auto object-cover rounded-lg transition-transform duration-200 hover:scale-[1.02]"
-            />
-          </a>
-        )}
+        <div className="flex flex-col lg:flex-row flex-wrap gap-2 mb-4 mx-auto">
+
+        {imageArray &&                      
+            imageArray.map(image=>
+              <a
+                key={image.id}
+                href={image.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto"
+              >
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  className="min-w- max-w-60 object-contain rounded-lg transition-transform duration-200 hover:scale-[1.02]"
+                />
+              </a>
+            )
+           } 
+        </div>
+        
 
         {/* Details */}
         {
