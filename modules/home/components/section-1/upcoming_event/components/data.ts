@@ -7,7 +7,7 @@ export const upcoming_events = [
     time: "From Morning 10:00AM",
     imageArray:[
      {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770013411/vvgc/images/2026/feb/mahashivaratri_1.jpg",
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770109476/vvgc/images/2026/feb/shivaratri_2026_withqrcode.jpg",
         alt:"shivratriimage1",
         id:1
     },
