@@ -18,7 +18,7 @@ import {
         className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
          bg-gradient-to-r from-green-50 via-slate-50 to-blue-50
          text-gray-900 text-left
-          m-auto h-full my-2 sm:p-2`}
+          m-auto  my-2 sm:p-2`}
       >
         <CardHeader className="text-2xl text-rose-800 ">
           {new Date(data.date).toLocaleDateString("en-US", {
@@ -43,9 +43,8 @@ import {
               )
             }
         </CardHeader> 
-        <CardContent>
-          { (
-            <div>
+        <CardContent>         
+           
               <div className="grid grid-cols-12 gap-2">
                 {singleEvent.startTime && singleEvent.details && (
                   <div className="col-span-full md:col-span-2 text-sm md:text-end font-roboto font-bold text-cyan-950 ">
@@ -80,11 +79,11 @@ import {
                   maxHeight="300px"
                 />
               )}
-            </div>
-          )}
+           
+         
         </CardContent>
         {/* sponsor event Link */}
-        <div className="flex flex-col md:flex-row gap-2 items-center justify-center">
+        <div className="flex flex-col md:flex-row w-full">
           <Share id={data.id}/>
           <GenerateCalendarLinks event={data} />
         </div>        
