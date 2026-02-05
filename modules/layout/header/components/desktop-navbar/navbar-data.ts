@@ -17,13 +17,13 @@ export const nav_components_list: { id: string, title: string; href: string; des
             id: "subev1",
             title: "Special Events",
             href: "/events/?evtype=special",
-            description: "Special poojas, seasonal events, festivals, musical events, bhajans and special events performed devotees."
+            description: "Special poojas, Seasonal events, Festivals, Musical events, Bhajans and Special events performed devotees."
         },
         {
             id: "subev2",
             title: "Daily Performed Poojas",
             href: "/events/?evtype=regular",
-            description: "Details daily performed poojas, abhishekas and prasadam distribution."
+            description: "Details of daily performed Poojas, Abhishekas and Prasadam distribution."
         }
         ]
     },
