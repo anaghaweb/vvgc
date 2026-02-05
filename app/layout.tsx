@@ -72,10 +72,12 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`max-w-full font-sans box-border m-0
-    ${inter.variable} ${roboto_mono.variable} 
-    ${noto_sans.variable} ${noto_sans_display.variable} ${noto_serif.variable} ${noto_serif_display.variable}
-    ${roboto.variable} ${opensans.variable} ${playfair.variable} ${cormorant.variable}`
+      <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
+            ${inter.variable} ${roboto_mono.variable} 
+          ${noto_sans.variable} ${noto_sans_display.variable} 
+          ${noto_serif.variable} ${noto_serif_display.variable}
+          ${roboto.variable} ${opensans.variable} ${playfair.variable}
+          ${cormorant.variable}`
       }>
         <TooltipProvider>
           <Header />
