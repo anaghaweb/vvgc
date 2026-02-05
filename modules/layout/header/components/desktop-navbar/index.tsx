@@ -26,7 +26,9 @@ export default function DesktopNavigationMenu({ navigationLink }: {
                         if (navitem.submenu !== null) {
                             return (
                                 <NavigationMenuItem key={navitem.id}>
-                                    <NavigationMenuTrigger>
+                                    <NavigationMenuTrigger
+                                    className="font-sans text-sm xl:text-base"
+                                    >
                                         {navitem.title}
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent className="bg-slate-100">
@@ -52,12 +54,14 @@ export default function DesktopNavigationMenu({ navigationLink }: {
                         else {
 
                             return (
-                                <NavigationMenuItem key={navitem.id}>
+                                <NavigationMenuItem key={navitem.id} >
                                     <NavigationMenuLink
                                         asChild
                                         className={navigationMenuTriggerStyle()}
                                     >
-                                        <Link href={navitem.href}>{navitem.title}</Link>
+                                        <Link href={navitem.href}
+                                        className=" font-sans text-sm xl:text-base"
+                                        >{navitem.title}</Link>
                                     </NavigationMenuLink>
                                 </NavigationMenuItem>
                             )
@@ -84,7 +88,7 @@ function ListItem({
             <NavigationMenuLink asChild>
                 <Link href={href}>
                     <div className="flex flex-col gap-1 text-sm">
-                        <div className="leading-none font-medium">{title}</div>
+                        <div className="leading-none font-medium text-xl">{title}</div>
                         <div className="text-muted-foreground line-clamp-3">{children}</div>
                     </div>
                 </Link>
