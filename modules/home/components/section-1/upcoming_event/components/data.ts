@@ -13,7 +13,7 @@ export const upcoming_events = [
     },
      
      {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1768454126/vvgc/images/2026/feb/shivaratri_2026.jpg",
+        url:" https://res.cloudinary.com/dixkqgqsi/image/upload/v1770526999/vvgc/images/2026/feb/shivaratri_1.jpg",
         alt:"shivaratriimage3",
         id:3
     },
@@ -46,7 +46,7 @@ export const upcoming_events = [
     time: "From Morning 7:00AM - 1:30PM",
     imageArray:[
      {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1767585425/vvgc/images/2026/jan/maha_rudra_yagnam_20260418.jpg",
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770527473/vvgc/images/2026/april/maha_rudra_yagnam.jpg",
         alt:"shivratriimage1",
         id:1
     },
