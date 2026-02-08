@@ -17,7 +17,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg`,
     'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1770527207/vvgc/images/2026/recurring/ekadasa_2026.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1759988293/vvgc/images/2025/october/everysatpooja.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1770533776/vvgc/images/2026/recurring/hanuman_pooja.jpg`,
   ];
 
   try {
