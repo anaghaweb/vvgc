@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import Divider from "@modules/common/components/divider";
 import Image from "next/image";
-import { cormorant, opensans } from "@lib/fonts/fonts";
 import Link from "next/link";
 
-const PhaseTwoConstruction = () => {
+const PhaseTwoConstruction = ({imageurl}:{imageurl:string}) => {
+
   return (
     <Fragment>
       <div
@@ -26,10 +26,10 @@ const PhaseTwoConstruction = () => {
         </p>
         <p className="text-center">(Click to enlarge)</p>
         <div className="mx-auto relative w-full h-64 md:w-3/4 md:h-[800px]">
-          <Link href="/images/donations/expansion/1.webp" target="_blank">
+          <Link href={imageurl} target="_blank">
             <Image
               quality={75}
-              src="/images/donations/expansion/1.webp"
+              src={imageurl}
               fill
               sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 50vw "
               className="absolute object-contain cursor-pointer"
