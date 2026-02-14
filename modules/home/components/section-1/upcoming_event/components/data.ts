@@ -6,11 +6,16 @@ export const upcoming_events = [
     date: ["15th Febraury"],
     time: "From Morning 10:00AM",
     imageArray:[
-     {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770109476/vvgc/images/2026/feb/shivaratri_2026_withqrcode.jpg",
+      {
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1771036599/vvgc/images/2026/feb/shivratri_2.jpg",
         alt:"shivratriimage1",
         id:1
     },
+     {
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770109476/vvgc/images/2026/feb/shivaratri_2026_withqrcode.jpg",
+        alt:"shivratriimage2",
+        id:2
+    },    
      
      {
         url:" https://res.cloudinary.com/dixkqgqsi/image/upload/v1770526999/vvgc/images/2026/feb/shivaratri_1.jpg",
@@ -19,8 +24,8 @@ export const upcoming_events = [
     },
     {
         url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770013412/vvgc/images/2026/feb/mahashivaratri_weekend_event.jpg",
-        alt:"shivaratriimage2",
-        id:2
+        alt:"shivaratriimage4",
+        id:4
     },
   ],
     description: [`All Are Welcome To Participate With Family Friends And Get Blessings Followed By Maha Prasadam `,
