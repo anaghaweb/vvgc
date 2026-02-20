@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@modules/layout/header/page";
 import Footer from "@modules/layout/footer/page";
+import Script from 'next/script'
 import {
   roboto,
   opensans,
@@ -70,6 +71,14 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+          <Script
+          src={`https://askable.gentic.in/versions/v0.1.4/askable-ws.js?v=0.1.4`}
+          data-site-id="vvcc-org"
+          data-widget-type="ws"
+          data-api-base-url={'https://askable.gentic.in'}
+          strategy="afterInteractive"
+        />
+
       </head>
 
       <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
@@ -85,7 +94,10 @@ export default function RootLayout({
           <Footer />
           <Toaster />
         </TooltipProvider>
+      
+
       </body>
+
     </html>
   );
 }

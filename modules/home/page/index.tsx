@@ -5,6 +5,7 @@ import SectionThree from '@modules/home/components/section3'
 import SectionFour from '@modules/home/components/section4'
 import SectionFive from '@modules/home/components/section5'
 
+
 import { CalendarEvent } from 'types/global'
 import { SubscribeToast } from '@modules/subscribe/notification'
 
@@ -18,6 +19,7 @@ const HomePageView = ({data, homePageData}:{
       h-auto from-gray-100 via-blue-100 to-slate-100`}>
         
         {/* Today's event & Daily Maha Prasadam info */}
+        
         <SectionOne eventdata={data}/>
 
         {/* Special and Sponsored events */}
