@@ -7,6 +7,7 @@ import getHomePageEventsData from '@lib/server-actions/homePageEvents';
 import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import AskableAgentScript from '@lib/askable-agent';
 
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = "https://vvgc.org/images/og/hsbanner.jpg";
@@ -52,6 +53,6 @@ export default async function Home() {
   <React.Fragment>
     <HeroCard page="home" text='A Home For Spiritual Devotees' />
     <HomePageView data={data} homePageData={homePageData} />
-    
+    {/* <AskableAgentScript /> */}
   </React.Fragment>)
 }
