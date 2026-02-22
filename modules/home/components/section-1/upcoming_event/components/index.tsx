@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FcCalendar } from "react-icons/fc";
 import { FcClock } from "react-icons/fc";
 import React_Video_Player from "@modules/common/components/react-video-player";
+import Divider from "@modules/common/components/divider";
 
 interface SponsorLink {
   url: string;
@@ -143,7 +144,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
             </div>
           )
         )}
-
+        <Divider />
       </article>
     </>
   );
