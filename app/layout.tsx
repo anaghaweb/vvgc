@@ -12,10 +12,8 @@ import {
   noto_sans, noto_sans_display, noto_serif, noto_serif_display
 } from "@lib/fonts/fonts";
 import React from "react";
-
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 import { Toaster } from 'sonner';
-
 import { Metadata } from "next"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -71,8 +69,6 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-
-
       </head>
 
       <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
@@ -93,9 +89,8 @@ export default function RootLayout({
           data-site-id="vvgc-org"
           data-widget-type="ws"
           data-api-base-url={'https://askable.gentic.in'}
-          strategy="afterInteractive"          
+          strategy="afterInteractive"
         />
-
       </body>
 
     </html>

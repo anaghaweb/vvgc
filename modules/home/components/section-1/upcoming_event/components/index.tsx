@@ -12,8 +12,8 @@ interface SponsorLink {
 
 interface imageArray {
   url: string;
-  alt:string;
-  id:number;
+  alt: string;
+  id: number;
 }
 
 interface NewEventCardProps {
@@ -22,10 +22,10 @@ interface NewEventCardProps {
   date?: string[];
   time?: string;
   imageArray?: imageArray[];
-  videoUrl?:string;
+  videoUrl?: string;
   description?: string[];
   sponsorLinks?: SponsorLink[];
-  details?:string[];
+  details?: string[];
   bgcolor?: string;
 }
 
@@ -43,7 +43,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 }) => {
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
-  
+
   return (
     <>
       <article className={`w-full min-w-72 md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
@@ -65,7 +65,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
               {date &&
                 date.map((ele) =>
                   <div key={ele} className="flex p-2 gap-2 justify-center items-center">
-                    <FcCalendar className="h-4 w-4"/><span className="font-medium">{ele}</span>
+                    <FcCalendar className="h-4 w-4" /><span className="font-medium">{ele}</span>
                   </div>
                 )
               }
@@ -77,7 +77,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           </div>
         )}
 
-         {/* Sponsor Links (Grid Layout) */}
+        {/* Sponsor Links (Grid Layout) */}
         {sponsorLinks && sponsorLinks.length > 0 && (
           <div className="flex flex-col gap-3 mb-6">
             {sponsorLinks.map((link, index) => (
@@ -102,8 +102,8 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         {/* Image */}
         <div className="flex flex-col lg:flex-row flex-wrap gap-2 mb-4 mx-auto">
 
-        {imageArray &&                      
-            imageArray.map(image=>
+          {imageArray &&
+            imageArray.map(image =>
               <a
                 key={image.id}
                 href={image.url}
@@ -118,34 +118,32 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
                 />
               </a>
             )
-           } 
+          }
         </div>
-        
+
 
         {/* Details */}
         {
-          details && (
-            details.map((ele)=>
-              <div key={ele} className="p-4 bg-yellow-100 text-center">
-            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
-              {ele}
-            </p>
+          details && details.map((ele, index) =>{
+            return <div key={ele} className="  p-2">
+              <p className="font-roboto text-gray-950 text-base text-left">
+                {ele}
+              </p>
             </div>
-            )
-          )
+          })
         }
 
         {/* Description */}
         {description && (
           description.map((ele) =>
-            <div key={ele} className="p-4 bg-yellow-100 text-center">
-            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
-              {ele}
-            </p>
+            <div key={ele} className="p-4  text-center">
+              <p className="font-cormorant font-semibold text-gray-950 text-xl">
+                {ele}
+              </p>
             </div>
           )
         )}
-       
+
       </article>
     </>
   );
