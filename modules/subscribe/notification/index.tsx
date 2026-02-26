@@ -36,7 +36,7 @@ export const SubscribeToast = () => {
         </div>
       ),
       {
-        position: "bottom-right",
+        position: "bottom-left",
         duration: 10000,
       }
     );
