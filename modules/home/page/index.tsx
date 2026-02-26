@@ -33,7 +33,7 @@ const HomePageView = ({data, homePageData}:{
        
         {/* Google Maps */}
         <SectionFive />
-        <SubscribeToast />
+        {/* <SubscribeToast /> */}
         </main>
     </Fragment>
   )
