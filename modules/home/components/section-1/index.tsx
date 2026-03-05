@@ -6,6 +6,7 @@ import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
 import Upcoming_Event from "./upcoming_event";
 import Image_Tiles from "@modules/common/components/image_tiles";
+import HoliEvent_2026 from "@modules/events/components/2026/march/holi";
 
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
@@ -55,6 +56,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Events:
             </h2>
             <article className="flex flex-col gap-2 w-full">
+              <HoliEvent_2026 />
               <Upcoming_Event />
             </article>
             <Divider className="my-4" />
