@@ -56,7 +56,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Events:
             </h2>
             <article className="flex flex-col gap-2 w-full">
-              <HoliEvent_2026 />
+              
               <Upcoming_Event />
             </article>
             <Divider className="my-4" />
