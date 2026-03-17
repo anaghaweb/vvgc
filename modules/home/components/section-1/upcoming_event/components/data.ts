@@ -59,6 +59,35 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
+  //DEVEE STUTHIS
+  {
+    heading: "🌺 Devee Sthuthis 🌺",
+    subtitle: "Vasantha Navarathri Special at VVGC",
+    date: ["Sunday, March 22"],
+    time: "10:30 AM",
+    imageArray:[
+     {
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1773759193/vvgc/images/2026/march/devee_stuthis_0322.jpg",
+        alt:"An Image of Devee Sthuthis",
+        id:1
+    },
+    
+  ],
+    description: [`All Are welcome to attend with family and friends`,
+    ],
+    videoUrl: "",
+    details:["Devee Sthuthis in a nutshell. Gensis and Gist"
+
+    ],
+    sponsorLinks: [
+      //   {
+      //   url: `https://paybee.io/@vvgc@33`,
+      //   name: "For registration & sponsorship:"
+      // },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
   
     //BHAGWATI JAGRAN
    {
