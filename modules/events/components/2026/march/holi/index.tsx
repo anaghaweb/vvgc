@@ -134,9 +134,7 @@ export default function HoliEvent_2026() {
 
         {/* Contacts */}
         <div className="space-y-1 text-sm">
-
           <p className="font-semibold">For More Info:</p>
-
           <div className="flex items-center gap-2">
             <MdPhone className="text-purple-600" />
             <p>Satnam Singh: (408) 726-1053</p>
@@ -165,7 +163,6 @@ export default function HoliEvent_2026() {
           vvgctemple bayareaevents HappyHoli ColorFestival vvgcsanmartin holi
           vvgc dance HinduFestival2026
         </p>
-
       </div>
     </div>
   );

@@ -51,8 +51,8 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
        ${bgcolor}
         `}>
         {/* Heading */}
-        <header className="mb-4">
-          <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-indigo-950 mb-2">
+        <header className="mb-4 text-center">
+          <h1 className="text-2xl sm:text-3xl  font-semibold font-noto_serif text-indigo-950 mb-2">
             {heading}
           </h1>
           <div className="">
@@ -80,7 +80,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
         {/* Sponsor Links (Grid Layout) */}
         {sponsorLinks && sponsorLinks.length > 0 && (
-          <div className="flex flex-col gap-3 mb-6">
+          <div className="flex flex-col justify-center items-center gap-3 mb-6">
             {sponsorLinks.map((link, index) => (
               <Link
                 key={index}
