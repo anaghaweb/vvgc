@@ -54,8 +54,8 @@ export const upcoming_events = [
         url: `https://vvgc.org/events/event_640`,
         name: "Click here for complete details"
       },
-      { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
   
