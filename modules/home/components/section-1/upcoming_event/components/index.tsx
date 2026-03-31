@@ -122,7 +122,6 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           }
         </div>
 
-
         {/* Details */}
         {
           details && details.map((ele, index) =>{
