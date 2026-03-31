@@ -1,63 +1,10 @@
 export const upcoming_events = [  
   
   // VASANTHA PANCHAMI
-  {
-    heading: "🌺 Vasantha Panchami 🌺",
-    subtitle: "Festival of Spring, Music and New Beginnings",
-    date: ["Friday, March 27"],
-    time: "6:00 PM",
-    imageArray:[
-     {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1774406639/vvgc/images/2026/march/vasantha_panchami_0327.jpg",
-        alt:"An Image of chandi homam 2026",
-        id:1
-    },
-  ],
-    description: [``,
-    ],
-    videoUrl: "",
-    details:[""],
-    sponsorLinks: [
-      //   {
-      //   url: `https://paybee.io/@vvgc@34`,
-      //   name: "For registration & sponsorship:"
-      // },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
+  
   //RAMA NAVAMI CELEBRATIONS
 
-  {
-    heading: "🌺 Sri Sita Rama Kalyana Utsavam 🌺",
-    subtitle: "Weekend Celebrations",
-    date: ["Saturday, March 28"],
-    time: "Starts at 3:00 PM",
-    imageArray:[
-     {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1774066529/vvgc/images/2026/march/ram_navami_0328.jpg",
-        alt:"Rama Kalyana Utsavam",
-        id:1
-    },
-    {
-        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1774066528/vvgc/images/2026/march/weekend_ram_navami_032728.jpg",
-        alt:"weekend celebrations",
-        id:2
-    },
-  ],
-    description: [`All Are Welcome To Participate With Family Friends And Get Blessings Followed By Maha Prasadam `,
-    ],
-    videoUrl: "",
-    details:[""],
-    sponsorLinks: [
-        {
-        url: `https://vvgc.org/events/event_640`,
-        name: "Click here for complete details"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
+  
   
   // ANANDA DANA
 
