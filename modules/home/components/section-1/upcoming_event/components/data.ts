@@ -41,10 +41,15 @@ export const upcoming_events = [
     date: ["18th April 2026"],
     time: "From Morning 7:00AM - 1:30PM",
     imageArray:[
+       {
+        url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1775300124/vvgc/images/2026/april/kanchivasa_0418.jpg",
+        alt:"kanchivasa image",
+        id:1
+    },
      {
         url:"https://res.cloudinary.com/dixkqgqsi/image/upload/v1770527473/vvgc/images/2026/april/maha_rudra_yagnam.jpg",
-        alt:"shivratriimage1",
-        id:1
+        alt:"maharudra yagnam image",
+        id:2
     },
     
   ],
