@@ -18,7 +18,10 @@ export const upcoming_events = [
     description: [`All Are Welcome To Participate With Family Friends And a musical evening `,
     ],
     videoUrl: "",
-    details:[],
+    details:[`1:00 PM : Sri Venkateswara Abhisheka/Sri Nava Graha Shanthi Homam and Sani Graha Shanthi Homam Nava Graha Abhisheka Sani Graha Abhisheka, Sani Dev Thel /Thaila Abhisheka Sani chalisa Aarati Sri Vishnu Sahasra Nama Chanting Aarati and Mantra Pushpa`,
+      `3:30PM - 6:00 PM : Smt Gayathri Venkataraghavan Music Performance`,
+      `5:00 PM : Sri Gomatha Pooja Aarati`
+    ],
     sponsorLinks: [
         {
         url: `https://scan.page/7b00ZP`,
