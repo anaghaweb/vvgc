@@ -4,10 +4,17 @@ import Link from "next/link";
 import { FcCalendar } from "react-icons/fc";
 import { FcClock } from "react-icons/fc";
 import React_Video_Player from "@modules/common/components/react-video-player";
+import Divider from "@modules/common/components/divider";
 
 interface SponsorLink {
   url: string;
   name: string;
+}
+
+interface imageArray {
+  url: string;
+  alt: string;
+  id: number;
 }
 
 interface NewEventCardProps {
@@ -15,11 +22,11 @@ interface NewEventCardProps {
   subtitle: string;
   date?: string[];
   time?: string;
-  imageUrl?: string;
-  videoUrl?:string;
+  imageArray?: imageArray[];
+  videoUrl?: string;
   description?: string[];
   sponsorLinks?: SponsorLink[];
-  details?:string[];
+  details?: string[];
   bgcolor?: string;
 }
 
@@ -28,7 +35,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
   subtitle,
   date,
   time,
-  imageUrl,
+  imageArray,
   videoUrl,
   description,
   sponsorLinks,
@@ -37,15 +44,15 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 }) => {
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
-  
+
   return (
     <>
       <article className={`w-full min-w-72 md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
        ${bgcolor}
         `}>
         {/* Heading */}
-        <header className="mb-4">
-          <h1 className="text-2xl sm:text-3xl font-semibold font-noto_serif text-indigo-950 mb-2">
+        <header className="mb-4 text-center">
+          <h1 className="text-2xl sm:text-3xl  font-semibold font-noto_serif text-indigo-950 mb-2">
             {heading}
           </h1>
           <div className="">
@@ -59,7 +66,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
               {date &&
                 date.map((ele) =>
                   <div key={ele} className="flex p-2 gap-2 justify-center items-center">
-                    <FcCalendar className="h-4 w-4"/><span className="font-medium">{ele}</span>
+                    <FcCalendar className="h-4 w-4" /><span className="font-medium">{ele}</span>
                   </div>
                 )
               }
@@ -71,9 +78,9 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           </div>
         )}
 
-         {/* Sponsor Links (Grid Layout) */}
+        {/* Sponsor Links (Grid Layout) */}
         {sponsorLinks && sponsorLinks.length > 0 && (
-          <div className="flex flex-col gap-3 mb-6">
+          <div className="flex flex-col justify-center items-center gap-3 mb-6">
             {sponsorLinks.map((link, index) => (
               <Link
                 key={index}
@@ -94,45 +101,49 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
           )
         }
         {/* Image */}
-        {imageUrl && (
-          <a
-            href={imageUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mb-4"
-          >
-            <img
-              src={imageUrl}
-              alt={heading}
-              className="w-full h-auto object-cover rounded-lg transition-transform duration-200 hover:scale-[1.02]"
-            />
-          </a>
-        )}
+        <div className="flex flex-col lg:flex-row flex-wrap gap-2 mb-4 mx-auto">
+
+          {imageArray &&
+            imageArray.map(image =>
+              <a
+                key={image.id}
+                href={image.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto"
+              >
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  className="min-w- max-w-60 object-contain rounded-lg transition-transform duration-200 hover:scale-[1.02]"
+                />
+              </a>
+            )
+          }
+        </div>
 
         {/* Details */}
         {
-          details && (
-            details.map((ele)=>
-              <div key={ele} className="p-4 bg-yellow-100 text-center">
-            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
-              {ele}
-            </p>
+          details && details.map((ele, index) =>{
+            return <div key={ele} className="  p-2">
+              <p className="font-roboto text-gray-950 text-base text-left">
+                {ele}
+              </p>
             </div>
-            )
-          )
+          })
         }
 
         {/* Description */}
         {description && (
           description.map((ele) =>
-            <div key={ele} className="p-4 bg-yellow-100 text-center">
-            <p  className="font-cormorant font-semibold text-emerald-950 text-xl">
-              {ele}
-            </p>
+            <div key={ele} className="p-4  text-center">
+              <p className="font-cormorant font-semibold text-gray-950 text-xl">
+                {ele}
+              </p>
             </div>
           )
         )}
-       
+        <Divider />
       </article>
     </>
   );

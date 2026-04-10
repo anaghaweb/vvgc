@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@modules/layout/header/page";
 import Footer from "@modules/layout/footer/page";
+import Script from 'next/script'
 import {
   roboto,
   opensans,
@@ -11,10 +12,8 @@ import {
   noto_sans, noto_sans_display, noto_serif, noto_serif_display
 } from "@lib/fonts/fonts";
 import React from "react";
-
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 import { Toaster } from 'sonner';
-
 import { Metadata } from "next"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -74,10 +73,12 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`max-w-full font-sans box-border m-0
-    ${inter.variable} ${roboto_mono.variable} 
-    ${noto_sans.variable} ${noto_sans_display.variable} ${noto_serif.variable} ${noto_serif_display.variable}
-    ${roboto.variable} ${opensans.variable} ${playfair.variable} ${cormorant.variable}`
+      <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
+            ${inter.variable} ${roboto_mono.variable} 
+          ${noto_sans.variable} ${noto_sans_display.variable} 
+          ${noto_serif.variable} ${noto_serif_display.variable}
+          ${roboto.variable} ${opensans.variable} ${playfair.variable}
+          ${cormorant.variable}`
       }>
         <TooltipProvider>
           <Header />
@@ -85,7 +86,15 @@ export default function RootLayout({
           <Footer />
           <Toaster />
         </TooltipProvider>
+        <Script
+          src={`https://askable.gentic.in/versions/v0.1.4/askable-ws.js?v=${Date.now()}`}
+          data-site-id="vvgc-org"
+          data-widget-type="ws"
+          data-api-base-url={'https://askable.gentic.in'}
+          strategy="afterInteractive"
+        />
       </body>
+
     </html>
   );
 }

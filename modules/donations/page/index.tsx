@@ -14,12 +14,9 @@ import GodhanamInDonation from "../components/godhanam";
 const DonationsPageView = () => {
 
     const divine_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg';
-
     const go_dhanam_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914207/VVGC%20San%20Martin%20Temple%20Data/temple-donation-image-1_fb8q9e.jpg';
-
-    const godhanam_donate_img = 'https://res.cloudinary.com/dixkqgqsi/image/upload/v1694926304/VVGC%20San%20Martin%20Temple%20Data/VVGC/GoDanam_ar6vy1.jpg';
-
-    const TPN = "https://res.cloudinary.com/dixkqgqsi/image/upload/v1717667737/VVGC%20Images/TPN_xouysf.png";
+    const specialfundraisingimageUrl = `https://res.cloudinary.com/dixkqgqsi/image/upload/v1770963558/vvgc/images/2026/recurring/vvgc_special_fund_raising_flyer_webp.webp`;
+   
   return (
 
     <Fragment>
@@ -29,7 +26,7 @@ const DonationsPageView = () => {
          <Divider className="border-rose-200" />
          <PaymentsContainer />
          <Divider className="border-rose-200" />
-        <PhaseTwoConstruction />
+        <PhaseTwoConstruction imageurl={specialfundraisingimageUrl}/>
         <Divider className="border-rose-200" />
         <LoanProgram />
         <Divider className="border-rose-200" />

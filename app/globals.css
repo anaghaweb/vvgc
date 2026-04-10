@@ -6,6 +6,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+@layer base {
+
+ select {
+  appearance: none;
+  background-image: none;
+  --webkit-appearance:none;
+  --moz-appearance:none;
+}
+
+}
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -51,9 +62,13 @@
   input[type="search"]::-webkit-search-results-decoration {
     -webkit-appearance: none;
   }
+
+   
 }
 
 @layer components {
+
+   
   .content-container {
     @apply max-w-[1440px] w-full mx-auto px-4;
   }
@@ -155,6 +170,8 @@
       50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
       66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
   }
+
+ 
   
 }
 

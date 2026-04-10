@@ -6,6 +6,7 @@ import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
 import Upcoming_Event from "./upcoming_event";
 import Image_Tiles from "@modules/common/components/image_tiles";
+import HoliEvent_2026 from "@modules/events/components/2026/march/holi";
 
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
@@ -16,8 +17,8 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   const urlset = [
     `https://res.cloudinary.com/dixkqgqsi/image/upload/v1758251531/vvgc/images/2025/september/lalitha_abhishekam.jpg`,
     'https://res.cloudinary.com/dixkqgqsi/image/upload/v1751856122/vvgc/images/2025/July/07/hanuman_chalisa_chanting.jpg',
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1749753566/vvgc/images/2025/june/23/ekadasha_vara_sri_rudrabhisheka.jpg`,
-    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1759988293/vvgc/images/2025/october/everysatpooja.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1770527207/vvgc/images/2026/recurring/ekadasa_2026.jpg`,
+    `https://res.cloudinary.com/dixkqgqsi/image/upload/v1770533776/vvgc/images/2026/recurring/hanuman_pooja.jpg`,
   ];
 
   try {
@@ -55,6 +56,12 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Events:
             </h2>
             <article className="flex flex-col gap-2 w-full">
+              {/* <section className="flex flex-col gap-2 text-center">
+              <h3 className="font-semibold font-cormorant text-2xl md:text-4xl text-red-900">Vasantha Navarathri Celebrations</h3>
+              <h4 className="font-semibold font-roboto text-sm text-gray-800">Sri Vallabha Maha Ganapathi Temple - VVGC</h4>
+              <p className="font-semibold font-roboto text-sm  text-gray-800">March 19 – April 3, 2026</p>
+              <p className="font-semibold font-roboto text-sm  text-gray-800">Daily Sri Lalitha Sahasra Nama Archana – 6:00 PM</p>
+              </section> */}
               <Upcoming_Event />
             </article>
             <Divider className="my-4" />
