@@ -5,11 +5,11 @@ const gtm_script = `
  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', ${gtmid});
+  gtag('config', '${gtmid}');
 `
 export default function GoogleTagManager() {
         return <>
-                <Script async src={`https://www.googletagmanager.com/gtag/js?id=${gtmid}`} strategy="afterInteractive"/>
+                <Script id="gtm" async src={`https://www.googletagmanager.com/gtag/js?id=${gtmid}`} strategy="afterInteractive"/>
                 <Script  strategy="afterInteractive"> 
                 {gtm_script}
                 </Script>
