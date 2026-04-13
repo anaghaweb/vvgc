@@ -1,4 +1,5 @@
 declare module 'nodemailer';
+declare module '*.css';
 
 declare type MediaProps = {    
     title: string;

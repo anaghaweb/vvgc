@@ -1,7 +1,8 @@
-import "./globals.css";
 import Header from "@modules/layout/header/page";
 import Footer from "@modules/layout/footer/page";
 import Script from 'next/script'
+import "./globals.css";
+import GoogleTagManager from "@modules/analytics";
 import {
   roboto,
   opensans,
@@ -57,6 +58,7 @@ export default function RootLayout({
         />
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* <link rel="stylesheet" href="./globals.css" /> */}
         <link
           rel="icon"
           href="/favicon/icon.png"
@@ -69,8 +71,9 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+       
       </head>
-
+      
       <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
             ${inter.variable} ${roboto_mono.variable} 
           ${noto_sans.variable} ${noto_sans_display.variable} 
@@ -80,6 +83,7 @@ export default function RootLayout({
       }>
         <TooltipProvider>
           <Header />
+          <GoogleTagManager />
           {children}
           <Footer />
           <Toaster />
@@ -91,7 +95,9 @@ export default function RootLayout({
           data-api-base-url={'https://askable.gentic.in'}
           strategy="afterInteractive"
         />
+
       </body>
+      
 
     </html>
   );
