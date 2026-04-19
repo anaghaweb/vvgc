@@ -83,7 +83,7 @@ export default function RootLayout({
       }>
         <TooltipProvider>
           <Header />
-          <GoogleTagManager />
+          {/* <GoogleTagManager /> */}
           {children}
           <Footer />
           <Toaster />
