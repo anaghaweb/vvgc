@@ -1,4 +1,3 @@
-'use server'
 const getDayOfTheWeek = () => {
     const today = getCurrentDate();
     const num = today.getDay();
