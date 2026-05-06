@@ -93,6 +93,7 @@ export default function RootLayout({
           data-api-base-url={'https://askable.gentic.in'}
           strategy="afterInteractive"
         />
+        
       </body>
 
     </html>

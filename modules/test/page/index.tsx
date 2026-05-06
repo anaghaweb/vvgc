@@ -5,8 +5,7 @@ import CalenderWithTimeZone from "../calendar";
 const TestPage = async () => {
     const response = false;
   return (
-    <Fragment>
-    
+    <Fragment>    
       <MahaRudraYagnamSummaryLink />
       <CalenderWithTimeZone />
     </Fragment>
