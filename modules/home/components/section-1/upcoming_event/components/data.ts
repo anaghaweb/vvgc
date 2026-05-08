@@ -80,5 +80,31 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
+
+  {
+    heading: "Hanuman Chalisa",
+    subtitle: "By Dr.Ranganji",
+    date: ["30th May"],
+    time: "From 4 pm to 5.30 pm",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1778214994/vvgc/images/2026/may/hanuman_chalisa_0530.jpg",
+        alt: "Hanuman Chalisa 30th May Flyer",
+        id: 1
+      },
+    ],
+    description: [`All Are Welcome To Participate With Family and Friends`,
+    ],
+    videoUrl: "",
+    details: [],
+    sponsorLinks: [
+      // {
+      //   url: `https://paybee.io/@vvgc@64`,
+      //   name: "Click here to donate"
+      // },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
 ];
 
