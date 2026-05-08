@@ -1,4 +1,4 @@
-"use server"
+
 import type { CalendarEvent } from "types/global";
 import { AllEventsData } from "./mainEvents"
 import { revalidateTag } from "next/cache";
@@ -8,7 +8,8 @@ const getHomePageEventsData = async ():Promise<CalendarEvent[]> => {
       response = await AllEventsData();
       if(response)
          result = response.filter(event => event.type === "sponsor"); 
-      else throw new Error("Error fetching data from server")
+      else throw new Error("Error fetching data from server");
+      console.log("get home page event function called: ", Date.now());
       return result;
    
    }  

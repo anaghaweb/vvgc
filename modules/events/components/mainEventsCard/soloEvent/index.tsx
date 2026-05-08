@@ -15,8 +15,8 @@ import {
     return data.title && data.eventList.length === 1 ? (
       <Card
         key={data.id}
-        className={`border-[1px] border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
-         bg-gradient-to-r from-green-50 via-slate-50 to-blue-50
+        className={`border border-purple-300 flex flex-col w-full lg:max-w-2xl sm:w-full 
+         bg-linear-to-r from-green-50 via-slate-50 to-blue-50
          text-gray-900 text-left
           m-auto  my-2 sm:p-2`}
       >

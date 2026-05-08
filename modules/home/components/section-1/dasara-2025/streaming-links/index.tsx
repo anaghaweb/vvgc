@@ -31,7 +31,7 @@ export default function GaneshaPoojaStreaming() {
       
 
       {/* Foreground content */}
-      <div className="relative space-y-6 text-gray-800 ">
+      <div className="relative gap-y-6 text-gray-800 ">
         {/* Streaming Links */}
         <div className="">
           <h3 className="text-base mt-4 md:text-xl font-semibold text-orange-700">

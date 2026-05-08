@@ -7,8 +7,8 @@ import { SiGoogleforms } from "react-icons/si";
 export default function GaneshaWorkshop() {
   return (
     <div className="flex justify-center md:m-6 mb-8">
-      <Card className="max-w-5xl w-full shadow-sm rounded-2xl">
-        <CardHeader className="text-center space-y-2">
+      <Card className="max-w-5xl w-full shadow-xs rounded-2xl">
+        <CardHeader className="text-center gap-y-2">
           <CardTitle className="text-2xl font-bold text-orange-700">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSc3VTYM8bFzE7fL1Z5Mg5tJ3qxjofgu-5qHPcvjXTGBNJqOaQ/viewform"
@@ -22,7 +22,7 @@ export default function GaneshaWorkshop() {
           <p className="text-gray-600">
             Sri Vallaba Ganapathi Temple, San Martin
           </p>
-            <div className={`p-4 inline-flex items-center justify-center gap-2 mx-auto shadow-sm rounded-sm
+            <div className={`p-4 inline-flex items-center justify-center gap-2 mx-auto shadow-xs rounded-sm
                 bg-gradient-to-tr from-pink-100 via-orange-100 bg-fuchsia-200
 
                 `}>
@@ -38,7 +38,7 @@ export default function GaneshaWorkshop() {
               </div>
         </CardHeader>
 
-        <CardContent className="space-y-6 text-gray-700">
+        <CardContent className="gap-y-6 text-gray-700">
           <div className="flex flex-col lg:flex-row gap-6 items-center">
             <div className="flex-1">
               <Image
@@ -50,7 +50,7 @@ export default function GaneshaWorkshop() {
               />
             </div>
 
-            <div className="flex-1 space-y-4">
+            <div className="flex-1 gap-y-4">
               <p>
                 <strong>Create your own Ganesha Murti with clay!</strong>
               </p>
@@ -71,7 +71,7 @@ export default function GaneshaWorkshop() {
                 Donations as cash or check are welcome to support such SEVA activities! (Checks can be made to VVGC)
               </p>
 
-              <div className="bg-orange-50 p-4 rounded-xl space-y-2">
+              <div className="bg-orange-50 p-4 rounded-xl gap-y-2">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-orange-600" />
                   <span className="font-medium">Date:</span> 24th August, Sunday
@@ -86,9 +86,9 @@ export default function GaneshaWorkshop() {
                 </div>
               </div>
 
-              <div className="space-y-1">
+              <div className="gap-y-1">
                 <h3 className="font-semibold text-orange-700">Aim of the workshop</h3>
-                <ul className="list-disc list-inside space-y-1">
+                <ul className="list-disc list-inside gap-y-1">
                   <li>Cultivate love for Lord Ganesha</li>
                   <li>Learn the art of murti making with clay</li>
                   <li>Do your part to save the environment</li>

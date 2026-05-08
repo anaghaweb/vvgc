@@ -1,13 +1,13 @@
 import * as React from 'react';
 import HeroCard from '@modules/home/components/Hero-section';
 import HomePageView from '@modules/home/page';
-import { AllEventsData } from "@lib/server-actions/mainEvents";
-import { CalendarEvent } from "types/global";
 import getHomePageEventsData from '@lib/server-actions/homePageEvents';
 import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 import type { Metadata } from 'next';
-import Script from 'next/script';
+
 import AskableAgentScript from '@lib/askable-agent';
+
+//export const revalidate = 300;
 
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = "https://vvgc.org/images/og/hsbanner.jpg";
@@ -45,7 +45,7 @@ export const viewport = {
 }
 
 export default async function Home() {
-  // const data: CalendarEvent[] = await AllEventsData();
+  
   const homePageData = await getHomePageEventsData();
   const data = await getMainEventsData();
   
@@ -53,6 +53,6 @@ export default async function Home() {
   <React.Fragment>
     <HeroCard page="home" text='A Home For Spiritual Devotees' />
     <HomePageView data={data} homePageData={homePageData} />
-    {/* <AskableAgentScript /> */}
+    <AskableAgentScript />
   </React.Fragment>)
 }

@@ -49,7 +49,7 @@
     "tailwind.config.ts",
     "./types/index.d.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "postcss.config.mjs"  ],
   "exclude": [
     "node_modules",
     ".next",

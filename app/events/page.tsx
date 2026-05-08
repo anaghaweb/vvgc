@@ -3,10 +3,11 @@ import { Metadata } from "next"
 import { weeklyEventsDataList } from "@lib/data/weeklyEventData";
 import EventsPageView from "@modules/events/pages";
 import { notFound } from "next/navigation";
-import { AllEventsData } from "@lib/server-actions/mainEvents";
 import { CalendarEvent, type EventTypes } from "types/global";
 import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 
+
+//export const revalidate = 300;
 
 export async function generateMetadata({ searchParams }: { searchParams: EventTypes }): Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/inner.jpg`;
@@ -42,7 +43,7 @@ export async function generateMetadata({ searchParams }: { searchParams: EventTy
 
 export default async function Event({ searchParams }:
   {
-    searchParams: EventTypes
+    searchParams: Promise<EventTypes>
   }
 ) {
 
@@ -51,9 +52,11 @@ export default async function Event({ searchParams }:
   return (
     <>
       <main className="mx-auto py-4 bg-neutral-100">
-        <EventsPageView data={templateEventData} 
+        <EventsPageView 
+        data={templateEventData} 
         weeklyEventsData={weeklyEventsDataList} 
-        searchParams={searchParams} />
+        searchParams={searchParams} 
+        />
       </main>
     </>
   );

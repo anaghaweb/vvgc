@@ -5,7 +5,7 @@ const MahaRudraYagnamSummaryLink = () => {
   const pongal = `https://vvgc.org/events/event_571`;
   const maharudra = `https://vvgc.org/events/event_661`;
   return (
-    <div className="p-2 relative bg-yellow-50 bg-shiva bg-[bottom_-3rem_left_-2rem] bg-[180px_auto] bg-no-repeat w-full sm:w-80 m-2 rounded-sm shadow-sm font-sans"
+    <div className="p-2 relative bg-yellow-50 bg-shiva bg-[bottom_-3rem_left_-2rem] bg-[180px_auto] bg-no-repeat w-full sm:w-80 m-2 rounded-sm shadow-xs font-sans"
 
     >
       {/* <div className="absolute left-0 bottom-0 bg-yellow-50 w-28">

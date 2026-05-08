@@ -6,7 +6,7 @@ const External_Link = ({text,url}:{text:string,url:string}) => {
   return (
     <div className="flex justify-center w-full">
     <Link
-    className={`inline-flex flex-shrink-0 justify-center items-center gap-2 max-w-fit rounded-l-full rounded-r-full font-roboto bg-blue-200 bg-opacity-75 transition-opacity hover:bg-gray-300 
+    className={`inline-flex shrink-0 justify-center items-center gap-2 max-w-fit rounded-l-full rounded-r-full font-roboto bg-blue-200 bg-opacity-75 transition-opacity hover:bg-gray-300 
       py-2 px-4 my-1 mx-auto
       text-base text-indigo-800 hover:text-blue-900`}
     target='_blank'
