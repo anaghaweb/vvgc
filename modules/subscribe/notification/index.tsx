@@ -9,7 +9,7 @@ export const SubscribeToast = () => {
     toast.custom(
       (t) => (
         <div
-          className={`mt-12 p-3 text-black h-20 w-84 flex flex-shrink-0 items-start
+          className={`mt-12 p-3 text-black h-20 w-84 flex shrink-0 items-start
         gap-4 text-sm text-left font-roboto rounded-md shadow-md tracking-tighter leading-5
         bg-gradient-to-r  from-blue-200 to-purple-300
         `}

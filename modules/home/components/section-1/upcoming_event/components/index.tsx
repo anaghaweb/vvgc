@@ -47,7 +47,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
 
   return (
     <>
-      <article className={`w-full min-w-72 md:max-w-xl md:mx-auto shadow-sm overflow-hidden border border-yellow-200 p-4 md:p-8
+      <article className={`w-full min-w-72 md:max-w-xl md:mx-auto shadow-xs overflow-hidden border border-yellow-200 p-4 md:p-8
        ${bgcolor}
         `}>
         {/* Heading */}

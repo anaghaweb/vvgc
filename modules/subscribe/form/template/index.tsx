@@ -1,12 +1,13 @@
 "use client";
 import { SubscribeMessage } from "../components/formattedResponse";
 import { useFormState } from "react-dom";
+import { useActionState } from "react";
 import { NewsLetterSubscription } from "@modules/subscribe/form/components/initiateSubProcess";
 import SubscribeSubmitButton from "../components/subscribeSubmitButton";
 import { FormLabel } from "@modules/common/components/ui/form";
 
 export function SubscribeForm() {
-  const [message, formAction] = useFormState(NewsLetterSubscription, null);
+  const [message, formAction] = useActionState(NewsLetterSubscription, null);
 
   if (message) {
 
@@ -23,7 +24,7 @@ export function SubscribeForm() {
               {/* EMAIL */}
               <input
                 required
-                className={`w-full border bg-white rounded-md border-slate-300 text-sm shadow-sm placeholder-slate-400 
+                className={`w-full border bg-white rounded-md border-slate-300 text-sm shadow-xs placeholder-slate-400 
                   focus:outline-none focus:ring-1 focus:border-sky-600 focus-ring-sky-500 p-2
                   `}
                 placeholder="Email Address"

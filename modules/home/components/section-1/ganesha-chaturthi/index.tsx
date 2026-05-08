@@ -18,7 +18,7 @@ export default function GaneshaChaturthi_2025() {
          
         `}>
         {/* Header Section */}
-        {/* <div className="text-center space-y-2 ">
+        {/* <div className="text-center gap-y-2 ">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-orange-700">
               Sri Ganesha Chaturthi Celebrations
@@ -30,7 +30,7 @@ export default function GaneshaChaturthi_2025() {
               </span>
             </p>
           </div>
-          <div className="space-y-2 text-sm md:text-base">
+          <div className="gap-y-2 text-sm md:text-base">
             <div className="flex justify-start items-baseline md:justify-center gap-2">
               <FaCalendarAlt className="text-orange-600 w-3 h-3" />
               <span>Daily Nithya Ganapathi Homam</span>
@@ -45,7 +45,7 @@ export default function GaneshaChaturthi_2025() {
             </div>
           </div>
         </div> */}
-        <div className="text-left md:text-center space-y-4">
+        <div className="text-left md:text-center gap-y-4">
           {/* Main Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-orange-700 tracking-wide">
             Sri Ganesha Chaturthi Celebrations
@@ -62,17 +62,17 @@ export default function GaneshaChaturthi_2025() {
 
 
           {/* Event Details */}
-          <div className="space-y-3 w-full md:max-w-fit p-2 text-sm md:text-base mx-0 md:mx-auto bg-yellow-50" >
+          <div className="gap-y-3 w-full md:max-w-fit p-2 text-sm md:text-base mx-0 md:mx-auto bg-yellow-50" >
             <div className="flex items-center gap-3 justify-start md:justify-center">
-              <FaCalendarAlt className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <FaCalendarAlt className="text-orange-600 w-4 h-4 shrink-0" />
               <span className="text-gray-800">Daily Nithya Ganapathi Homam</span>
             </div>
             <div className="flex items-center gap-3 justify-start md:justify-center">
-              <FaClock className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <FaClock className="text-orange-600 w-4 h-4 shrink-0" />
               <span className="text-gray-800">Weekdays 6 PM • Weekends 4 PM</span>
             </div>
             <div className="flex items-center gap-3 justify-start md:justify-center">
-              <FaMapMarkerAlt className="text-orange-600 w-4 h-4 flex-shrink-0" />
+              <FaMapMarkerAlt className="text-orange-600 w-4 h-4 shrink-0" />
               <span className="text-gray-800">
                 VVGC – 1355 Monterey Hwy, San Martin, CA 95046
               </span>
@@ -82,7 +82,7 @@ export default function GaneshaChaturthi_2025() {
 
 
         {/* Main Content */}
-        <div className="space-y-6 text-gray-700">
+        <div className="gap-y-6 text-gray-700">
           <div className="flex flex-col items-center xl:flex-row gap-6">
             {/* Streaming Component */}
             

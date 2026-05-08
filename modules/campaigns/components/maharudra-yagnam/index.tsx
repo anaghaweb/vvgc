@@ -7,7 +7,7 @@ import React_Video_Player from '@modules/common/components/react-video-player';
 const MahaRudraYagnaVideo = () => {
   const url="https://youtu.be/HrpqEK-Iuy8https://youtu.be/HrpqEK-Iuy8";
   return (
-    <div className="h-auto md:w-2/3 bg-green-50 shadow-sm flex-1 my-4 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base gap-4">
+    <div className="h-auto md:w-2/3 bg-green-50 shadow-xs flex-1 my-4 mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base gap-4">
       
       <div>
 

@@ -6,8 +6,6 @@ import Divider from "@modules/common/components/divider";
 import { CalendarEvent } from "types/global";
 import Upcoming_Event from "./upcoming_event";
 import Image_Tiles from "@modules/common/components/image_tiles";
-import HoliEvent_2026 from "@modules/events/components/2026/march/holi";
-
 
 const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
   let currentDay = getDayOfTheWeek();
@@ -37,8 +35,8 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
     console.log(error.name);
   }
   return (
-    <div className=" bg-gradient-to-r from-white via-slate-50 to-yellow-50 p-2 max-w-[1440] mx-auto">
-      <div className={`min-h-[300px] grid grid-cols-1 lg:grid-cols-2`}>
+    <div className=" bg-linear-to-r from-white via-slate-50 to-yellow-50 p-2 max-w-[1440] mx-auto">
+      <div className={`min-h-75 grid grid-cols-1 lg:grid-cols-2`}>
         <div className="h-auto flex-1 flex-col lg:pl-2 md:pl-4 col-span-full">
           <h2 className="font-noto_sans_display text-xl md:text-3xl text-left text-cyan-950">
             Today at the Temple, {currentDay}
@@ -56,13 +54,7 @@ const SectionOne = ({ eventdata }: { eventdata: CalendarEvent[] }) => {
               Upcoming Events:
             </h2>
             <article className="flex flex-col gap-2 w-full">
-              {/* <section className="flex flex-col gap-2 text-center">
-              <h3 className="font-semibold font-cormorant text-2xl md:text-4xl text-red-900">Vasantha Navarathri Celebrations</h3>
-              <h4 className="font-semibold font-roboto text-sm text-gray-800">Sri Vallabha Maha Ganapathi Temple - VVGC</h4>
-              <p className="font-semibold font-roboto text-sm  text-gray-800">March 19 – April 3, 2026</p>
-              <p className="font-semibold font-roboto text-sm  text-gray-800">Daily Sri Lalitha Sahasra Nama Archana – 6:00 PM</p>
-              </section> */}
-              <Upcoming_Event />
+             <Upcoming_Event />
             </article>
             <Divider className="my-4" />
             <h2 className="font-serif text-xl md:text-2xl text-left my-4 text-indigo-950">

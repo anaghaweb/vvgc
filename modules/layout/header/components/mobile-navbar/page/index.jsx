@@ -30,7 +30,7 @@ const MobileNavigationMenu = () => {
         </SheetTrigger>
         <SheetContent side="left" className="overflow-y-auto">
           <SheetHeader>
-            <SheetTitle className="flex flex-shrink-0 items-baseline justify-center gap-4 font-cormorant">
+            <SheetTitle className="flex shrink-0 items-baseline justify-center gap-4 font-cormorant">
               <OM_SVG w={12} h={12} color="grey" /> Welcome to VVGC{" "}
               <OM_SVG w={12} h={12} color="grey" />
             </SheetTitle>
