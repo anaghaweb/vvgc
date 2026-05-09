@@ -28,9 +28,9 @@ export default function GaneshaPoojaStreaming() {
         aria-hidden="true"
       ></div>
 
-      <div className="pt-6 space-y-2 text-sm md:text-base">
+      <div className="pt-6 gap-y-2 text-sm md:text-base">
         <h4 className="font-semibold text-orange-700">Special Events</h4>
-        <ul className="list-disc list-inside space-y-1">
+        <ul className="list-disc list-inside gap-y-1">
           <li className="list-none">
             <strong>August 27, 2025:</strong> Swarna Ganesha Alankaram
           </li>
@@ -53,7 +53,7 @@ export default function GaneshaPoojaStreaming() {
             <strong>9 PM: </strong> Sukh karta dikh harta aarati and Sri Jai Jagadeshahare aarati for balaji ekantha seva and temple closes
           </li>
         </ul>
-        <ul className="list-disc list-inside space-y-1">
+        <ul className="list-disc list-inside gap-y-1">
           <li className="list-none">
             <strong>September 7, 2025:</strong> Ganesha Visarjan (Immersion)
           </li>
@@ -71,7 +71,7 @@ export default function GaneshaPoojaStreaming() {
       </div>
 
       {/* Foreground content */}
-      <div className="relative space-y-6 text-gray-800 ">
+      <div className="relative gap-y-6 text-gray-800 ">
         {/* Streaming Links */}
         <div className="">
           <h3 className="text-base mt-4 md:text-xl font-semibold text-orange-700">
@@ -120,9 +120,9 @@ export default function GaneshaPoojaStreaming() {
 
 
         {/* Sponsorship */}
-        <div className="pt-6 text-sm md:text-base text-gray-700 space-y-2">
+        <div className="pt-6 text-sm md:text-base text-gray-700 gap-y-2">
           <h4 className="font-semibold text-orange-700">Sponsorships</h4>
-          <ul className="space-y-1">
+          <ul className="gap-y-1">
             <li>🥇 Gold Sponsor – $500</li>
             <li>🍚 Sponsor Annadhanam/Mahaprasadam – $2500</li>
             <li>🌸 Sponsor Flowers – $1001</li>

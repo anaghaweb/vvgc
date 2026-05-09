@@ -45,7 +45,6 @@ export type WeeklyEvents =
     }[]  
 }
 
-
 export type Campaign = {
   id: string;
   start?: string;

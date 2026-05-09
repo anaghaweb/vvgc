@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const MahaPrasadamSanMartin = () => {
   return (
-    <div className="h-auto flex-1 my-4 bg-pink-50 shadow-sm mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
+    <div className="h-auto flex-1 my-4 bg-pink-50 shadow-xs mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
       <div>
 
     <h2 className="text-2xl md:text-3xl font-serif text-indigo-950">
@@ -48,7 +48,7 @@ Both Saturdays And Sundays</p>
 
     <div className="flex justify-center w-full">
     <Link
-    className={`inline-flex flex-shrink-0 justify-center items-center gap-2 max-w-fit rounded-l-full rounded-r-full font-roboto  bg-blue-200 bg-opacity-75 transition-opacity hover:bg-gray-300 
+    className={`inline-flex shrink-0 justify-center items-center gap-2 max-w-fit rounded-l-full rounded-r-full font-roboto  bg-blue-200 bg-opacity-75 transition-opacity hover:bg-gray-300 
       py-2 px-4 my-1 mx-auto
       text-xl text-indigo-800 hover:text-blue-900`}
     target='_blank'

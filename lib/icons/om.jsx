@@ -3,7 +3,7 @@ import React from "react";
 const OM_SVG = ({w,h, color}) => {
   return (
     <svg
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       viewBox="0 0 512 512"
       width={w || 24}
       height={h || 24}

@@ -10,7 +10,7 @@ import Build_Kitchen from '@modules/campaigns/components/vvgc-kitchen/build-kitc
 const KitchenVVGC = () => {
   return (
     <Fragment>
-      <div className="h-auto flex-1 my-4 bg-yellow-50 shadow-sm mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
+      <div className="h-auto flex-1 my-4 bg-yellow-50 shadow-xs mx-auto p-2 md:pl-4 col-span-1 text-left track-tight text-sm lg:text-base w-full md:w-2/3">
         <div>
           <p className="mt-12 mb-2 font-serif text-2xl md:text-3xl text-left text-cyan-950">
             Kitchen at VVGC San Martin

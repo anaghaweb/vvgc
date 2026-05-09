@@ -1,14 +1,139 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+@import "tailwindcss";
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+
+/* DESIGN TOKENS */
+
+
+
+/* FONT UTILITIES */
+
+@utility font-inter { font-family: var(--font-inter); }
+@utility font-roboto { font-family: var(--font-roboto); }
+@utility font-playfair { font-family: var(--font-playfair); }
+@utility font-opensans { font-family: var(--font-opensans); }
+@utility font-cormorant { font-family: var(--font-cormorant); }
+@utility font-noto-sans { font-family: var(--font-noto-sans); }
+@utility font-noto-serif { font-family: var(--font-noto-serif); }
+
+/* CONTAINER */
+
+@utility container-custom {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom { padding-inline: 2rem; }
+}
+@media (min-width: 1024px) {
+  .container-custom { padding-inline: 4rem; }
+}
+@media (min-width: 1280px) {
+  .container-custom { padding-inline: 5rem; }
+}
+@media (min-width: 1536px) {
+  .container-custom {
+    padding-inline: 6rem;
+    max-width: 1400px;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@utility animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+@utility animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
+
+/* BACKGROUND IMAGES UTILITIES */
+
+@utility bg-hero-donations {
+  background-image: url("/images/donations/banner/donationsBanner.png");
+}
+
+@utility bg-hero-aboutus {
+  background-image: url("/images/aboutus/banner/1.jpg");
+}
+
+@utility bg-hero-event {
+  background-image: url("/images/events/banner/eventsBanner.jpg");
+}
+
+@utility bg-hero-pooja {
+  background-image: url("/images/pooja-services/banner/poojaBanner.jpg");
+}
+
+@utility bg-hero-prasadam {
+  background-image: url("/images/prasadam-services/banner/prasadamBanner.jpg");
+}
+
+@utility bg-hero-san-jose {
+  background-image: url("/images/sanjose/banner/1.jpg");
+}
+
+@utility bg-hero-priests {
+  background-image: url("/images/priests/banner/priestsBanner.jpg");
+}
+
+@utility bg-hero-home {
+  background-image: url("/images/home/banner/heroBanner.jpg");
+}
+
+@utility bg-hero-goshala {
+  background-image: url("/images/goshala/banner/goshalaBanner.jpg");
+}
+
+/* Decorative */
+@utility bg-divineabode {
+  background-image: url("https://res.cloudinary.com/dixkqgqsi/image/upload/v1691914214/VVGC%20San%20Martin%20Temple%20Data/VVGC/IMG-20230603-WA0002_slca3v.jpg");
+}
+
+@utility bg-ganesha {
+  background-image: url("/images/home/ganesha/bg_ganesha.avif");
+}
+
+@utility bg-tarika {
+  background-image: url("/images/home/ganesha/Tarika.webp");
+}
+
+@utility bg-gar1 {
+  background-image: url("/images/home/ganesha/gar1.jpg");
+}
+
+@utility bg-gar2 {
+  background-image: url("/images/home/ganesha/garland.png");
+}
+
+@utility bg-rangoli {
+  background-image: url("/images/home/ganesha/rangoli.avif");
+}
+
+@utility bg-chains {
+  background-image: url("/images/home/ganesha/chains.png");
+}
+
+@utility bg-trishul {
+  background-image: url("/images/home/maharudrayagnam/trishul_4.png");
+}
+
+@utility bg-shiva {
+  background-image: url("/images/home/maharudrayagnam/shiva.png");
+}
 
 
 @layer base {
-
  select {
   appearance: none;
   background-image: none;
@@ -34,7 +159,7 @@
 
   input:focus ~ label,
   input:not(:placeholder-shown) ~ label {
-    @apply -translate-y-2 text-xsmall-regular;
+    @apply -translate-y-2 text-sm;
   }
 
   input:focus ~ label {
@@ -61,79 +186,24 @@
   input[type="search"]::-webkit-search-results-button,
   input[type="search"]::-webkit-search-results-decoration {
     -webkit-appearance: none;
-  }
-
-   
+  }   
 }
 
-@layer components {
+@utility content-container{
+  max-width: 1440px;
+  width:100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
 
-   
-  .content-container {
-    @apply max-w-[1440px] w-full mx-auto px-4;
-  }
+@utility text-muted{
+  font-size:1rem;
+  font-weight: normal;
+  color: gray;
 
-  .contrast-btn {
-    @apply px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200 ease-in;
-  }
+}
 
-  .text-xsmall-regular {
-    @apply text-[10px] leading-4 font-normal;
-  }
-
-  .text-small-regular {
-    @apply text-xs leading-5 font-normal;
-  }
-
-  .text-small-semi {
-    @apply text-xs leading-5 font-semibold;
-  }
-
-  .text-base-regular {
-    @apply text-sm leading-6 font-normal;
-  }
-
-  .text-base-semi {
-    @apply text-sm leading-6 font-semibold;
-  }
-
-  .text-large-regular {
-    @apply text-base leading-6 font-normal;
-  }
-
-  .text-large-semi {
-    @apply text-base leading-6 font-semibold;
-  }
-
-  .text-xl-regular {
-    @apply text-2xl leading-[36px] font-normal;
-  }
-
-  .text-xl-semi {
-    @apply text-2xl leading-[36px] font-semibold;
-  }
-
-  .text-2xl-regular {
-    @apply text-[30px] leading-[48px] font-normal;
-  }
-
-  .text-2xl-semi {
-    @apply text-[30px] leading-[48px] font-semibold;
-  }
-
-  .text-3xl-regular {
-    @apply text-[32px] leading-[44px] font-normal;
-  }
-
-  .text-3xl-semi {
-    @apply text-[32px] leading-[44px] font-semibold;
-  }
-
-  .text-muted {
-    @apply text-base font-normal text-gray-600;
-  }
-
-  .customspinner {
+@utility customspinner {
     width: 50px;
     padding: 8px;
     aspect-ratio: 1;
@@ -154,7 +224,7 @@
     }
   }
 
-  .custom-dot-loader {
+  @utility custom-dot-loader {
     width:50px;
     height:12px;
     background: 
@@ -169,6 +239,26 @@
       33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
       50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
       66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
-  } 
-}
+  }
 
+
+  /* RECOMMENDED BY TAILWIND OFFICIAL UPGRADE GUIDE */
+
+  @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  dialog {
+    margin: auto;
+  }
+}

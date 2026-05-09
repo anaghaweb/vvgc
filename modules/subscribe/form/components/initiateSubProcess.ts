@@ -29,7 +29,7 @@ export async function NewsLetterSubscription(
             })
 
             //CLEANUP EXPIRED TOKENS
-            // await DeleteExpiredToken({sheets});
+           await DeleteExpiredToken({sheets});
 
             const response = await sheets.spreadsheets.values.get({
                 spreadsheetId:process.env.G_ID,

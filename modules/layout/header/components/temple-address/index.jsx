@@ -15,7 +15,7 @@ const TempleAddressHeader = () => {
           Sri Vallabha Maha Ganapathi Temple
         </p>
         <p
-          className={`tracking-tighter font-cormorant text-[12px] md:text-[14px]  `}
+          className={`tracking-tighter font-roboto text-xs text-[#000058]`}
         >
           (A Registered Non-Profit Organization - CA Tax ID: 61-1449457)
         </p>

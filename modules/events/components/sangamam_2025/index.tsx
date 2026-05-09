@@ -12,7 +12,7 @@ const SangamamHikeEvent = () => {
                 VVGC Sangamam' 2025 - A Hike/Walk Event
             </h1>
              <React_Video_Player vsrc={vurl}/>
-        <div className="mx-auto p-4 shadow-sm text-gray-800">
+        <div className="mx-auto p-4 shadow-xs text-gray-800">
            
 
             <div className="flex flex-col md:flex-row gap-6 justify-evenly">
@@ -50,7 +50,7 @@ const SangamamHikeEvent = () => {
 
                     <div className="mb-4">
                         <h2 className="font-bold text-blue-600 mb-2">Event Flow</h2>
-                        <ul className="list-disc pl-6 space-y-1">
+                        <ul className="list-disc pl-6 gap-y-1">
                             <li>🅿️ Car Park @ VVGC, San Martin</li>
                             <li>📝 Registration</li>
                             <li>🥗 Vegetarian Breakfast</li>

@@ -5,7 +5,7 @@ import type { CalendarEvent, EventTypes, WeeklyEvents } from 'types/global'
 
 const EventsPageView = ({data, weeklyEventsData, searchParams}:{
   data:CalendarEvent[],
-  searchParams: EventTypes,
+  searchParams: Promise<EventTypes>,
   weeklyEventsData: WeeklyEvents[]
 }) => {
   return (

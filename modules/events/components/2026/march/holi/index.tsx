@@ -41,9 +41,9 @@ export default function HoliEvent_2026() {
                 </Link>
             </Imageholder>            
         </div>
-      <div className="grid-cols-1 flex flex-col gap-4 p-2 h-full grow shrink-0 bg-red-50 backdrop-blur">
+      <div className="grid-cols-1 flex flex-col gap-4 p-2 h-full grow shrink-0 bg-red-50 backdrop-blur-sm">
         {/* Header */}
-        <div className="text-center space-y-2 ">
+        <div className="text-center gap-y-2 ">
           <h1 className="text-xl font-bold text-purple-700">
              Get Ready to Celebrate the Festival of Colors! 
           </h1>
@@ -103,12 +103,12 @@ export default function HoliEvent_2026() {
         </p>
 
         {/* Donation */}
-        <div className="bg-yellow-100 rounded-lg p-3 text-center font-medium space-y-4">
+        <div className="bg-yellow-100 rounded-lg p-3 text-center font-medium gap-y-4">
           Suggested Donation: $5 or more per family
         </div>
 
         {/* Links */}
-        <div className="space-y-2 text-sm">
+        <div className="gap-y-2 text-sm">
 
           <p>
             <strong>Register here:</strong>{" "}
@@ -133,7 +133,7 @@ export default function HoliEvent_2026() {
         </div>
 
         {/* Contacts */}
-        <div className="space-y-1 text-sm">
+        <div className="gap-y-1 text-sm">
           <p className="font-semibold">For More Info:</p>
           <div className="flex items-center gap-2">
             <MdPhone className="text-purple-600" />

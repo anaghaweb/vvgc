@@ -18,7 +18,7 @@ export default function NavratriEvent() {
           </p>
         </div>
          <React_Video_Player vsrc={url}/>
-        <div className="p-4 sm:p-6 md:p-10 space-y-6">
+        <div className="p-4 sm:p-6 md:p-10 gap-y-6">
           {/* Location */}
           <div className="bg-orange-200 rounded-xl p-3 md:p-6 shadow-md">
             <p className="text-sm sm:text-lg font-bold text-orange-900">📍 Location:</p>
@@ -52,7 +52,7 @@ export default function NavratriEvent() {
           {/* Highlights */}
           <div className="bg-orange-100 border-l-4 border-orange-600 rounded-xl p-3 md:p-6 shadow-md">
             <h3 className="text-base sm:text-xl md:text-2xl font-extrabold text-orange-800 mb-2">Join us for:</h3>
-            <ul className="list-disc list-inside text-xs sm:text-base text-gray-800 space-y-1">
+            <ul className="list-disc list-inside text-xs sm:text-base text-gray-800 gap-y-1">
               <li><span className="text-sm sm:text-base">🪔</span> Traditional Garba & Dandiya dancing</li>
               <li><span className="text-sm sm:text-base">🪔</span> Divine prayers and aarti</li>
               <li><span className="text-sm sm:text-base">🪔</span> Live musical performances</li>
@@ -62,7 +62,7 @@ export default function NavratriEvent() {
           </div>
 
           {/* Footer */}
-          <div className="text-center mt-6 space-y-2">
+          <div className="text-center mt-6 gap-y-2">
             <p className="text-sm sm:text-lg md:text-xl font-extrabold text-orange-900">
               Bring your family and friends for this auspicious celebration!
             </p>

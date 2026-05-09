@@ -83,60 +83,28 @@ export function FeedbackForm() {
      
         <Form {...form}>       
           
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
-              {/* <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Username</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Username" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              /> */}
-
-              {/* EMAIL */}
+            <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-y-2 p-2 bg-gray-200">
+             {/* EMAIL */}
               <FormField
                 control={form.control}
                 name="email"
+                
                 render={({ field }) => (
-                  <FormItem>
-                   
-                    <FormControl>
+                  <FormItem >                   
+                    <FormControl >
                       <Input placeholder="Email Address" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              {/* PHONE */}
-
-              {/* <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Phone Number</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Phone Number" {...field} />
-                    </FormControl>
-
-                    <FormMessage />
-                  </FormItem>
-                )}
-              /> */}
-
-              {/* MESSAGE */}
-
+             
+             {/* MESSAGE */}
               <FormField
                 control={form.control}
                 name="message"
                 render={({ field }) => (
-                  <FormItem>
-                    
+                  <FormItem>                    
                     <FormControl>
                       <Textarea
                         placeholder="Your feedback..."

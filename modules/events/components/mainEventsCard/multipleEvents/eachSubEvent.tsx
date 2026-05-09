@@ -18,12 +18,12 @@ const SubEventList = ({ event }:{event:EventListProps }
     <div className="grid grid-cols-12 mb-2 font-roboto ">  
       {/* EVENT TIMINGS */}
       {event.details ?      
-      <div className="col-span-full md:col-span-2 text-sm text-blue-950 font-bold md:text-right inline-block px-[4px] content-normal">
+      <div className="col-span-full md:col-span-2 text-sm text-blue-950 font-bold md:text-right inline-block px-1 content-normal">
         {( event.startTime) ? event.startTime : ""}
         { event.endTime ? ` to ${event.endTime} ` : ""}
       </div>      
       :
-      event.startTime && <div className="col-span-full text-blue-950 text-sm font-bold px-[4px] content-normal">
+      event.startTime && <div className="col-span-full text-blue-950 text-sm font-bold px-1 content-normal">
       Timings: {(event.startTime) ? event.startTime : ""}{ event.endTime ? ` to ${event.endTime}` : ""}
     </div> 
     }      

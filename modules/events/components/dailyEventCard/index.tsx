@@ -8,8 +8,8 @@ import type { WeeklyEvents } from "types/global";
 
 const DailyEventCard = ({ data }: { data: WeeklyEvents }) => {
   return (
-    <Card className="p-2 border-[1px] border-purple-200">
-      <CardHeader className=" text-[2rem] text-red-700 border-b-[1px] border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold">
+    <Card className="p-2 border border-purple-200">
+      <CardHeader className=" text-[2rem] text-red-700 border-b border-b-indigo-800 leading-7 px-1 py-2 md:text-4xl md:leading-10 md:font-semibold">
       {data.day}
       </CardHeader>
       <CardContent >
