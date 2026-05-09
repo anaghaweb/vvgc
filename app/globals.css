@@ -239,13 +239,8 @@
       33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
       50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
       66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
-<<<<<<< HEAD
-  } 
-}
-=======
   }
 
->>>>>>> 1321ab85ed840c6caa24711f7e5cc0b89c5a2692
 
   /* RECOMMENDED BY TAILWIND OFFICIAL UPGRADE GUIDE */
 

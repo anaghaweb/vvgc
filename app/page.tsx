@@ -4,7 +4,6 @@ import HomePageView from '@modules/home/page';
 import getHomePageEventsData from '@lib/server-actions/homePageEvents';
 import getMainEventsData from "@lib/server-actions/revalidateMainEvents";
 import type { Metadata } from 'next';
-
 import AskableAgentScript from '@lib/askable-agent';
 
 //export const revalidate = 300;

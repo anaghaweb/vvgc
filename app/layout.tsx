@@ -1,12 +1,6 @@
+
 import Header from "@modules/layout/header/page";
 import Footer from "@modules/layout/footer/page";
-import Script from 'next/script'
-<<<<<<< HEAD
-import "./globals.css";
-import GoogleTagManager from "@modules/analytics";
-=======
-import { askable_agent_url } from "@lib/server-actions/askable";
->>>>>>> 1321ab85ed840c6caa24711f7e5cc0b89c5a2692
 import {
   roboto,
   opensans,
@@ -20,6 +14,7 @@ import React from "react";
 import { TooltipProvider } from "@modules/common/components/ui/tooltip";
 import { Toaster } from 'sonner';
 import { Metadata } from "next"
+import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = `${process.env.BASE_URL}/images/og/hsbanner.jpg`;
@@ -61,15 +56,9 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
 
-<<<<<<< HEAD
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* <link rel="stylesheet" href="./globals.css" /> */}
-=======
         <link rel="icon" href="/favicon.ico" sizes="<generated>" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
->>>>>>> 1321ab85ed840c6caa24711f7e5cc0b89c5a2692
         <link
           rel="icon"
           href="/favicon/icon.png"
@@ -84,13 +73,8 @@ export default function RootLayout({
         />
        
       </head>
-<<<<<<< HEAD
-      
-      <body className={`max-w-[90rem] mx-auto font-sans box-border m-0
-=======
 
       <body className={`max-w-360 mx-auto font-sans box-border m-0
->>>>>>> 1321ab85ed840c6caa24711f7e5cc0b89c5a2692
             ${inter.variable} ${roboto_mono.variable} 
           ${noto_sans.variable} ${noto_sans_display.variable} 
           ${noto_serif.variable} ${noto_serif_display.variable}
@@ -110,16 +94,9 @@ export default function RootLayout({
           data-widget-type="ws"
           data-api-base-url={'https://askable.gentic.in'}
           strategy="afterInteractive"
-<<<<<<< HEAD
-        />
-
-=======
         /> */}
         
->>>>>>> 1321ab85ed840c6caa24711f7e5cc0b89c5a2692
       </body>
-      
-
-    </html>
+      </html>
   );
 }

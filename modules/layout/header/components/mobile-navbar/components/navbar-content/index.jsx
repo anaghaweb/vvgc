@@ -30,7 +30,7 @@ const CreateMenu = ({ item, depth}) => {
   if (item.child) {
      return (
       <li className="px-2">
-        <Accordion type="multiple" collapsible>
+        <Accordion type="multiple" collapsible="true">
           <AccordionItem value="item.title">
             <AccordionTrigger>{item.title}</AccordionTrigger>
             {item.child.map((c1, i1) => (              
