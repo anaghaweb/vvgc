@@ -1,15 +1,15 @@
 export const upcoming_events = [
-
-  //HANUMAN JAYANTHI 12th may
+ 
+//BHAGWATI JAGRAN 15TH MAY
   {
-    heading: "Mother's Day",
+    heading: "Bhagwati Jagran",
     subtitle: "",
-    date: ["8th May"],
-    time: "5 PM to 8 PM",
+    date: ["15th May"],
+    time: "From 7:00 pm",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1777695760/vvgc/images/2026/may/mothers_day_0508.jpg",
-        alt: "mother's day image",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1778653007/vvgc/images/2026/may/bhagwati_jagran_0515.jpg",
+        alt: "Bhagwati Jagran 15th May Flyer",
         id: 1
       },
     ],
@@ -19,41 +19,13 @@ export const upcoming_events = [
     details: [],
     sponsorLinks: [
       // {
-      //   url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=52#optionList`,
+      //   url: `https://paybee.io/@vvgc@64`,
       //   name: "Click here to donate"
       // },
       // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
-
-  //HANUMAN JAYANTHI 12th may
-  {
-    heading: "Chandramana Sri Hanuman Jayanthi Celebrations",
-    subtitle: "",
-    date: ["12th May"],
-    time: "7:00PM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1775543913/vvgc/images/2026/may/chandramana_hanuman_jayanthi_0512.jpg",
-        alt: "hanuman jayanthi",
-        id: 1
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "",
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=52#optionList`,
-        name: "Click here to donate"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
-
   //HANUMAN CHALISA 30TH MAY
   {
     heading: "Hanuman Chalisa",
