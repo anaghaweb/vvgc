@@ -7,7 +7,7 @@ const SectionFive = () => {
     <Fragment>
       <Card>
         <iframe
-          className="w-full h-[200px] md:h-[400px]"
+          className="w-full h-50 md:h-100"
           src={mapUrl}
         ></iframe>
       </Card>

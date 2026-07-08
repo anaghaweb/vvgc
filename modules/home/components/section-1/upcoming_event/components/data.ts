@@ -1,6 +1,6 @@
 export const upcoming_events = [
  
-    //KAMBARAMAYANAM 13TH JUNE
+    //Maharudram 18th,19th July
   {
     heading: "Maha Rudram",
     subtitle: "Program held at VVGC San Martin",
@@ -25,7 +25,7 @@ export const upcoming_events = [
       { url: "https://forms.gle/mRkVwQKgFN23Q9TG8", name: "Register for Ritwik Event" },
     ],
   },
-   //Bhagwati Jagran 19TH JUNE
+  //  Bhagwati Jagran 19TH JUNE
   // {
   //   heading: "Bhagwati Jagran ",
   //   subtitle: "Followed by Priti Bhoj",
@@ -33,7 +33,7 @@ export const upcoming_events = [
   //   time: "7:00 PM",
   //   imageArray: [
   //     {
-  //       url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1781268328/vvgc/images/2026/june/bhagwati_jagran_0619.jpg",
+  //       url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1782049134/vvgc/images/2026/july/maha_rudram_0718.jpg",
   //       alt: "bhagwati jagran Image",
   //       id: 1
   //     },
