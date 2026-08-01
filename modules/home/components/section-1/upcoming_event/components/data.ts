@@ -1,17 +1,15 @@
 export const upcoming_events = [
- 
-    //Maharudram 18th,19th July
   
-  //  Bhagwati Jagran 19TH JUNE
+  //  THRUVADI 14TH AUG
   {
-    heading: "Vitthal Wari Celebration",
-    subtitle: "",
-    date: ["25th July"],
-    time: "4:30PM to 7:30PM",
+    heading: "Thiruvadi Pooram Celebration",
+    subtitle: "A devi / Ambal Pooja Special",
+    date: ["14th August"],
+    time: "5:30PM to 7:30PM",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1783416056/vvgc/images/2026/july/vitthal_wari_0725.jpg",
-        alt: "Vitthal Wari Flyer",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1785581689/vvgc/images/2026/august/thiruvadi_0814.jpg",
+        alt: "Thiruvadi Pooram Flyer",
         id: 1
       },
     ],
@@ -32,7 +30,7 @@ export const upcoming_events = [
   {
     heading: "Shri Shirdi Sai Aarthi",
     subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["July 16th, 23rd, 30th"],
+    date: ["August 6th, 13th, 20th, 27th"],
     time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
