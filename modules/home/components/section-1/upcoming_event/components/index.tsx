@@ -125,7 +125,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         {/* Details */}
         {
           details && details.map((ele, index) =>{
-            return <div key={ele} className="  p-2">
+            return <div key={ele} className="p-2 ">
               <p className="font-roboto text-gray-950 text-base text-left">
                 {ele}
               </p>
@@ -136,7 +136,7 @@ const NewEventCard: React.FC<NewEventCardProps> = ({
         {/* Description */}
         {description && (
           description.map((ele) =>
-            <div key={ele} className="p-4  text-center">
+            <div key={ele} className="p-4  text-justify">
               <p className="font-cormorant font-semibold text-gray-950 text-xl">
                 {ele}
               </p>
