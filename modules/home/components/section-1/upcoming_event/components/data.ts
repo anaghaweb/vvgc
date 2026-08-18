@@ -1,28 +1,30 @@
 export const upcoming_events = [
   
-  //  THRUVADI 14TH AUG
+  //  BHAGWATI JAGRAN 21ST AUG
   {
-    heading: "Thiruvadi Pooram Celebration",
-    subtitle: "A devi / Ambal Pooja Special",
-    date: ["14th August"],
-    time: "5:30PM to 7:30PM",
+    heading: "Bhagwati Jagran",
+    subtitle: "Followed by Priti Bhoj",
+    date: ["21st August 2026"],
+    time: "Starts @ 7:00 PM",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1785581689/vvgc/images/2026/august/thiruvadi_0814.jpg",
-        alt: "Thiruvadi Pooram Flyer",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787038746/vvgc/images/2026/august/bhagwati_jagran_0821.jpg",
+        alt: "Bhagwati Jagran",
         id: 1
       },
     ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
+    description: [
     ],
     videoUrl: "", 
-    details: [],
+    details: [
+     
+    ],
     sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // {
+      //   url: `https://runsignup.com/Race/CA/SanMartin/VVGCSangamam `,
+      //   name: "Click here to register"
+      // },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
@@ -63,6 +65,8 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
+  
+ 
   //  Shirdi Sai Aarthi
   {
     heading: "Shri Shirdi Sai Aarthi",
