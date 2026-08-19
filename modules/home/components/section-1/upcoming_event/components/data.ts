@@ -1,5 +1,30 @@
 export const upcoming_events = [
-  
+  //  Shirdi Sai Aarthi
+  {
+    heading: "Shri Shirdi Sai Aarthi",
+    subtitle: "Every thursday evening @ VVGC San Martin",
+    date: ["August 20th, 27th"],
+    time: "10 am, 1 pm, 6 pm, 8 pm",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1783676707/vvgc/images/2026/recurring/shri_shirdi_sai_aarthi.jpg",
+        alt: "Vitthal Wari Flyer",
+        id: 1
+      },
+    ],
+    description: [`All Are Welcome To Participate With Family and Friends`,
+    ],
+    videoUrl: "", 
+    details: [],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/@vvgc@32`,
+        name: "Contribute to this event"
+      },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
   //  BHAGWATI JAGRAN 21ST AUG
   {
     heading: "Bhagwati Jagran",
@@ -18,6 +43,38 @@ export const upcoming_events = [
     videoUrl: "", 
     details: [
      
+    ],
+    sponsorLinks: [
+      // {
+      //   url: `https://runsignup.com/Race/CA/SanMartin/VVGCSangamam `,
+      //   name: "Click here to register"
+      // },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
+
+  //KRISHNA JANMASHTAMI SEPT 04
+  {
+    heading: "Sri Krishna Janmashtami",
+    subtitle: "",
+    date: ["4th September 2026"],
+    time: "From 7:00 PM - 10:00 PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787113315/vvgc/images/2026/sept/krishna_janmashtami_0904.jpg",
+        alt: "Krishna Janmashtami",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [
+     "7PM: Rath Yatra: Procession with joy and devotion",
+     "7.30PM: Matki: Dahi handi celebration",
+     "8.00 PM: Bhajan: devotional singing and kirtan",
+     "8.30 PM: Janki Radha Krishna: Divine Darshan", 
     ],
     sponsorLinks: [
       // {
@@ -67,32 +124,7 @@ export const upcoming_events = [
   },
   
  
-  //  Shirdi Sai Aarthi
-  {
-    heading: "Shri Shirdi Sai Aarthi",
-    subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["August 6th, 13th, 20th, 27th"],
-    time: "10 am, 1 pm, 6 pm, 8 pm",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1783676707/vvgc/images/2026/recurring/shri_shirdi_sai_aarthi.jpg",
-        alt: "Vitthal Wari Flyer",
-        id: 1
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
+  
 
 ];
 
