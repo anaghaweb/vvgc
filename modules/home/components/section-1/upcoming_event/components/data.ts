@@ -62,8 +62,8 @@ export const upcoming_events = [
     time: "From 7:00 PM - 10:00 PM",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787113315/vvgc/images/2026/sept/krishna_janmashtami_0904.jpg",
-        alt: "Krishna Janmashtami",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787297385/vvgc/images/2026/sept/krishna_janmashtami_20260904.jpg",
+        alt: "Sri Krishna Janmashtami",
         id: 1
       },
     ],
@@ -130,4 +130,3 @@ export const upcoming_events = [
 
 
 
-//https://res.cloudinary.com/dixkqgqsi/image/upload/v1783676707/vvgc/images/2026/recurring/shri_shirdi_sai_aarthi.jpg
