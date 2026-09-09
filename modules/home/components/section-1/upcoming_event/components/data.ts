@@ -1,66 +1,31 @@
 export const upcoming_events = [
- 
-  //  BHAGWATI JAGRAN 21ST AUG
-  // {
-  //   heading: "Bhagwati Jagran",
-  //   subtitle: "Followed by Priti Bhoj",
-  //   date: ["21st August 2026"],
-  //   time: "Starts @ 7:00 PM",
-  //   imageArray: [
-  //     {
-  //       url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787038746/vvgc/images/2026/august/bhagwati_jagran_0821.jpg",
-  //       alt: "Bhagwati Jagran",
-  //       id: 1
-  //     },
-  //   ],
-  //   description: [
-  //   ],
-  //   videoUrl: "", 
-  //   details: [
-     
-  //   ],
-  //   sponsorLinks: [
-  //     {
-  //       url: `https://runsignup.com/Race/CA/SanMartin/VVGCSangamam `,
-  //       name: "Click here to register"
-  //     },
-  //      { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
-  //     { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-  //   ],
-  // },
-
-  //KRISHNA JANMASHTAMI SEPT 04
+    //  Shirdi Sai Aarthi
   {
-    heading: "Sri Krishna Janmashtami",
-    subtitle: "",
-    date: ["4th September 2026"],
-    time: "From 7:00 PM - 10:00 PM",
+    heading: "Shri Shirdi Sai Aarthi",
+    subtitle: "Every thursday evening @ VVGC San Martin",
+    date: ["Spetember 3rd, 10th, 17th & 24th"],
+    time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787297385/vvgc/images/2026/sept/krishna_janmashtami_20260904.jpg",
-        alt: "Sri Krishna Janmashtami",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788932527/vvgc/images/2026/recurring/shirdisai_aarathi.jpg",
+        alt: "Vitthal Wari Flyer",
         id: 1
       },
     ],
-    description: ["All Are Welcome to participate in the celebrations with family friends."
+    description: [`All Are Welcome To Participate With Family and Friends`,
     ],
     videoUrl: "", 
-    details: [
-     "7PM: Rath Yatra: Procession with joy and devotion",
-     "7.30PM: Matki: Dahi handi celebration",
-     "8.00 PM: Bhajan: devotional singing and kirtan",
-     "8.30 PM: Janki Radha Krishna: Divine Darshan", 
-    ],
+    details: [],
     sponsorLinks: [
-      // {
-      //   url: `https://runsignup.com/Race/CA/SanMartin/VVGCSangamam `,
-      //   name: "Click here to register"
-      // },
-      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      {
+        url: `https://paybee.io/@vvgc@32`,
+        name: "Contribute to this event"
+      },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
-  //SANGAMAM SEPT 12TH 2026
+   //SANGAMAM SEPT 12TH 2026
    {
     heading: "Sangamam",
     subtitle: "Community Hike & Walk",
@@ -97,30 +62,193 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
-   //  Shirdi Sai Aarthi
+  //16 Day Ganesh Chathurthi Celebrations
   {
-    heading: "Shri Shirdi Sai Aarthi",
-    subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["Spetember 3rd, 10th, 17th & 24th"],
-    time: "10 am, 1 pm, 6 pm, 8 pm",
+    heading: "16 Day Ganesh Chathurthi Celebrations",
+    subtitle: "",
+    date: ["From 12th September to 27th September"],
+    time: "check flyer",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1783676707/vvgc/images/2026/recurring/shri_shirdi_sai_aarthi.jpg",
-        alt: "Vitthal Wari Flyer",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_chathurthi_1.jpg",
+        alt: "ganesha_1",
         id: 1
       },
     ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [
+      
+    ],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
+        name: "Click here to contribute"
+      },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
+  //Sama Veda Upakarma
+  {
+    heading: "Sama Veda Upakarma",
+    subtitle: "",
+    date: ["13th September 2026"],
+    time: "Morning 8:00 AM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872060/vvgc/images/2026/sept/sama_veda_0913.jpg",
+        alt: "sama veda upakarma",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [
+    
+    ],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=32`,
+        name: "Click here to contribute"
+      },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
+  //Ganesh Chathurthi Sri Vinayakar Chathurthi Celebrations
+  {
+    heading: "Sri Vinayaka Chathurthi Celebrations",
+    subtitle: "",
+    date: ["14th & 15th September 2026"],
+    time: "check flyer",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_chathurthi_2.jpg",
+        alt: "ganesha_2",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [ ],
+    sponsorLinks: [
+     {
+        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
+        name: "Click here to contribute"
+      },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  }, 
+    //Ganapathi Bappa Morya
+  {
+    heading: "Ganapathi Bappa Morya",
+    subtitle: "Part of the 16 Day celebrtions",
+    date: ["20th September 2026"],
+    time: "4:30 PM to 7:30 PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_chathurthi_celeb_highlights.jpg",
+        alt: "ganesha_3",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
     ],
     videoUrl: "", 
     details: [],
     sponsorLinks: [
       {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
+        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
+        name: "Click here to contribute"
       },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
-  },
+  },  
+  //Ganesha Visarjan Ceremony
+  {
+    heading: "Ganesha Visarjan Ceremony",
+    subtitle: "Nimmarjanam Ceremony",
+    date: ["27th September 2026"],
+    time: "starts @ 4:00 PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_visarjan.jpg",
+        alt: "ganesha_4",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
+        name: "Click here to contribute"
+      },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },  
+  //Navaratri
+  {
+    heading: "Navaratri Celebrations",
+    subtitle: "Nimmarjanam Ceremony",
+    date: ["11th Oct to 21st Oct 2026"],
+    time: "7:30 PM to 9:30 PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788941478/vvgc/images/2026/oct/navaratri_oct2026i.webp",
+        alt: "navaratri",
+        id: 1
+      },
+    ],
+    description: ["All Are Welcome to participate in the celebrations with family friends."
+    ],
+    videoUrl: "", 
+    details: [],
+    sponsorLinks: [
+      // {
+      //   url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
+      //   name: "Click here to contribute"
+      // },
+      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },  
 ];
+
+//  BHAGWATI JAGRAN 21ST AUG
+  // {
+  //   heading: "Bhagwati Jagran",
+  //   subtitle: "Followed by Priti Bhoj",
+  //   date: ["21st August 2026"],
+  //   time: "Starts @ 7:00 PM",
+  //   imageArray: [
+  //     {
+  //       url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1787038746/vvgc/images/2026/august/bhagwati_jagran_0821.jpg",
+  //       alt: "Bhagwati Jagran",
+  //       id: 1
+  //     },
+  //   ],
+  //   description: [
+  //   ],
+  //   videoUrl: "", 
+  //   details: [
+     
+  //   ],
+  //   sponsorLinks: [
+  //     {
+  //       url: `https://runsignup.com/Race/CA/SanMartin/VVGCSangamam `,
+  //       name: "Click here to register"
+  //     },
+  //      { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+  //     { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+  //   ],
+  // },
