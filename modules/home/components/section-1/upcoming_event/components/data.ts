@@ -37,6 +37,44 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
+    //SANGAMAM SEPT 12TH 2026
+   {
+    heading: "Ganesha Clay Workshop",
+    subtitle: "Come join us for a fun-filled workshop! Learn how to make a Ganesha idol with clay!'",
+    date: ["13th September 2026"],
+    time: "11:00 AM to 1:00 PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1789186076/vvgc/images/2026/sept/ganesha_idol.jpg",
+        alt: "ganesha idol workshop",
+        id: 1
+      },
+    ],
+    description: [
+      // 'When - Sep 13th',
+      // 'Time - 11am - 1pm',
+      // 'Where : Prasadam Hall, VVGC, San Martin temple',
+    ],
+    videoUrl: "", 
+    details: [
+      'Traditionally, the Ganesha idol used for the Chaturthi puja is made using clay. At the end of the festival, the idol is immersed in a well, pond, lake, or sea where it dissolves back into the natural world. VVGC is helping revive this tradition by hosting this workshop and in this process, raising awareness amongst our youth',
+      'All are welcome! Children 8 and under will need their parent’s assistance.',
+      'All the materials will be provided. The workshop is FREE!',
+      'Date: 13st September, Sunday',
+      'Time: 11 am - 1 pm',
+      'Venue: VVGC - 11355 Monterey Hwy, San Martin, CA 95046'
+    ],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/@vvgc@70`,
+        name: "Click here to register"
+      },
+       { url: "https://paybee.io/@vvgc@31", 
+        name: "Contribute to this event"
+       },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },
   //16 Day Ganesh Chathurthi Celebrations
   {
     heading: "16 Day Ganesh Chathurthi Celebrations",
