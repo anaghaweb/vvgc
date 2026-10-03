@@ -1,67 +1,14 @@
 export const upcoming_events = [
-   //16 Day Ganesh Chathurthi Celebrations
-  {
-    heading: "16 Day Ganesh Chathurthi Celebrations",
-    subtitle: "",
-    date: ["From 12th September to 27th September"],
-    time: "check flyer",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_chathurthi_1.jpg",
-        alt: "ganesha_1",
-        id: 1
-      },
-    ],
-    description: ["All Are Welcome to participate in the celebrations with family friends."
-    ],
-    videoUrl: "", 
-    details: [
-      
-    ],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
-        name: "Click here to contribute"
-      },
-      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
+
    //Shirdi Sai Aarthi
-  // {
-  //   heading: "Shri Shirdi Sai Aarthi",
-  //   subtitle: "Every thursday evening @ VVGC San Martin",
-  //   date: ["Spetember 24th"],
-  //   time: "10 am, 1 pm, 6 pm, 8 pm",
-  //   imageArray: [
-  //     {
-  //       url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788932527/vvgc/images/2026/recurring/shirdisai_aarathi.jpg",
-  //       alt: "Vitthal Wari Flyer",
-  //       id: 1
-  //     },
-  //   ],
-  //   description: [`All Are Welcome To Participate With Family and Friends`,
-  //   ],
-  //   videoUrl: "", 
-  //   details: [],
-  //   sponsorLinks: [
-  //     {
-  //       url: `https://paybee.io/@vvgc@32`,
-  //       name: "Contribute to this event"
-  //     },
-  //     // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-  //     // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-  //   ],
-  // }, 
-  //Sundarkand Path
   {
-    heading: "Sundarkand Path",
-    subtitle: "",
-    date: ["Spetember 26th"],
-    time: "7:30 PM",
+    heading: "Shri Shirdi Sai Aarthi",
+    subtitle: "Every thursday evening @ VVGC San Martin",
+    date: ["October 8th"],
+    time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1790381142/vvgc/images/2026/sept/sundarkand_path.jpg",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788932527/vvgc/images/2026/recurring/shirdisai_aarathi.jpg",
         alt: "Vitthal Wari Flyer",
         id: 1
       },
@@ -84,7 +31,7 @@ export const upcoming_events = [
   {
     heading: "Weekly Hanuman Chalisa",
     subtitle: "Every Saturday",
-    date: ["Spetember 26th"],
+    date: ["October 3rd"],
     time: "6:30 PM",
     imageArray: [
       {
@@ -106,32 +53,32 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   }, 
-  //Ganesha Visarjan Ceremony
+   //Harikatha Samarpanam
   {
-    heading: "Ganesha Visarjan Ceremony",
-    subtitle: "Nimmarjanam Ceremony",
-    date: ["27th September 2026"],
-    time: "starts @ 4:00 PM",
+    heading: "Harikatha Samarpanam",
+    subtitle: "Valli Kalyanam",
+    date: ["October 11th"],
+    time: "10 am to 12 pm noon",
     imageArray: [
       {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788872059/vvgc/images/2026/sept/ganesh_visarjan.jpg",
-        alt: "ganesha_4",
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1791008836/vvgc/images/2026/oct/harikatha_samarpanam_1011.jpg",
+        alt: "Harikatha Samarpanam",
         id: 1
       },
     ],
-    description: ["All Are Welcome to participate in the celebrations with family friends."
+    description: [`All Are Welcome To Participate With Family and Friends`,
     ],
     videoUrl: "", 
     details: [],
     sponsorLinks: [
-      {
-        url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
-        name: "Click here to contribute"
-      },
-      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
+      // {
+      //   url: `https://paybee.io/@vvgc@32`,
+      //   name: "Contribute to this event"
+      // },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
-  },  
+  }, 
   //Navaratri
   {
     heading: "Navaratri Celebrations",
@@ -212,6 +159,8 @@ export const upcoming_events = [
   }, 
 ];
 
+
+
 //BHAGWATI JAGRAN 21ST AUG
   // {
   //   heading: "Bhagwati Jagran",
@@ -240,3 +189,5 @@ export const upcoming_events = [
   //     { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
   //   ],
   // },
+
+  //https://res.cloudinary.com/dixkqgqsi/image/upload/v1791008836/vvgc/images/2026/oct/harikatha_samarpanam_1011.jpg
