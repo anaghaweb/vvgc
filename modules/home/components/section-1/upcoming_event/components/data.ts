@@ -30,7 +30,7 @@ export const upcoming_events = [
   {
     heading: "Shri Shirdi Sai Aarthi",
     subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["October 15th"],
+    date: ["October 22nd"],
     time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
@@ -82,7 +82,7 @@ export const upcoming_events = [
   {
     heading: "Suvasini Pooja & Chenda Melam",
     subtitle: "Sharadha Navarathri Celebrations",
-    date: ["October 17th"],
+    date: ["October 18th"],
     time: "Pooja starts @ 11:00 AM",
     imageArray: [
       {
@@ -182,7 +182,58 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   }, 
- 
+     //Sindur Khela 24th Oct
+   {
+    heading: "Sindur Khela",
+    subtitle: "Celebrating the Shakthi in every Woman",
+    date: ["October 24th"],
+    time: "Starts @ 11:00 AM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1792203604/vvgc/images/2026/oct/sindur_khela_1024.jpg",
+        alt: "Sindur  Khela",
+        id: 551
+      },
+    ],
+    description: [`All Are Welcome To Participate With Family and Friends`,
+    ],
+    videoUrl: "", 
+    details: [],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/@vvgc@32`,
+        name: "Contribute to this event"
+      },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  },  
+   //Deepawali Nov 7,8 & 9
+   {
+    heading: "Diwali Celebrations",
+    subtitle: "Three Day Celebration",
+    date: ["Nov 7th, 8th & 9th"],
+    time: "7:30PM",
+    imageArray: [
+      {
+        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1792203691/vvgc/images/2026/nov/deepawali_nov789.jpg",
+        alt: "diwali celebrations",
+        id: 991
+      },
+    ],
+    description: [`All Are Welcome To Participate With Family and Friends`,
+    ],
+    videoUrl: "", 
+    details: [],
+    sponsorLinks: [
+      {
+        url: `https://paybee.io/@vvgc@32`,
+        name: "Contribute to this event"
+      },
+      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
+      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
+    ],
+  }, 
  
        //Skanda Sasti Vratha Nov 10th to 15th 
    {
@@ -261,8 +312,7 @@ export const upcoming_events = [
       // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
-  },   
-  
+  },     
 ];
 
 
