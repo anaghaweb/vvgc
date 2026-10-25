@@ -9,7 +9,7 @@ const getHomePageEventsData = async ():Promise<CalendarEvent[]> => {
       if(response)
          result = response.filter(event => event.type === "sponsor"); 
       else throw new Error("Error fetching data from server");
-      console.log("get home page event function called: ", Date.now());
+      
       return result;
    
    }  

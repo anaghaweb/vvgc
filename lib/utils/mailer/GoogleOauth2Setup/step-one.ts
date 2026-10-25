@@ -19,14 +19,13 @@ import { google } from "googleapis";
       // This scope allows sending email
     });
     
-     console.log("Open this URL to get authorization code and pass it to getToken function",authUrl);
+    
 
     //STEP TWO//
     const getToken = async (code: string) => {
       try {
         const { tokens } = await oAuth2Client.getToken(code);
-        console.log('Access Token:', tokens.access_token);
-        console.log('Refresh Token:', tokens.refresh_token); 
+     
         // Save the refresh token to your environment or a secure place
       } catch (error) {
         console.error('Error retrieving access token:', error);

@@ -1,7 +1,7 @@
 const getDayOfTheWeek = () => {
     const today = getCurrentDate();
     const num = today.getDay();
-    console.log("num",num)
+    
     const daysOfWeek = [
       "Sunday",
       "Monday",

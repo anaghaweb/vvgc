@@ -26,7 +26,7 @@ const ConfirmSubscription = async ({
       range: `VerificationToken!A:Z`,
     });
     const rows = response.data.values;
-    console.log("rows",rows)
+    
 
     if (!rows) {
       return {Success:false, message:"Verification Link has expired. Please enter your email id again"};
@@ -37,7 +37,7 @@ const ConfirmSubscription = async ({
         TokenList.push({ timestamp: e[0], token: e[1], email: e[2] });
       }
     });
-    console.log("tokenlist",TokenList)
+    
     tokenExists = TokenList.find(
       (ele) => ele.token === verificationToken
     );

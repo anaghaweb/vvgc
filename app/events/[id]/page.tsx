@@ -14,12 +14,12 @@ import Link from "next/link";
 // }
 
 export async function generateMetadata ({params}:{
-  params:{
+  params:Promise<{
     id:string
-  }
+  }>
 })
 {
-  const {id} = params;
+  const {id} = await params;
   const events = await AllEventsData();
   const EVENT = events.find((e:CalendarEvent)=> e.id === id);
   const localImage = `${process.env.BASE_URL}/images/og/inner.jpg`;
@@ -53,14 +53,17 @@ export async function generateMetadata ({params}:{
 }
 
 const SingleEventPage = async ({params}:{
-  params:{
+  params: Promise<{
     id:string
-  }
+  }>
 }) => 
 {
-    const {id} = params;
+    const {id} = await params;
+    
     const event = await AllEventsData();
-    const data = event.find((e:CalendarEvent)=> e.id === id)
+    
+    const data = event.find((e:CalendarEvent)=> e.id === id);
+    
     
   return (
     <Fragment>
