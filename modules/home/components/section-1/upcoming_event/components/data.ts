@@ -1,36 +1,10 @@
 export const upcoming_events = [
  
-  //Navaratri
-  {
-    heading: "Navaratri Celebrations",
-    subtitle: "Nimmarjanam Ceremony",
-    date: ["11th Oct to 21st Oct 2026"],
-    time: "7:30 PM to 9:30 PM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1788941478/vvgc/images/2026/oct/navaratri_oct2026i.webp",
-        alt: "navaratri",
-        id: 1
-      },
-    ],
-    description: ["All Are Welcome to participate in the celebrations with family friends."
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      // {
-      //   url: `https://paybee.io/quickpay.html?handle=vvgc&ppid=31`,
-      //   name: "Click here to contribute"
-      // },
-      //  { url: "https://paybee.io/@vvgc@74", name: "Contribute to this event" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },
      //Shirdi Sai Aarthi
   {
     heading: "Shri Shirdi Sai Aarthi",
     subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["October 22nd"],
+    date: ["October 29thd"],
     time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
@@ -52,63 +26,12 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },    
-    //Chandi Homam
-  {
-    heading: "Sri Chandi Homam",
-    subtitle: "Sharadha Navarathri Celebrations",
-    date: ["October 17th"],
-    time: "Homam starts @ 11:00 AM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1790381379/vvgc/images/2026/oct/sharadha_navarathri_chandihomam.jpg",
-        alt: "Vitthal Wari Flyer",
-        id: 2
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@34`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  }, 
-     //Suvasini Pooja
-  {
-    heading: "Suvasini Pooja & Chenda Melam",
-    subtitle: "Sharadha Navarathri Celebrations",
-    date: ["October 18th"],
-    time: "Pooja starts @ 11:00 AM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1790381403/vvgc/images/2026/oct/sharadha_navarathri_suvasini_pooja.jpg",
-        alt: "suvasini pooja image",
-        id: 3
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@33`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  }, 
+ 
      //Weekly Hanuman Chalisa
   {
     heading: "Weekly Hanuman Chalisa",
     subtitle: "Every Saturday",
-    date: ["October 17th"],
+    date: ["October 31st"],
     time: "6:30 PM",
     imageArray: [
       {
@@ -130,84 +53,8 @@ export const upcoming_events = [
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
   },
-     //Bathukamma Celebrations 18th oct
-  {
-    heading: "Bathukamma Celebrations",
-    subtitle: "",
-    date: ["October 18th"],
-    time: "5PM to 6:30PM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1791877805/vvgc/images/2026/oct/bathukamma_celebrations_20261018.jpg",
-        alt: "Bathukamma Celebrations",
-        id: 4
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  }, 
-    //Samoohika Ayudha Pooja Oct 21st
-   {
-    heading: "Samoohika Ayudha Pooja",
-    subtitle: "",
-    date: ["October 21st"],
-    time: "6:30PM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1791879162/vvgc/images/2026/oct/samoohika_ayudha_pooja_oct_21.jpg",
-        alt: "Samoohika ayudha pooja",
-        id: 5
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  }, 
-     //Sindur Khela 24th Oct
-   {
-    heading: "Sindur Khela",
-    subtitle: "Celebrating the Shakthi in every Woman",
-    date: ["October 24th"],
-    time: "Starts @ 11:00 AM",
-    imageArray: [
-      {
-        url: "https://res.cloudinary.com/dixkqgqsi/image/upload/v1792203604/vvgc/images/2026/oct/sindur_khela_1024.jpg",
-        alt: "Sindur  Khela",
-        id: 551
-      },
-    ],
-    description: [`All Are Welcome To Participate With Family and Friends`,
-    ],
-    videoUrl: "", 
-    details: [],
-    sponsorLinks: [
-      {
-        url: `https://paybee.io/@vvgc@32`,
-        name: "Contribute to this event"
-      },
-      // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
-      // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
-    ],
-  },  
+ 
+ 
    //Deepawali Nov 7,8 & 9
    {
     heading: "Diwali Celebrations",
