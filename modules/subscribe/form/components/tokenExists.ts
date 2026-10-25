@@ -7,7 +7,7 @@ const verificationTokenExists= async({userInputEmailId, sheets}:{userInputEmailI
     });
     const rows = response.data.values;
     const result = rows?.find(row=>row[2] === userInputEmailId);
-    console.log("Active token exists", result);
+    
     if(result){
         return{Success:true, message:"We have already sent you a verification link. Please check your email"}
     }

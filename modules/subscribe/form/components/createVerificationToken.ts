@@ -20,6 +20,6 @@ export async function CreateVerificationToken({userInputEmailId, sheets}:{userIn
     if(!vToken){
         return null;
     }
-    console.log("Added New token to sheets", expiration, token, userInputEmailId)
+    
     return token;   
 }
