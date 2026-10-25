@@ -8,6 +8,8 @@ import AskableAgentScript from '@lib/askable-agent';
 
 //export const revalidate = 300;
 
+export const dynamic = 'force-dynamic';
+
 export async function generateMetadata(): Promise<Metadata> {
   const opengraphURL = "https://vvgc.org/images/og/hsbanner.jpg";
   const twitterURL = "https://vvgc.org/images/og/hsbanner.jpg";
