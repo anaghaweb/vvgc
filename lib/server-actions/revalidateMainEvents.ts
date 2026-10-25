@@ -9,7 +9,7 @@ const getMainEventsData = unstable_cache(async ():Promise<CalendarEvent[]> => {
   },
   ['google_sheet_cache'],
   {
-    revalidate:3600,
+    revalidate:60,
     tags:['events']
   }
 )
