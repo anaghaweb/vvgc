@@ -4,7 +4,7 @@ export const upcoming_events = [
   {
     heading: "Shri Shirdi Sai Aarthi",
     subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["October 29thd"],
+    date: ["Nov 5th"],
     time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
@@ -31,7 +31,7 @@ export const upcoming_events = [
   {
     heading: "Weekly Hanuman Chalisa",
     subtitle: "Every Saturday",
-    date: ["October 31st"],
+    date: ["Nov 7th"],
     time: "6:30 PM",
     imageArray: [
       {
