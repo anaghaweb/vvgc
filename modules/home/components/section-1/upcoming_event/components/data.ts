@@ -4,7 +4,7 @@ export const upcoming_events = [
   {
     heading: "Shri Shirdi Sai Aarthi",
     subtitle: "Every thursday evening @ VVGC San Martin",
-    date: ["Nov 5th"],
+    date: ["Nov 12th"],
     time: "10 am, 1 pm, 6 pm, 8 pm",
     imageArray: [
       {
@@ -52,9 +52,7 @@ export const upcoming_events = [
       // { url: "https://bit.ly/vvgc-maharudram", name: "Register Here" },
       // { url: "https://paybee.io/@vvgc@73", name: "Make a donation" },
     ],
-  },
- 
- 
+  }, 
    //Deepawali Nov 7,8 & 9
    {
     heading: "Diwali Celebrations",
